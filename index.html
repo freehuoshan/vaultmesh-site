@@ -7,421 +7,313 @@
   <meta name="description" content="VaultMesh is a local-first password manager for mobile and desktop. Sync works independently across trusted devices with end-to-end encryption.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav class="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <img src="img/vaultmesh-app-icon.png" alt="" class="brand-icon" aria-hidden="true">
-      VaultMesh
-    </a>
-    <ul class="nav-links">
-      <li><a href="#features">Features</a></li>
-      <li><a href="#how-it-works">How It Works</a></li>
-      <li><a href="#download">Download</a></li>
-      <li><a href="relay.html">Relay Guide</a></li>
-    </ul>
-    <div class="nav-cta">
-      <a href="#download" class="btn btn-primary btn-sm">Download</a>
-    </div>
-  </div>
+<nav class="site-nav">
+  <a class="nav-brand" href="index.html">
+    <img src="img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
+    <span class="nav-brand-name">VaultMesh</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="#download">Download</a></li>
+    <li><a href="relay.html">Relay Guide</a></li>
+    <li><a href="#download" class="nav-cta">Get VaultMesh</a></li>
+  </ul>
 </nav>
 
 <section class="hero">
-  <div class="hero-badge">
-    <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><circle cx="6" cy="6" r="4"/></svg>
-    Private by design - Local first - Multi-device sync
-  </div>
-  <h1>Secure passwords for phone and desktop.<br><span>Private from first unlock to daily sync.</span></h1>
-  <p class="hero-sub">
-    VaultMesh keeps your vault encrypted on your own devices. Mobile and desktop can pair
-    and sync directly, with no required hub device and no desktop dependency for mobile sync.
+  <div class="hero-badge">Local-first - End-to-end encrypted - Multi-device</div>
+  <h1>Secure passwords.<br><em>Private from first unlock</em><br>to daily sync.</h1>
+  <p class="hero-desc">
+    VaultMesh keeps your vault encrypted on your own devices. Mobile and desktop sync directly,
+    with no required hub and no plaintext exposure to relay transport.
   </p>
   <div class="hero-actions">
-    <a href="#download" class="btn btn-primary btn-lg">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    <a href="#download" class="btn-primary">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 1v8M4 6l3 3 3-3M2 11h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       Get VaultMesh
     </a>
-    <a href="#how-it-works" class="btn btn-outline btn-lg">How Sync Works</a>
+    <a href="#how-it-works" class="btn-secondary">How sync works</a>
   </div>
-  <div class="hero-pills">
-    <span class="hero-pill">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-      End-to-end encrypted
-    </span>
-    <span class="hero-pill">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-      Works fully offline
-    </span>
-    <span class="hero-pill">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-      Mobile and desktop sync independently
-    </span>
-    <span class="hero-pill">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-      Windows, macOS, Linux, Browser
-    </span>
-  </div>
-</section>
-
-<section class="features" id="features">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="section-tag">Why VaultMesh</span>
-      <h2 class="section-title">Simple workflow, serious security</h2>
-      <p class="section-sub">VaultMesh is built so mobile and desktop users can share one secure vault without giving up control over keys or plaintext data.</p>
+  <div class="hero-stats">
+    <div class="stat-item">
+      <span class="stat-label">Encryption</span>
+      <span class="stat-value">XChaCha20-Poly1305</span>
     </div>
-    <div class="features-grid">
-
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        </div>
-        <h3>Zero Knowledge</h3>
-        <p>No service can read your vault. Encryption and decryption happen only on your devices, and keys stay local.</p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-        </div>
-        <h3>Local First</h3>
-        <p>Your vault is stored locally in an encrypted database. VaultMesh remains usable even with no network connection.</p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h3>Strong Cryptography</h3>
-        <p>Argon2id, XChaCha20-Poly1305, X25519, and Ed25519 protect your data with modern, proven primitives.</p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-        </div>
-        <h3>Device Sync You Control</h3>
-        <p>Sync over local network by default. For remote devices, the relay forwards encrypted payloads without seeing plaintext.</p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-        </div>
-        <h3>Independent Device Sync</h3>
-        <p>Mobile and desktop devices pair and sync securely without a required hub. Relay is only for cross-network encrypted transport.</p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
-        </div>
-        <h3>Conflict-Free Sync</h3>
-        <p>Hybrid logical clock and version vectors merge concurrent edits deterministically so data remains consistent.</p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-        </div>
-        <h3>Browser Extension Bridge</h3>
-        <p>Extensions connect to the desktop client for secure autofill, keeping sensitive data out of long-term browser storage.</p>
-      </div>
-
-      <div class="feature-card">
-        <div class="feature-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2h4"/><path d="M12 14v-4"/><circle cx="12" cy="18" r="4"/><path d="M12 2v2"/></svg>
-        </div>
-        <h3>Secure Pairing</h3>
-        <p>SPAKE2 plus human verification ensures only your trusted physical devices can join your sync domain.</p>
-      </div>
-
+    <div class="stat-item">
+      <span class="stat-label">KDF</span>
+      <span class="stat-value">Argon2id</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Key Exchange</span>
+      <span class="stat-value">X25519 + SPAKE2</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-label">Platforms</span>
+      <span class="stat-value">iOS - Android - Win - Mac - Linux</span>
     </div>
   </div>
 </section>
 
-<section class="how" id="how-it-works">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="section-tag">How It Works</span>
-      <h2 class="section-title">Four steps from first install to daily use</h2>
-      <p class="section-sub">Start on any device you prefer, then pair more trusted devices when you want shared sync.</p>
+<div class="divider"></div>
+
+<section class="section" id="features">
+  <div class="section-label">Features</div>
+  <h2 class="section-title">Simple workflow,<br>serious security.</h2>
+  <p class="section-sub">Built so mobile and desktop users can share one encrypted vault without trusting any third-party service with keys or plaintext.</p>
+
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M6 9l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="feature-title">Zero Knowledge</div>
+      <div class="feature-desc">No server can read your vault. Encryption and decryption happen only on your devices. Keys never leave local storage.</div>
     </div>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h4>Install on Any Device</h4>
-        <p>Install VaultMesh on mobile or desktop, then create your vault with your preferred starting device.</p>
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="4" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1" stroke="currentColor" stroke-width="1.5"/></svg>
       </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h4>Create Vault</h4>
-        <p>Set your master password and import or add credentials. Data is encrypted before it is written to disk.</p>
+      <div class="feature-title">Local First</div>
+      <div class="feature-desc">Your vault is stored locally in an encrypted database. VaultMesh remains fully usable offline with zero network dependency.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9a6 6 0 1 1 12 0A6 6 0 0 1 3 9z" stroke="currentColor" stroke-width="1.5"/><path d="M9 6v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h4>Pair Trusted Devices</h4>
-        <p>Use QR or pairing code between devices, then verify the security string before joining your sync domain.</p>
+      <div class="feature-title">Conflict-Free Sync</div>
+      <div class="feature-desc">Hybrid logical clock and version vectors merge concurrent edits deterministically with no data loss across devices.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="2" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="10" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="10" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
       </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <h4>Use Everywhere</h4>
-        <p>Continue on mobile and desktop with one encrypted vault. Add browser extension integration when needed.</p>
+      <div class="feature-title">Independent Sync</div>
+      <div class="feature-desc">Mobile and desktop sync without requiring a hub device. Each device is a first-class sync participant.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2l2.5 5H17l-4 3.5 1.5 5.5L9 13l-5.5 3L5 10.5 1 7h5.5L9 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
       </div>
+      <div class="feature-title">Secure Pairing</div>
+      <div class="feature-desc">SPAKE2 plus human verification ensures only your trusted physical devices can join your sync domain.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-icon">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M9 2v2M9 14v2M2 9h2M14 9h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <div class="feature-title">Browser Extension</div>
+      <div class="feature-desc">Extensions connect to the desktop client for secure autofill. Sensitive data stays out of long-term browser storage.</div>
     </div>
   </div>
 </section>
 
-<section class="downloads" id="download">
-  <div class="section-inner">
-    <div class="section-header">
-      <span class="section-tag">Download</span>
-      <h2 class="section-title">Direct packages from this site</h2>
-      <p class="section-sub">Desktop, extension, CLI, and relay packages are served from this website. Mobile apps are distributed through app marketplaces.</p>
-      <p class="dl-note">Mobile sync does not require desktop. Desktop is optional unless you need browser extension integration.</p>
+<div class="divider"></div>
+
+<section class="section" id="how-it-works">
+  <div class="section-label">How It Works</div>
+  <h2 class="section-title">Four steps from<br>first install to daily use.</h2>
+  <p class="section-sub">Start on any device you prefer, then pair more trusted devices when you want shared sync.</p>
+
+  <div class="steps-wrapper">
+    <div class="step-card">
+      <div class="step-num">01</div>
+      <div class="step-title">Install on Any Device</div>
+      <div class="step-desc">Install VaultMesh on mobile or desktop with no account registration or cloud setup.</div>
     </div>
 
-    <div class="dl-group">
-      <div class="dl-group-title">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2" ry="2"/><line x1="11" y1="18" x2="13" y2="18"/></svg>
-        Mobile Apps
+    <div class="step-card">
+      <div class="step-num">02</div>
+      <div class="step-title">Create Your Vault</div>
+      <div class="step-desc">Set your master password. Data is encrypted with Argon2id and XChaCha20 before storage.</div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">03</div>
+      <div class="step-title">Pair Trusted Devices</div>
+      <div class="step-desc">Use QR or pairing code between devices and verify the security string before approving.</div>
+    </div>
+
+    <div class="step-card">
+      <div class="step-num">04</div>
+      <div class="step-title">Use Everywhere</div>
+      <div class="step-desc">Keep one encrypted vault across mobile and desktop. Add browser extension integration when needed.</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section" id="download">
+  <div class="section-label">Download</div>
+  <h2 class="section-title">Direct packages<br>from this site.</h2>
+  <p class="section-sub">Desktop, extension, CLI, and relay packages are served directly. Mobile apps are distributed via app marketplaces.</p>
+
+  <div class="download-wrapper">
+    <div class="dl-group dl-group-mobile">
+      <div class="dl-group-header">
+        <div class="dl-group-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="4" y="1" width="8" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="12" r="1" fill="currentColor"/></svg>
+        </div>
+        <div>
+          <div class="dl-group-title">Mobile Apps</div>
+          <div class="dl-group-sub">Mobile sync is independent and does not require desktop</div>
+        </div>
       </div>
-      <p class="dl-group-sub">Available via App Store and Google Play. Mobile devices can sync directly without requiring desktop.</p>
-      <div class="dl-cards">
-
-        <div class="dl-card dl-card-disabled" aria-disabled="true">
-          <div class="dl-card-icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#eff4fb"/><path d="M20.5 11.3c-1.6-1.9-3.8-1.7-3.8-1.7s-.3 2 1.3 3.5c1.7 1.6 3.6 1.2 3.6 1.2s.5-1.1-1.1-3zm-4.5 3.4c-.9 0-2.5-1-4.7-1C8.7 13.7 7 15.7 7 15.7c2.3 3.8.6 9.4 2.8 11.5.7.7 1.4.9 2.2.9 1.2 0 1.9-.7 3.5-.7 1.7 0 2.2.7 3.5.7.9 0 1.8-.3 2.5-1.1 1.8-2 2.5-6.3 2.5-6.5-.1 0-3.4-1.3-3.4-4.8 0-3.1 2.6-4.2 2.7-4.3-.6-.8-1.7-1.1-1.7-1.1s-.7-.1-1.2-.1-.9.1-1.9.5z" fill="#4f6276"/></svg>
+      <div class="mobile-row">
+        <div class="dl-item">
+          <div class="dl-item-info">
+            <div class="dl-item-name">iOS App</div>
+            <div class="dl-item-meta">Apple App Store</div>
           </div>
-          <div class="dl-card-info">
-            <div class="dl-card-name">iOS App</div>
-            <div class="dl-card-meta">Apple App Store</div>
-          </div>
-          <span class="dl-card-btn">Marketplace</span>
+          <a href="#" class="dl-btn">App Store</a>
         </div>
-
-        <div class="dl-card dl-card-disabled" aria-disabled="true">
-          <div class="dl-card-icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#eff4fb"/><path d="M11.2 8.9c.5-.9 1.7-1.3 2.6-.8l8.4 4.7c1 .6 1 2 0 2.6l-8.4 4.7c-.9.5-2.1.1-2.6-.8L8 13.5c-.4-.8-.4-1.7 0-2.5l3.2-2.1z" fill="#34a853"/><path d="M11.4 9.1l6.4 6.4" stroke="#fbbc05" stroke-width="1.8"/><path d="M9.2 14l8.2-4.9" stroke="#4285f4" stroke-width="1.8"/><path d="M9.2 13.9l8.2 4.9" stroke="#ea4335" stroke-width="1.8"/></svg>
+        <div class="dl-item">
+          <div class="dl-item-info">
+            <div class="dl-item-name">Android App</div>
+            <div class="dl-item-meta">Google Play</div>
           </div>
-          <div class="dl-card-info">
-            <div class="dl-card-name">Android App</div>
-            <div class="dl-card-meta">Google Play</div>
-          </div>
-          <span class="dl-card-btn">Marketplace</span>
+          <a href="#" class="dl-btn">Google Play</a>
         </div>
-
       </div>
     </div>
 
     <div class="dl-group">
-      <div class="dl-group-title">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-        Desktop Client
+      <div class="dl-group-header">
+        <div class="dl-group-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1" y="2" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M5 14h6M8 11v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <div class="dl-group-title">Desktop Client</div>
+          <div class="dl-group-sub">Required for browser extension bridge</div>
+        </div>
       </div>
-      <p class="dl-group-sub">Desktop app for desktop usage and optional browser extension bridge.</p>
-      <div class="dl-cards">
-
-        <a href="downloads/desktop/vaultmesh-desktop-windows-x64.msi" class="dl-card" title="Download for Windows">
-          <div class="dl-card-icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#eff4fb"/><path d="M7 8.5h7.5V16H7V8.5zm9.5 0H24V16h-7.5V8.5zM7 18h7.5v7.5H7V18zm9.5 0H24v7.5h-7.5V18z" fill="#0078d4"/></svg>
+      <div class="dl-list">
+        <div class="dl-item">
+          <div class="dl-item-info">
+            <div class="dl-item-name">Windows</div>
+            <div class="dl-item-meta">.msi - x86_64</div>
           </div>
-          <div class="dl-card-info">
-            <div class="dl-card-name">Windows</div>
-            <div class="dl-card-meta">.msi installer - x86_64</div>
+          <a href="downloads/desktop/vaultmesh-desktop-windows-x64.msi" class="dl-btn">Download</a>
+        </div>
+        <div class="dl-item">
+          <div class="dl-item-info">
+            <div class="dl-item-name">macOS</div>
+            <div class="dl-item-meta">.dmg - universal</div>
           </div>
-          <span class="dl-card-btn">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download
-          </span>
-        </a>
-
-        <a href="downloads/desktop/vaultmesh-desktop-macos-universal.dmg" class="dl-card" title="Download for macOS">
-          <div class="dl-card-icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#eff4fb"/><path d="M20.5 11.3c-1.6-1.9-3.8-1.7-3.8-1.7s-.3 2 1.3 3.5c1.7 1.6 3.6 1.2 3.6 1.2s.5-1.1-1.1-3zm-4.5 3.4c-.9 0-2.5-1-4.7-1C8.7 13.7 7 15.7 7 15.7c2.3 3.8.6 9.4 2.8 11.5.7.7 1.4.9 2.2.9 1.2 0 1.9-.7 3.5-.7 1.7 0 2.2.7 3.5.7.9 0 1.8-.3 2.5-1.1 1.8-2 2.5-6.3 2.5-6.5-.1 0-3.4-1.3-3.4-4.8 0-3.1 2.6-4.2 2.7-4.3-.6-.8-1.7-1.1-1.7-1.1s-.7-.1-1.2-.1-.9.1-1.9.5z" fill="#4f6276"/></svg>
+          <a href="downloads/desktop/vaultmesh-desktop-macos-universal.dmg" class="dl-btn">Download</a>
+        </div>
+        <div class="dl-item">
+          <div class="dl-item-info">
+            <div class="dl-item-name">Linux</div>
+            <div class="dl-item-meta">.AppImage + .deb - x86_64</div>
           </div>
-          <div class="dl-card-info">
-            <div class="dl-card-name">macOS</div>
-            <div class="dl-card-meta">.dmg - Apple Silicon and Intel</div>
-          </div>
-          <span class="dl-card-btn">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download
-          </span>
-        </a>
-
-        <a href="downloads/desktop/vaultmesh-desktop-linux-x64.AppImage" class="dl-card" title="Download for Linux">
-          <div class="dl-card-icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#eff4fb"/><circle cx="16" cy="16" r="9" stroke="#e95420" stroke-width="2" fill="none"/><path d="M12 20c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="#e95420" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="13" cy="14" r="1.2" fill="#e95420"/><circle cx="19" cy="14" r="1.2" fill="#e95420"/></svg>
-          </div>
-          <div class="dl-card-info">
-            <div class="dl-card-name">Linux</div>
-            <div class="dl-card-meta">.AppImage and .deb - x86_64</div>
-          </div>
-          <span class="dl-card-btn">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download
-          </span>
-        </a>
-
+          <a href="downloads/desktop/vaultmesh-desktop-linux-x64.AppImage" class="dl-btn">Download</a>
+        </div>
       </div>
     </div>
 
     <div class="dl-group">
-      <div class="dl-group-title">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        Browser Extensions
+      <div class="dl-group-header">
+        <div class="dl-group-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M8 5v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <div>
+          <div class="dl-group-title">Browser Extensions + CLI</div>
+          <div class="dl-group-sub">Extensions require desktop app via native messaging</div>
+        </div>
       </div>
-      <p class="dl-group-sub">Browser autofill package. Requires desktop app via native messaging.</p>
-      <div class="dl-cards">
-
-        <a href="downloads/extensions/vaultmesh-extension-chrome.zip" class="dl-card" title="Download Chrome extension package">
-          <div class="dl-card-icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#eff4fb"/><circle cx="16" cy="16" r="8" fill="#4285F4"/><circle cx="16" cy="16" r="4.5" fill="white"/><path d="M16 8h8.5" stroke="#EA4335" stroke-width="2.5"/><path d="M8.25 22l4.25-7.36" stroke="#34A853" stroke-width="2.5"/><path d="M23.75 22l-4.25-7.36" stroke="#FBBC05" stroke-width="2.5"/></svg>
+      <div class="dl-list">
+        <div class="dl-item">
+          <div class="dl-item-info">
+            <div class="dl-item-name">Chrome Extension</div>
+            <div class="dl-item-meta">.zip bundle</div>
           </div>
-          <div class="dl-card-info">
-            <div class="dl-card-name">Chrome Package</div>
-            <div class="dl-card-meta">.zip bundle</div>
+          <a href="downloads/extensions/vaultmesh-extension-chrome.zip" class="dl-btn">Download</a>
+        </div>
+        <div class="dl-item">
+          <div class="dl-item-info">
+            <div class="dl-item-name">Firefox Extension</div>
+            <div class="dl-item-meta">.xpi bundle</div>
           </div>
-          <span class="dl-card-btn">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download
-          </span>
-        </a>
-
-        <a href="downloads/extensions/vaultmesh-extension-firefox.xpi" class="dl-card" title="Download Firefox extension package">
-          <div class="dl-card-icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#eff4fb"/><circle cx="16" cy="16" r="8" fill="#FF9400"/><circle cx="16" cy="16" r="5" fill="#FF6611"/><circle cx="16" cy="16" r="2.5" fill="#fff"/></svg>
+          <a href="downloads/extensions/vaultmesh-extension-firefox.xpi" class="dl-btn">Download</a>
+        </div>
+        <div class="dl-item">
+          <div class="dl-item-info">
+            <div class="dl-item-name">CLI Packages</div>
+            <div class="dl-item-meta">Windows + macOS + Linux</div>
           </div>
-          <div class="dl-card-info">
-            <div class="dl-card-name">Firefox Package</div>
-            <div class="dl-card-meta">.xpi bundle</div>
-          </div>
-          <span class="dl-card-btn">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download
-          </span>
-        </a>
-
+          <a href="downloads/cli/" class="dl-btn">Open</a>
+        </div>
       </div>
     </div>
 
-    <div class="dl-group">
-      <div class="dl-group-title">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
-        Command-Line Interface
-      </div>
-      <p class="dl-group-sub">For scripts and automation workflows.</p>
-      <div class="dl-cards">
-
-        <a href="downloads/cli/vaultmesh-cli-windows-x64.exe" class="dl-card" title="Download CLI for Windows">
-          <div class="dl-card-icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#eff4fb"/><path d="M7 8.5h7.5V16H7V8.5zm9.5 0H24V16h-7.5V8.5zM7 18h7.5v7.5H7V18zm9.5 0H24v7.5h-7.5V18z" fill="#0078d4"/></svg>
-          </div>
-          <div class="dl-card-info">
-            <div class="dl-card-name">CLI - Windows</div>
-            <div class="dl-card-meta">.exe - x86_64</div>
-          </div>
-          <span class="dl-card-btn">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download
-          </span>
-        </a>
-
-        <a href="downloads/cli/vaultmesh-cli-macos-universal.tar.gz" class="dl-card" title="Download CLI for macOS">
-          <div class="dl-card-icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#eff4fb"/><path d="M20.5 11.3c-1.6-1.9-3.8-1.7-3.8-1.7s-.3 2 1.3 3.5c1.7 1.6 3.6 1.2 3.6 1.2s.5-1.1-1.1-3zm-4.5 3.4c-.9 0-2.5-1-4.7-1C8.7 13.7 7 15.7 7 15.7c2.3 3.8.6 9.4 2.8 11.5.7.7 1.4.9 2.2.9 1.2 0 1.9-.7 3.5-.7 1.7 0 2.2.7 3.5.7.9 0 1.8-.3 2.5-1.1 1.8-2 2.5-6.3 2.5-6.5-.1 0-3.4-1.3-3.4-4.8 0-3.1 2.6-4.2 2.7-4.3-.6-.8-1.7-1.1-1.7-1.1s-.7-.1-1.2-.1-.9.1-1.9.5z" fill="#4f6276"/></svg>
-          </div>
-          <div class="dl-card-info">
-            <div class="dl-card-name">CLI - macOS</div>
-            <div class="dl-card-meta">.tar.gz - universal</div>
-          </div>
-          <span class="dl-card-btn">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download
-          </span>
-        </a>
-
-        <a href="downloads/cli/vaultmesh-cli-linux-x64.tar.gz" class="dl-card" title="Download CLI for Linux">
-          <div class="dl-card-icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#eff4fb"/><circle cx="16" cy="16" r="9" stroke="#e95420" stroke-width="2" fill="none"/><path d="M12 20c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="#e95420" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="13" cy="14" r="1.2" fill="#e95420"/><circle cx="19" cy="14" r="1.2" fill="#e95420"/></svg>
-          </div>
-          <div class="dl-card-info">
-            <div class="dl-card-name">CLI - Linux</div>
-            <div class="dl-card-meta">.tar.gz - x86_64</div>
-          </div>
-          <span class="dl-card-btn">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download
-          </span>
-        </a>
-
+    <div style="grid-column: 1 / -1;">
+      <div class="relay-banner">
+        <div class="relay-banner-text">
+          <h3>Need remote sync across networks?</h3>
+          <p>Use a relay node for NAT traversal. Relay forwards encrypted payloads only and never reads vault plaintext.</p>
+        </div>
+        <a href="relay.html" class="btn-primary">View Relay Guide</a>
       </div>
     </div>
+  </div>
 
-    <p class="dl-note">Checksums and signatures: <a href="downloads/checksums.txt">downloads/checksums.txt</a></p>
+  <div style="margin-top: 20px; text-align: right;">
+    <a href="downloads/checksums.txt" class="mono-link">checksums.txt</a>
   </div>
 </section>
 
-<section class="relay-cta">
-  <div class="relay-cta-inner">
-    <div>
-      <p class="section-tag">Infrastructure</p>
-      <h2>Need remote sync across networks?</h2>
-      <p>Use a relay node for NAT traversal. VaultMesh relay forwards encrypted payloads only and does not read vault plaintext.</p>
-    </div>
-    <div>
-      <a href="relay.html" class="btn btn-outline btn-lg">
-        View Relay Guide
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
+<footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <h3>
-          <img src="img/vaultmesh-app-icon.png" alt="" class="brand-icon brand-icon-sm" aria-hidden="true">
-          VaultMesh
-        </h3>
-        <p>Private password manager for desktop and mobile with local-first storage and end-to-end encryption.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Product</h4>
-        <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#download">Download</a></li>
-          <li><a href="relay.html">Relay Guide</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="downloads/checksums.txt">Checksums</a></li>
-          <li><a href="downloads/desktop/">Desktop Packages</a></li>
-          <li><a href="downloads/relay/">Relay Packages</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="mailto:free.huoshan@gmail.com">Contact</a></li>
-        </ul>
+    <div>
+      <div class="footer-brand-name">VaultMesh</div>
+      <div class="footer-brand-desc">Private password manager for desktop and mobile with local-first storage and end-to-end encryption.</div>
+      <div class="crypto-chips">
+        <span class="chip">Argon2id</span>
+        <span class="chip">XChaCha20</span>
+        <span class="chip">X25519</span>
+        <span class="chip">Ed25519</span>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 VaultMesh. All rights reserved.</span>
-      <span><a href="mailto:free.huoshan@gmail.com">free.huoshan@gmail.com</a></span>
+    <div>
+      <div class="footer-col-title">Product</div>
+      <ul class="footer-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="relay.html">Relay Guide</a></li>
+      </ul>
     </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="downloads/checksums.txt">Checksums</a></li>
+        <li><a href="downloads/desktop/">Desktop Packages</a></li>
+        <li><a href="downloads/relay/">Relay Packages</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal</div>
+      <ul class="footer-links">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="mailto:free.huoshan@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 VaultMesh. All rights reserved.</span>
+    <span class="footer-copy"><a href="mailto:free.huoshan@gmail.com" style="color:inherit;text-decoration:none;">free.huoshan@gmail.com</a></span>
   </div>
 </footer>
 
