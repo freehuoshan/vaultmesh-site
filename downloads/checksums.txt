@@ -1,0 +1,16 @@
+# VaultMesh checksums placeholder
+# Replace this file during release automation.
+# Format: <sha256>  <filename>
+
+TBD  vaultmesh-desktop-windows-x64.msi
+TBD  vaultmesh-desktop-macos-universal.dmg
+TBD  vaultmesh-desktop-linux-x64.AppImage
+TBD  vaultmesh-extension-chrome.zip
+TBD  vaultmesh-extension-firefox.xpi
+TBD  vaultmesh-cli-windows-x64.exe
+TBD  vaultmesh-cli-macos-universal.tar.gz
+TBD  vaultmesh-cli-linux-x64.tar.gz
+TBD  vaultmesh-relay-linux-x86_64.tar.gz
+TBD  vaultmesh-relay-linux-arm64.tar.gz
+TBD  vaultmesh-relay-macos-universal.tar.gz
+TBD  vaultmesh-relay-docker-image.tar
