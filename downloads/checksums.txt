@@ -1,10 +1,7 @@
 af71e9148e32bc1b5154e800d56cf4667d7d7d6a3729517c7b864e46f13583ec  desktop/linux-VaultMesh_1.0.0_amd64.AppImage
 2d6c002ac1b3fe9899f0d408eab4c9b5c446686aedd6b9be1bd861a3e01e7365  desktop/linux-VaultMesh_1.0.0_amd64.deb
-28b123bf5de72487be9c22dfce48ffe78890ebe6af017e324310993f0945ee30  desktop/macos-arm64-VaultMesh_1.0.0_aarch64.dmg
-493f5d749f77b611e285c46a9e92c37e8f6f81b3c8fd1afa391fb093e38a8954  desktop/macos-x64-VaultMesh_1.0.0_aarch64.dmg
+04eac65eb3f61f113d6d0bcb0761f7b37b44b81541d077bf9733a99b43a912c9  desktop/macos-universal-VaultMesh_1.1.5_universal.dmg
 3396a540cd9c98db1e393bd82873ce8fc5764104e7c87e46733ed2921ee46aa9  desktop/windows-VaultMesh_1.0.0_x64-setup.exe
-6b516768faf4662765d0131090fe45925934ba2387a69cd2ad872c930f668773  extensions/vaultmesh-extension-chrome-v1.0.0.zip
-43d9a4810351ebe791ed2e0f512d1ff28a6eb962cd4c04cd9366bf684dba3d47  extensions/vaultmesh-extension-firefox-v1.0.0.xpi
 4404ecad685bb4d1de32aef38ec8539609feb86eb32e9c2a296b972f2b0f102e  relay/vaultmesh-relay-v1.0.0-linux-x64.tar.gz
 14bf4705c7a762fa8f0839fddbebadb5ed78f583f6643f6622190b104e018f79  relay/vaultmesh-relay-v1.0.0-macos-arm64.tar.gz
 379dfaea0687847f3b098efef3592e39fc9c59ca9ff6dc0e5de46ec8ebece93d  relay/vaultmesh-relay-v1.0.0-macos-x64.tar.gz
