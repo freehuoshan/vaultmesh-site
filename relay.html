@@ -97,17 +97,14 @@
     <div class="code-block">
       <pre><span class="comment"># Linux or macOS example</span>
 tar -xzf vaultmesh-relay-v1.0.0-linux-x64.tar.gz
-cd vaultmesh-relay
-chmod +x vault-relay
+cd vaultmesh-relay-v1.0.0-linux-x64
+chmod +x vaultmesh-relay
 
-<span class="comment"># Start relay on port 8080</span>
-./vault-relay --port 8080 --log-level info
+<span class="comment"># Start relay on port 3030</span>
+./vaultmesh-relay --listen 0.0.0.0:3030 --db relay.db
 
-<span class="comment"># Start with TLS certificates</span>
-./vault-relay \
-  <span class="flag">--port</span> <span class="string">443</span> \
-  <span class="flag">--tls-cert</span> <span class="string">/etc/ssl/certs/relay.crt</span> \
-  <span class="flag">--tls-key</span> <span class="string">/etc/ssl/private/relay.key</span></pre>
+<span class="comment"># For production, put TLS in front with nginx, Caddy, or another reverse proxy.</span>
+<span class="comment"># VaultMesh clients should use the public https:// relay URL.</span></pre>
     </div>
 
     <h3>System Requirements</h3>
@@ -120,52 +117,51 @@ chmod +x vault-relay
         <tr><td>RAM</td><td>64 MB minimum</td></tr>
         <tr><td>Disk</td><td>Less than 30 MB for binary and logs</td></tr>
         <tr><td>Network</td><td>Public domain or static IP with inbound TCP port</td></tr>
-        <tr><td>TLS</td><td>Recommended for production deployments</td></tr>
+        <tr><td>TLS</td><td>Terminate HTTPS with a reverse proxy for production deployments</td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="paper">
     <h2>Configuration Reference</h2>
-    <p>Configure relay using CLI flags or environment variables.</p>
+    <p>Configure relay using CLI flags.</p>
 
     <table class="config-table">
       <thead>
-        <tr><th>Flag</th><th>Env Variable</th><th>Default</th><th>Description</th></tr>
+        <tr><th>Flag</th><th>Default</th><th>Description</th></tr>
       </thead>
       <tbody>
-        <tr><td><code>--port</code></td><td><code>RELAY_PORT</code></td><td><code>8080</code></td><td>TCP port to listen on</td></tr>
-        <tr><td><code>--bind</code></td><td><code>RELAY_BIND</code></td><td><code>0.0.0.0</code></td><td>Interface address to bind</td></tr>
-        <tr><td><code>--tls-cert</code></td><td><code>RELAY_TLS_CERT</code></td><td>-</td><td>Path to PEM certificate file</td></tr>
-        <tr><td><code>--tls-key</code></td><td><code>RELAY_TLS_KEY</code></td><td>-</td><td>Path to PEM private key file</td></tr>
-        <tr><td><code>--max-connections</code></td><td><code>RELAY_MAX_CONNECTIONS</code></td><td><code>1000</code></td><td>Maximum concurrent device connections</td></tr>
-        <tr><td><code>--session-ttl</code></td><td><code>RELAY_SESSION_TTL</code></td><td><code>3600</code></td><td>Inactive session timeout in seconds</td></tr>
-        <tr><td><code>--log-level</code></td><td><code>RELAY_LOG_LEVEL</code></td><td><code>info</code></td><td><code>error</code>, <code>warn</code>, <code>info</code>, or <code>debug</code></td></tr>
+        <tr><td><code>--listen</code></td><td><code>0.0.0.0:3030</code></td><td>HTTP API listen address</td></tr>
+        <tr><td><code>--db</code></td><td><code>relay.db</code></td><td>SQLite database path for persistent storage</td></tr>
+        <tr><td><code>--mode</code></td><td><code>store-and-forward</code></td><td>Relay mode: persistent store-and-forward or stateless</td></tr>
+        <tr><td><code>--ttl-hours</code></td><td><code>72</code></td><td>Message TTL in hours</td></tr>
+        <tr><td><code>--max-buffer</code></td><td><code>10485760</code></td><td>Maximum buffer size per vault in bytes</td></tr>
+        <tr><td><code>--p2p-port</code></td><td><code>4001</code></td><td>libp2p Circuit Relay listen port; use <code>0</code> to disable</td></tr>
       </tbody>
     </table>
 
     <h3>Connect VaultMesh Clients</h3>
     <ol>
       <li>Open <strong>Settings - Sync - Relay</strong> in VaultMesh client.</li>
-      <li>Enter relay URL, for example <code>wss://relay.yourdomain.com</code>.</li>
+      <li>Enter relay URL, for example <code>https://relay.yourdomain.com</code>.</li>
       <li>Save and use the same relay URL on all trusted devices in the vault.</li>
     </ol>
 
     <div class="note-box">
-      <p><strong>Important:</strong> Production deployments should use <code>wss://</code> with TLS. Plain <code>ws://</code> is for localhost testing only.</p>
+      <p><strong>Important:</strong> Production deployments should use <code>https://</code> with TLS. Plain <code>http://</code> is for localhost testing only.</p>
     </div>
 
     <h3>Systemd Service (Linux)</h3>
     <div class="code-block">
-      <pre><span class="comment"># /etc/systemd/system/vault-relay.service</span>
+      <pre><span class="comment"># /etc/systemd/system/vaultmesh-relay.service</span>
 [Unit]
 Description=VaultMesh Relay Server
 After=network.target
 
 [Service]
 Type=simple
-User=vault-relay
-ExecStart=/usr/local/bin/vault-relay --port 8080 --log-level info
+User=vaultmesh-relay
+ExecStart=/usr/local/bin/vaultmesh-relay --listen 0.0.0.0:3030 --db /var/lib/vaultmesh-relay/relay.db
 Restart=on-failure
 RestartSec=5
 NoNewPrivileges=true
@@ -177,8 +173,8 @@ WantedBy=multi-user.target</pre>
 
     <div class="code-block">
       <pre>sudo systemctl daemon-reload
-sudo systemctl enable --now vault-relay
-sudo systemctl status vault-relay</pre>
+sudo systemctl enable --now vaultmesh-relay
+sudo systemctl status vaultmesh-relay</pre>
     </div>
 
     <h3>Health Check</h3>
@@ -187,9 +183,9 @@ sudo systemctl status vault-relay</pre>
 
 {
   <span class="string">"status"</span>: <span class="string">"ok"</span>,
-  <span class="string">"version"</span>: <span class="string">"1.0.0"</span>,
-  <span class="string">"connections"</span>: 3,
-  <span class="string">"uptime_seconds"</span>: 86400
+  <span class="string">"protocol"</span>: <span class="string">"vaultmesh-relay-3"</span>,
+  <span class="string">"mode"</span>: <span class="string">"store-and-forward"</span>,
+  <span class="string">"buffering"</span>: <span class="string">"enabled"</span>
 }</pre>
     </div>
 
