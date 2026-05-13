@@ -1,7 +1,7 @@
-af71e9148e32bc1b5154e800d56cf4667d7d7d6a3729517c7b864e46f13583ec  desktop/linux-VaultMesh_1.0.0_amd64.AppImage
-2d6c002ac1b3fe9899f0d408eab4c9b5c446686aedd6b9be1bd861a3e01e7365  desktop/linux-VaultMesh_1.0.0_amd64.deb
+361d5bf45bbf365f1a4502766a765276ad01cf25141651dc4cbee1b04b00be5c  desktop/linux-VaultMesh_1.1.6_amd64.AppImage
+44ff854d80a986dccef56187a2c2f5fb3f0b038434cd865b49797074f4031616  desktop/linux-VaultMesh_1.1.6_amd64.deb
 1d1568cfef34322c3a8f9296f3368f186a4d7e2460c27b991a84c63d95e65bd3  desktop/macos-universal-VaultMesh_1.1.6_universal.dmg
 3396a540cd9c98db1e393bd82873ce8fc5764104e7c87e46733ed2921ee46aa9  desktop/windows-VaultMesh_1.0.0_x64-setup.exe
-4404ecad685bb4d1de32aef38ec8539609feb86eb32e9c2a296b972f2b0f102e  relay/vaultmesh-relay-v1.0.0-linux-x64.tar.gz
+83bb8adab72aad2440a1aece0d138576f4745249daebef3ed398c570bb61924f  relay/vaultmesh-relay-v1.1.6-linux-x64.tar.gz
 a529828743ae822baee5f86c7a0b77074009c3ca7e2c962512d5b0d5b6f99b8a  relay/vaultmesh-relay-v1.1.6-macos-universal.tar.gz
 7a21614886e6382d6992fc122529af3012b646090cc5ee458c92e884be301ef8  relay/vaultmesh-relay-v1.0.0-windows-x64.zip
