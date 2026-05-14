@@ -55,9 +55,315 @@
     </div>
     <div class="stat-item">
       <span class="stat-label">Platforms</span>
-      <span class="stat-value">iOS - Mac - Win - Linux</span>
+      <span class="stat-value">iOS - Android - Mac - Win - Linux</span>
     </div>
   </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="section showcase-section" id="showcase">
+  <div class="section-label">See It In Action</div>
+  <h2 class="section-title">Three features,<br>one glance.</h2>
+  <p class="section-sub">Watch how VaultMesh pairs your devices, syncs your vault, and fills in your passwords — all without a cloud middleman.</p>
+
+  <div class="showcase-tabs" role="tablist" aria-label="Feature showcase">
+    <button class="showcase-tab active" role="tab" aria-selected="true"
+            aria-controls="showcase-panel-pairing" id="showcase-tab-pairing" data-tab="pairing">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+        <circle cx="4" cy="7" r="2.5" stroke="currentColor" stroke-width="1.3"/>
+        <circle cx="10" cy="3" r="2.5" stroke="currentColor" stroke-width="1.3"/>
+        <circle cx="10" cy="11" r="2.5" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M6.5 7h1M6.3 5.4l1-.8M6.3 8.6l1 .8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+      Pairing
+    </button>
+    <button class="showcase-tab" role="tab" aria-selected="false"
+            aria-controls="showcase-panel-sync" id="showcase-tab-sync" data-tab="sync">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+        <path d="M2 7a5 5 0 0 1 9.5-2.2M12 7a5 5 0 0 1-9.5 2.2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+        <path d="M11.5 2l.5 2.8-2.7-.5M2.5 12l-.5-2.8 2.7.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Sync
+    </button>
+    <button class="showcase-tab" role="tab" aria-selected="false"
+            aria-controls="showcase-panel-autofill" id="showcase-tab-autofill" data-tab="autofill">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+        <rect x="1" y="3" width="12" height="9" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
+        <path d="M3 1.5h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M4 7.5h2.5M4 9.5h4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+        <circle cx="10.5" cy="8.5" r="1.5" fill="currentColor" opacity=".35"/>
+      </svg>
+      Autofill
+    </button>
+  </div>
+
+  <div class="showcase-progress" aria-hidden="true">
+    <div class="showcase-progress-bar"></div>
+  </div>
+
+  <div class="showcase-canvas">
+
+    <!-- PANEL 1: PAIRING -->
+    <div class="showcase-panel active" id="showcase-panel-pairing"
+         role="tabpanel" aria-labelledby="showcase-tab-pairing">
+      <svg class="showcase-svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="240" cy="235" rx="200" ry="190" fill="#dbe9ff" opacity="0.35"/>
+
+        <!-- 6 direct device-to-device connections (solid lines) -->
+        <!-- 1. Laptop ↔ Phone -->
+        <line class="pair-line pair-line-1" x1="240" y1="80" x2="68" y2="226"
+              stroke="#3f8efc" stroke-width="1.5" stroke-dasharray="1 0"
+              pathLength="1" stroke-dashoffset="1"/>
+        <!-- 2. Laptop ↔ Desktop -->
+        <line class="pair-line pair-line-2" x1="240" y1="80" x2="374" y2="211"
+              stroke="#3f8efc" stroke-width="1.5" stroke-dasharray="1 0"
+              pathLength="1" stroke-dashoffset="1"/>
+        <!-- 3. Laptop ↔ Tablet -->
+        <line class="pair-line pair-line-3" x1="240" y1="80" x2="237" y2="387"
+              stroke="#3f8efc" stroke-width="1.5" stroke-dasharray="1 0"
+              pathLength="1" stroke-dashoffset="1"/>
+        <!-- 4. Phone ↔ Desktop -->
+        <line class="pair-line pair-line-4" x1="68" y1="226" x2="374" y2="211"
+              stroke="#3f8efc" stroke-width="1.5" stroke-dasharray="1 0"
+              pathLength="1" stroke-dashoffset="1"/>
+        <!-- 5. Phone ↔ Tablet -->
+        <line class="pair-line pair-line-5" x1="68" y1="226" x2="237" y2="387"
+              stroke="#3f8efc" stroke-width="1.5" stroke-dasharray="1 0"
+              pathLength="1" stroke-dashoffset="1"/>
+        <!-- 6. Desktop ↔ Tablet -->
+        <line class="pair-line pair-line-6" x1="374" y1="211" x2="237" y2="387"
+              stroke="#3f8efc" stroke-width="1.5" stroke-dasharray="1 0"
+              pathLength="1" stroke-dashoffset="1"/>
+
+        <!-- Laptop (top-center) -->
+        <g transform="translate(185,45)">
+          <rect x="0" y="0" width="110" height="70" rx="5" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1.5"/>
+          <rect x="5" y="5" width="100" height="60" rx="3" fill="#e8f1ff"/>
+          <circle cx="13" cy="13" r="3" fill="#c6d9f1"/>
+          <circle cx="23" cy="13" r="3" fill="#c6d9f1"/>
+          <circle cx="33" cy="13" r="3" fill="#c6d9f1"/>
+          <rect x="-8" y="70" width="126" height="7" rx="3" fill="#e8f1ff" stroke="#c6d9f1" stroke-width="1.5"/>
+        </g>
+        <g class="pair-badge pair-badge-1" transform="translate(207,127)" opacity="0">
+          <rect x="0" y="0" width="66" height="20" rx="10" fill="#2f78e6"/>
+          <path d="M8 10l3 3 5-6" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <text x="20" y="14" font-family="DM Mono, monospace" font-size="9" fill="white" letter-spacing="0.04em">Paired</text>
+        </g>
+
+        <!-- Phone (left) -->
+        <g transform="translate(46,188)">
+          <rect x="0" y="0" width="44" height="76" rx="7" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1.5"/>
+          <rect x="4" y="10" width="36" height="52" rx="3" fill="#e8f1ff"/>
+          <rect x="14" y="66" width="16" height="3" rx="1.5" fill="#c6d9f1"/>
+          <rect x="16" y="4" width="12" height="3" rx="1.5" fill="#c6d9f1"/>
+        </g>
+        <g class="pair-badge pair-badge-2" transform="translate(24,276)" opacity="0">
+          <rect x="0" y="0" width="66" height="20" rx="10" fill="#2f78e6"/>
+          <path d="M8 10l3 3 5-6" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <text x="20" y="14" font-family="DM Mono, monospace" font-size="9" fill="white" letter-spacing="0.04em">Paired</text>
+        </g>
+
+        <!-- Desktop (right) -->
+        <g transform="translate(338,185)">
+          <rect x="0" y="0" width="72" height="52" rx="5" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1.5"/>
+          <rect x="4" y="4" width="64" height="40" rx="3" fill="#e8f1ff"/>
+          <rect x="28" y="52" width="16" height="10" rx="2" fill="#e8f1ff" stroke="#c6d9f1" stroke-width="1.5"/>
+          <rect x="20" y="62" width="32" height="5" rx="2" fill="#e8f1ff" stroke="#c6d9f1" stroke-width="1.5"/>
+        </g>
+        <g class="pair-badge pair-badge-3" transform="translate(330,258)" opacity="0">
+          <rect x="0" y="0" width="66" height="20" rx="10" fill="#2f78e6"/>
+          <path d="M8 10l3 3 5-6" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <text x="20" y="14" font-family="DM Mono, monospace" font-size="9" fill="white" letter-spacing="0.04em">Paired</text>
+        </g>
+
+        <!-- Tablet (bottom-center, landscape) -->
+        <g transform="translate(192,355)">
+          <rect x="0" y="0" width="90" height="64" rx="8" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1.5"/>
+          <rect x="5" y="5" width="78" height="54" rx="4" fill="#e8f1ff"/>
+          <rect x="83" y="27" width="5" height="10" rx="2.5" fill="#c6d9f1"/>
+          <circle cx="3" cy="32" r="2" fill="#c6d9f1"/>
+        </g>
+        <g class="pair-badge pair-badge-4" transform="translate(205,428)" opacity="0">
+          <rect x="0" y="0" width="66" height="20" rx="10" fill="#2f78e6"/>
+          <path d="M8 10l3 3 5-6" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <text x="20" y="14" font-family="DM Mono, monospace" font-size="9" fill="white" letter-spacing="0.04em">Paired</text>
+        </g>
+
+        <!-- P2P Mesh label -->
+        <g class="pair-p2p-label" transform="translate(197,222)" opacity="0">
+          <rect x="0" y="0" width="86" height="20" rx="10" fill="#e8f1ff" stroke="#2f78e6" stroke-width="1"/>
+          <text x="43" y="14" font-family="DM Mono, monospace" font-size="9" fill="#2f78e6"
+                text-anchor="middle" letter-spacing="0.04em">P2P Mesh</text>
+        </g>
+
+        <!-- Center shield/lock -->
+        <g class="pair-shield" transform="translate(215,200)">
+          <path d="M25 4 L46 13 L46 28 C46 39 25 48 25 48 C25 48 4 39 4 28 L4 13 Z"
+                fill="#2f78e6" opacity="0.15" stroke="#2f78e6" stroke-width="1.5"/>
+          <rect x="17" y="26" width="16" height="12" rx="3" fill="#2f78e6"/>
+          <path d="M20 26 L20 22 C20 18.7 30 18.7 30 22 L30 26"
+                stroke="#2f78e6" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <circle cx="25" cy="31" r="2.5" fill="white" opacity="0.8"/>
+          <rect x="23.5" y="31" width="3" height="4" rx="1" fill="white" opacity="0.8"/>
+        </g>
+      </svg>
+      <div class="showcase-caption">
+        <strong>Secure Device Pairing</strong> — Direct device-to-device key exchange via SPAKE2. No server involvement. Works over LAN or relay.
+      </div>
+    </div>
+
+    <!-- PANEL 2: SYNC -->
+    <div class="showcase-panel" id="showcase-panel-sync"
+         role="tabpanel" aria-labelledby="showcase-tab-sync" hidden>
+      <svg class="showcase-svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="240" cy="240" rx="180" ry="130" fill="#dbe9ff" opacity="0.4"/>
+
+        <!-- Phone (left) -->
+        <g transform="translate(60,185)">
+          <rect x="0" y="0" width="60" height="104" rx="9" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1.5"/>
+          <rect x="5" y="14" width="50" height="72" rx="4" fill="#e8f1ff"/>
+          <rect x="20" y="90" width="20" height="4" rx="2" fill="#c6d9f1"/>
+          <rect x="22" y="5" width="16" height="4" rx="2" fill="#c6d9f1"/>
+          <rect x="22" y="34" width="16" height="14" rx="3" fill="#3f8efc" opacity="0.3"/>
+          <path d="M26 34 L26 31 C26 28.7 34 28.7 34 31 L34 34" stroke="#3f8efc" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+        </g>
+
+        <!-- Laptop (right) -->
+        <g transform="translate(320,162)">
+          <rect x="0" y="0" width="110" height="70" rx="5" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1.5"/>
+          <rect x="5" y="5" width="100" height="60" rx="3" fill="#e8f1ff"/>
+          <circle cx="13" cy="13" r="3" fill="#c6d9f1"/>
+          <circle cx="23" cy="13" r="3" fill="#c6d9f1"/>
+          <circle cx="33" cy="13" r="3" fill="#c6d9f1"/>
+          <rect x="46" y="28" width="18" height="16" rx="3" fill="#3f8efc" opacity="0.3"/>
+          <path d="M50 28 L50 24 C50 21.3 60 21.3 60 24 L60 28" stroke="#3f8efc" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+          <rect x="-8" y="70" width="126" height="7" rx="3" fill="#e8f1ff" stroke="#c6d9f1" stroke-width="1.5"/>
+        </g>
+
+        <!-- Direct P2P channel -->
+        <rect class="sync-channel" x="122" y="222" width="196" height="30" rx="15"
+              fill="#e8f1ff" stroke="#3f8efc" stroke-width="1" opacity="0"/>
+        <g class="sync-p2p-label" opacity="0">
+          <rect x="182" y="228" width="116" height="18" rx="9" fill="#2f78e6"/>
+          <text x="240" y="241" font-family="DM Mono, monospace" font-size="9" fill="white"
+                text-anchor="middle" letter-spacing="0.04em">Direct P2P</text>
+        </g>
+
+        <!-- Relay optional path (secondary, visually de-emphasized) -->
+        <g class="sync-relay-path" opacity="0">
+          <line x1="120" y1="256" x2="120" y2="320" stroke="#c6d9f1" stroke-width="1" stroke-dasharray="3 3"/>
+          <line x1="320" y1="232" x2="320" y2="320" stroke="#c6d9f1" stroke-width="1" stroke-dasharray="3 3"/>
+          <line x1="120" y1="320" x2="320" y2="320" stroke="#c6d9f1" stroke-width="1.5" stroke-dasharray="4 3"/>
+          <rect x="210" y="309" width="60" height="22" rx="5" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1"/>
+          <text x="240" y="324" font-family="DM Mono, monospace" font-size="8" fill="#6f8fb5"
+                text-anchor="middle" letter-spacing="0.03em">Relay</text>
+          <text x="240" y="350" font-family="DM Sans, sans-serif" font-size="8" fill="#6f8fb5"
+                text-anchor="middle" opacity="0.7">optional</text>
+        </g>
+
+        <g class="sync-packet sync-packet-ltr-a">
+          <rect x="0" y="0" width="30" height="18" rx="4" fill="#2f78e6"/>
+          <path d="M8 9 l4 4 6-7" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <rect x="19" y="5" width="7" height="8" rx="1.5" fill="white" opacity="0.3"/>
+        </g>
+        <g class="sync-packet sync-packet-ltr-b">
+          <rect x="0" y="0" width="30" height="18" rx="4" fill="#2f78e6"/>
+          <path d="M8 9 l4 4 6-7" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <rect x="19" y="5" width="7" height="8" rx="1.5" fill="white" opacity="0.3"/>
+        </g>
+        <g class="sync-packet sync-packet-rtl-a">
+          <rect x="0" y="0" width="30" height="18" rx="4" fill="#3f8efc" opacity="0.85"/>
+          <path d="M8 9 l4 4 6-7" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <rect x="19" y="5" width="7" height="8" rx="1.5" fill="white" opacity="0.3"/>
+        </g>
+        <g class="sync-packet sync-packet-rtl-b">
+          <rect x="0" y="0" width="30" height="18" rx="4" fill="#3f8efc" opacity="0.85"/>
+          <path d="M8 9 l4 4 6-7" stroke="white" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <rect x="19" y="5" width="7" height="8" rx="1.5" fill="white" opacity="0.3"/>
+        </g>
+
+        <g class="sync-label-center" opacity="0">
+          <rect x="176" y="264" width="128" height="20" rx="10" fill="#e8f1ff" stroke="#c6d9f1" stroke-width="1"/>
+          <text x="240" y="278" font-family="DM Mono, monospace" font-size="9" fill="#3f6490"
+                text-anchor="middle" letter-spacing="0.04em">E2E Encrypted</text>
+        </g>
+      </svg>
+      <div class="showcase-caption">
+        <strong>Direct P2P Sync</strong> — Devices sync directly over LAN without any server. XChaCha20-Poly1305 end-to-end. Relay is optional and sees only ciphertext.
+      </div>
+    </div>
+
+    <!-- PANEL 3: AUTOFILL -->
+    <div class="showcase-panel" id="showcase-panel-autofill"
+         role="tabpanel" aria-labelledby="showcase-tab-autofill" hidden>
+      <svg class="showcase-svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="shadow-popup" x="-10%" y="-20%" width="120%" height="150%">
+            <feDropShadow dx="0" dy="-4" stdDeviation="8" flood-color="#1b3f6d" flood-opacity="0.12"/>
+          </filter>
+          <clipPath id="clip-user">
+            <rect class="autofill-clip-user" x="76" y="92" width="0" height="28"/>
+          </clipPath>
+        </defs>
+
+        <!-- Browser window -->
+        <g transform="translate(80,60)">
+          <rect x="0" y="0" width="320" height="280" rx="10" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1.5"/>
+          <rect x="0" y="0" width="320" height="34" rx="10" fill="#e8f1ff"/>
+          <rect x="0" y="24" width="320" height="10" fill="#e8f1ff"/>
+          <circle cx="18" cy="17" r="5" fill="#ff6b6b" opacity="0.7"/>
+          <circle cx="34" cy="17" r="5" fill="#ffd93d" opacity="0.7"/>
+          <circle cx="50" cy="17" r="5" fill="#6bcb77" opacity="0.7"/>
+          <rect x="68" y="9" width="200" height="16" rx="4" fill="#dbe9ff" stroke="#c6d9f1" stroke-width="1"/>
+          <text x="168" y="21" font-family="DM Mono, monospace" font-size="9" fill="#6f8fb5" text-anchor="middle">vaultmesh.app/login</text>
+          <line x1="0" y1="34" x2="320" y2="34" stroke="#c6d9f1" stroke-width="1"/>
+
+          <rect x="60" y="54" width="200" height="170" rx="8" fill="white" stroke="#c6d9f1" stroke-width="1"/>
+          <text x="160" y="82" font-family="DM Sans, sans-serif" font-size="13" font-weight="600" fill="#1b3f6d" text-anchor="middle">Sign in</text>
+
+          <rect x="76" y="92" width="168" height="28" rx="5" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1"/>
+          <text x="84" y="103" font-family="DM Sans, sans-serif" font-size="8" fill="#6f8fb5">Username</text>
+          <text class="autofill-text-user" x="84" y="115" font-family="DM Mono, monospace" font-size="9" fill="#1b3f6d" clip-path="url(#clip-user)">jon@example.com</text>
+          <rect class="autofill-sweep-user" x="76" y="92" width="168" height="28" rx="5" fill="#3f8efc" opacity="0"/>
+
+          <rect x="76" y="130" width="168" height="28" rx="5" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1"/>
+          <text x="84" y="141" font-family="DM Sans, sans-serif" font-size="8" fill="#6f8fb5">Password</text>
+          <g class="autofill-pwd-dots" opacity="0">
+            <circle cx="89"  cy="149" r="3" fill="#1b3f6d"/>
+            <circle cx="98"  cy="149" r="3" fill="#1b3f6d"/>
+            <circle cx="107" cy="149" r="3" fill="#1b3f6d"/>
+            <circle cx="116" cy="149" r="3" fill="#1b3f6d"/>
+            <circle cx="125" cy="149" r="3" fill="#1b3f6d"/>
+            <circle cx="134" cy="149" r="3" fill="#1b3f6d"/>
+            <circle cx="143" cy="149" r="3" fill="#1b3f6d"/>
+            <circle cx="152" cy="149" r="3" fill="#1b3f6d"/>
+          </g>
+          <rect class="autofill-sweep-pwd" x="76" y="130" width="168" height="28" rx="5" fill="#3f8efc" opacity="0"/>
+
+          <rect class="autofill-btn-pulse" x="76" y="170" width="168" height="32" rx="6" fill="#2f78e6"/>
+          <text x="160" y="191" font-family="DM Sans, sans-serif" font-size="11" font-weight="500" fill="white" text-anchor="middle">Sign In</text>
+        </g>
+
+        <!-- VaultMesh popup slides up -->
+        <g class="autofill-popup" transform="translate(80,420)">
+          <rect x="0" y="0" width="320" height="72" rx="10" fill="white" stroke="#c6d9f1" stroke-width="1.5"
+                filter="url(#shadow-popup)"/>
+          <rect x="0" y="0" width="320" height="4" rx="2" fill="#2f78e6"/>
+          <rect x="14" y="14" width="28" height="28" rx="6" fill="#2f78e6" opacity="0.12"/>
+          <path d="M28 18 L35 21 L35 28 C35 32 28 36 28 36 C28 36 21 32 21 28 L21 21 Z" fill="#2f78e6" opacity="0.7"/>
+          <text x="50" y="26" font-family="DM Mono, monospace" font-size="10" font-weight="500" fill="#1b3f6d">VaultMesh</text>
+          <text x="50" y="40" font-family="DM Sans, sans-serif" font-size="9" fill="#6f8fb5">Fill credentials for vaultmesh.app?</text>
+          <rect x="240" y="20" width="64" height="26" rx="5" fill="#2f78e6"/>
+          <text x="272" y="37" font-family="DM Sans, sans-serif" font-size="9" font-weight="500" fill="white" text-anchor="middle">Autofill</text>
+        </g>
+      </svg>
+      <div class="showcase-caption">
+        <strong>Browser Autofill</strong> — Extension talks to your desktop client via native messaging. Credentials never stored in the browser.
+      </div>
+    </div>
+
+  </div><!-- /.showcase-canvas -->
 </section>
 
 <div class="divider"></div>
@@ -337,6 +643,68 @@
     <span class="footer-copy"><a href="mailto:free.huoshan@gmail.com" style="color:inherit;text-decoration:none;">free.huoshan@gmail.com</a></span>
   </div>
 </footer>
+
+<script>
+(function () {
+  'use strict';
+  var CYCLE_MS = 4000;
+  var tabs = Array.from(document.querySelectorAll('.showcase-tab'));
+  var panels = Array.from(document.querySelectorAll('.showcase-panel'));
+  var progressBar = document.querySelector('.showcase-progress-bar');
+  var cycleTimer = null;
+  var currentIdx = 0;
+  var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function activateTab(idx) {
+    tabs.forEach(function (tab, i) {
+      var on = i === idx;
+      tab.classList.toggle('active', on);
+      tab.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    panels.forEach(function (panel, i) {
+      var on = i === idx;
+      panel.classList.toggle('active', on);
+      if (on) { panel.removeAttribute('hidden'); }
+      else { panel.setAttribute('hidden', ''); }
+    });
+    currentIdx = idx;
+    if (!prefersReducedMotion && progressBar) {
+      progressBar.classList.remove('is-cycling');
+      void progressBar.offsetWidth;
+      progressBar.classList.add('is-cycling');
+    }
+  }
+
+  function startCycle() {
+    if (prefersReducedMotion) return;
+    clearInterval(cycleTimer);
+    cycleTimer = setInterval(function () {
+      activateTab((currentIdx + 1) % tabs.length);
+    }, CYCLE_MS);
+  }
+
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { activateTab(i); startCycle(); });
+    tab.addEventListener('keydown', function (e) {
+      var n = -1;
+      if (e.key === 'ArrowRight') n = (i + 1) % tabs.length;
+      if (e.key === 'ArrowLeft')  n = (i - 1 + tabs.length) % tabs.length;
+      if (e.key === 'Home') n = 0;
+      if (e.key === 'End')  n = tabs.length - 1;
+      if (n >= 0) { e.preventDefault(); activateTab(n); tabs[n].focus(); startCycle(); }
+    });
+  });
+
+  var canvas = document.querySelector('.showcase-canvas');
+  if (canvas) {
+    canvas.addEventListener('mouseenter', function () { clearInterval(cycleTimer); });
+    canvas.addEventListener('mouseleave', startCycle);
+  }
+
+  activateTab(0);
+  startCycle();
+})();
+</script>
 
 </body>
 </html>
