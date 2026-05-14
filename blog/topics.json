@@ -5,7 +5,8 @@
       "title": "Strong passwords vs complex passwords: they're not the same",
       "angle": "Most people equate symbols/numbers/uppercase with strength. The real driver of strength is length and unpredictability. Walk through why P@ssw0rd1 is weak and a random four-word phrase is strong, without using entropy math.",
       "audience": "Anyone with online accounts who's been confused by password complexity rules",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-05-14-strong-vs-complex.md"
     },
     {
       "id": "password-reuse-risk",
