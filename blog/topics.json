@@ -1,0 +1,74 @@
+{
+  "topics": [
+    {
+      "id": "strong-vs-complex",
+      "title": "Strong passwords vs complex passwords: they're not the same",
+      "angle": "Most people equate symbols/numbers/uppercase with strength. The real driver of strength is length and unpredictability. Walk through why P@ssw0rd1 is weak and a random four-word phrase is strong, without using entropy math.",
+      "audience": "Anyone with online accounts who's been confused by password complexity rules",
+      "status": "queued"
+    },
+    {
+      "id": "password-reuse-risk",
+      "title": "The one password habit that quietly hurts most people",
+      "angle": "Reusing a password across sites is the highest-impact common mistake. When one site is breached, attackers try those credentials everywhere (credential stuffing). Explain in plain terms, give the practical fix.",
+      "audience": "General readers who reuse passwords because remembering many is hard",
+      "status": "queued"
+    },
+    {
+      "id": "recognizing-phishing",
+      "title": "How to spot a phishing login page before you type",
+      "angle": "Concrete cues: domain check, padlock isn't enough, hover-before-click, urgency-as-red-flag. Make the reader confident at recognizing the 80% common case, honest about the harder ones.",
+      "audience": "General readers who get sketchy emails and want to handle them better",
+      "status": "queued"
+    },
+    {
+      "id": "2fa-explained-plain",
+      "title": "Two-factor authentication, explained without jargon",
+      "angle": "What 2FA actually is, the three common kinds (SMS code, authenticator app, hardware key), where each fits, and why SMS is the weakest of the three. Avoid implying SMS is useless — it's still better than nothing.",
+      "audience": "Readers who've seen '2FA' in account settings and never turned it on",
+      "status": "queued"
+    },
+    {
+      "id": "after-a-breach",
+      "title": "Your password was in a breach. Here's what actually matters next",
+      "angle": "Most breach-response advice is generic panic. The real priority order: change the password on the breached site first, then anywhere else you reused it, then enable 2FA. What is and isn't worth doing.",
+      "audience": "Anyone who got a 'your data was exposed' notification",
+      "status": "queued"
+    },
+    {
+      "id": "password-managers-101",
+      "title": "What a password manager actually does (and doesn't do)",
+      "angle": "Demystify password managers for someone who's never used one. What they store, what they don't, what 'master password' means, what happens if you forget it. Mention VaultMesh once here as an example of a local-first option (per STYLE.md rules).",
+      "audience": "People considering using a password manager for the first time",
+      "status": "queued"
+    },
+    {
+      "id": "security-question-myth",
+      "title": "Why 'security questions' are often the weakest link",
+      "angle": "Mother's maiden name, first pet, etc. — most of these are findable on social media. Why they exist anyway, and what to do when a site insists on them (lying / using a manager-generated answer).",
+      "audience": "Anyone who's filled out a security question form",
+      "status": "queued"
+    },
+    {
+      "id": "public-wifi-overblown",
+      "title": "Public WiFi: what's a real risk, and what isn't anymore",
+      "angle": "HTTPS-everywhere has made the old 'man in the middle on coffee shop WiFi' threat much smaller. What still matters (fake captive portals, untrusted networks for sensitive admin work), what doesn't.",
+      "audience": "Travelers and remote workers who worry about hotel/cafe WiFi",
+      "status": "queued"
+    },
+    {
+      "id": "browser-saved-passwords",
+      "title": "Browser-saved passwords: convenient, but at what cost?",
+      "angle": "The trade-offs of letting Chrome / Safari / Firefox remember your passwords. Where they're stored, how they sync, when this is fine, when it isn't.",
+      "audience": "Anyone who clicked 'Save password' in their browser",
+      "status": "queued"
+    },
+    {
+      "id": "passphrase-vs-password",
+      "title": "Four random words: the passphrase that's stronger than it looks",
+      "angle": "Walk through why a randomly-chosen 4-word phrase (e.g., the EFF diceware list) is both memorable and resistant to guessing — and why deliberately picking 4 words yourself doesn't count as random.",
+      "audience": "Readers who want one strong master password they can actually remember",
+      "status": "queued"
+    }
+  ]
+}

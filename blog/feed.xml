@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Password Sense — VaultMesh</title>
+  <link>https://vaultmesh.codeblog.net/blog/</link>
+  <description>Plain-English notes on password safety and account security, from the team behind VaultMesh.</description>
+  <language>en</language>
+  <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
+  <item>
+    <title>A blog about the password habits that actually matter</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/welcome.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/welcome.html</guid>
+    <pubDate>Thu, 14 May 2026 00:00:00 GMT</pubDate>
+    <description>A short note on what Password Sense is for, who it&#39;s written for, and what kinds of posts to expect.</description>
+  </item>
+</channel>
+</rss>
