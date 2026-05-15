@@ -23,7 +23,28 @@
     <li><a href="index.html#download">下载</a></li>
     <li><a href="relay.html">Relay 指南</a></li>
     <li><a href="../blog/">Blog</a></li>
-    <li><a href="../privacy.html" class="nav-lang" data-lang-switch="en" hreflang="en" aria-label="Switch to English">EN</a></li>
+    <li class="lang-dropdown">
+      <button type="button" class="lang-toggle" aria-haspopup="true" aria-expanded="false">
+        <span class="lang-current">简体中文</span>
+        <svg class="lang-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ul class="lang-menu" role="menu" hidden>
+        <li><a href="../privacy.html"       role="menuitem" hreflang="en"      data-lang-switch="en"      lang="en">English</a></li>
+        <li><a href="privacy.html"          role="menuitem" hreflang="zh-CN"   data-lang-switch="zh"      lang="zh-CN"   class="lang-option is-current" aria-current="true">简体中文</a></li>
+        <li><a href="../zh-Hant/index.html" role="menuitem" hreflang="zh-Hant" data-lang-switch="zh-Hant" lang="zh-Hant">繁體中文</a></li>
+        <li><a href="../ja/index.html"      role="menuitem" hreflang="ja"      data-lang-switch="ja"      lang="ja">日本語</a></li>
+        <li><a href="../de/index.html"      role="menuitem" hreflang="de"      data-lang-switch="de"      lang="de">Deutsch</a></li>
+        <li><a href="../es/index.html"      role="menuitem" hreflang="es"      data-lang-switch="es"      lang="es">Español</a></li>
+        <li><a href="../fr/index.html"      role="menuitem" hreflang="fr"      data-lang-switch="fr"      lang="fr">Français</a></li>
+        <li><a href="../pt-BR/index.html"   role="menuitem" hreflang="pt-BR"   data-lang-switch="pt-BR"   lang="pt-BR">Português (Brasil)</a></li>
+        <li><a href="../ko/index.html"      role="menuitem" hreflang="ko"      data-lang-switch="ko"      lang="ko">한국어</a></li>
+        <li><a href="../it/index.html"      role="menuitem" hreflang="it"      data-lang-switch="it"      lang="it">Italiano</a></li>
+        <li><a href="../nl/index.html"      role="menuitem" hreflang="nl"      data-lang-switch="nl"      lang="nl">Nederlands</a></li>
+        <li><a href="../hi/index.html"      role="menuitem" hreflang="hi"      data-lang-switch="hi"      lang="hi">हिन्दी</a></li>
+        <li><a href="../id/index.html"      role="menuitem" hreflang="id"      data-lang-switch="id"      lang="id">Bahasa Indonesia</a></li>
+        <li><a href="../vi/index.html"      role="menuitem" hreflang="vi"      data-lang-switch="vi"      lang="vi">Tiếng Việt</a></li>
+      </ul>
+    </li>
     <li><a href="index.html#download" class="nav-cta">获取 VaultMesh</a></li>
   </ul>
 </nav>
@@ -149,6 +170,15 @@
 <script>
 (function () {
   try {
+    var toggle = document.querySelector('.lang-toggle');
+    var menu = document.querySelector('.lang-menu');
+    if (toggle && menu) {
+      function close() { toggle.setAttribute('aria-expanded', 'false'); menu.hidden = true; }
+      function open()  { toggle.setAttribute('aria-expanded', 'true');  menu.hidden = false; }
+      toggle.addEventListener('click', function (e) { e.stopPropagation(); (menu.hidden ? open : close)(); });
+      document.addEventListener('click', function (e) { if (!menu.hidden && !menu.contains(e.target) && e.target !== toggle) close(); });
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !menu.hidden) { close(); toggle.focus(); } });
+    }
     document.querySelectorAll('[data-lang-switch]').forEach(function (a) {
       a.addEventListener('click', function () {
         try { localStorage.setItem('vm-lang', a.getAttribute('data-lang-switch')); } catch (e) {}

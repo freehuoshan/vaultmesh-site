@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="nl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VaultMesh — 跨设备密码管理器</title>
-  <meta name="description" content="VaultMesh 是面向移动端和桌面端的本地优先密码管理器。设备之间端到端加密直连同步，无需依赖中心服务。">
+  <title>VaultMesh — Wachtwoordmanager voor meerdere apparaten</title>
+  <meta name="description" content="VaultMesh is een local-first wachtwoordmanager voor meerdere apparaten. Mobiel en desktop synchroniseren direct met end-to-end-encryptie, zonder centrale server.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -18,66 +18,65 @@
     <span class="nav-brand-name">VaultMesh</span>
   </a>
   <ul class="nav-links">
-    <li><a href="#features">功能特性</a></li>
-    <li><a href="#how-it-works">工作原理</a></li>
-    <li><a href="#download">下载</a></li>
-    <li><a href="relay.html">Relay 指南</a></li>
+    <li><a href="#features">Functies</a></li>
+    <li><a href="#how-it-works">Hoe het werkt</a></li>
+    <li><a href="#download">Download</a></li>
+    <li><a href="../relay.html">Relay-gids</a></li>
     <li><a href="../blog/">Blog</a></li>
     <li class="lang-dropdown">
       <button type="button" class="lang-toggle" aria-haspopup="true" aria-expanded="false">
-        <span class="lang-current">简体中文</span>
+        <span class="lang-current">Nederlands</span>
         <svg class="lang-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <ul class="lang-menu" role="menu" hidden>
-        <li><a href="../index.html"         role="menuitem" hreflang="en"      data-lang-switch="en"      lang="en">English</a></li>
-        <li><a href="index.html"            role="menuitem" hreflang="zh-CN"   data-lang-switch="zh"      lang="zh-CN"   class="lang-option is-current" aria-current="true">简体中文</a></li>
-        <li><a href="../zh-Hant/index.html" role="menuitem" hreflang="zh-Hant" data-lang-switch="zh-Hant" lang="zh-Hant">繁體中文</a></li>
-        <li><a href="../ja/index.html"      role="menuitem" hreflang="ja"      data-lang-switch="ja"      lang="ja">日本語</a></li>
-        <li><a href="../de/index.html"      role="menuitem" hreflang="de"      data-lang-switch="de"      lang="de">Deutsch</a></li>
-        <li><a href="../es/index.html"      role="menuitem" hreflang="es"      data-lang-switch="es"      lang="es">Español</a></li>
-        <li><a href="../fr/index.html"      role="menuitem" hreflang="fr"      data-lang-switch="fr"      lang="fr">Français</a></li>
-        <li><a href="../pt-BR/index.html"   role="menuitem" hreflang="pt-BR"   data-lang-switch="pt-BR"   lang="pt-BR">Português (Brasil)</a></li>
-        <li><a href="../ko/index.html"      role="menuitem" hreflang="ko"      data-lang-switch="ko"      lang="ko">한국어</a></li>
-        <li><a href="../it/index.html"      role="menuitem" hreflang="it"      data-lang-switch="it"      lang="it">Italiano</a></li>
-        <li><a href="../nl/index.html"      role="menuitem" hreflang="nl"      data-lang-switch="nl"      lang="nl">Nederlands</a></li>
-        <li><a href="../hi/index.html"      role="menuitem" hreflang="hi"      data-lang-switch="hi"      lang="hi">हिन्दी</a></li>
-        <li><a href="../id/index.html"      role="menuitem" hreflang="id"      data-lang-switch="id"      lang="id">Bahasa Indonesia</a></li>
-        <li><a href="../vi/index.html"      role="menuitem" hreflang="vi"      data-lang-switch="vi"      lang="vi">Tiếng Việt</a></li>
+      <li><a href="../index.html" role="menuitem" hreflang="en" data-lang-switch="en" lang="en" class="lang-option">English</a></li>
+      <li><a href="../zh/index.html" role="menuitem" hreflang="zh-CN" data-lang-switch="zh" lang="zh-CN" class="lang-option">简体中文</a></li>
+      <li><a href="../zh-Hant/index.html" role="menuitem" hreflang="zh-Hant" data-lang-switch="zh-Hant" lang="zh-Hant" class="lang-option">繁體中文</a></li>
+      <li><a href="../ja/index.html" role="menuitem" hreflang="ja" data-lang-switch="ja" lang="ja" class="lang-option">日本語</a></li>
+      <li><a href="../de/index.html" role="menuitem" hreflang="de" data-lang-switch="de" lang="de" class="lang-option">Deutsch</a></li>
+      <li><a href="../es/index.html" role="menuitem" hreflang="es" data-lang-switch="es" lang="es" class="lang-option">Español</a></li>
+      <li><a href="../fr/index.html" role="menuitem" hreflang="fr" data-lang-switch="fr" lang="fr" class="lang-option">Français</a></li>
+      <li><a href="../pt-BR/index.html" role="menuitem" hreflang="pt-BR" data-lang-switch="pt-BR" lang="pt-BR" class="lang-option">Português (Brasil)</a></li>
+      <li><a href="../ko/index.html" role="menuitem" hreflang="ko" data-lang-switch="ko" lang="ko" class="lang-option">한국어</a></li>
+      <li><a href="../it/index.html" role="menuitem" hreflang="it" data-lang-switch="it" lang="it" class="lang-option">Italiano</a></li>
+      <li><a href="index.html" role="menuitem" hreflang="nl" data-lang-switch="nl" lang="nl" class="lang-option is-current" aria-current="true">Nederlands</a></li>
+      <li><a href="../hi/index.html" role="menuitem" hreflang="hi" data-lang-switch="hi" lang="hi" class="lang-option">हिन्दी</a></li>
+      <li><a href="../id/index.html" role="menuitem" hreflang="id" data-lang-switch="id" lang="id" class="lang-option">Bahasa Indonesia</a></li>
+      <li><a href="../vi/index.html" role="menuitem" hreflang="vi" data-lang-switch="vi" lang="vi" class="lang-option">Tiếng Việt</a></li>
       </ul>
     </li>
-    <li><a href="#download" class="nav-cta">获取 VaultMesh</a></li>
+    <li><a href="#download" class="nav-cta">VaultMesh halen</a></li>
   </ul>
 </nav>
 
 <section class="hero">
-  <div class="hero-badge">本地优先 · 端到端加密 · 多设备</div>
-  <h1>密码安全可控。<br><em>从首次解锁就保持私密</em><br>到日常同步皆然。</h1>
+  <div class="hero-badge">Local-first · End-to-end versleuteld · Meerdere apparaten</div>
+  <h1>Veilige wachtwoorden.<br><em>Privé vanaf de eerste ontgrendeling</em><br>tot de dagelijkse sync.</h1>
   <p class="hero-desc">
-    VaultMesh 将你的密码库以加密形式存放在自己的设备上。移动端与桌面端之间直接同步，
-    无需中心服务，传输过程不暴露任何明文。
+    VaultMesh houdt je kluis versleuteld op je eigen apparaten. Mobiel en desktop synchroniseren rechtstreeks, zonder verplichte hub en zonder klare tekst in het transport.
   </p>
   <div class="hero-actions">
     <a href="#download" class="btn-primary">
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 1v8M4 6l3 3 3-3M2 11h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      获取 VaultMesh
+      VaultMesh halen
     </a>
-    <a href="#how-it-works" class="btn-secondary">了解同步原理</a>
+    <a href="#how-it-works" class="btn-secondary">Hoe sync werkt</a>
   </div>
   <div class="hero-stats">
     <div class="stat-item">
-      <span class="stat-label">加密算法</span>
+      <span class="stat-label">Versleuteling</span>
       <span class="stat-value">XChaCha20-Poly1305</span>
     </div>
     <div class="stat-item">
-      <span class="stat-label">密钥派生</span>
+      <span class="stat-label">KDF</span>
       <span class="stat-value">Argon2id</span>
     </div>
     <div class="stat-item">
-      <span class="stat-label">密钥交换</span>
+      <span class="stat-label">Sleuteluitwisseling</span>
       <span class="stat-value">X25519 + SPAKE2</span>
     </div>
     <div class="stat-item">
-      <span class="stat-label">支持平台</span>
+      <span class="stat-label">Platforms</span>
       <span class="stat-value">iOS · Android · Mac · Win · Linux</span>
     </div>
   </div>
@@ -86,11 +85,11 @@
 <div class="divider"></div>
 
 <section class="section showcase-section" id="showcase">
-  <div class="section-label">动效演示</div>
-  <h2 class="section-title">三项核心能力，<br>一眼看懂。</h2>
-  <p class="section-sub">看看 VaultMesh 如何在没有云端中介的情况下，完成设备配对、密码库同步与浏览器自动填充。</p>
+  <div class="section-label">In actie</div>
+  <h2 class="section-title">Drie functies,<br>in één oogopslag.</h2>
+  <p class="section-sub">Zie hoe VaultMesh je apparaten koppelt, je kluis synchroniseert en wachtwoorden invult — zonder cloudtussenpersoon.</p>
 
-  <div class="showcase-tabs" role="tablist" aria-label="功能演示">
+  <div class="showcase-tabs" role="tablist" aria-label="In actie">
     <button class="showcase-tab active" role="tab" aria-selected="true"
             aria-controls="showcase-panel-pairing" id="showcase-tab-pairing" data-tab="pairing">
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -99,7 +98,7 @@
         <circle cx="10" cy="11" r="2.5" stroke="currentColor" stroke-width="1.3"/>
         <path d="M6.5 7h1M6.3 5.4l1-.8M6.3 8.6l1 .8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
       </svg>
-      设备配对
+      Koppelen
     </button>
     <button class="showcase-tab" role="tab" aria-selected="false"
             aria-controls="showcase-panel-sync" id="showcase-tab-sync" data-tab="sync">
@@ -107,7 +106,7 @@
         <path d="M2 7a5 5 0 0 1 9.5-2.2M12 7a5 5 0 0 1-9.5 2.2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
         <path d="M11.5 2l.5 2.8-2.7-.5M2.5 12l-.5-2.8 2.7.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      同步
+      Sync
     </button>
     <button class="showcase-tab" role="tab" aria-selected="false"
             aria-controls="showcase-panel-autofill" id="showcase-tab-autofill" data-tab="autofill">
@@ -117,7 +116,7 @@
         <path d="M4 7.5h2.5M4 9.5h4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
         <circle cx="10.5" cy="8.5" r="1.5" fill="currentColor" opacity=".35"/>
       </svg>
-      自动填充
+      Autofill
     </button>
   </div>
 
@@ -127,7 +126,6 @@
 
   <div class="showcase-canvas">
 
-    <!-- PANEL 1: PAIRING -->
     <div class="showcase-panel active" id="showcase-panel-pairing"
          role="tabpanel" aria-labelledby="showcase-tab-pairing">
       <svg class="showcase-svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
@@ -219,11 +217,10 @@
         </g>
       </svg>
       <div class="showcase-caption">
-        <strong>安全设备配对</strong> — 基于 SPAKE2 在设备之间直接交换密钥，无需服务器介入。局域网或经 Relay 中转均可。
+        <strong>Veilige apparaatkoppeling</strong> — Directe sleuteluitwisseling tussen apparaten via SPAKE2. Geen serverbetrokkenheid. Werkt over LAN of Relay.
       </div>
     </div>
 
-    <!-- PANEL 2: SYNC -->
     <div class="showcase-panel" id="showcase-panel-sync"
          role="tabpanel" aria-labelledby="showcase-tab-sync" hidden>
       <svg class="showcase-svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
@@ -296,11 +293,10 @@
         </g>
       </svg>
       <div class="showcase-caption">
-        <strong>P2P 直连同步</strong> — 设备在局域网中直接同步，不经过任何服务器。XChaCha20-Poly1305 端到端加密，Relay 仅为可选转发，只能看到密文。
+        <strong>Directe P2P-sync</strong> — Apparaten synchroniseren rechtstreeks via LAN, zonder server. XChaCha20-Poly1305 end-to-end. Relay is optioneel en ziet alleen versleutelde gegevens.
       </div>
     </div>
 
-    <!-- PANEL 3: AUTOFILL -->
     <div class="showcase-panel" id="showcase-panel-autofill"
          role="tabpanel" aria-labelledby="showcase-tab-autofill" hidden>
       <svg class="showcase-svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
@@ -363,67 +359,50 @@
         </g>
       </svg>
       <div class="showcase-caption">
-        <strong>浏览器自动填充</strong> — 扩展通过原生消息与桌面客户端通信，凭证不会留在浏览器存储中。
+        <strong>Browser-autofill</strong> — De extensie communiceert via native messaging met de desktopclient. Inloggegevens worden niet in de browser opgeslagen.
       </div>
     </div>
 
-  </div><!-- /.showcase-canvas -->
+  </div>
 </section>
 
 <div class="divider"></div>
 
 <section class="section" id="features">
-  <div class="section-label">功能特性</div>
-  <h2 class="section-title">流程简洁，<br>安全严肃。</h2>
-  <p class="section-sub">无需把密钥或明文交给任何第三方服务，移动端和桌面端就能共享同一个加密密码库。</p>
+  <div class="section-label">Functies</div>
+  <h2 class="section-title">Eenvoudige werking,<br>serieuze beveiliging.</h2>
+  <p class="section-sub">Ontworpen zodat mobiel en desktop één versleutelde kluis delen zonder sleutels of klare tekst aan derden af te geven.</p>
 
   <div class="features-grid">
     <div class="feature-card">
-      <div class="feature-icon">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M6 9l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </div>
-      <div class="feature-title">零知识</div>
-      <div class="feature-desc">服务端无法读取你的密码库。加密与解密只在你的设备上完成，密钥始终保存在本地。</div>
+      <div class="feature-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M6 9l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div class="feature-title">Zero Knowledge</div>
+      <div class="feature-desc">Geen server kan je kluis lezen. Versleutelen en ontsleutelen gebeurt alleen op je apparaten; sleutels verlaten nooit lokale opslag.</div>
     </div>
-
     <div class="feature-card">
-      <div class="feature-icon">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="4" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1" stroke="currentColor" stroke-width="1.5"/></svg>
-      </div>
-      <div class="feature-title">本地优先</div>
-      <div class="feature-desc">密码库以加密形式存储在本地数据库。完全离线也能正常使用，不依赖任何网络服务。</div>
+      <div class="feature-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="4" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1" stroke="currentColor" stroke-width="1.5"/></svg></div>
+      <div class="feature-title">Local-first</div>
+      <div class="feature-desc">Je kluis staat lokaal opgeslagen in een versleutelde database. VaultMesh werkt volledig offline, zonder netwerkafhankelijkheid.</div>
     </div>
-
     <div class="feature-card">
-      <div class="feature-icon">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9a6 6 0 1 1 12 0A6 6 0 0 1 3 9z" stroke="currentColor" stroke-width="1.5"/><path d="M9 6v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-      </div>
-      <div class="feature-title">无冲突同步</div>
-      <div class="feature-desc">采用混合逻辑时钟与版本向量，多端并发编辑能够稳定合并，不丢数据。</div>
+      <div class="feature-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9a6 6 0 1 1 12 0A6 6 0 0 1 3 9z" stroke="currentColor" stroke-width="1.5"/><path d="M9 6v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      <div class="feature-title">Conflictvrije sync</div>
+      <div class="feature-desc">Hybrid logical clock en versievectoren mergen gelijktijdige bewerkingen deterministisch, zonder dataverlies.</div>
     </div>
-
     <div class="feature-card">
-      <div class="feature-icon">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="2" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="10" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="10" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
-      </div>
-      <div class="feature-title">独立同步</div>
-      <div class="feature-desc">移动端与桌面端互不依赖，无需"主设备"。每台设备都是平等的同步参与者。</div>
+      <div class="feature-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="2" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="10" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="10" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg></div>
+      <div class="feature-title">Onafhankelijke sync</div>
+      <div class="feature-desc">Mobiel en desktop synchroniseren zonder hub-apparaat. Elk apparaat is gelijkwaardig deelnemer.</div>
     </div>
-
     <div class="feature-card">
-      <div class="feature-icon">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2l2.5 5H17l-4 3.5 1.5 5.5L9 13l-5.5 3L5 10.5 1 7h5.5L9 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
-      </div>
-      <div class="feature-title">安全配对</div>
-      <div class="feature-desc">SPAKE2 协议加人工验证码核对，确保只有你信任的物理设备能够加入同步域。</div>
+      <div class="feature-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2l2.5 5H17l-4 3.5 1.5 5.5L9 13l-5.5 3L5 10.5 1 7h5.5L9 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+      <div class="feature-title">Veilige koppeling</div>
+      <div class="feature-desc">SPAKE2 plus menselijke verificatie zorgen dat alleen jouw vertrouwde apparaten je sync-domein binnenkomen.</div>
     </div>
-
     <div class="feature-card">
-      <div class="feature-icon">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M9 2v2M9 14v2M2 9h2M14 9h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-      </div>
-      <div class="feature-title">浏览器扩展</div>
-      <div class="feature-desc">扩展通过桌面客户端完成自动填充，敏感数据不会长期留在浏览器存储中。</div>
+      <div class="feature-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M9 2v2M9 14v2M2 9h2M14 9h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+      <div class="feature-title">Browserextensie</div>
+      <div class="feature-desc">Extensies maken verbinding met de desktopclient voor veilig autofill. Gevoelige gegevens blijven niet in browseropslag.</div>
     </div>
   </div>
 </section>
@@ -431,160 +410,102 @@
 <div class="divider"></div>
 
 <section class="section" id="how-it-works">
-  <div class="section-label">工作原理</div>
-  <h2 class="section-title">从首次安装<br>到日常使用，只需四步。</h2>
-  <p class="section-sub">从任意设备起步，需要多端同步时再配对其他可信设备即可。</p>
+  <div class="section-label">Hoe het werkt</div>
+  <h2 class="section-title">Van eerste installatie<br>tot dagelijks gebruik in vier stappen.</h2>
+  <p class="section-sub">Begin op elk gewenst apparaat en koppel later andere vertrouwde apparaten voor gedeelde sync.</p>
 
   <div class="steps-wrapper">
-    <div class="step-card">
-      <div class="step-num">01</div>
-      <div class="step-title">在任意设备上安装</div>
-      <div class="step-desc">移动端或桌面端均可安装，无需账号注册，无需任何云端配置。</div>
-    </div>
-
-    <div class="step-card">
-      <div class="step-num">02</div>
-      <div class="step-title">创建密码库</div>
-      <div class="step-desc">设置主密码。数据在保存前先经过 Argon2id 派生密钥并由 XChaCha20 加密。</div>
-    </div>
-
-    <div class="step-card">
-      <div class="step-num">03</div>
-      <div class="step-title">配对可信设备</div>
-      <div class="step-desc">使用二维码或配对码连接其他设备，在双方界面上核对安全短语后再确认。</div>
-    </div>
-
-    <div class="step-card">
-      <div class="step-num">04</div>
-      <div class="step-title">随处使用</div>
-      <div class="step-desc">在移动端和桌面端共享同一个加密密码库，需要时再启用浏览器扩展集成。</div>
-    </div>
+    <div class="step-card"><div class="step-num">01</div><div class="step-title">Installeer op elk apparaat</div><div class="step-desc">Installeer VaultMesh op mobiel of desktop zonder accountregistratie of cloudconfiguratie.</div></div>
+    <div class="step-card"><div class="step-num">02</div><div class="step-title">Maak je kluis aan</div><div class="step-desc">Stel je hoofdwachtwoord in. Gegevens worden met Argon2id en XChaCha20 versleuteld voordat ze worden opgeslagen.</div></div>
+    <div class="step-card"><div class="step-num">03</div><div class="step-title">Vertrouwde apparaten koppelen</div><div class="step-desc">Gebruik QR of een koppelcode tussen apparaten en verifieer de security string aan beide kanten voor je goedkeurt.</div></div>
+    <div class="step-card"><div class="step-num">04</div><div class="step-title">Overal gebruiken</div><div class="step-desc">Eén versleutelde kluis op mobiel en desktop. Voeg de browserextensie toe wanneer je wilt.</div></div>
   </div>
 </section>
 
 <div class="divider"></div>
 
 <section class="section" id="download">
-  <div class="section-label">下载</div>
-  <h2 class="section-title">下载安装<br>与应用商店链接。</h2>
-  <p class="section-sub">移动端和浏览器扩展请走官方应用商店，桌面端与 Relay 安装包直接从本站点托管。</p>
+  <div class="section-label">Download</div>
+  <h2 class="section-title">Downloads<br>en storelinks.</h2>
+  <p class="section-sub">Mobiel en browserextensies via officiële stores; desktop- en Relay-pakketten worden rechtstreeks vanaf deze site geserveerd.</p>
 
   <div class="download-wrapper">
     <div class="dl-group dl-group-mobile">
       <div class="dl-group-header">
-        <div class="dl-group-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="4" y="1" width="8" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="12" r="1" fill="currentColor"/></svg>
-        </div>
+        <div class="dl-group-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="4" y="1" width="8" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="12" r="1" fill="currentColor"/></svg></div>
         <div>
-          <div class="dl-group-title">移动端应用</div>
-          <div class="dl-group-sub">移动端同步独立运行，无需依赖桌面端</div>
+          <div class="dl-group-title">Mobiele apps</div>
+          <div class="dl-group-sub">Mobiele sync werkt onafhankelijk, geen desktop nodig</div>
         </div>
       </div>
       <div class="mobile-row">
         <div class="dl-item">
-          <div class="dl-item-info">
-            <div class="dl-item-name">iOS 应用</div>
-            <div class="dl-item-meta">Apple App Store</div>
-          </div>
+          <div class="dl-item-info"><div class="dl-item-name">iOS-app</div><div class="dl-item-meta">Apple App Store</div></div>
           <a href="https://apps.apple.com/app/vaultmesh/id6761998890" class="dl-btn">App Store</a>
         </div>
         <div class="dl-item">
-          <div class="dl-item-info">
-            <div class="dl-item-name">Android 应用</div>
-            <div class="dl-item-meta">Google Play · 即将上线</div>
-          </div>
-          <a href="#download" class="dl-btn">即将上线</a>
+          <div class="dl-item-info"><div class="dl-item-name">Android-app</div><div class="dl-item-meta">Google Play · binnenkort</div></div>
+          <a href="#download" class="dl-btn">Binnenkort</a>
         </div>
       </div>
     </div>
 
     <div class="dl-group">
       <div class="dl-group-header">
-        <div class="dl-group-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1" y="2" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M5 14h6M8 11v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
+        <div class="dl-group-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1" y="2" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M5 14h6M8 11v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
         <div>
-          <div class="dl-group-title">桌面客户端</div>
-          <div class="dl-group-sub">Safari 自动填充请使用 App Store 版；Chrome / Firefox / Edge 自动填充请使用本站桌面安装包</div>
+          <div class="dl-group-title">Desktopclient</div>
+          <div class="dl-group-sub">Voor Safari-autofill: gebruik de App Store-versie; voor Chrome / Firefox / Edge: gebruik de desktoppakketten van deze site</div>
         </div>
       </div>
       <div class="dl-list">
         <div class="dl-item">
-          <div class="dl-item-info">
-            <div class="dl-item-name">Windows</div>
-            <div class="dl-item-meta">支持 Chrome / Firefox / Edge 自动填充</div>
-          </div>
-          <a href="../downloads/desktop/windows-VaultMesh_1.0.0_x64-setup.exe" class="dl-btn">下载</a>
+          <div class="dl-item-info"><div class="dl-item-name">Windows</div><div class="dl-item-meta">Ondersteunt Chrome- / Firefox- / Edge-autofill</div></div>
+          <a href="../downloads/desktop/windows-VaultMesh_1.0.0_x64-setup.exe" class="dl-btn">Download</a>
         </div>
         <div class="dl-item">
-          <div class="dl-item-info">
-            <div class="dl-item-name">macOS App Store</div>
-            <div class="dl-item-meta">支持 Safari 自动填充</div>
-          </div>
+          <div class="dl-item-info"><div class="dl-item-name">macOS App Store</div><div class="dl-item-meta">Ondersteunt Safari-autofill</div></div>
           <a href="https://apps.apple.com/app/vaultmesh/id6761998890" class="dl-btn">App Store</a>
         </div>
         <div class="dl-item">
-          <div class="dl-item-info">
-            <div class="dl-item-name">macOS Universal DMG</div>
-            <div class="dl-item-meta">支持 Chrome / Firefox / Edge 自动填充</div>
-          </div>
-          <a href="../downloads/desktop/macos-universal-VaultMesh_1.1.6_universal.dmg" class="dl-btn">下载</a>
+          <div class="dl-item-info"><div class="dl-item-name">macOS Universal DMG</div><div class="dl-item-meta">Ondersteunt Chrome- / Firefox- / Edge-autofill</div></div>
+          <a href="../downloads/desktop/macos-universal-VaultMesh_1.1.6_universal.dmg" class="dl-btn">Download</a>
         </div>
         <div class="dl-item">
-          <div class="dl-item-info">
-            <div class="dl-item-name">Linux</div>
-            <div class="dl-item-meta">支持 Chrome / Firefox / Edge 自动填充</div>
-          </div>
-          <a href="../downloads/desktop/linux-VaultMesh_1.1.6_amd64.AppImage" class="dl-btn">下载</a>
+          <div class="dl-item-info"><div class="dl-item-name">Linux</div><div class="dl-item-meta">Ondersteunt Chrome- / Firefox- / Edge-autofill</div></div>
+          <a href="../downloads/desktop/linux-VaultMesh_1.1.6_amd64.AppImage" class="dl-btn">Download</a>
         </div>
         <div class="dl-item">
-          <div class="dl-item-info">
-            <div class="dl-item-name">Linux (.deb)</div>
-            <div class="dl-item-meta">支持 Chrome / Firefox / Edge 自动填充</div>
-          </div>
-          <a href="../downloads/desktop/linux-VaultMesh_1.1.6_amd64.deb" class="dl-btn">下载</a>
+          <div class="dl-item-info"><div class="dl-item-name">Linux (.deb)</div><div class="dl-item-meta">Ondersteunt Chrome- / Firefox- / Edge-autofill</div></div>
+          <a href="../downloads/desktop/linux-VaultMesh_1.1.6_amd64.deb" class="dl-btn">Download</a>
         </div>
       </div>
     </div>
 
     <div class="dl-group">
       <div class="dl-group-header">
-        <div class="dl-group-icon">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M8 5v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        </div>
+        <div class="dl-group-icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M8 5v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
         <div>
-          <div class="dl-group-title">浏览器扩展 + 命令行</div>
-          <div class="dl-group-sub">扩展通过原生消息与桌面客户端通信</div>
+          <div class="dl-group-title">Browserextensies + CLI</div>
+          <div class="dl-group-sub">Extensies praten via native messaging met de desktop-app</div>
         </div>
       </div>
       <div class="dl-list">
         <div class="dl-item">
-          <div class="dl-item-info">
-            <div class="dl-item-name">Chrome 扩展</div>
-            <div class="dl-item-meta">Chrome Web Store</div>
-          </div>
+          <div class="dl-item-info"><div class="dl-item-name">Chrome-extensie</div><div class="dl-item-meta">Chrome Web Store</div></div>
           <a href="https://chrome.google.com/webstore/detail/kjclabfepakhhbakbookhbfokimkjbec" class="dl-btn">Chrome</a>
         </div>
         <div class="dl-item">
-          <div class="dl-item-info">
-            <div class="dl-item-name">Firefox 扩展</div>
-            <div class="dl-item-meta">Firefox Add-ons</div>
-          </div>
+          <div class="dl-item-info"><div class="dl-item-name">Firefox-extensie</div><div class="dl-item-meta">Firefox Add-ons</div></div>
           <a href="https://addons.mozilla.org/addon/vaultmesh/" class="dl-btn">Firefox</a>
         </div>
         <div class="dl-item">
-          <div class="dl-item-info">
-            <div class="dl-item-name">Edge 扩展</div>
-            <div class="dl-item-meta">Microsoft Edge Add-ons</div>
-          </div>
+          <div class="dl-item-info"><div class="dl-item-name">Edge-extensie</div><div class="dl-item-meta">Microsoft Edge Add-ons</div></div>
           <a href="https://microsoftedge.microsoft.com/addons/detail/vaultmesh/jfldligmihojmcmbnojjljhgdnfkecfm" class="dl-btn">Edge</a>
         </div>
         <div class="dl-item">
-          <div class="dl-item-info">
-            <div class="dl-item-name">CLI 命令行包</div>
-            <div class="dl-item-meta">即将随版本发布提供</div>
-          </div>
-          <a href="../downloads/cli/" class="dl-btn">查看进度</a>
+          <div class="dl-item-info"><div class="dl-item-name">CLI-pakketten</div><div class="dl-item-meta">Binnenkort in de release-workflow</div></div>
+          <a href="../downloads/cli/" class="dl-btn">Status</a>
         </div>
       </div>
     </div>
@@ -592,10 +513,10 @@
     <div style="grid-column: 1 / -1;">
       <div class="relay-banner">
         <div class="relay-banner-text">
-          <h3>需要跨网络远程同步？</h3>
-          <p>使用 Relay 节点进行 NAT 穿透。Relay 只转发加密载荷，无法读取密码库明文。</p>
+          <h3>Sync nodig over netwerken heen?</h3>
+          <p>Gebruik een Relay-knooppunt voor NAT-traversal. De Relay stuurt alleen versleutelde payloads door en leest nooit klare kluis-tekst.</p>
         </div>
-        <a href="relay.html" class="btn-primary">查看 Relay 指南</a>
+        <a href="../relay.html" class="btn-primary">Bekijk de Relay-gids</a>
       </div>
     </div>
   </div>
@@ -609,7 +530,7 @@
   <div class="footer-inner">
     <div>
       <div class="footer-brand-name">VaultMesh</div>
-      <div class="footer-brand-desc">面向桌面与移动端的私有密码管理器，本地优先存储、端到端加密。</div>
+      <div class="footer-brand-desc">Privé wachtwoordmanager voor desktop en mobiel, local-first opslag en end-to-end-encryptie.</div>
       <div class="crypto-chips">
         <span class="chip">Argon2id</span>
         <span class="chip">XChaCha20</span>
@@ -618,33 +539,33 @@
       </div>
     </div>
     <div>
-      <div class="footer-col-title">产品</div>
+      <div class="footer-col-title">Product</div>
       <ul class="footer-links">
-        <li><a href="#features">功能特性</a></li>
-        <li><a href="#how-it-works">工作原理</a></li>
-        <li><a href="#download">下载</a></li>
-        <li><a href="relay.html">Relay 指南</a></li>
+        <li><a href="#features">Functies</a></li>
+        <li><a href="#how-it-works">Hoe het werkt</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="../relay.html">Relay-gids</a></li>
       </ul>
     </div>
     <div>
-      <div class="footer-col-title">资源</div>
+      <div class="footer-col-title">Bronnen</div>
       <ul class="footer-links">
         <li><a href="../blog/">Blog</a></li>
-        <li><a href="../downloads/checksums.txt">校验和</a></li>
-        <li><a href="../downloads/desktop/">桌面安装包</a></li>
-        <li><a href="../downloads/relay/">Relay 安装包</a></li>
+        <li><a href="../downloads/checksums.txt">Checksums</a></li>
+        <li><a href="../downloads/desktop/">Desktoppakketten</a></li>
+        <li><a href="../downloads/relay/">Relay-pakketten</a></li>
       </ul>
     </div>
     <div>
-      <div class="footer-col-title">法律</div>
+      <div class="footer-col-title">Juridisch</div>
       <ul class="footer-links">
-        <li><a href="privacy.html">隐私政策</a></li>
-        <li><a href="mailto:free.huoshan@gmail.com">联系我们</a></li>
+        <li><a href="../privacy.html">Privacybeleid</a></li>
+        <li><a href="mailto:free.huoshan@gmail.com">Contact</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <span class="footer-copy">&copy; 2026 VaultMesh. 保留所有权利。</span>
+    <span class="footer-copy">© 2026 VaultMesh. Alle rechten voorbehouden.</span>
     <span class="footer-copy"><a href="mailto:free.huoshan@gmail.com" style="color:inherit;text-decoration:none;">free.huoshan@gmail.com</a></span>
   </div>
 </footer>
@@ -659,35 +580,13 @@
   var cycleTimer = null;
   var currentIdx = 0;
   var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
   function activateTab(idx) {
-    tabs.forEach(function (tab, i) {
-      var on = i === idx;
-      tab.classList.toggle('active', on);
-      tab.setAttribute('aria-selected', on ? 'true' : 'false');
-    });
-    panels.forEach(function (panel, i) {
-      var on = i === idx;
-      panel.classList.toggle('active', on);
-      if (on) { panel.removeAttribute('hidden'); }
-      else { panel.setAttribute('hidden', ''); }
-    });
+    tabs.forEach(function (tab, i) { var on = i === idx; tab.classList.toggle('active', on); tab.setAttribute('aria-selected', on ? 'true' : 'false'); });
+    panels.forEach(function (panel, i) { var on = i === idx; panel.classList.toggle('active', on); if (on) panel.removeAttribute('hidden'); else panel.setAttribute('hidden', ''); });
     currentIdx = idx;
-    if (!prefersReducedMotion && progressBar) {
-      progressBar.classList.remove('is-cycling');
-      void progressBar.offsetWidth;
-      progressBar.classList.add('is-cycling');
-    }
+    if (!prefersReducedMotion && progressBar) { progressBar.classList.remove('is-cycling'); void progressBar.offsetWidth; progressBar.classList.add('is-cycling'); }
   }
-
-  function startCycle() {
-    if (prefersReducedMotion) return;
-    clearInterval(cycleTimer);
-    cycleTimer = setInterval(function () {
-      activateTab((currentIdx + 1) % tabs.length);
-    }, CYCLE_MS);
-  }
-
+  function startCycle() { if (prefersReducedMotion) return; clearInterval(cycleTimer); cycleTimer = setInterval(function () { activateTab((currentIdx + 1) % tabs.length); }, CYCLE_MS); }
   tabs.forEach(function (tab, i) {
     tab.addEventListener('click', function () { activateTab(i); startCycle(); });
     tab.addEventListener('keydown', function (e) {
@@ -699,15 +598,9 @@
       if (n >= 0) { e.preventDefault(); activateTab(n); tabs[n].focus(); startCycle(); }
     });
   });
-
   var canvas = document.querySelector('.showcase-canvas');
-  if (canvas) {
-    canvas.addEventListener('mouseenter', function () { clearInterval(cycleTimer); });
-    canvas.addEventListener('mouseleave', startCycle);
-  }
-
-  activateTab(0);
-  startCycle();
+  if (canvas) { canvas.addEventListener('mouseenter', function () { clearInterval(cycleTimer); }); canvas.addEventListener('mouseleave', startCycle); }
+  activateTab(0); startCycle();
 })();
 </script>
 
@@ -718,7 +611,7 @@
     var menu = document.querySelector('.lang-menu');
     if (toggle && menu) {
       function close() { toggle.setAttribute('aria-expanded', 'false'); menu.hidden = true; }
-      function open()  { toggle.setAttribute('aria-expanded', 'true');  menu.hidden = false; }
+      function open() { toggle.setAttribute('aria-expanded', 'true'); menu.hidden = false; }
       toggle.addEventListener('click', function (e) { e.stopPropagation(); (menu.hidden ? open : close)(); });
       document.addEventListener('click', function (e) { if (!menu.hidden && !menu.contains(e.target) && e.target !== toggle) close(); });
       document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !menu.hidden) { close(); toggle.focus(); } });
