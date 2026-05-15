@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐私政策 — VaultMesh</title>
+  <meta name="description" content="VaultMesh 移动端、桌面端、浏览器扩展以及 Relay 流程的隐私政策说明。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-brand" href="index.html">
+    <img src="../img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
+    <span class="nav-brand-name">VaultMesh</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#features">功能特性</a></li>
+    <li><a href="index.html#how-it-works">工作原理</a></li>
+    <li><a href="index.html#download">下载</a></li>
+    <li><a href="relay.html">Relay 指南</a></li>
+    <li><a href="../blog/">Blog</a></li>
+    <li><a href="../privacy.html" class="nav-lang" data-lang-switch="en" hreflang="en" aria-label="Switch to English">EN</a></li>
+    <li><a href="index.html#download" class="nav-cta">获取 VaultMesh</a></li>
+  </ul>
+</nav>
+
+<section class="page-header">
+  <div class="page-badge">法律</div>
+  <h1>隐私政策</h1>
+  <p>VaultMesh 的设计目标是在本地存储、设备配对与同步传输全过程中始终保持密码库数据的加密状态。</p>
+</section>
+
+<div class="divider"></div>
+
+<section class="page-shell">
+  <div class="paper">
+    <p class="updated">最后更新：2026 年 4 月 22 日</p>
+
+    <p>本《隐私政策》说明 VaultMesh 产品如何处理数据，涵盖移动端与桌面端应用、浏览器扩展集成，以及可选的同步 Relay 使用。</p>
+
+    <h2>1. 隐私模型</h2>
+    <p>VaultMesh 是一款本地优先、端到端加密的密码管理器。密码库内容在你的设备上加密后再进行同步，只能在你信任的设备上被解密。</p>
+
+    <h2>2. 我们无法以明文形式访问的数据</h2>
+    <p>VaultMesh 的设计确保 Relay 运维方与传输基础设施无法以明文形式读取你的秘密信息，具体包括：</p>
+    <ul>
+      <li>主密码</li>
+      <li>保存于密码库中的密码、备注以及凭据字段</li>
+      <li>恢复密钥及其他私钥材料的明文</li>
+      <li>生物特征模板（由操作系统负责管理）</li>
+    </ul>
+
+    <h2>3. 为提供同步而处理的数据</h2>
+    <p>为完成同步与配对，VaultMesh 会处理加密载荷以及若干用于路由和一致性所必需的协议元数据。</p>
+    <ul>
+      <li><strong>加密同步数据：</strong>密码库条目及状态更新以加密形式传输。</li>
+      <li><strong>协议元数据：</strong>密码库标识符、设备标识符、序号 / 版本元数据、以及会话 / 鉴权令牌，用于正确投递同步消息。</li>
+      <li><strong>网络元数据：</strong>使用 Relay 传输时，IP 地址、请求时间等网络层元数据可能对 Relay 运维方及基础设施提供方可见。</li>
+    </ul>
+
+    <h2>4. 设备上的本地存储</h2>
+    <p>VaultMesh 将加密的密码库数据存放在你的设备本地。为支持应用启动、设备配对和同步配置，部分非敏感的运行元数据也会保存在本地。</p>
+
+    <h2>5. Relay 的行为与数据保留</h2>
+    <p>Relay 是跨网络同步的可选传输组件。</p>
+    <ul>
+      <li>Relay 可能会临时缓冲加密的同步载荷以便投递。</li>
+      <li>Relay 可能维持短期会话状态，用于配对和鉴权流程。</li>
+      <li>Relay 并非密码库内容的明文信任源。</li>
+    </ul>
+
+    <h2>6. 设备权限与功能</h2>
+    <ul>
+      <li><strong>摄像头：</strong>用于扫描配对二维码。</li>
+      <li><strong>生物识别解锁：</strong>Face ID 与指纹弹窗由操作系统 API 管理。</li>
+      <li><strong>网络与局域网：</strong>用于设备直接发现 / 同步以及可选的 Relay 同步。</li>
+    </ul>
+
+    <h2>7. 分析与追踪</h2>
+    <p>VaultMesh 核心产品流程不使用广告 SDK，也不通过行为追踪分析来对用户进行画像。我们不会出售你的个人数据。</p>
+    <p>应用分发平台与操作系统可能依据各自政策处理有限的技术性数据。</p>
+
+    <h2>8. 你可控制的选项</h2>
+    <ul>
+      <li>你可以在不启用同步的情况下本地使用 VaultMesh。</li>
+      <li>你可以根据自身环境选择合适的 Relay 配置。</li>
+      <li>你可以通过删除设备上的密码库文件和应用存储来清除本地应用数据。</li>
+    </ul>
+
+    <h2>9. 儿童隐私</h2>
+    <p>VaultMesh 不面向 13 岁以下儿童。我们不会有意收集儿童的个人信息。</p>
+
+    <h2>10. 政策变更</h2>
+    <p>我们可能会不时更新本《隐私政策》。变更后会更新本页面，并附上新的生效日期。</p>
+
+    <h2>11. 联系我们</h2>
+    <p>如对本《隐私政策》有疑问，请联系 <a href="mailto:free.huoshan@gmail.com">free.huoshan@gmail.com</a>。</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">VaultMesh</div>
+      <div class="footer-brand-desc">面向桌面与移动端的私有密码管理器，本地优先存储、端到端加密。</div>
+      <div class="crypto-chips">
+        <span class="chip">Argon2id</span>
+        <span class="chip">XChaCha20</span>
+        <span class="chip">X25519</span>
+        <span class="chip">Ed25519</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">产品</div>
+      <ul class="footer-links">
+        <li><a href="index.html#features">功能特性</a></li>
+        <li><a href="index.html#how-it-works">工作原理</a></li>
+        <li><a href="index.html#download">下载</a></li>
+        <li><a href="relay.html">Relay 指南</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">资源</div>
+      <ul class="footer-links">
+        <li><a href="../blog/">Blog</a></li>
+        <li><a href="../downloads/checksums.txt">校验和</a></li>
+        <li><a href="../downloads/desktop/">桌面安装包</a></li>
+        <li><a href="../downloads/relay/">Relay 安装包</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">法律</div>
+      <ul class="footer-links">
+        <li><a href="privacy.html">隐私政策</a></li>
+        <li><a href="mailto:free.huoshan@gmail.com">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 VaultMesh. 保留所有权利。</span>
+    <span class="footer-copy"><a href="mailto:free.huoshan@gmail.com" style="color:inherit;text-decoration:none;">free.huoshan@gmail.com</a></span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  try {
+    document.querySelectorAll('[data-lang-switch]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        try { localStorage.setItem('vm-lang', a.getAttribute('data-lang-switch')); } catch (e) {}
+      });
+    });
+  } catch (e) {}
+})();
+</script>
+
+</body>
+</html>

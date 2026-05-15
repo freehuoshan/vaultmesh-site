@@ -23,6 +23,7 @@
     <li><a href="index.html#download">Download</a></li>
     <li><a href="relay.html">Relay Guide</a></li>
     <li><a href="blog/">Blog</a></li>
+    <li><a href="zh/privacy.html" class="nav-lang" data-lang-switch="zh" hreflang="zh-CN" aria-label="切换到中文">中文</a></li>
     <li><a href="index.html#download" class="nav-cta">Get VaultMesh</a></li>
   </ul>
 </nav>
@@ -144,6 +145,28 @@
     <span class="footer-copy"><a href="mailto:free.huoshan@gmail.com" style="color:inherit;text-decoration:none;">free.huoshan@gmail.com</a></span>
   </div>
 </footer>
+
+<script>
+(function () {
+  try {
+    var page = (location.pathname.split('/').pop() || 'index.html');
+    var inZh = /\/zh\//.test(location.pathname);
+    document.querySelectorAll('[data-lang-switch]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        try { localStorage.setItem('vm-lang', a.getAttribute('data-lang-switch')); } catch (e) {}
+      });
+    });
+    if (inZh) return;
+    var stored = null;
+    try { stored = localStorage.getItem('vm-lang'); } catch (e) {}
+    if (stored) return;
+    if (/^zh\b/i.test(navigator.language || '') &&
+        ['', 'index.html', 'relay.html', 'privacy.html'].indexOf(page) !== -1) {
+      location.replace('zh/' + (page === '' ? '' : page));
+    }
+  } catch (e) {}
+})();
+</script>
 
 </body>
 </html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relay 部署指南 — VaultMesh</title>
+  <meta name="description" content="在自有基础设施上部署 VaultMesh Relay，为加密远程同步提供传输通道。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-brand" href="index.html">
+    <img src="../img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
+    <span class="nav-brand-name">VaultMesh</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#features">功能特性</a></li>
+    <li><a href="index.html#how-it-works">工作原理</a></li>
+    <li><a href="index.html#download">下载</a></li>
+    <li><a href="relay.html" class="active">Relay 指南</a></li>
+    <li><a href="../blog/">Blog</a></li>
+    <li><a href="../relay.html" class="nav-lang" data-lang-switch="en" hreflang="en" aria-label="Switch to English">EN</a></li>
+    <li><a href="index.html#download" class="nav-cta">获取 VaultMesh</a></li>
+  </ul>
+</nav>
+
+<section class="page-header">
+  <div class="page-badge">基础设施</div>
+  <h1>自建 Relay 中转服务。</h1>
+  <p>VaultMesh Relay 让位于不同网络的可信设备彼此互达，且只转发加密载荷。</p>
+  <div class="page-actions">
+    <a href="../downloads/relay/" class="btn-primary">Relay 安装包</a>
+    <a href="index.html#download" class="btn-secondary">全部下载</a>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section class="page-shell">
+  <div class="paper">
+    <h2>Relay 的作用</h2>
+    <p>只要条件允许，VaultMesh 设备会在局域网内直接同步。当设备位于不同网络时，Relay 负责会合发现以及加密同步流量的转发。</p>
+    <div class="note-box">
+      <p><strong>隐私模型：</strong>Relay 传输不受信任。客户端通过协议头 <code>X-VaultMesh-Protocol: 3</code> 校验协议兼容性。Relay 运维方无法解密密码库的明文内容。</p>
+    </div>
+
+    <h3>下载 Relay 安装包</h3>
+    <div class="download-wrapper one-col">
+      <div class="dl-group">
+        <div class="dl-group-header">
+          <div class="dl-group-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1l6 3v4c0 3.2-2 5.5-6 7-4-1.5-6-3.8-6-7V4l6-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="dl-group-title">官方 Relay 构建</div>
+            <div class="dl-group-sub">由本站点直接托管</div>
+          </div>
+        </div>
+        <div class="dl-list">
+          <div class="dl-item">
+            <div class="dl-item-info">
+              <div class="dl-item-name">Linux x64</div>
+              <div class="dl-item-meta">.tar.gz 二进制包</div>
+            </div>
+            <a href="../downloads/relay/vaultmesh-relay-v1.1.6-linux-x64.tar.gz" class="dl-btn">下载</a>
+          </div>
+          <div class="dl-item">
+            <div class="dl-item-info">
+              <div class="dl-item-name">macOS Universal</div>
+              <div class="dl-item-meta">.tar.gz 二进制包 · arm64 + x64</div>
+            </div>
+            <a href="../downloads/relay/vaultmesh-relay-v1.1.6-macos-universal.tar.gz" class="dl-btn">下载</a>
+          </div>
+          <div class="dl-item">
+            <div class="dl-item-info">
+              <div class="dl-item-name">Windows x64</div>
+              <div class="dl-item-meta">.zip 二进制包</div>
+            </div>
+            <a href="../downloads/relay/vaultmesh-relay-v1.0.0-windows-x64.zip" class="dl-btn">下载</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="paper">
+    <h2>快速开始（二进制）</h2>
+    <div class="code-block">
+      <pre><span class="comment"># Linux 或 macOS 示例</span>
+tar -xzf vaultmesh-relay-v1.1.6-linux-x64.tar.gz
+cd vaultmesh-relay-v1.1.6-linux-x64
+chmod +x vaultmesh-relay
+
+<span class="comment"># 在 3030 端口启动 Relay</span>
+./vaultmesh-relay --listen 0.0.0.0:3030 --db relay.db
+
+<span class="comment"># 生产环境请在前面挂上 TLS（nginx、Caddy 或其他反向代理）。</span>
+<span class="comment"># VaultMesh 客户端应使用公开的 https:// Relay URL。</span></pre>
+    </div>
+
+    <h3>系统要求</h3>
+    <table class="config-table">
+      <thead>
+        <tr><th>组件</th><th>要求</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>操作系统</td><td>Linux (x86_64 或 arm64)、macOS 或 Windows Server</td></tr>
+        <tr><td>内存</td><td>至少 64 MB</td></tr>
+        <tr><td>磁盘</td><td>二进制与日志合计不超过 30 MB</td></tr>
+        <tr><td>网络</td><td>具备公网域名或静态 IP，并能开放入站 TCP 端口</td></tr>
+        <tr><td>TLS</td><td>生产环境需通过反向代理终止 HTTPS</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="paper">
+    <h2>配置参数说明</h2>
+    <p>通过命令行参数配置 Relay。</p>
+
+    <table class="config-table">
+      <thead>
+        <tr><th>参数</th><th>默认值</th><th>说明</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>--listen</code></td><td><code>0.0.0.0:3030</code></td><td>HTTP API 监听地址</td></tr>
+        <tr><td><code>--db</code></td><td><code>relay.db</code></td><td>持久化使用的 SQLite 数据库路径</td></tr>
+        <tr><td><code>--mode</code></td><td><code>store-and-forward</code></td><td>Relay 模式：持久化的存储转发或无状态模式</td></tr>
+        <tr><td><code>--ttl-hours</code></td><td><code>72</code></td><td>消息生存时长（小时）</td></tr>
+        <tr><td><code>--max-buffer</code></td><td><code>10485760</code></td><td>单个密码库的最大缓冲大小（字节）</td></tr>
+        <tr><td><code>--p2p-port</code></td><td><code>4001</code></td><td>libp2p Circuit Relay 监听端口，设为 <code>0</code> 表示禁用</td></tr>
+      </tbody>
+    </table>
+
+    <h3>客户端接入</h3>
+    <ol>
+      <li>在 VaultMesh 客户端中打开 <strong>设置 — 同步 — Relay</strong>。</li>
+      <li>填入 Relay 地址，例如 <code>https://relay.yourdomain.com</code>。</li>
+      <li>保存，并在该密码库下的所有可信设备使用同一个 Relay 地址。</li>
+    </ol>
+
+    <div class="note-box">
+      <p><strong>重要：</strong>生产环境必须使用启用 TLS 的 <code>https://</code>。纯 <code>http://</code> 仅供本机测试。</p>
+    </div>
+
+    <h3>Systemd 服务单元（Linux）</h3>
+    <div class="code-block">
+      <pre><span class="comment"># /etc/systemd/system/vaultmesh-relay.service</span>
+[Unit]
+Description=VaultMesh Relay Server
+After=network.target
+
+[Service]
+Type=simple
+User=vaultmesh-relay
+ExecStart=/usr/local/bin/vaultmesh-relay --listen 0.0.0.0:3030 --db /var/lib/vaultmesh-relay/relay.db
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target</pre>
+    </div>
+
+    <div class="code-block">
+      <pre>sudo systemctl daemon-reload
+sudo systemctl enable --now vaultmesh-relay
+sudo systemctl status vaultmesh-relay</pre>
+    </div>
+
+    <h3>健康检查</h3>
+    <div class="code-block">
+      <pre>GET /health
+
+{
+  <span class="string">"status"</span>: <span class="string">"ok"</span>,
+  <span class="string">"protocol"</span>: <span class="string">"vaultmesh-relay-3"</span>,
+  <span class="string">"mode"</span>: <span class="string">"store-and-forward"</span>,
+  <span class="string">"buffering"</span>: <span class="string">"enabled"</span>
+}</pre>
+    </div>
+
+    <div class="warn-box">
+      <p><strong>注意：</strong>Relay 是同步传输组件，不是 VPN，也不是通用代理。请按既定策略管控访问权限。</p>
+    </div>
+
+    <h3>支持</h3>
+    <p>部署遇到问题可联系 <a href="mailto:free.huoshan@gmail.com">free.huoshan@gmail.com</a>。请附上 Relay 版本、启动参数和日志片段。</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">VaultMesh</div>
+      <div class="footer-brand-desc">面向桌面与移动端的私有密码管理器，本地优先存储、端到端加密。</div>
+      <div class="crypto-chips">
+        <span class="chip">Argon2id</span>
+        <span class="chip">XChaCha20</span>
+        <span class="chip">X25519</span>
+        <span class="chip">Ed25519</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">产品</div>
+      <ul class="footer-links">
+        <li><a href="index.html#features">功能特性</a></li>
+        <li><a href="index.html#how-it-works">工作原理</a></li>
+        <li><a href="index.html#download">下载</a></li>
+        <li><a href="relay.html">Relay 指南</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">资源</div>
+      <ul class="footer-links">
+        <li><a href="../blog/">Blog</a></li>
+        <li><a href="../downloads/checksums.txt">校验和</a></li>
+        <li><a href="../downloads/desktop/">桌面安装包</a></li>
+        <li><a href="../downloads/relay/">Relay 安装包</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">法律</div>
+      <ul class="footer-links">
+        <li><a href="privacy.html">隐私政策</a></li>
+        <li><a href="mailto:free.huoshan@gmail.com">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 VaultMesh. 保留所有权利。</span>
+    <span class="footer-copy"><a href="mailto:free.huoshan@gmail.com" style="color:inherit;text-decoration:none;">free.huoshan@gmail.com</a></span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  try {
+    document.querySelectorAll('[data-lang-switch]').forEach(function (a) {
+      a.addEventListener('click', function () {
+        try { localStorage.setItem('vm-lang', a.getAttribute('data-lang-switch')); } catch (e) {}
+      });
+    });
+  } catch (e) {}
+})();
+</script>
+
+</body>
+</html>

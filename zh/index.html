@@ -1,63 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VaultMesh — Cross-Device Password Manager</title>
-  <meta name="description" content="VaultMesh is a local-first password manager for mobile and desktop. Sync works independently across trusted devices with end-to-end encryption.">
+  <title>VaultMesh — 跨设备密码管理器</title>
+  <meta name="description" content="VaultMesh 是面向移动端和桌面端的本地优先密码管理器。设备之间端到端加密直连同步，无需依赖中心服务。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <nav class="site-nav">
   <a class="nav-brand" href="index.html">
-    <img src="img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
+    <img src="../img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
     <span class="nav-brand-name">VaultMesh</span>
   </a>
   <ul class="nav-links">
-    <li><a href="#features">Features</a></li>
-    <li><a href="#how-it-works">How It Works</a></li>
-    <li><a href="#download">Download</a></li>
-    <li><a href="relay.html">Relay Guide</a></li>
-    <li><a href="blog/">Blog</a></li>
-    <li><a href="zh/index.html" class="nav-lang" data-lang-switch="zh" hreflang="zh-CN" aria-label="切换到中文">中文</a></li>
-    <li><a href="#download" class="nav-cta">Get VaultMesh</a></li>
+    <li><a href="#features">功能特性</a></li>
+    <li><a href="#how-it-works">工作原理</a></li>
+    <li><a href="#download">下载</a></li>
+    <li><a href="relay.html">Relay 指南</a></li>
+    <li><a href="../blog/">Blog</a></li>
+    <li><a href="../index.html" class="nav-lang" data-lang-switch="en" hreflang="en" aria-label="Switch to English">EN</a></li>
+    <li><a href="#download" class="nav-cta">获取 VaultMesh</a></li>
   </ul>
 </nav>
 
 <section class="hero">
-  <div class="hero-badge">Local-first - End-to-end encrypted - Multi-device</div>
-  <h1>Secure passwords.<br><em>Private from first unlock</em><br>to daily sync.</h1>
+  <div class="hero-badge">本地优先 · 端到端加密 · 多设备</div>
+  <h1>密码安全可控。<br><em>从首次解锁就保持私密</em><br>到日常同步皆然。</h1>
   <p class="hero-desc">
-    VaultMesh keeps your vault encrypted on your own devices. Mobile and desktop sync directly,
-    with no required hub and no plaintext exposure to relay transport.
+    VaultMesh 将你的密码库以加密形式存放在自己的设备上。移动端与桌面端之间直接同步，
+    无需中心服务，传输过程不暴露任何明文。
   </p>
   <div class="hero-actions">
     <a href="#download" class="btn-primary">
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 1v8M4 6l3 3 3-3M2 11h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      Get VaultMesh
+      获取 VaultMesh
     </a>
-    <a href="#how-it-works" class="btn-secondary">How sync works</a>
+    <a href="#how-it-works" class="btn-secondary">了解同步原理</a>
   </div>
   <div class="hero-stats">
     <div class="stat-item">
-      <span class="stat-label">Encryption</span>
+      <span class="stat-label">加密算法</span>
       <span class="stat-value">XChaCha20-Poly1305</span>
     </div>
     <div class="stat-item">
-      <span class="stat-label">KDF</span>
+      <span class="stat-label">密钥派生</span>
       <span class="stat-value">Argon2id</span>
     </div>
     <div class="stat-item">
-      <span class="stat-label">Key Exchange</span>
+      <span class="stat-label">密钥交换</span>
       <span class="stat-value">X25519 + SPAKE2</span>
     </div>
     <div class="stat-item">
-      <span class="stat-label">Platforms</span>
-      <span class="stat-value">iOS - Android - Mac - Win - Linux</span>
+      <span class="stat-label">支持平台</span>
+      <span class="stat-value">iOS · Android · Mac · Win · Linux</span>
     </div>
   </div>
 </section>
@@ -65,11 +65,11 @@
 <div class="divider"></div>
 
 <section class="section showcase-section" id="showcase">
-  <div class="section-label">See It In Action</div>
-  <h2 class="section-title">Three features,<br>one glance.</h2>
-  <p class="section-sub">Watch how VaultMesh pairs your devices, syncs your vault, and fills in your passwords — all without a cloud middleman.</p>
+  <div class="section-label">动效演示</div>
+  <h2 class="section-title">三项核心能力，<br>一眼看懂。</h2>
+  <p class="section-sub">看看 VaultMesh 如何在没有云端中介的情况下，完成设备配对、密码库同步与浏览器自动填充。</p>
 
-  <div class="showcase-tabs" role="tablist" aria-label="Feature showcase">
+  <div class="showcase-tabs" role="tablist" aria-label="功能演示">
     <button class="showcase-tab active" role="tab" aria-selected="true"
             aria-controls="showcase-panel-pairing" id="showcase-tab-pairing" data-tab="pairing">
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
@@ -78,7 +78,7 @@
         <circle cx="10" cy="11" r="2.5" stroke="currentColor" stroke-width="1.3"/>
         <path d="M6.5 7h1M6.3 5.4l1-.8M6.3 8.6l1 .8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
       </svg>
-      Pairing
+      设备配对
     </button>
     <button class="showcase-tab" role="tab" aria-selected="false"
             aria-controls="showcase-panel-sync" id="showcase-tab-sync" data-tab="sync">
@@ -86,7 +86,7 @@
         <path d="M2 7a5 5 0 0 1 9.5-2.2M12 7a5 5 0 0 1-9.5 2.2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
         <path d="M11.5 2l.5 2.8-2.7-.5M2.5 12l-.5-2.8 2.7.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
-      Sync
+      同步
     </button>
     <button class="showcase-tab" role="tab" aria-selected="false"
             aria-controls="showcase-panel-autofill" id="showcase-tab-autofill" data-tab="autofill">
@@ -96,7 +96,7 @@
         <path d="M4 7.5h2.5M4 9.5h4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
         <circle cx="10.5" cy="8.5" r="1.5" fill="currentColor" opacity=".35"/>
       </svg>
-      Autofill
+      自动填充
     </button>
   </div>
 
@@ -112,33 +112,25 @@
       <svg class="showcase-svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
         <ellipse cx="240" cy="235" rx="200" ry="190" fill="#dbe9ff" opacity="0.35"/>
 
-        <!-- 6 direct device-to-device connections (solid lines) -->
-        <!-- 1. Laptop ↔ Phone -->
         <line class="pair-line pair-line-1" x1="240" y1="80" x2="68" y2="226"
               stroke="#3f8efc" stroke-width="1.5" stroke-dasharray="1 0"
               pathLength="1" stroke-dashoffset="1"/>
-        <!-- 2. Laptop ↔ Desktop -->
         <line class="pair-line pair-line-2" x1="240" y1="80" x2="374" y2="211"
               stroke="#3f8efc" stroke-width="1.5" stroke-dasharray="1 0"
               pathLength="1" stroke-dashoffset="1"/>
-        <!-- 3. Laptop ↔ Tablet -->
         <line class="pair-line pair-line-3" x1="240" y1="80" x2="237" y2="387"
               stroke="#3f8efc" stroke-width="1.5" stroke-dasharray="1 0"
               pathLength="1" stroke-dashoffset="1"/>
-        <!-- 4. Phone ↔ Desktop -->
         <line class="pair-line pair-line-4" x1="68" y1="226" x2="374" y2="211"
               stroke="#3f8efc" stroke-width="1.5" stroke-dasharray="1 0"
               pathLength="1" stroke-dashoffset="1"/>
-        <!-- 5. Phone ↔ Tablet -->
         <line class="pair-line pair-line-5" x1="68" y1="226" x2="237" y2="387"
               stroke="#3f8efc" stroke-width="1.5" stroke-dasharray="1 0"
               pathLength="1" stroke-dashoffset="1"/>
-        <!-- 6. Desktop ↔ Tablet -->
         <line class="pair-line pair-line-6" x1="374" y1="211" x2="237" y2="387"
               stroke="#3f8efc" stroke-width="1.5" stroke-dasharray="1 0"
               pathLength="1" stroke-dashoffset="1"/>
 
-        <!-- Laptop (top-center) -->
         <g transform="translate(185,45)">
           <rect x="0" y="0" width="110" height="70" rx="5" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1.5"/>
           <rect x="5" y="5" width="100" height="60" rx="3" fill="#e8f1ff"/>
@@ -153,7 +145,6 @@
           <text x="20" y="14" font-family="DM Mono, monospace" font-size="9" fill="white" letter-spacing="0.04em">Paired</text>
         </g>
 
-        <!-- Phone (left) -->
         <g transform="translate(46,188)">
           <rect x="0" y="0" width="44" height="76" rx="7" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1.5"/>
           <rect x="4" y="10" width="36" height="52" rx="3" fill="#e8f1ff"/>
@@ -166,7 +157,6 @@
           <text x="20" y="14" font-family="DM Mono, monospace" font-size="9" fill="white" letter-spacing="0.04em">Paired</text>
         </g>
 
-        <!-- Desktop (right) -->
         <g transform="translate(338,185)">
           <rect x="0" y="0" width="72" height="52" rx="5" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1.5"/>
           <rect x="4" y="4" width="64" height="40" rx="3" fill="#e8f1ff"/>
@@ -179,7 +169,6 @@
           <text x="20" y="14" font-family="DM Mono, monospace" font-size="9" fill="white" letter-spacing="0.04em">Paired</text>
         </g>
 
-        <!-- Tablet (bottom-center, landscape) -->
         <g transform="translate(192,355)">
           <rect x="0" y="0" width="90" height="64" rx="8" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1.5"/>
           <rect x="5" y="5" width="78" height="54" rx="4" fill="#e8f1ff"/>
@@ -192,14 +181,12 @@
           <text x="20" y="14" font-family="DM Mono, monospace" font-size="9" fill="white" letter-spacing="0.04em">Paired</text>
         </g>
 
-        <!-- P2P Mesh label -->
         <g class="pair-p2p-label" transform="translate(197,222)" opacity="0">
           <rect x="0" y="0" width="86" height="20" rx="10" fill="#e8f1ff" stroke="#2f78e6" stroke-width="1"/>
           <text x="43" y="14" font-family="DM Mono, monospace" font-size="9" fill="#2f78e6"
                 text-anchor="middle" letter-spacing="0.04em">P2P Mesh</text>
         </g>
 
-        <!-- Center shield/lock -->
         <g class="pair-shield" transform="translate(215,200)">
           <path d="M25 4 L46 13 L46 28 C46 39 25 48 25 48 C25 48 4 39 4 28 L4 13 Z"
                 fill="#2f78e6" opacity="0.15" stroke="#2f78e6" stroke-width="1.5"/>
@@ -211,7 +198,7 @@
         </g>
       </svg>
       <div class="showcase-caption">
-        <strong>Secure Device Pairing</strong> — Direct device-to-device key exchange via SPAKE2. No server involvement. Works over LAN or relay.
+        <strong>安全设备配对</strong> — 基于 SPAKE2 在设备之间直接交换密钥，无需服务器介入。局域网或经 Relay 中转均可。
       </div>
     </div>
 
@@ -221,7 +208,6 @@
       <svg class="showcase-svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
         <ellipse cx="240" cy="240" rx="180" ry="130" fill="#dbe9ff" opacity="0.4"/>
 
-        <!-- Phone (left) -->
         <g transform="translate(60,185)">
           <rect x="0" y="0" width="60" height="104" rx="9" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1.5"/>
           <rect x="5" y="14" width="50" height="72" rx="4" fill="#e8f1ff"/>
@@ -231,7 +217,6 @@
           <path d="M26 34 L26 31 C26 28.7 34 28.7 34 31 L34 34" stroke="#3f8efc" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
         </g>
 
-        <!-- Laptop (right) -->
         <g transform="translate(320,162)">
           <rect x="0" y="0" width="110" height="70" rx="5" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1.5"/>
           <rect x="5" y="5" width="100" height="60" rx="3" fill="#e8f1ff"/>
@@ -243,7 +228,6 @@
           <rect x="-8" y="70" width="126" height="7" rx="3" fill="#e8f1ff" stroke="#c6d9f1" stroke-width="1.5"/>
         </g>
 
-        <!-- Direct P2P channel -->
         <rect class="sync-channel" x="122" y="222" width="196" height="30" rx="15"
               fill="#e8f1ff" stroke="#3f8efc" stroke-width="1" opacity="0"/>
         <g class="sync-p2p-label" opacity="0">
@@ -252,7 +236,6 @@
                 text-anchor="middle" letter-spacing="0.04em">Direct P2P</text>
         </g>
 
-        <!-- Relay optional path (secondary, visually de-emphasized) -->
         <g class="sync-relay-path" opacity="0">
           <line x1="120" y1="256" x2="120" y2="320" stroke="#c6d9f1" stroke-width="1" stroke-dasharray="3 3"/>
           <line x1="320" y1="232" x2="320" y2="320" stroke="#c6d9f1" stroke-width="1" stroke-dasharray="3 3"/>
@@ -292,7 +275,7 @@
         </g>
       </svg>
       <div class="showcase-caption">
-        <strong>Direct P2P Sync</strong> — Devices sync directly over LAN without any server. XChaCha20-Poly1305 end-to-end. Relay is optional and sees only ciphertext.
+        <strong>P2P 直连同步</strong> — 设备在局域网中直接同步，不经过任何服务器。XChaCha20-Poly1305 端到端加密，Relay 仅为可选转发，只能看到密文。
       </div>
     </div>
 
@@ -309,7 +292,6 @@
           </clipPath>
         </defs>
 
-        <!-- Browser window -->
         <g transform="translate(80,60)">
           <rect x="0" y="0" width="320" height="280" rx="10" fill="#f2f7ff" stroke="#c6d9f1" stroke-width="1.5"/>
           <rect x="0" y="0" width="320" height="34" rx="10" fill="#e8f1ff"/>
@@ -347,7 +329,6 @@
           <text x="160" y="191" font-family="DM Sans, sans-serif" font-size="11" font-weight="500" fill="white" text-anchor="middle">Sign In</text>
         </g>
 
-        <!-- VaultMesh popup slides up -->
         <g class="autofill-popup" transform="translate(80,420)">
           <rect x="0" y="0" width="320" height="72" rx="10" fill="white" stroke="#c6d9f1" stroke-width="1.5"
                 filter="url(#shadow-popup)"/>
@@ -361,7 +342,7 @@
         </g>
       </svg>
       <div class="showcase-caption">
-        <strong>Browser Autofill</strong> — Extension talks to your desktop client via native messaging. Credentials never stored in the browser.
+        <strong>浏览器自动填充</strong> — 扩展通过原生消息与桌面客户端通信，凭证不会留在浏览器存储中。
       </div>
     </div>
 
@@ -371,57 +352,57 @@
 <div class="divider"></div>
 
 <section class="section" id="features">
-  <div class="section-label">Features</div>
-  <h2 class="section-title">Simple workflow,<br>serious security.</h2>
-  <p class="section-sub">Built so mobile and desktop users can share one encrypted vault without trusting any third-party service with keys or plaintext.</p>
+  <div class="section-label">功能特性</div>
+  <h2 class="section-title">流程简洁，<br>安全严肃。</h2>
+  <p class="section-sub">无需把密钥或明文交给任何第三方服务，移动端和桌面端就能共享同一个加密密码库。</p>
 
   <div class="features-grid">
     <div class="feature-card">
       <div class="feature-icon">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="7" stroke="currentColor" stroke-width="1.5"/><path d="M6 9l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </div>
-      <div class="feature-title">Zero Knowledge</div>
-      <div class="feature-desc">No server can read your vault. Encryption and decryption happen only on your devices. Keys never leave local storage.</div>
+      <div class="feature-title">零知识</div>
+      <div class="feature-desc">服务端无法读取你的密码库。加密与解密只在你的设备上完成，密钥始终保存在本地。</div>
     </div>
 
     <div class="feature-card">
       <div class="feature-icon">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="4" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M6 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1" stroke="currentColor" stroke-width="1.5"/></svg>
       </div>
-      <div class="feature-title">Local First</div>
-      <div class="feature-desc">Your vault is stored locally in an encrypted database. VaultMesh remains fully usable offline with zero network dependency.</div>
+      <div class="feature-title">本地优先</div>
+      <div class="feature-desc">密码库以加密形式存储在本地数据库。完全离线也能正常使用，不依赖任何网络服务。</div>
     </div>
 
     <div class="feature-card">
       <div class="feature-icon">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M3 9a6 6 0 1 1 12 0A6 6 0 0 1 3 9z" stroke="currentColor" stroke-width="1.5"/><path d="M9 6v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
-      <div class="feature-title">Conflict-Free Sync</div>
-      <div class="feature-desc">Hybrid logical clock and version vectors merge concurrent edits deterministically with no data loss across devices.</div>
+      <div class="feature-title">无冲突同步</div>
+      <div class="feature-desc">采用混合逻辑时钟与版本向量，多端并发编辑能够稳定合并，不丢数据。</div>
     </div>
 
     <div class="feature-card">
       <div class="feature-icon">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><rect x="2" y="2" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="2" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="10" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="10" width="6" height="6" rx="1.5" stroke="currentColor" stroke-width="1.5"/></svg>
       </div>
-      <div class="feature-title">Independent Sync</div>
-      <div class="feature-desc">Mobile and desktop sync without requiring a hub device. Each device is a first-class sync participant.</div>
+      <div class="feature-title">独立同步</div>
+      <div class="feature-desc">移动端与桌面端互不依赖，无需"主设备"。每台设备都是平等的同步参与者。</div>
     </div>
 
     <div class="feature-card">
       <div class="feature-icon">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 2l2.5 5H17l-4 3.5 1.5 5.5L9 13l-5.5 3L5 10.5 1 7h5.5L9 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
       </div>
-      <div class="feature-title">Secure Pairing</div>
-      <div class="feature-desc">SPAKE2 plus human verification ensures only your trusted physical devices can join your sync domain.</div>
+      <div class="feature-title">安全配对</div>
+      <div class="feature-desc">SPAKE2 协议加人工验证码核对，确保只有你信任的物理设备能够加入同步域。</div>
     </div>
 
     <div class="feature-card">
       <div class="feature-icon">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M9 2v2M9 14v2M2 9h2M14 9h2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </div>
-      <div class="feature-title">Browser Extension</div>
-      <div class="feature-desc">Extensions connect to the desktop client for secure autofill. Sensitive data stays out of long-term browser storage.</div>
+      <div class="feature-title">浏览器扩展</div>
+      <div class="feature-desc">扩展通过桌面客户端完成自动填充，敏感数据不会长期留在浏览器存储中。</div>
     </div>
   </div>
 </section>
@@ -429,33 +410,33 @@
 <div class="divider"></div>
 
 <section class="section" id="how-it-works">
-  <div class="section-label">How It Works</div>
-  <h2 class="section-title">Four steps from<br>first install to daily use.</h2>
-  <p class="section-sub">Start on any device you prefer, then pair more trusted devices when you want shared sync.</p>
+  <div class="section-label">工作原理</div>
+  <h2 class="section-title">从首次安装<br>到日常使用，只需四步。</h2>
+  <p class="section-sub">从任意设备起步，需要多端同步时再配对其他可信设备即可。</p>
 
   <div class="steps-wrapper">
     <div class="step-card">
       <div class="step-num">01</div>
-      <div class="step-title">Install on Any Device</div>
-      <div class="step-desc">Install VaultMesh on mobile or desktop with no account registration or cloud setup.</div>
+      <div class="step-title">在任意设备上安装</div>
+      <div class="step-desc">移动端或桌面端均可安装，无需账号注册，无需任何云端配置。</div>
     </div>
 
     <div class="step-card">
       <div class="step-num">02</div>
-      <div class="step-title">Create Your Vault</div>
-      <div class="step-desc">Set your master password. Data is encrypted with Argon2id and XChaCha20 before storage.</div>
+      <div class="step-title">创建密码库</div>
+      <div class="step-desc">设置主密码。数据在保存前先经过 Argon2id 派生密钥并由 XChaCha20 加密。</div>
     </div>
 
     <div class="step-card">
       <div class="step-num">03</div>
-      <div class="step-title">Pair Trusted Devices</div>
-      <div class="step-desc">Use QR or pairing code between devices and verify the security string before approving.</div>
+      <div class="step-title">配对可信设备</div>
+      <div class="step-desc">使用二维码或配对码连接其他设备，在双方界面上核对安全短语后再确认。</div>
     </div>
 
     <div class="step-card">
       <div class="step-num">04</div>
-      <div class="step-title">Use Everywhere</div>
-      <div class="step-desc">Keep one encrypted vault across mobile and desktop. Add browser extension integration when needed.</div>
+      <div class="step-title">随处使用</div>
+      <div class="step-desc">在移动端和桌面端共享同一个加密密码库，需要时再启用浏览器扩展集成。</div>
     </div>
   </div>
 </section>
@@ -463,9 +444,9 @@
 <div class="divider"></div>
 
 <section class="section" id="download">
-  <div class="section-label">Download</div>
-  <h2 class="section-title">Downloads<br>and store links.</h2>
-  <p class="section-sub">Use official stores for mobile and browser extensions. Direct desktop and relay packages are served from this site.</p>
+  <div class="section-label">下载</div>
+  <h2 class="section-title">下载安装<br>与应用商店链接。</h2>
+  <p class="section-sub">移动端和浏览器扩展请走官方应用商店，桌面端与 Relay 安装包直接从本站点托管。</p>
 
   <div class="download-wrapper">
     <div class="dl-group dl-group-mobile">
@@ -474,24 +455,24 @@
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="4" y="1" width="8" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="8" cy="12" r="1" fill="currentColor"/></svg>
         </div>
         <div>
-          <div class="dl-group-title">Mobile Apps</div>
-          <div class="dl-group-sub">Mobile sync is independent and does not require desktop</div>
+          <div class="dl-group-title">移动端应用</div>
+          <div class="dl-group-sub">移动端同步独立运行，无需依赖桌面端</div>
         </div>
       </div>
       <div class="mobile-row">
         <div class="dl-item">
           <div class="dl-item-info">
-            <div class="dl-item-name">iOS App</div>
+            <div class="dl-item-name">iOS 应用</div>
             <div class="dl-item-meta">Apple App Store</div>
           </div>
           <a href="https://apps.apple.com/app/vaultmesh/id6761998890" class="dl-btn">App Store</a>
         </div>
         <div class="dl-item">
           <div class="dl-item-info">
-            <div class="dl-item-name">Android App</div>
-            <div class="dl-item-meta">Google Play - coming soon</div>
+            <div class="dl-item-name">Android 应用</div>
+            <div class="dl-item-meta">Google Play · 即将上线</div>
           </div>
-          <a href="#download" class="dl-btn">Coming soon</a>
+          <a href="#download" class="dl-btn">即将上线</a>
         </div>
       </div>
     </div>
@@ -502,45 +483,45 @@
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1" y="2" width="14" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5"/><path d="M5 14h6M8 11v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </div>
         <div>
-          <div class="dl-group-title">Desktop Client</div>
-          <div class="dl-group-sub">Use App Store for Safari AutoFill; use desktop packages for Chrome/Firefox/Edge AutoFill</div>
+          <div class="dl-group-title">桌面客户端</div>
+          <div class="dl-group-sub">Safari 自动填充请使用 App Store 版；Chrome / Firefox / Edge 自动填充请使用本站桌面安装包</div>
         </div>
       </div>
       <div class="dl-list">
         <div class="dl-item">
           <div class="dl-item-info">
             <div class="dl-item-name">Windows</div>
-            <div class="dl-item-meta">Chrome / Firefox / Edge AutoFill support</div>
+            <div class="dl-item-meta">支持 Chrome / Firefox / Edge 自动填充</div>
           </div>
-          <a href="downloads/desktop/windows-VaultMesh_1.0.0_x64-setup.exe" class="dl-btn">Download</a>
+          <a href="../downloads/desktop/windows-VaultMesh_1.0.0_x64-setup.exe" class="dl-btn">下载</a>
         </div>
         <div class="dl-item">
           <div class="dl-item-info">
             <div class="dl-item-name">macOS App Store</div>
-            <div class="dl-item-meta">Safari AutoFill support</div>
+            <div class="dl-item-meta">支持 Safari 自动填充</div>
           </div>
           <a href="https://apps.apple.com/app/vaultmesh/id6761998890" class="dl-btn">App Store</a>
         </div>
         <div class="dl-item">
           <div class="dl-item-info">
             <div class="dl-item-name">macOS Universal DMG</div>
-            <div class="dl-item-meta">Chrome / Firefox / Edge AutoFill support</div>
+            <div class="dl-item-meta">支持 Chrome / Firefox / Edge 自动填充</div>
           </div>
-          <a href="downloads/desktop/macos-universal-VaultMesh_1.1.6_universal.dmg" class="dl-btn">Download</a>
+          <a href="../downloads/desktop/macos-universal-VaultMesh_1.1.6_universal.dmg" class="dl-btn">下载</a>
         </div>
         <div class="dl-item">
           <div class="dl-item-info">
             <div class="dl-item-name">Linux</div>
-            <div class="dl-item-meta">Chrome / Firefox / Edge AutoFill support</div>
+            <div class="dl-item-meta">支持 Chrome / Firefox / Edge 自动填充</div>
           </div>
-          <a href="downloads/desktop/linux-VaultMesh_1.1.6_amd64.AppImage" class="dl-btn">Download</a>
+          <a href="../downloads/desktop/linux-VaultMesh_1.1.6_amd64.AppImage" class="dl-btn">下载</a>
         </div>
         <div class="dl-item">
           <div class="dl-item-info">
             <div class="dl-item-name">Linux (.deb)</div>
-            <div class="dl-item-meta">Chrome / Firefox / Edge AutoFill support</div>
+            <div class="dl-item-meta">支持 Chrome / Firefox / Edge 自动填充</div>
           </div>
-          <a href="downloads/desktop/linux-VaultMesh_1.1.6_amd64.deb" class="dl-btn">Download</a>
+          <a href="../downloads/desktop/linux-VaultMesh_1.1.6_amd64.deb" class="dl-btn">下载</a>
         </div>
       </div>
     </div>
@@ -551,38 +532,38 @@
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M8 5v3l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </div>
         <div>
-          <div class="dl-group-title">Browser Extensions + CLI</div>
-          <div class="dl-group-sub">Extensions require desktop app via native messaging</div>
+          <div class="dl-group-title">浏览器扩展 + 命令行</div>
+          <div class="dl-group-sub">扩展通过原生消息与桌面客户端通信</div>
         </div>
       </div>
       <div class="dl-list">
         <div class="dl-item">
           <div class="dl-item-info">
-            <div class="dl-item-name">Chrome Extension</div>
+            <div class="dl-item-name">Chrome 扩展</div>
             <div class="dl-item-meta">Chrome Web Store</div>
           </div>
           <a href="https://chrome.google.com/webstore/detail/kjclabfepakhhbakbookhbfokimkjbec" class="dl-btn">Chrome</a>
         </div>
         <div class="dl-item">
           <div class="dl-item-info">
-            <div class="dl-item-name">Firefox Extension</div>
+            <div class="dl-item-name">Firefox 扩展</div>
             <div class="dl-item-meta">Firefox Add-ons</div>
           </div>
           <a href="https://addons.mozilla.org/addon/vaultmesh/" class="dl-btn">Firefox</a>
         </div>
         <div class="dl-item">
           <div class="dl-item-info">
-            <div class="dl-item-name">Edge Extension</div>
+            <div class="dl-item-name">Edge 扩展</div>
             <div class="dl-item-meta">Microsoft Edge Add-ons</div>
           </div>
           <a href="https://microsoftedge.microsoft.com/addons/detail/vaultmesh/jfldligmihojmcmbnojjljhgdnfkecfm" class="dl-btn">Edge</a>
         </div>
         <div class="dl-item">
           <div class="dl-item-info">
-            <div class="dl-item-name">CLI Packages</div>
-            <div class="dl-item-meta">Coming soon in release workflow</div>
+            <div class="dl-item-name">CLI 命令行包</div>
+            <div class="dl-item-meta">即将随版本发布提供</div>
           </div>
-          <a href="downloads/cli/" class="dl-btn">Status</a>
+          <a href="../downloads/cli/" class="dl-btn">查看进度</a>
         </div>
       </div>
     </div>
@@ -590,16 +571,16 @@
     <div style="grid-column: 1 / -1;">
       <div class="relay-banner">
         <div class="relay-banner-text">
-          <h3>Need remote sync across networks?</h3>
-          <p>Use a relay node for NAT traversal. Relay forwards encrypted payloads only and never reads vault plaintext.</p>
+          <h3>需要跨网络远程同步？</h3>
+          <p>使用 Relay 节点进行 NAT 穿透。Relay 只转发加密载荷，无法读取密码库明文。</p>
         </div>
-        <a href="relay.html" class="btn-primary">View Relay Guide</a>
+        <a href="relay.html" class="btn-primary">查看 Relay 指南</a>
       </div>
     </div>
   </div>
 
   <div style="margin-top: 20px; text-align: right;">
-    <a href="downloads/checksums.txt" class="mono-link">checksums.txt</a>
+    <a href="../downloads/checksums.txt" class="mono-link">checksums.txt</a>
   </div>
 </section>
 
@@ -607,7 +588,7 @@
   <div class="footer-inner">
     <div>
       <div class="footer-brand-name">VaultMesh</div>
-      <div class="footer-brand-desc">Private password manager for desktop and mobile with local-first storage and end-to-end encryption.</div>
+      <div class="footer-brand-desc">面向桌面与移动端的私有密码管理器，本地优先存储、端到端加密。</div>
       <div class="crypto-chips">
         <span class="chip">Argon2id</span>
         <span class="chip">XChaCha20</span>
@@ -616,33 +597,33 @@
       </div>
     </div>
     <div>
-      <div class="footer-col-title">Product</div>
+      <div class="footer-col-title">产品</div>
       <ul class="footer-links">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#download">Download</a></li>
-        <li><a href="relay.html">Relay Guide</a></li>
+        <li><a href="#features">功能特性</a></li>
+        <li><a href="#how-it-works">工作原理</a></li>
+        <li><a href="#download">下载</a></li>
+        <li><a href="relay.html">Relay 指南</a></li>
       </ul>
     </div>
     <div>
-      <div class="footer-col-title">Resources</div>
+      <div class="footer-col-title">资源</div>
       <ul class="footer-links">
-        <li><a href="blog/">Blog</a></li>
-        <li><a href="downloads/checksums.txt">Checksums</a></li>
-        <li><a href="downloads/desktop/">Desktop Packages</a></li>
-        <li><a href="downloads/relay/">Relay Packages</a></li>
+        <li><a href="../blog/">Blog</a></li>
+        <li><a href="../downloads/checksums.txt">校验和</a></li>
+        <li><a href="../downloads/desktop/">桌面安装包</a></li>
+        <li><a href="../downloads/relay/">Relay 安装包</a></li>
       </ul>
     </div>
     <div>
-      <div class="footer-col-title">Legal</div>
+      <div class="footer-col-title">法律</div>
       <ul class="footer-links">
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="mailto:free.huoshan@gmail.com">Contact</a></li>
+        <li><a href="privacy.html">隐私政策</a></li>
+        <li><a href="mailto:free.huoshan@gmail.com">联系我们</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <span class="footer-copy">&copy; 2026 VaultMesh. All rights reserved.</span>
+    <span class="footer-copy">&copy; 2026 VaultMesh. 保留所有权利。</span>
     <span class="footer-copy"><a href="mailto:free.huoshan@gmail.com" style="color:inherit;text-decoration:none;">free.huoshan@gmail.com</a></span>
   </div>
 </footer>
@@ -712,21 +693,11 @@
 <script>
 (function () {
   try {
-    var page = (location.pathname.split('/').pop() || 'index.html');
-    var inZh = /\/zh\//.test(location.pathname);
     document.querySelectorAll('[data-lang-switch]').forEach(function (a) {
       a.addEventListener('click', function () {
         try { localStorage.setItem('vm-lang', a.getAttribute('data-lang-switch')); } catch (e) {}
       });
     });
-    if (inZh) return;
-    var stored = null;
-    try { stored = localStorage.getItem('vm-lang'); } catch (e) {}
-    if (stored) return;
-    if (/^zh\b/i.test(navigator.language || '') &&
-        ['', 'index.html', 'relay.html', 'privacy.html'].indexOf(page) !== -1) {
-      location.replace('zh/' + (page === '' ? '' : page));
-    }
   } catch (e) {}
 })();
 </script>
