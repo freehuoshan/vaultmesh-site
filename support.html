@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - VaultMesh</title>
-  <meta name="description" content="Privacy policy for VaultMesh mobile, desktop, extension, and relay product flows.">
+  <title>Support - VaultMesh</title>
+  <meta name="description" content="Get help with VaultMesh — contact, bug reports, and common questions about the password manager, pairing, and self-hosted relay.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -30,8 +30,8 @@
         <svg class="lang-caret" width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 3.5l3 3 3-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <ul class="lang-menu" role="menu" hidden>
-        <li><a href="privacy.html"       role="menuitem" hreflang="en"      data-lang-switch="en"      lang="en"      class="lang-option is-current" aria-current="true">English</a></li>
-        <li><a href="zh/privacy.html"    role="menuitem" hreflang="zh-CN"   data-lang-switch="zh"      lang="zh-CN">简体中文</a></li>
+        <li><a href="support.html"       role="menuitem" hreflang="en"      data-lang-switch="en"      lang="en"      class="lang-option is-current" aria-current="true">English</a></li>
+        <li><a href="zh/index.html"      role="menuitem" hreflang="zh-CN"   data-lang-switch="zh"      lang="zh-CN">简体中文</a></li>
         <li><a href="zh-Hant/index.html" role="menuitem" hreflang="zh-Hant" data-lang-switch="zh-Hant" lang="zh-Hant">繁體中文</a></li>
         <li><a href="ja/index.html"      role="menuitem" hreflang="ja"      data-lang-switch="ja"      lang="ja">日本語</a></li>
         <li><a href="de/index.html"      role="menuitem" hreflang="de"      data-lang-switch="de"      lang="de">Deutsch</a></li>
@@ -51,76 +51,52 @@
 </nav>
 
 <section class="page-header">
-  <div class="page-badge">Legal</div>
-  <h1>Privacy Policy</h1>
-  <p>VaultMesh is designed so vault data stays encrypted across local storage, pairing, and sync transport.</p>
+  <div class="page-badge">Help</div>
+  <h1>Support</h1>
+  <p>Help with VaultMesh — bug reports, sync questions, account recovery, and feedback.</p>
 </section>
 
 <div class="divider"></div>
 
 <section class="page-shell">
   <div class="paper">
-    <p class="updated">Last updated: April 22, 2026</p>
+    <p class="updated">Last updated: May 18, 2026</p>
 
-    <p>This Privacy Policy describes how VaultMesh products process data, including mobile and desktop apps, extension integration, and optional sync relay usage.</p>
+    <h2>Contact</h2>
+    <p>Email <a href="mailto:vaultmesh.support@gmail.com">vaultmesh.support@gmail.com</a> for any question about VaultMesh — installation, pairing, sync, or anything else.</p>
+    <p>We answer on a best-effort basis, typically within 48–72 hours.</p>
 
-    <h2>1. Privacy Model</h2>
-    <p>VaultMesh is designed as a local-first, end-to-end encrypted password manager. Vault content is encrypted on your device before sync and is decrypted only on your trusted devices.</p>
-
-    <h2>2. Data We Do Not Access in Plaintext</h2>
-    <p>VaultMesh is built so relay operators and transport infrastructure cannot read your secrets in plaintext. This includes:</p>
+    <h2>Before you write</h2>
+    <p>A few things resolve quickly on your end:</p>
     <ul>
-      <li>Master password</li>
-      <li>Passwords, notes, and credential fields stored in your vault</li>
-      <li>Recovery keys and private key material in plaintext</li>
-      <li>Biometric templates (handled by your operating system)</li>
+      <li><strong>Pairing or sync issues:</strong> make sure all devices are on the same VaultMesh version, and check the <a href="relay.html">Relay Guide</a> if you use a self-hosted relay.</li>
+      <li><strong>Lost master password:</strong> use your recovery key from device setup. Without the master password or recovery key, the vault cannot be decrypted by anyone — including us.</li>
+      <li><strong>Autofill not working:</strong> verify the browser extension is installed and the desktop app is running.</li>
     </ul>
 
-    <h2>3. Data Processed to Provide Sync</h2>
-    <p>To deliver sync and pairing, VaultMesh processes encrypted payloads and limited protocol metadata needed for routing and consistency.</p>
+    <h2>What to include in a bug report</h2>
+    <p>Helpful details so we can reproduce and fix the issue:</p>
     <ul>
-      <li><strong>Encrypted sync data:</strong> vault entries and state updates are transmitted as encrypted payloads.</li>
-      <li><strong>Protocol metadata:</strong> vault identifiers, device identifiers, sequence/version metadata, and session/auth tokens are used to deliver sync correctly.</li>
-      <li><strong>Network metadata:</strong> when using relay transport, network-level metadata such as IP address and request timing may be visible to relay operators and infrastructure providers.</li>
+      <li>Device and OS version (e.g. iPhone 15, iOS 18.2; macOS 14.5; Pixel 8, Android 14)</li>
+      <li>VaultMesh app version (Settings ▸ About)</li>
+      <li>What you did, what you expected, what happened instead</li>
+      <li>If it's a sync issue: which devices are involved, and whether you are using P2P (local network) or a self-hosted relay</li>
+      <li>Screenshots if the UI is involved (please redact any passwords)</li>
     </ul>
+    <p>Never paste master passwords, recovery keys, or vault content into an email — they aren't needed to diagnose any issue.</p>
 
-    <h2>4. Local Storage on Your Devices</h2>
-    <p>VaultMesh stores encrypted vault data locally on your devices. Some non-secret operational metadata is also stored locally to support app startup, pairing, and sync configuration.</p>
+    <h2>Security and responsible disclosure</h2>
+    <p>If you believe you've found a security issue in VaultMesh, please email <a href="mailto:vaultmesh.support@gmail.com">vaultmesh.support@gmail.com</a> with the subject line beginning <code>[SECURITY]</code>. Please don't share details publicly until we've had a chance to investigate and respond.</p>
 
-    <h2>5. Relay Behavior and Retention</h2>
-    <p>Relay is an optional transport component for cross-network sync.</p>
+    <h2>Feature requests and feedback</h2>
+    <p>We read every message. If a feature is missing or an interaction feels rough, let us know. Concrete examples ("when I do X, I expected Y") help more than abstract requests.</p>
+
+    <h2>Related</h2>
     <ul>
-      <li>Relay may temporarily buffer encrypted sync payloads for delivery.</li>
-      <li>Relay may maintain short-lived session state for pairing and authentication flows.</li>
-      <li>Relay is not a plaintext trust source for vault contents.</li>
+      <li><a href="relay.html">Relay Guide</a> — set up and operate your own sync relay</li>
+      <li><a href="privacy.html">Privacy Policy</a> — what data the product touches and how</li>
+      <li><a href="downloads/checksums.txt">Checksums</a> — verify installer integrity</li>
     </ul>
-
-    <h2>6. Permissions and Device Features</h2>
-    <ul>
-      <li><strong>Camera:</strong> used for scanning pairing QR codes.</li>
-      <li><strong>Biometric unlock:</strong> Face ID and fingerprint prompts are managed by OS APIs.</li>
-      <li><strong>Network and local network:</strong> used for direct device discovery/sync and optional relay sync.</li>
-    </ul>
-
-    <h2>7. Analytics and Tracking</h2>
-    <p>VaultMesh core product flows do not use advertising SDKs or behavior-tracking analytics to profile users. We do not sell your personal data.</p>
-    <p>App distribution platforms and operating systems may process limited technical data under their own policies.</p>
-
-    <h2>8. Your Control Choices</h2>
-    <ul>
-      <li>You can use VaultMesh locally without enabling sync.</li>
-      <li>You can choose relay configuration appropriate for your environment.</li>
-      <li>You can remove local app data by deleting vault files and app storage on your devices.</li>
-    </ul>
-
-    <h2>9. Children&apos;s Privacy</h2>
-    <p>VaultMesh is not directed to children under 13. We do not knowingly collect personal information from children.</p>
-
-    <h2>10. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy over time. Changes will be posted on this page with a revised effective date.</p>
-
-    <h2>11. Contact</h2>
-    <p>If you have questions about this Privacy Policy, contact <a href="mailto:vaultmesh.support@gmail.com">vaultmesh.support@gmail.com</a>.</p>
   </div>
 </section>
 
@@ -149,9 +125,9 @@
       <div class="footer-col-title">Resources</div>
       <ul class="footer-links">
         <li><a href="blog/">Blog</a></li>
+        <li><a href="support.html">Support</a></li>
         <li><a href="downloads/checksums.txt">Checksums</a></li>
         <li><a href="downloads/desktop/">Desktop Packages</a></li>
-        <li><a href="downloads/relay/">Relay Packages</a></li>
       </ul>
     </div>
     <div>
