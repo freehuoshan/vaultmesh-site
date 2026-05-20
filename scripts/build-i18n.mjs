@@ -1282,15 +1282,15 @@ ${langMenu}
         </div>
         <div class="dl-item">
           <div class="dl-item-info"><div class="dl-item-name">macOS Universal DMG</div><div class="dl-item-meta">${t('dl_meta_chrome')}</div></div>
-          <a href="../downloads/desktop/macos-universal-VaultMesh_1.1.6_universal.dmg" class="dl-btn">${t('dl_btn_dl')}</a>
+          <a href="../downloads/desktop/macos-universal-VaultMesh_1.1.7_universal.dmg" class="dl-btn">${t('dl_btn_dl')}</a>
         </div>
         <div class="dl-item">
           <div class="dl-item-info"><div class="dl-item-name">Linux</div><div class="dl-item-meta">${t('dl_meta_chrome')}</div></div>
-          <a href="../downloads/desktop/linux-VaultMesh_1.1.6_amd64.AppImage" class="dl-btn">${t('dl_btn_dl')}</a>
+          <a href="../downloads/desktop/linux-VaultMesh_1.1.7_amd64.AppImage" class="dl-btn">${t('dl_btn_dl')}</a>
         </div>
         <div class="dl-item">
           <div class="dl-item-info"><div class="dl-item-name">Linux (.deb)</div><div class="dl-item-meta">${t('dl_meta_chrome')}</div></div>
-          <a href="../downloads/desktop/linux-VaultMesh_1.1.6_amd64.deb" class="dl-btn">${t('dl_btn_dl')}</a>
+          <a href="../downloads/desktop/linux-VaultMesh_1.1.7_amd64.deb" class="dl-btn">${t('dl_btn_dl')}</a>
         </div>
       </div>
     </div>
@@ -1373,13 +1373,13 @@ ${langMenu}
       <div class="footer-col-title">${t('foot_legal')}</div>
       <ul class="footer-links">
         <li><a href="../privacy.html">${t('foot_privacy')}</a></li>
-        <li><a href="mailto:free.huoshan@gmail.com">${t('foot_contact')}</a></li>
+        <li><a href="mailto:vaultmesh.support@gmail.com">${t('foot_contact')}</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <span class="footer-copy">${t('foot_copy')}</span>
-    <span class="footer-copy"><a href="mailto:free.huoshan@gmail.com" style="color:inherit;text-decoration:none;">free.huoshan@gmail.com</a></span>
+    <span class="footer-copy"><a href="mailto:vaultmesh.support@gmail.com" style="color:inherit;text-decoration:none;">vaultmesh.support@gmail.com</a></span>
   </div>
 </footer>
 
