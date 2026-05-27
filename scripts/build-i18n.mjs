@@ -1282,7 +1282,7 @@ ${langMenu}
         </div>
         <div class="dl-item">
           <div class="dl-item-info"><div class="dl-item-name">macOS Universal DMG</div><div class="dl-item-meta">${t('dl_meta_chrome')}</div></div>
-          <a href="../downloads/desktop/macos-universal-VaultMesh_1.1.7_universal.dmg" class="dl-btn">${t('dl_btn_dl')}</a>
+          <a href="../downloads/desktop/macos-universal-VaultMesh_1.1.8_universal.dmg" class="dl-btn">${t('dl_btn_dl')}</a>
         </div>
         <div class="dl-item">
           <div class="dl-item-info"><div class="dl-item-name">Linux</div><div class="dl-item-meta">${t('dl_meta_chrome')}</div></div>
