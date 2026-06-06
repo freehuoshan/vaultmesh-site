@@ -13,6 +13,12 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
+// Desktop download version, bump on each release so regenerated locale pages
+// point at the current installers. Relay downloads live on relay.html (not
+// generated here). Keep in sync with the hand-maintained index.html / zh/index.html.
+const VERSION = '1.1.9';
+const PLAY_URL = 'https://play.google.com/store/apps/details?id=net.codeblog.vaultmesh';
+
 // Locale metadata: [pathSegment, htmlLang, nativeName]
 const LOCALES = [
   ['zh-Hant', 'zh-Hant', '繁體中文'],
@@ -1257,8 +1263,8 @@ ${langMenu}
           <a href="https://apps.apple.com/app/vaultmesh/id6761998890" class="dl-btn">App Store</a>
         </div>
         <div class="dl-item">
-          <div class="dl-item-info"><div class="dl-item-name">${t('dl_and_n')}</div><div class="dl-item-meta">${t('dl_and_m')}</div></div>
-          <a href="#download" class="dl-btn">${t('dl_and_btn')}</a>
+          <div class="dl-item-info"><div class="dl-item-name">${t('dl_and_n')}</div><div class="dl-item-meta">Google Play</div></div>
+          <a href="${PLAY_URL}" class="dl-btn">Google Play</a>
         </div>
       </div>
     </div>
@@ -1274,7 +1280,7 @@ ${langMenu}
       <div class="dl-list">
         <div class="dl-item">
           <div class="dl-item-info"><div class="dl-item-name">Windows</div><div class="dl-item-meta">${t('dl_meta_chrome')}</div></div>
-          <a href="../downloads/desktop/windows-VaultMesh_1.0.0_x64-setup.exe" class="dl-btn">${t('dl_btn_dl')}</a>
+          <a href="../downloads/desktop/windows-VaultMesh_${VERSION}_x64-setup.exe" class="dl-btn">${t('dl_btn_dl')}</a>
         </div>
         <div class="dl-item">
           <div class="dl-item-info"><div class="dl-item-name">macOS App Store</div><div class="dl-item-meta">${t('dl_meta_safari')}</div></div>
@@ -1282,15 +1288,15 @@ ${langMenu}
         </div>
         <div class="dl-item">
           <div class="dl-item-info"><div class="dl-item-name">macOS Universal DMG</div><div class="dl-item-meta">${t('dl_meta_chrome')}</div></div>
-          <a href="../downloads/desktop/macos-universal-VaultMesh_1.1.8_universal.dmg" class="dl-btn">${t('dl_btn_dl')}</a>
+          <a href="../downloads/desktop/macos-universal-VaultMesh_${VERSION}_universal.dmg" class="dl-btn">${t('dl_btn_dl')}</a>
         </div>
         <div class="dl-item">
           <div class="dl-item-info"><div class="dl-item-name">Linux</div><div class="dl-item-meta">${t('dl_meta_chrome')}</div></div>
-          <a href="../downloads/desktop/linux-VaultMesh_1.1.8_amd64.AppImage" class="dl-btn">${t('dl_btn_dl')}</a>
+          <a href="../downloads/desktop/linux-VaultMesh_${VERSION}_amd64.AppImage" class="dl-btn">${t('dl_btn_dl')}</a>
         </div>
         <div class="dl-item">
           <div class="dl-item-info"><div class="dl-item-name">Linux (.deb)</div><div class="dl-item-meta">${t('dl_meta_chrome')}</div></div>
-          <a href="../downloads/desktop/linux-VaultMesh_1.1.8_amd64.deb" class="dl-btn">${t('dl_btn_dl')}</a>
+          <a href="../downloads/desktop/linux-VaultMesh_${VERSION}_amd64.deb" class="dl-btn">${t('dl_btn_dl')}</a>
         </div>
       </div>
     </div>
