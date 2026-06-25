@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#1a1000"/>
+      <stop offset="100%" stop-color="#352200"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Right side: fake browser window with suspicious login page -->
+
+  <!-- Browser window frame -->
+  <rect x="725" y="130" width="450" height="360" rx="8" fill="#1a1000" stroke="#d97706" stroke-width="1" opacity="0.4"/>
+
+  <!-- Browser tab bar -->
+  <rect x="725" y="130" width="450" height="32" rx="8" fill="#251800" opacity="0.9"/>
+  <rect x="725" y="148" width="450" height="14" fill="#251800" opacity="0.9"/>
+  <!-- Tab -->
+  <rect x="738" y="134" width="140" height="22" rx="4" fill="#1a1000" stroke="#d97706" stroke-width="0.8" opacity="0.5"/>
+  <text x="748" y="149" font-family="'Courier New',Courier,monospace" font-size="10" fill="#ffffff" opacity="0.4">PayPal - Log In</text>
+  <!-- Window controls -->
+  <circle cx="1148" cy="145" r="5" fill="#d97706" opacity="0.25"/>
+  <circle cx="1162" cy="145" r="5" fill="#d97706" opacity="0.15"/>
+
+  <!-- Address bar -->
+  <rect x="737" y="170" width="426" height="30" rx="15" fill="#0e0900" stroke="#d97706" stroke-width="1" opacity="0.5"/>
+  <!-- Warning triangle in address bar -->
+  <path d="M 754 178 L 762 193 L 746 193 Z" fill="none" stroke="#d97706" stroke-width="1.5" opacity="0.8"/>
+  <text x="754" y="191" font-family="'Courier New',Courier,monospace" font-size="9" fill="#d97706" opacity="0.9" text-anchor="middle">!</text>
+  <!-- URL with suspicious part -->
+  <text x="773" y="191" font-family="'Courier New',Courier,monospace" font-size="13" fill="#ffffff" opacity="0.35">https://</text>
+  <!-- Highlighted suspicious domain -->
+  <rect x="818" y="175" width="84" height="20" rx="3" fill="#d97706" opacity="0.2"/>
+  <text x="821" y="191" font-family="'Courier New',Courier,monospace" font-size="13" fill="#d97706" opacity="0.95">paypa1</text>
+  <text x="902" y="191" font-family="'Courier New',Courier,monospace" font-size="13" fill="#ffffff" opacity="0.35">.com/signin</text>
+
+  <!-- Urgent banner inside fake page -->
+  <rect x="725" y="210" width="450" height="28" fill="#d97706" opacity="0.18"/>
+  <text x="950" y="229" font-family="'Courier New',Courier,monospace" font-size="11" fill="#d97706" opacity="0.8" text-anchor="middle" letter-spacing="1">ACCOUNT SUSPENDED — VERIFY NOW</text>
+
+  <!-- Fake login form -->
+  <text x="950" y="282" font-family="Georgia,'Times New Roman',serif" font-size="20" fill="#ffffff" opacity="0.5" text-anchor="middle">Log in to your account</text>
+  <!-- Email field -->
+  <rect x="760" y="296" width="380" height="34" rx="4" fill="#0e0900" stroke="#d97706" stroke-width="0.8" opacity="0.4"/>
+  <text x="772" y="318" font-family="'Courier New',Courier,monospace" font-size="12" fill="#ffffff" opacity="0.2">Email address</text>
+  <!-- Password field -->
+  <rect x="760" y="340" width="380" height="34" rx="4" fill="#0e0900" stroke="#d97706" stroke-width="0.8" opacity="0.4"/>
+  <text x="772" y="362" font-family="'Courier New',Courier,monospace" font-size="12" fill="#ffffff" opacity="0.2">Password</text>
+  <!-- Submit button -->
+  <rect x="760" y="386" width="380" height="36" rx="4" fill="#d97706" opacity="0.55"/>
+  <text x="950" y="410" font-family="'Courier New',Courier,monospace" font-size="13" fill="#ffffff" opacity="0.9" text-anchor="middle" letter-spacing="1">LOG IN</text>
+
+  <!-- Subtle grid texture (right background) -->
+  <line x1="720" y1="510" x2="1180" y2="510" stroke="#d97706" stroke-width="0.4" opacity="0.06"/>
+  <line x1="720" y1="560" x2="1180" y2="560" stroke="#d97706" stroke-width="0.4" opacity="0.04"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#d97706"/>
+  <text x="80" y="100" font-family="'Courier New',Courier,monospace" font-size="13" letter-spacing="4" fill="#d97706" opacity="0.7">PASSWORD SENSE</text>
+
+  <!-- Title -->
+  <text x="80" y="261" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="#fff3e0">How to spot a</text>
+  <text x="80" y="329" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="#fff3e0">phishing page</text>
+  <text x="80" y="397" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="#fff3e0">before you type</text>
+
+  <text x="80"   y="572" font-family="'Courier New',Courier,monospace" font-size="13" fill="#ffffff" opacity="0.3" letter-spacing="1">June 25, 2026  ·  phishing  ·  habits  ·  accounts</text>
+  <text x="1144" y="572" font-family="'Courier New',Courier,monospace" font-size="13" fill="#ffffff" opacity="0.3" text-anchor="end" letter-spacing="1">VAULTMESH</text>
+</svg>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to spot a phishing login page before you type — Password Sense</title>
+  <meta name="description" content="A few reliable cues — domain name, urgency, the padlock myth — that cover the most common phishing attempts before you enter a single character.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to spot a phishing login page before you type">
+  <meta property="og:description" content="A few reliable cues — domain name, urgency, the padlock myth — that cover the most common phishing attempts before you enter a single character.">
+  <meta property="og:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/recognizing-phishing.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to spot a phishing login page before you type">
+  <meta name="twitter:description" content="A few reliable cues — domain name, urgency, the padlock myth — that cover the most common phishing attempts before you enter a single character.">
+  <meta name="twitter:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/recognizing-phishing.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .blog-prose { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+    .blog-prose h1 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 400; line-height: 1.2; margin: 0 0 32px; color: var(--ink); }
+    .blog-prose h2 { font-family: var(--serif); font-size: 24px; font-weight: 400; margin-top: 2em; margin-bottom: 0.6em; color: var(--ink); }
+    .blog-prose h3 { font-family: var(--sans); font-size: 18px; font-weight: 600; margin-top: 1.6em; color: var(--ink); }
+    .blog-prose p { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); margin: 0 0 1.1em; }
+    .blog-prose a { color: var(--primary); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .blog-prose a:hover { color: var(--primary-hover); }
+    .blog-prose pre { background: #103866; color: #f0f7ff; padding: 18px 20px; border-radius: 6px; overflow-x: auto; font-family: var(--mono); font-size: 13px; line-height: 1.55; margin: 1.4em 0; }
+    .blog-prose code { font-family: var(--mono); font-size: 0.88em; background: var(--bg2); padding: 1px 5px; border-radius: 3px; color: var(--ink); }
+    .blog-prose pre code { background: none; padding: 0; color: inherit; font-size: inherit; }
+    .blog-prose ul, .blog-prose ol { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); padding-left: 1.4em; }
+    .blog-prose li { margin: 0.3em 0; }
+    .blog-prose blockquote { border-left: 3px solid var(--accent-warm); margin: 1.4em 0; padding: 0.2em 0 0.2em 18px; color: var(--ink3); font-style: italic; }
+    .blog-meta { font-family: var(--mono); color: var(--ink3); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+    .blog-meta .tag { display: inline-block; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; margin-left: 6px; }
+    .blog-post-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .blog-back { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 12px; color: var(--ink3); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .blog-back:hover { color: var(--primary); }
+    .share-x { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 12px; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .share-x:hover { color: var(--primary-hover); }
+    .blog-cover-img { width: 100%; height: auto; display: block; border-radius: 8px; margin-bottom: 32px; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-brand" href="/index.html">
+    <img src="/img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
+    <span class="nav-brand-name">VaultMesh</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/index.html#features">Features</a></li>
+    <li><a href="/index.html#how-it-works">How It Works</a></li>
+    <li><a href="/index.html#download">Download</a></li>
+    <li><a href="/relay.html">Relay Guide</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/support.html">Support</a></li>
+    <li><a href="/index.html#download" class="nav-cta">Get VaultMesh</a></li>
+  </ul>
+</nav>
+
+<main class="blog-prose">
+  <img class="blog-cover-img" src="/blog/posts/covers/recognizing-phishing.svg" alt="" aria-hidden="true">
+  <div class="blog-meta">June 25, 2026 <span class="tag">phishing</span> <span class="tag">habits</span> <span class="tag">accounts</span></div>
+  <h1>How to spot a phishing login page before you type</h1>
+  <p>You get an email saying your account has been suspended and you need to log in immediately to restore access. The page it links to looks exactly right — the logo, the colors, the layout. You type your password.</p>
+<p>That&#39;s the point. Phishing login pages are designed to be indistinguishable from the real thing at a glance. The good news is that a second look, at the right things, catches the large majority of attempts.</p>
+<h2>The domain name is the only thing that doesn&#39;t lie</h2>
+<p>Every element of a phishing page can be copied: logos, fonts, colors, error messages, even security badges. What can&#39;t be copied is a domain name the attacker doesn&#39;t own.</p>
+<p>Before you type anything on a login page, look at the actual URL in the address bar. Not the page title. Not the logo. The URL.</p>
+<p>A real login page for a bank, email provider, or any other service will be on that service&#39;s actual domain. <code>paypal.com</code> is PayPal. <code>paypa1.com</code> (with a numeral 1), <code>paypal-secure.com</code>, or <code>login-paypal.net</code> are not. Attackers often use domains that look right at a quick scan — a letter swapped, a word added, a different top-level domain.</p>
+<p>The check takes two seconds. Make it a habit.</p>
+<h2>The padlock does not mean the site is safe</h2>
+<p>For years, the advice was &quot;look for the padlock.&quot; The padlock icon means the connection is encrypted — and that&#39;s still true. But it does not mean the site is legitimate.</p>
+<p>Attackers can and do obtain valid SSL certificates for phishing domains. A padlock means your connection to the site is encrypted. It says nothing about whether the site is who it claims to be.</p>
+<p>If a login page has no padlock, that&#39;s a red flag. But its presence is not reassurance. The domain name is what matters.</p>
+<h2>Urgency is a technique, not a reason to hurry</h2>
+<p>&quot;Your account will be closed in 24 hours.&quot; &quot;Unusual activity detected — verify now.&quot; &quot;You must confirm your identity immediately.&quot;</p>
+<p>Phishing messages consistently use urgency because it works. When something feels pressing, people skip the checks they&#39;d otherwise run. The urgency itself is worth noticing as a signal.</p>
+<p>Real services do send security alerts, and some are genuine. The difference is that a real alert can be verified by navigating to the service directly — not by clicking the link in the email. If an email says there&#39;s a problem with your account, open a new tab, type the service&#39;s address yourself, and log in from there. If there&#39;s actually an issue, you&#39;ll see it.</p>
+<h2>Hovering before you click</h2>
+<p>On desktop, hovering over a link before clicking shows the destination URL in the browser&#39;s status bar. This takes less than a second and lets you see where the link actually goes before you follow it.</p>
+<p>On mobile, pressing and holding a link shows a URL preview in most browsers. It&#39;s more cumbersome, but available when something looks off.</p>
+<h2>What these checks don&#39;t catch</h2>
+<p>These cues handle the common case well. More sophisticated attacks — a compromised legitimate subdomain, a very new domain with no red flags yet — are harder to spot by inspection alone.</p>
+<p>Two-factor authentication helps here: even if an attacker gets your password from a phishing page, they still need the second factor. A password manager that autofills based on the domain will also quietly refuse to fill credentials on a fake site, because the domain doesn&#39;t match — the autofill simply won&#39;t appear.</p>
+<p>No single habit is enough on its own. But checking the domain name before typing, treating urgency as a reason to slow down rather than speed up, and understanding what the padlock does and doesn&#39;t mean puts the most common phishing attempts in a category you can recognize.</p>
+
+  <div class="blog-post-actions">
+    <a class="blog-back" href="/blog/">← All posts</a>
+    <a class="share-x" href="https://twitter.com/intent/tweet?text=How%20to%20spot%20a%20phishing%20login%20page%20before%20you%20type&url=https%3A%2F%2Fvaultmesh.codeblog.net%2Fblog%2Fposts%2Frecognizing-phishing.html" target="_blank" rel="noopener noreferrer">Share on X →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">VaultMesh</div>
+      <div class="footer-brand-desc">Private password manager for desktop and mobile with local-first storage and end-to-end encryption.</div>
+      <div class="crypto-chips">
+        <span class="chip">Argon2id</span>
+        <span class="chip">XChaCha20</span>
+        <span class="chip">X25519</span>
+        <span class="chip">Ed25519</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Product</div>
+      <ul class="footer-links">
+        <li><a href="/index.html#features">Features</a></li>
+        <li><a href="/index.html#how-it-works">How It Works</a></li>
+        <li><a href="/index.html#download">Download</a></li>
+        <li><a href="/relay.html">Relay Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/downloads/checksums.txt">Checksums</a></li>
+        <li><a href="/downloads/desktop/">Desktop Packages</a></li>
+        <li><a href="/downloads/relay/">Relay Packages</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal</div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="mailto:vaultmesh.support@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 VaultMesh. All rights reserved.</span>
+    <span class="footer-copy"><a href="mailto:vaultmesh.support@gmail.com" style="color:inherit;text-decoration:none;">vaultmesh.support@gmail.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

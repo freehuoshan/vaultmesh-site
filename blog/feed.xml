@@ -14,6 +14,13 @@
     <description>Reusing the same password across multiple sites turns one compromised account into a key that unlocks all of them.</description>
   </item>
   <item>
+    <title>How to spot a phishing login page before you type</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/recognizing-phishing.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/recognizing-phishing.html</guid>
+    <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+    <description>A few reliable cues — domain name, urgency, the padlock myth — that cover the most common phishing attempts before you enter a single character.</description>
+  </item>
+  <item>
     <title>Strong passwords vs complex passwords — they&#39;re not the same</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/strong-vs-complex.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/strong-vs-complex.html</guid>

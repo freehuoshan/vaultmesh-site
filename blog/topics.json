@@ -21,7 +21,8 @@
       "title": "How to spot a phishing login page before you type",
       "angle": "Concrete cues: domain check, padlock isn't enough, hover-before-click, urgency-as-red-flag. Make the reader confident at recognizing the 80% common case, honest about the harder ones.",
       "audience": "General readers who get sketchy emails and want to handle them better",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-06-25-recognizing-phishing.md"
     },
     {
       "id": "2fa-explained-plain",
