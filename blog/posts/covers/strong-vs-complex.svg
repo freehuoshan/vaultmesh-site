@@ -7,10 +7,10 @@
   </defs>
   <rect width="1200" height="630" fill="url(#g)"/>
   <rect x="56" y="56" width="4" height="518" fill="#2f78e6"/>
-  <text x="80" y="100" font-family="'Courier New',Courier,monospace" font-size="13" letter-spacing="4" fill="#3f6490">PASSWORD SENSE</text>
+  <text x="80" y="100" font-family="'Courier New',Courier,monospace" font-size="13" letter-spacing="4" fill="#2f78e6" opacity="0.7">PASSWORD SENSE</text>
   <text x="80" y="263" font-family="Georgia,'Times New Roman',serif" font-size="50" fill="#f2f7ff">Strong passwords vs complex</text>
   <text x="80" y="328" font-family="Georgia,'Times New Roman',serif" font-size="50" fill="#f2f7ff">passwords — they&#39;re not the</text>
   <text x="80" y="393" font-family="Georgia,'Times New Roman',serif" font-size="50" fill="#f2f7ff">same</text>
-  <text x="80" y="580" font-family="'Courier New',Courier,monospace" font-size="13" fill="#3f6490" letter-spacing="1">May 14, 2026  ·  passwords · habits · myths</text>
-  <text x="1144" y="580" font-family="'Courier New',Courier,monospace" font-size="13" fill="#3f6490" text-anchor="end" letter-spacing="1">VAULTMESH</text>
+  <text x="80" y="580" font-family="'Courier New',Courier,monospace" font-size="13" fill="#ffffff" opacity="0.3" letter-spacing="1">May 14, 2026  ·  passwords · habits · myths</text>
+  <text x="1144" y="580" font-family="'Courier New',Courier,monospace" font-size="13" fill="#ffffff" opacity="0.3" text-anchor="end" letter-spacing="1">VAULTMESH</text>
 </svg>
