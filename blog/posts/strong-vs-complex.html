@@ -26,8 +26,11 @@
     .blog-prose blockquote { border-left: 3px solid var(--accent-warm); margin: 1.4em 0; padding: 0.2em 0 0.2em 18px; color: var(--ink3); font-style: italic; }
     .blog-meta { font-family: var(--mono); color: var(--ink3); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
     .blog-meta .tag { display: inline-block; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; margin-left: 6px; }
-    .blog-back { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 12px; color: var(--ink3); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .blog-post-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .blog-back { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 12px; color: var(--ink3); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
     .blog-back:hover { color: var(--primary); }
+    .share-x { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 12px; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .share-x:hover { color: var(--primary-hover); }
     .blog-cover-img { width: 100%; height: auto; display: block; border-radius: 8px; margin-bottom: 32px; }
   </style>
 </head>
@@ -74,7 +77,10 @@
 <p>One practical note: some sites impose restrictions that make long phrases impractical — no spaces allowed, character limits of 12 or 16. Work within those constraints, but treat them as a limitation of that site, not as guidance for how to think about passwords in general.</p>
 <p>The goal is a password that&#39;s genuinely hard to guess. Complexity rules were an attempt to get there, but they measure the wrong thing. Length and randomness are closer to what actually counts.</p>
 
-  <a class="blog-back" href="/blog/">← All posts</a>
+  <div class="blog-post-actions">
+    <a class="blog-back" href="/blog/">← All posts</a>
+    <a class="share-x" href="https://twitter.com/intent/tweet?text=Strong%20passwords%20vs%20complex%20passwords%20%E2%80%94%20they're%20not%20the%20same&url=https%3A%2F%2Fvaultmesh.codeblog.net%2Fblog%2Fposts%2Fstrong-vs-complex.html" target="_blank" rel="noopener noreferrer">Share on X →</a>
+  </div>
 </main>
 
 <footer class="site-footer">
