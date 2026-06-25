@@ -13,7 +13,8 @@
       "title": "The one password habit that quietly hurts most people",
       "angle": "Reusing a password across sites is the highest-impact common mistake. When one site is breached, attackers try those credentials everywhere (credential stuffing). Explain in plain terms, give the practical fix.",
       "audience": "General readers who reuse passwords because remembering many is hard",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-06-25-password-reuse-risk.md"
     },
     {
       "id": "recognizing-phishing",
