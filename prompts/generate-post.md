@@ -35,6 +35,23 @@ Follow these steps exactly, in order:
    that exact name already exists, append `-2` (or `-3`, etc.) to the slug
    portion of the filename. Never overwrite an existing draft.
 
+5b. Generate a cover SVG for the post and write it to
+    `blog/posts/covers/<slug>.svg`. The SVG must be 1200×630 px. Design
+    guidelines:
+    - Background: a dark gradient that matches the post's primary tag color
+      (breaches → dark red, phishing → dark amber, 2fa → dark green,
+      habits → dark purple, myths → dark teal, passwords/accounts → dark navy).
+    - Left side (x 56–680): left accent bar (x=56, w=4, h=518) in the accent
+      color; "PASSWORD SENSE" label (monospace, 13px, letter-spacing 4) at
+      y=100; the post title wrapped to ≤28 chars per line in Georgia serif
+      (52–60px); date + tags and "VAULTMESH" wordmark at y=580 in white 30%
+      opacity.
+    - Right side (x 700–1200): a UNIQUE thematic illustration drawn with SVG
+      primitives (circles, lines, paths, polygons) that visually represents the
+      post's topic — NOT just abstract shapes, but something conceptually
+      related to the article. Be creative and specific to the topic.
+    - No external images or fonts. SVG elements only.
+
 6. Update `blog/topics.json` in place:
    - Set the chosen topic's `status` to `"drafted"`.
    - Add a `"draft_path"` field with the relative path to the new file.

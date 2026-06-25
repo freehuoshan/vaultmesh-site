@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
+import { spawnSync } from 'node:child_process';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 
@@ -9,8 +10,10 @@ const POSTS_DIR = path.join(ROOT, 'blog/_posts');
 const OUT_DIR = path.join(ROOT, 'blog/posts');
 const TEMPLATE = fs.readFileSync(path.join(ROOT, 'blog/template.html'), 'utf8');
 const SITE_URL = 'https://vaultmesh.codeblog.net';
+const COVERS_DIR = path.join(ROOT, 'blog/posts/covers');
 
 fs.mkdirSync(OUT_DIR, { recursive: true });
+fs.mkdirSync(COVERS_DIR, { recursive: true });
 
 marked.setOptions({ headerIds: false, mangle: false });
 
@@ -38,6 +41,65 @@ const formatDate = (d) =>
 const renderTags = (tags) =>
   tags.map((t) => ` <span class="tag">${escapeHtml(t)}</span>`).join('');
 
+const TAG_ACCENTS = {
+  breaches:           { bar: '#e05252', grad1: '#1f0a0a', grad2: '#3d1010' },
+  phishing:           { bar: '#d97706', grad1: '#1a1000', grad2: '#3a2200' },
+  '2fa':              { bar: '#059669', grad1: '#001a12', grad2: '#003326' },
+  habits:             { bar: '#7c3aed', grad1: '#0e0a1f', grad2: '#1c1040' },
+  myths:              { bar: '#0891b2', grad1: '#001519', grad2: '#002b33' },
+  'password-managers':{ bar: '#4f46e5', grad1: '#0a0a1f', grad2: '#141438' },
+  passwords:          { bar: '#2f78e6', grad1: '#0d2244', grad2: '#1b3f6d' },
+  accounts:           { bar: '#2f78e6', grad1: '#0d2244', grad2: '#1b3f6d' },
+};
+
+function accentForTags(tags) {
+  for (const t of (tags || [])) {
+    if (TAG_ACCENTS[t]) return TAG_ACCENTS[t];
+  }
+  return TAG_ACCENTS.passwords;
+}
+
+function wrapText(text, maxChars) {
+  const words = text.split(' ');
+  const lines = [];
+  let line = '';
+  for (const word of words) {
+    const test = line ? `${line} ${word}` : word;
+    if (test.length > maxChars && line) { lines.push(line); line = word; }
+    else line = test;
+  }
+  if (line) lines.push(line);
+  return lines;
+}
+
+function generateCoverSVG(title, date, tags) {
+  const dateStr = formatDate(date);
+  const tagStr = (tags || []).slice(0, 3).join(' · ');
+  const { bar, grad1, grad2 } = accentForTags(tags);
+  const lines = wrapText(title, 28);
+  const fontSize = lines.length >= 3 ? 50 : 60;
+  const lineH = Math.round(fontSize * 1.3);
+  const blockH = lines.length * lineH;
+  const titleY = Math.round((630 - blockH) / 2) - 20;
+  const titleSvg = lines
+    .map((l, i) => `  <text x="80" y="${titleY + (i + 1) * lineH}" font-family="Georgia,'Times New Roman',serif" font-size="${fontSize}" fill="#f2f7ff">${escapeHtml(l)}</text>`)
+    .join('\n');
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="${grad1}"/>
+      <stop offset="100%" stop-color="${grad2}"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect x="56" y="56" width="4" height="518" fill="${bar}"/>
+  <text x="80" y="100" font-family="'Courier New',Courier,monospace" font-size="13" letter-spacing="4" fill="${bar}" opacity="0.7">PASSWORD SENSE</text>
+${titleSvg}
+  <text x="80" y="580" font-family="'Courier New',Courier,monospace" font-size="13" fill="#ffffff" opacity="0.3" letter-spacing="1">${escapeHtml(dateStr)}${tagStr ? `  ·  ${escapeHtml(tagStr)}` : ''}</text>
+  <text x="1144" y="580" font-family="'Courier New',Courier,monospace" font-size="13" fill="#ffffff" opacity="0.3" text-anchor="end" letter-spacing="1">VAULTMESH</text>
+</svg>`;
+}
+
 const rfc822 = (d) => toDate(d).toUTCString();
 
 const posts = fs.existsSync(POSTS_DIR)
@@ -58,11 +120,35 @@ const posts = fs.existsSync(POSTS_DIR)
 // ---- Per-post HTML ----
 for (const p of posts) {
   const tags = Array.isArray(p.tags) ? p.tags : [];
+
+  // Generate cover SVG (skip if AI-generated one already exists)
+  const svgPath = path.join(COVERS_DIR, `${p.slug}.svg`);
+  const pngPath = path.join(COVERS_DIR, `${p.slug}.png`);
+  if (!fs.existsSync(svgPath)) {
+    fs.writeFileSync(svgPath, generateCoverSVG(p.title, p.date, tags));
+  }
+
+  // Convert SVG → PNG via headless Chromium (Twitter/OG requires PNG)
+  spawnSync('chromium-browser', [
+    '--headless=new', '--disable-gpu',
+    `--screenshot=${pngPath}`,
+    '--window-size=1200,630',
+    `file://${svgPath}`,
+  ], { stdio: 'pipe' });
+
+  const coverUrl = `${SITE_URL}/blog/posts/covers/${p.slug}.png`;
+  const coverImg = `<img class="blog-cover-img" src="/blog/posts/covers/${escapeHtml(p.slug)}.svg" alt="" aria-hidden="true">`;
+  const postUrl = `${SITE_URL}/blog/posts/${p.slug}.html`;
+  const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(p.title)}&url=${encodeURIComponent(postUrl)}`;
+
   const html = TEMPLATE
     .replaceAll('{{title}}', escapeHtml(p.title))
     .replaceAll('{{date}}', formatDate(p.date))
     .replaceAll('{{excerpt}}', escapeHtml(p.excerpt || ''))
     .replaceAll('{{tags}}', renderTags(tags))
+    .replaceAll('{{og_image}}', escapeHtml(coverUrl))
+    .replaceAll('{{cover_img}}', coverImg)
+    .replaceAll('{{tweet_url}}', tweetUrl)
     .replaceAll('{{content}}', p.body);
   fs.writeFileSync(path.join(OUT_DIR, `${p.slug}.html`), html);
 }
@@ -92,6 +178,7 @@ const indexHtml = `<!DOCTYPE html>
     .blog-card-title { font-family: var(--serif); font-size: 22px; font-weight: 400; color: var(--ink); margin: 0 0 8px; line-height: 1.3; }
     .blog-card-excerpt { font-family: var(--sans); font-size: 15px; font-weight: 300; color: var(--ink2); margin: 0; line-height: 1.6; }
     .blog-card-tag { display: inline-block; padding: 1px 7px; border: 1px solid var(--line); border-radius: 999px; margin-left: 6px; }
+    .blog-card-cover { width: 100%; height: auto; display: block; border-radius: 6px; margin-bottom: 14px; }
     .blog-empty { padding: 80px 0; text-align: center; color: var(--ink3); font-family: var(--sans); }
     .blog-empty .blog-empty-hint { font-family: var(--mono); font-size: 12px; margin-top: 12px; }
     .blog-rss { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink3); margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
@@ -127,6 +214,7 @@ const indexHtml = `<!DOCTYPE html>
     : posts
         .map(
           (p) => `<a class="blog-card" href="/blog/posts/${escapeHtml(p.slug)}.html">
+    <img class="blog-card-cover" src="/blog/posts/covers/${escapeHtml(p.slug)}.svg" alt="" aria-hidden="true">
     <div class="blog-card-meta">${formatDate(p.date)}${(p.tags || []).map((t) => `<span class="blog-card-tag">${escapeHtml(t)}</span>`).join('')}</div>
     <h2 class="blog-card-title">${escapeHtml(p.title)}</h2>
     <p class="blog-card-excerpt">${escapeHtml(p.excerpt || '')}</p>
@@ -211,4 +299,4 @@ const rss = `<?xml version="1.0" encoding="UTF-8"?>
 `;
 fs.writeFileSync(path.join(ROOT, 'blog/feed.xml'), rss);
 
-console.log(`Built ${posts.length} post(s) → blog/posts/, blog/index.html, blog/feed.xml`);
+console.log(`Built ${posts.length} post(s) → blog/posts/, blog/posts/covers/, blog/index.html, blog/feed.xml`);

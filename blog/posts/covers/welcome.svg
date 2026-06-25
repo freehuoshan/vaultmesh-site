@@ -1,15 +1,58 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0%" stop-color="#0e0a1f"/>
-      <stop offset="100%" stop-color="#1c1040"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#0d0a1e"/>
+      <stop offset="100%" stop-color="#1a1040"/>
     </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Right side: opening gateway / concentric arcs suggesting a door into the topic -->
+
+  <!-- Radial glow -->
+  <circle cx="960" cy="315" r="200" fill="url(#glow)"/>
+
+  <!-- Concentric arcs (open on left side — like a door opening toward the reader) -->
+  <path d="M 960 115 A 200 200 0 0 1 960 515" fill="none" stroke="#7c3aed" stroke-width="1.5" opacity="0.35"/>
+  <path d="M 960 155 A 160 160 0 0 1 960 475" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.3"/>
+  <path d="M 960 195 A 120 120 0 0 1 960 435" fill="none" stroke="#7c3aed" stroke-width="1"   opacity="0.25"/>
+  <path d="M 960 230 A  85  85 0 0 1 960 400" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.2"/>
+  <path d="M 960 260 A  55  55 0 0 1 960 370" fill="none" stroke="#7c3aed" stroke-width="0.6" opacity="0.15"/>
+
+  <!-- Extended arcs going further right -->
+  <path d="M 960 80  A 235 235 0 0 1 960 550" fill="none" stroke="#7c3aed" stroke-width="1" opacity="0.18"/>
+  <path d="M 960 40  A 275 275 0 0 1 960 590" fill="none" stroke="#7c3aed" stroke-width="0.6" opacity="0.1"/>
+
+  <!-- Horizontal line through center (horizon) -->
+  <line x1="730" y1="315" x2="1180" y2="315" stroke="#7c3aed" stroke-width="0.6" opacity="0.2"/>
+
+  <!-- Central dot (vanishing point) -->
+  <circle cx="960" cy="315" r="6"  fill="#7c3aed" opacity="0.7"/>
+  <circle cx="960" cy="315" r="14" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.4"/>
+  <circle cx="960" cy="315" r="24" fill="none" stroke="#7c3aed" stroke-width="0.8" opacity="0.25"/>
+
+  <!-- Small floating dots — like words / ideas floating in -->
+  <circle cx="820"  cy="220" r="3.5" fill="#7c3aed" opacity="0.45"/>
+  <circle cx="1060" cy="195" r="2.5" fill="#7c3aed" opacity="0.3"/>
+  <circle cx="1090" cy="380" r="3"   fill="#7c3aed" opacity="0.35"/>
+  <circle cx="810"  cy="420" r="2"   fill="#7c3aed" opacity="0.25"/>
+  <circle cx="1000" cy="260" r="2"   fill="#7c3aed" opacity="0.3"/>
+  <circle cx="900"  cy="410" r="2.5" fill="#7c3aed" opacity="0.28"/>
+  <circle cx="1130" cy="290" r="2"   fill="#7c3aed" opacity="0.22"/>
+
+  <!-- Left accent bar -->
   <rect x="56" y="56" width="4" height="518" fill="#7c3aed"/>
   <text x="80" y="100" font-family="'Courier New',Courier,monospace" font-size="13" letter-spacing="4" fill="#7c3aed" opacity="0.7">PASSWORD SENSE</text>
-  <text x="80" y="295" font-family="Georgia,'Times New Roman',serif" font-size="60" fill="#f2f7ff">A blog about the password</text>
-  <text x="80" y="373" font-family="Georgia,'Times New Roman',serif" font-size="60" fill="#f2f7ff">habits that actually matter</text>
-  <text x="80" y="580" font-family="'Courier New',Courier,monospace" font-size="13" fill="#ffffff" opacity="0.3" letter-spacing="1">May 14, 2026  ·  habits · accounts</text>
-  <text x="1144" y="580" font-family="'Courier New',Courier,monospace" font-size="13" fill="#ffffff" opacity="0.3" text-anchor="end" letter-spacing="1">VAULTMESH</text>
+
+  <!-- Title -->
+  <text x="80" y="261" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="#ede8ff">A blog about the</text>
+  <text x="80" y="329" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="#ede8ff">password habits</text>
+  <text x="80" y="397" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="#ede8ff">that actually matter</text>
+
+  <text x="80"   y="572" font-family="'Courier New',Courier,monospace" font-size="13" fill="#ffffff" opacity="0.3" letter-spacing="1">May 14, 2026  ·  habits  ·  accounts</text>
+  <text x="1144" y="572" font-family="'Courier New',Courier,monospace" font-size="13" fill="#ffffff" opacity="0.3" text-anchor="end" letter-spacing="1">VAULTMESH</text>
 </svg>
