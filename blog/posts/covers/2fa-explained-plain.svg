@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%"   stop-color="#001a12"/>
+      <stop offset="100%" stop-color="#003326"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Right side: two overlapping shield layers representing two factors -->
+
+  <!-- Outer shield (factor 1 — password) -->
+  <path d="M 950 120 L 1120 175 L 1120 340 Q 1120 460 950 520 Q 780 460 780 340 L 780 175 Z"
+        fill="none" stroke="#059669" stroke-width="1.5" opacity="0.2"/>
+
+  <!-- Middle shield (factor 2 — device) — offset slightly -->
+  <path d="M 950 155 L 1090 203 L 1090 345 Q 1090 445 950 498 Q 810 445 810 345 L 810 203 Z"
+        fill="none" stroke="#059669" stroke-width="1.8" opacity="0.35"/>
+
+  <!-- Inner shield (filled, solid) -->
+  <path d="M 950 192 L 1058 231 L 1058 348 Q 1058 430 950 476 Q 842 430 842 348 L 842 231 Z"
+        fill="#059669" opacity="0.07"/>
+  <path d="M 950 192 L 1058 231 L 1058 348 Q 1058 430 950 476 Q 842 430 842 348 L 842 231 Z"
+        fill="none" stroke="#059669" stroke-width="2" opacity="0.6"/>
+
+  <!-- Lock body inside inner shield -->
+  <rect x="917" y="320" width="66" height="52" rx="5" fill="none" stroke="#059669" stroke-width="2" opacity="0.75"/>
+  <!-- Lock shackle -->
+  <path d="M 928 320 L 928 302 Q 928 280 950 280 Q 972 280 972 302 L 972 320"
+        fill="none" stroke="#059669" stroke-width="2" opacity="0.75"/>
+  <!-- Keyhole -->
+  <circle cx="950" cy="344" r="7" fill="#059669" opacity="0.6"/>
+  <rect x="947" y="344" width="6" height="14" rx="2" fill="#059669" opacity="0.6"/>
+
+  <!-- OTP code display — small phone beneath shield -->
+  <rect x="890" y="418" width="120" height="42" rx="6" fill="#001a12" stroke="#059669" stroke-width="1.2" opacity="0.7"/>
+  <text x="950" y="436" font-family="'Courier New',Courier,monospace" font-size="10" fill="#059669" opacity="0.6" text-anchor="middle" letter-spacing="1">ONE-TIME CODE</text>
+  <text x="950" y="453" font-family="'Courier New',Courier,monospace" font-size="14" fill="#059669" opacity="0.95" text-anchor="middle" letter-spacing="4" font-weight="bold">4 8 3 2 1 9</text>
+
+  <!-- Subtle radiating circles from shield center -->
+  <circle cx="950" cy="334" r="110" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.08"/>
+  <circle cx="950" cy="334" r="155" fill="none" stroke="#059669" stroke-width="0.4" opacity="0.05"/>
+  <circle cx="950" cy="334" r="200" fill="none" stroke="#059669" stroke-width="0.3" opacity="0.04"/>
+
+  <!-- Check mark top-right of inner shield (authenticated) -->
+  <path d="M 1010 210 L 1022 224 L 1044 200" fill="none" stroke="#059669" stroke-width="2.5" opacity="0.7" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Horizontal grid lines (subtle) -->
+  <line x1="760" y1="550" x2="1170" y2="550" stroke="#059669" stroke-width="0.4" opacity="0.06"/>
+  <line x1="760" y1="580" x2="1170" y2="580" stroke="#059669" stroke-width="0.3" opacity="0.04"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#059669"/>
+  <text x="80" y="100" font-family="'Courier New',Courier,monospace" font-size="13" letter-spacing="4" fill="#059669" opacity="0.7">PASSWORD SENSE</text>
+
+  <!-- Title -->
+  <text x="80" y="248" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="#e6fff7">Two-factor</text>
+  <text x="80" y="316" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="#e6fff7">authentication,</text>
+  <text x="80" y="384" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="#e6fff7">explained</text>
+
+  <text x="80"   y="572" font-family="'Courier New',Courier,monospace" font-size="13" fill="#ffffff" opacity="0.3" letter-spacing="1">June 26, 2026  ·  2fa  ·  habits  ·  accounts</text>
+  <text x="1144" y="572" font-family="'Courier New',Courier,monospace" font-size="13" fill="#ffffff" opacity="0.3" text-anchor="end" letter-spacing="1">VAULTMESH</text>
+</svg>

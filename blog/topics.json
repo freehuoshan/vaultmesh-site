@@ -29,7 +29,8 @@
       "title": "Two-factor authentication, explained without jargon",
       "angle": "What 2FA actually is, the three common kinds (SMS code, authenticator app, hardware key), where each fits, and why SMS is the weakest of the three. Avoid implying SMS is useless — it's still better than nothing.",
       "audience": "Readers who've seen '2FA' in account settings and never turned it on",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-06-26-2fa-explained-plain.md"
     },
     {
       "id": "after-a-breach",

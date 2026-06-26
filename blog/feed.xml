@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Two-factor authentication, explained without jargon</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/2fa-explained-plain.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/2fa-explained-plain.html</guid>
+    <pubDate>Fri, 26 Jun 2026 00:00:00 GMT</pubDate>
+    <description>What 2FA actually is, the three common kinds, and why SMS is weaker than the alternatives — but still worth using.</description>
+  </item>
+  <item>
     <title>The one password habit that quietly hurts most people</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/password-reuse-risk.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/password-reuse-risk.html</guid>
