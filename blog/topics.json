@@ -37,7 +37,8 @@
       "title": "Your password was in a breach. Here's what actually matters next",
       "angle": "Most breach-response advice is generic panic. The real priority order: change the password on the breached site first, then anywhere else you reused it, then enable 2FA. What is and isn't worth doing.",
       "audience": "Anyone who got a 'your data was exposed' notification",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-06-27-after-a-breach.md"
     },
     {
       "id": "password-managers-101",

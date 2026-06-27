@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your password was in a breach — here&#39;s what actually matters next — Password Sense</title>
+  <meta name="description" content="Getting a breach notification is unsettling, but the right response is short and specific — not a security overhaul of every account you own.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Your password was in a breach — here&#39;s what actually matters next">
+  <meta property="og:description" content="Getting a breach notification is unsettling, but the right response is short and specific — not a security overhaul of every account you own.">
+  <meta property="og:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/after-a-breach.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Your password was in a breach — here&#39;s what actually matters next">
+  <meta name="twitter:description" content="Getting a breach notification is unsettling, but the right response is short and specific — not a security overhaul of every account you own.">
+  <meta name="twitter:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/after-a-breach.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .blog-prose { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+    .blog-prose h1 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 400; line-height: 1.2; margin: 0 0 32px; color: var(--ink); }
+    .blog-prose h2 { font-family: var(--serif); font-size: 24px; font-weight: 400; margin-top: 2em; margin-bottom: 0.6em; color: var(--ink); }
+    .blog-prose h3 { font-family: var(--sans); font-size: 18px; font-weight: 600; margin-top: 1.6em; color: var(--ink); }
+    .blog-prose p { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); margin: 0 0 1.1em; }
+    .blog-prose a { color: var(--primary); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .blog-prose a:hover { color: var(--primary-hover); }
+    .blog-prose pre { background: #103866; color: #f0f7ff; padding: 18px 20px; border-radius: 6px; overflow-x: auto; font-family: var(--mono); font-size: 13px; line-height: 1.55; margin: 1.4em 0; }
+    .blog-prose code { font-family: var(--mono); font-size: 0.88em; background: var(--bg2); padding: 1px 5px; border-radius: 3px; color: var(--ink); }
+    .blog-prose pre code { background: none; padding: 0; color: inherit; font-size: inherit; }
+    .blog-prose ul, .blog-prose ol { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); padding-left: 1.4em; }
+    .blog-prose li { margin: 0.3em 0; }
+    .blog-prose blockquote { border-left: 3px solid var(--accent-warm); margin: 1.4em 0; padding: 0.2em 0 0.2em 18px; color: var(--ink3); font-style: italic; }
+    .blog-meta { font-family: var(--mono); color: var(--ink3); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+    .blog-meta .tag { display: inline-block; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; margin-left: 6px; }
+    .blog-post-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .blog-back { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 12px; color: var(--ink3); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .blog-back:hover { color: var(--primary); }
+    .share-x { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 12px; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .share-x:hover { color: var(--primary-hover); }
+    .blog-cover-img { width: 100%; height: auto; display: block; border-radius: 8px; margin-bottom: 32px; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-brand" href="/index.html">
+    <img src="/img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
+    <span class="nav-brand-name">VaultMesh</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/index.html#features">Features</a></li>
+    <li><a href="/index.html#how-it-works">How It Works</a></li>
+    <li><a href="/index.html#download">Download</a></li>
+    <li><a href="/relay.html">Relay Guide</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/support.html">Support</a></li>
+    <li><a href="/index.html#download" class="nav-cta">Get VaultMesh</a></li>
+  </ul>
+</nav>
+
+<main class="blog-prose">
+  <img class="blog-cover-img" src="/blog/posts/covers/after-a-breach.svg" alt="" aria-hidden="true">
+  <div class="blog-meta">June 27, 2026 <span class="tag">breaches</span> <span class="tag">passwords</span> <span class="tag">2fa</span> <span class="tag">habits</span></div>
+  <h1>Your password was in a breach — here&#39;s what actually matters next</h1>
+  <p>You get the notification: a company informs you that your email address and password were exposed in a data breach. Maybe the message came from the company itself. Maybe it came from a service that monitors breach lists on your behalf. Either way, the instinct is to do everything at once — change every password, cancel your credit cards, lock down every account immediately.</p>
+<p>Most of that instinct is either misdirected or premature. There is a clear order to what actually matters after a breach notification, and the list is shorter than the panic suggests.</p>
+<h2>Step one: change the password on the breached site</h2>
+<p>Go to the specific site that was breached, log in with your current credentials, and change your password to something new. Do this before anything else.</p>
+<p>The replacement should be long and random — something that hasn&#39;t been used anywhere else. If you use a password manager, let it generate a new one. If you&#39;re choosing manually, aim for at least 16 characters, or a phrase of four or more words chosen at random.</p>
+<p>Some company notifications will say your password was &quot;hashed&quot; — stored in a protected form rather than as plain text. That&#39;s better than storing it in plain text, but the quality of that protection varies, and there&#39;s no reliable way to assess it from the outside. Changing the password closes the question.</p>
+<h2>Step two: find every other place you used that same password</h2>
+<p>This step is where the real exposure lives. Attackers who collect credentials from a breach routinely try those same username-and-password combinations on other services — email providers, banks, shopping sites, anywhere the combination might work. The technique is common and effective precisely because password reuse is widespread.</p>
+<p>Think carefully about where else you used the exposed password. If you&#39;re not sure, searching your email inbox for &quot;welcome to&quot; and &quot;verify your account&quot; can surface accounts you&#39;ve forgotten about. Any site where you used the same password should be updated now.</p>
+<p>This can be tedious if the password was reused in many places. It is still the most meaningful thing you can do in response to a breach.</p>
+<h2>Step three: turn on two-factor authentication</h2>
+<p>While you&#39;re in the account settings for the breached site, look for a two-factor authentication option. If it&#39;s available and you haven&#39;t enabled it, turn it on. Then do the same for your email account — which, if compromised, can be used to reset passwords elsewhere — and any other accounts you consider high-stakes.</p>
+<p>Two-factor authentication (commonly called 2FA) requires something beyond your password to log in, typically a short code generated by an app on your phone. Even if someone has your correct password, they can&#39;t log in without that second piece.</p>
+<p>If you&#39;re given a choice between receiving codes by text message versus an authenticator app, the app is the more resistant option. SMS codes can occasionally be intercepted or redirected. That said, either form of 2FA is meaningfully better than relying on a password alone.</p>
+<h2>What doesn&#39;t belong on the list</h2>
+<p>A few common post-breach actions feel urgent but aren&#39;t.</p>
+<p>Changing passwords at sites that weren&#39;t part of the breach is only necessary if you used the same password there — which brings you back to step two. A breach at one company doesn&#39;t expose your credentials at unrelated services.</p>
+<p>Canceling credit cards is usually premature unless the breach specifically involved payment card data. Most credential breaches contain email addresses and passwords, not full card numbers. If the breach notification mentions financial data specifically, your card issuer will typically reach out, and their guidance is the right one to follow.</p>
+<p>Immediately signing up for a monitoring service in the hours after a breach puts the secondary concern ahead of the primary one. Deal with the specific exposure first.</p>
+<h2>The short version</h2>
+<p>A breach notification is worth taking seriously. It is not a signal to upend your entire digital life.</p>
+<p>Change the password at the site that was breached. Update it at every other site where you used the same password. Add a second factor to your most important accounts. That covers the meaningful response, and it&#39;s enough to work through in an afternoon.</p>
+<p>One incident, handled clearly, is more useful than a general sense of alarm that dissipates before any of the important steps get done.</p>
+
+  <div class="blog-post-actions">
+    <a class="blog-back" href="/blog/">← All posts</a>
+    <a class="share-x" href="https://twitter.com/intent/tweet?text=Your%20password%20was%20in%20a%20breach%20%E2%80%94%20here's%20what%20actually%20matters%20next&url=https%3A%2F%2Fvaultmesh.codeblog.net%2Fblog%2Fposts%2Fafter-a-breach.html" target="_blank" rel="noopener noreferrer">Share on X →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">VaultMesh</div>
+      <div class="footer-brand-desc">Private password manager for desktop and mobile with local-first storage and end-to-end encryption.</div>
+      <div class="crypto-chips">
+        <span class="chip">Argon2id</span>
+        <span class="chip">XChaCha20</span>
+        <span class="chip">X25519</span>
+        <span class="chip">Ed25519</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Product</div>
+      <ul class="footer-links">
+        <li><a href="/index.html#features">Features</a></li>
+        <li><a href="/index.html#how-it-works">How It Works</a></li>
+        <li><a href="/index.html#download">Download</a></li>
+        <li><a href="/relay.html">Relay Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/downloads/checksums.txt">Checksums</a></li>
+        <li><a href="/downloads/desktop/">Desktop Packages</a></li>
+        <li><a href="/downloads/relay/">Relay Packages</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal</div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="mailto:vaultmesh.support@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 VaultMesh. All rights reserved.</span>
+    <span class="footer-copy"><a href="mailto:vaultmesh.support@gmail.com" style="color:inherit;text-decoration:none;">vaultmesh.support@gmail.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
