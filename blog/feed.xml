@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Why security questions are often the weakest link</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/security-question-myth.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/security-question-myth.html</guid>
+    <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Mother&#39;s maiden name and first pet — security questions feel like extra protection, but their answers are often findable by anyone who looks.</description>
+  </item>
+  <item>
     <title>What a password manager actually does (and doesn&#39;t do)</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/password-managers-101.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/password-managers-101.html</guid>

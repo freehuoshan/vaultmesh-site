@@ -53,7 +53,8 @@
       "title": "Why 'security questions' are often the weakest link",
       "angle": "Mother's maiden name, first pet, etc. — most of these are findable on social media. Why they exist anyway, and what to do when a site insists on them (lying / using a manager-generated answer).",
       "audience": "Anyone who's filled out a security question form",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-06-29-security-question-myth.md"
     },
     {
       "id": "public-wifi-overblown",
