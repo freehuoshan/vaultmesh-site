@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>What a password manager actually does (and doesn&#39;t do)</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/password-managers-101.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/password-managers-101.html</guid>
+    <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Password managers are simpler than they sound — here&#39;s what they store, how the master password works, and what happens if you forget it.</description>
+  </item>
+  <item>
     <title>Your password was in a breach — here&#39;s what actually matters next</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/after-a-breach.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/after-a-breach.html</guid>

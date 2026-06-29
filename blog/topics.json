@@ -45,7 +45,8 @@
       "title": "What a password manager actually does (and doesn't do)",
       "angle": "Demystify password managers for someone who's never used one. What they store, what they don't, what 'master password' means, what happens if you forget it. Mention VaultMesh once here as an example of a local-first option (per STYLE.md rules).",
       "audience": "People considering using a password manager for the first time",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-06-28-password-managers-101.md"
     },
     {
       "id": "security-question-myth",
