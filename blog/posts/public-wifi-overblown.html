@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Public WiFi: what&#39;s a real risk and what isn&#39;t anymore — Password Sense</title>
+  <meta name="description" content="The old WiFi eavesdropping threat has shrunk considerably — here&#39;s what still matters and what you can mostly stop worrying about.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Public WiFi: what&#39;s a real risk and what isn&#39;t anymore">
+  <meta property="og:description" content="The old WiFi eavesdropping threat has shrunk considerably — here&#39;s what still matters and what you can mostly stop worrying about.">
+  <meta property="og:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/public-wifi-overblown.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Public WiFi: what&#39;s a real risk and what isn&#39;t anymore">
+  <meta name="twitter:description" content="The old WiFi eavesdropping threat has shrunk considerably — here&#39;s what still matters and what you can mostly stop worrying about.">
+  <meta name="twitter:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/public-wifi-overblown.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .blog-prose { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+    .blog-prose h1 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 400; line-height: 1.2; margin: 0 0 32px; color: var(--ink); }
+    .blog-prose h2 { font-family: var(--serif); font-size: 24px; font-weight: 400; margin-top: 2em; margin-bottom: 0.6em; color: var(--ink); }
+    .blog-prose h3 { font-family: var(--sans); font-size: 18px; font-weight: 600; margin-top: 1.6em; color: var(--ink); }
+    .blog-prose p { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); margin: 0 0 1.1em; }
+    .blog-prose a { color: var(--primary); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .blog-prose a:hover { color: var(--primary-hover); }
+    .blog-prose pre { background: #103866; color: #f0f7ff; padding: 18px 20px; border-radius: 6px; overflow-x: auto; font-family: var(--mono); font-size: 13px; line-height: 1.55; margin: 1.4em 0; }
+    .blog-prose code { font-family: var(--mono); font-size: 0.88em; background: var(--bg2); padding: 1px 5px; border-radius: 3px; color: var(--ink); }
+    .blog-prose pre code { background: none; padding: 0; color: inherit; font-size: inherit; }
+    .blog-prose ul, .blog-prose ol { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); padding-left: 1.4em; }
+    .blog-prose li { margin: 0.3em 0; }
+    .blog-prose blockquote { border-left: 3px solid var(--accent-warm); margin: 1.4em 0; padding: 0.2em 0 0.2em 18px; color: var(--ink3); font-style: italic; }
+    .blog-meta { font-family: var(--mono); color: var(--ink3); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+    .blog-meta .tag { display: inline-block; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; margin-left: 6px; }
+    .blog-post-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .blog-back { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 12px; color: var(--ink3); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .blog-back:hover { color: var(--primary); }
+    .share-x { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 12px; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .share-x:hover { color: var(--primary-hover); }
+    .blog-cover-img { width: 100%; height: auto; display: block; border-radius: 8px; margin-bottom: 32px; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-brand" href="/index.html">
+    <img src="/img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
+    <span class="nav-brand-name">VaultMesh</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/index.html#features">Features</a></li>
+    <li><a href="/index.html#how-it-works">How It Works</a></li>
+    <li><a href="/index.html#download">Download</a></li>
+    <li><a href="/relay.html">Relay Guide</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/support.html">Support</a></li>
+    <li><a href="/index.html#download" class="nav-cta">Get VaultMesh</a></li>
+  </ul>
+</nav>
+
+<main class="blog-prose">
+  <img class="blog-cover-img" src="/blog/posts/covers/public-wifi-overblown.svg" alt="" aria-hidden="true">
+  <div class="blog-meta">June 30, 2026 <span class="tag">myths</span> <span class="tag">habits</span></div>
+  <h1>Public WiFi: what&#39;s a real risk and what isn&#39;t anymore</h1>
+  <p>The advice has been around long enough to feel like received wisdom: never use public WiFi for anything sensitive. No banking, no email, definitely not work. Coffee shops and hotel networks are traps.</p>
+<p>There&#39;s a real threat underneath that advice. But the threat has changed considerably over the past decade, and what was genuinely risky in 2012 looks different now.</p>
+<h2>What the original concern was</h2>
+<p>The classic attack on public WiFi was passive eavesdropping. On an open wireless network, all traffic is broadcast through the air, and anyone on the same network with the right tools could watch it. If you loaded a banking page over plain HTTP, someone nearby could see exactly what you were doing — account numbers, passwords, everything.</p>
+<p>That attack worked because most web traffic was unencrypted. The assumption that &quot;only you can see what you&#39;re sending&quot; was simply wrong on a shared network.</p>
+<h2>What changed: HTTPS is now nearly universal</h2>
+<p>The web has largely moved to HTTPS. When a site loads over HTTPS, the connection is encrypted end-to-end between your browser and the server. Someone watching the network can see that you connected to yourbank.com, but not what page you loaded, not what form you submitted, not the credentials you typed. The content is scrambled in transit.</p>
+<p>The shift took time, but it took hold. Search engines, browsers, and hosting providers pushed hard for HTTPS adoption, and today most sites a normal person visits use it by default.</p>
+<p>This doesn&#39;t make public WiFi risk-free. It means the specific threat of a stranger quietly reading your login credentials from the next table is much smaller than it was.</p>
+<h2>What still matters</h2>
+<p><strong>Fake access points.</strong> An attacker can create a WiFi hotspot with a plausible name — &quot;Airport_Free_WiFi&quot; or &quot;HiltonGuest&quot; — and wait for devices to connect. Once you&#39;re on their network, they control what your device sees. They can redirect you to convincing fake login pages, intercept traffic before encryption kicks in, or inject content into any unencrypted page you load. The defense is simple: ask a staff member for the actual network name, and prefer networks that require a password over completely open ones.</p>
+<p><strong>Captive portals.</strong> Most public WiFi networks make you click through a welcome or terms-of-service page before granting internet access. These pages load over HTTP — they have to, in order to intercept your connection before it&#39;s established. It&#39;s a brief window where your device is making unencrypted requests on a network you don&#39;t control. It&#39;s short, but worth knowing about: avoid entering passwords or sensitive information until you&#39;re fully connected and past the portal page.</p>
+<p><strong>High-stakes administrative work.</strong> If your job involves accessing server infrastructure, business admin panels, or systems where a compromised credential would cause serious damage, a hotel or cafe WiFi network deserves extra caution. The risk on any given connection may be small, but the downside of getting it wrong is large. A VPN routed through a network you trust adds a layer of protection here — it keeps your traffic off the local network and away from the scenarios above.</p>
+<h2>What you can mostly stop worrying about</h2>
+<p>Checking email, browsing, shopping, or accessing your bank&#39;s website on public WiFi is generally fine if the site loads over HTTPS. The padlock in your browser&#39;s address bar signals that the connection is encrypted. With that in place, someone on the same network cannot read your traffic by watching it.</p>
+<p>&quot;Never use public WiFi&quot; as a blanket rule made sense when HTTP was common. As a rule for today, it&#39;s an overcorrection — one that makes using a laptop in public significantly more inconvenient without meaningfully improving security for most everyday tasks.</p>
+<h2>The practical approach</h2>
+<p>Before connecting to any public network, glance at the name and confirm it matches what the venue actually runs. Once connected, complete any captive portal page before doing anything sensitive. On any site where you&#39;re entering a password, confirm HTTPS is active.</p>
+<p>If you travel for work and regularly access sensitive systems remotely, a VPN through a trusted network is a reasonable precaution. It isn&#39;t necessary for general browsing, but it narrows the exposure for higher-value targets.</p>
+<p>The goal is calibrated caution, not avoidance. Public WiFi has genuine limits, and it&#39;s worth knowing what they are — but &quot;never trust it for anything&quot; overstates them by a fair margin.</p>
+
+  <div class="blog-post-actions">
+    <a class="blog-back" href="/blog/">← All posts</a>
+    <a class="share-x" href="https://twitter.com/intent/tweet?text=Public%20WiFi%3A%20what's%20a%20real%20risk%20and%20what%20isn't%20anymore&url=https%3A%2F%2Fvaultmesh.codeblog.net%2Fblog%2Fposts%2Fpublic-wifi-overblown.html" target="_blank" rel="noopener noreferrer">Share on X →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">VaultMesh</div>
+      <div class="footer-brand-desc">Private password manager for desktop and mobile with local-first storage and end-to-end encryption.</div>
+      <div class="crypto-chips">
+        <span class="chip">Argon2id</span>
+        <span class="chip">XChaCha20</span>
+        <span class="chip">X25519</span>
+        <span class="chip">Ed25519</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Product</div>
+      <ul class="footer-links">
+        <li><a href="/index.html#features">Features</a></li>
+        <li><a href="/index.html#how-it-works">How It Works</a></li>
+        <li><a href="/index.html#download">Download</a></li>
+        <li><a href="/relay.html">Relay Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/downloads/checksums.txt">Checksums</a></li>
+        <li><a href="/downloads/desktop/">Desktop Packages</a></li>
+        <li><a href="/downloads/relay/">Relay Packages</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal</div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="mailto:vaultmesh.support@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 VaultMesh. All rights reserved.</span>
+    <span class="footer-copy"><a href="mailto:vaultmesh.support@gmail.com" style="color:inherit;text-decoration:none;">vaultmesh.support@gmail.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

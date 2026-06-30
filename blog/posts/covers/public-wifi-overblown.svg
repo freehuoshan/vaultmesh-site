@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#051a18"/>
+      <stop offset="100%" stop-color="#0a2d28"/>
+    </linearGradient>
+    <linearGradient id="tableGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d2e28"/>
+      <stop offset="100%" stop-color="#081e1a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#14b8a6"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="54" fill="white">Public WiFi: what's</text>
+  <text x="76" y="254" font-family="Georgia, serif" font-size="54" fill="white">a real risk and</text>
+  <text x="76" y="320" font-family="Georgia, serif" font-size="54" fill="white">what isn't anymore</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-06-30  ·  myths  ·  habits  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: WiFi + HTTPS illustration ── -->
+
+  <!-- WiFi signal arcs (large, centered around 920,340) -->
+  <!-- Outermost arc - faint, "old threat" grey -->
+  <path d="M 760,340 A 160,160 0 0,1 1080,340" fill="none" stroke="rgba(20,184,166,0.15)" stroke-width="3" stroke-linecap="round"/>
+  <!-- Second arc -->
+  <path d="M 800,340 A 120,120 0 0,1 1040,340" fill="none" stroke="rgba(20,184,166,0.28)" stroke-width="4" stroke-linecap="round"/>
+  <!-- Third arc -->
+  <path d="M 840,340 A 80,80 0 0,1 1000,340" fill="none" stroke="rgba(20,184,166,0.45)" stroke-width="5" stroke-linecap="round"/>
+  <!-- Innermost arc -->
+  <path d="M 878,340 A 42,42 0 0,1 962,340" fill="none" stroke="rgba(20,184,166,0.7)" stroke-width="6" stroke-linecap="round"/>
+  <!-- Center dot -->
+  <circle cx="920" cy="340" r="10" fill="#14b8a6"/>
+
+  <!-- HTTPS padlock below WiFi dot — indicating encrypted connection -->
+  <g transform="translate(888, 380)">
+    <!-- Padlock body -->
+    <rect x="0" y="20" width="64" height="52" rx="8" fill="#0d3530" stroke="#14b8a6" stroke-width="2.5"/>
+    <!-- Shackle -->
+    <path d="M 14,20 L 14,8 A 18,18 0 0,1 50,8 L 50,20" fill="none" stroke="#14b8a6" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Keyhole -->
+    <circle cx="32" cy="42" r="8" fill="none" stroke="#14b8a6" stroke-width="2"/>
+    <rect x="28" y="46" width="8" height="14" rx="3" fill="#14b8a6" opacity="0.7"/>
+    <!-- HTTPS label above padlock -->
+    <text x="-8" y="-6" font-family="monospace" font-size="13" fill="rgba(20,184,166,0.8)" letter-spacing="2">HTTPS</text>
+  </g>
+
+  <!-- "Spy" figure to the left — crossed out, representing the diminished threat -->
+  <g transform="translate(730, 195)" opacity="0.35">
+    <!-- Stick figure with spy hat -->
+    <circle cx="30" cy="20" r="14" fill="none" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Hat brim -->
+    <rect x="14" y="10" width="32" height="4" rx="2" fill="#94a3b8"/>
+    <rect x="18" y="2" width="24" height="10" rx="3" fill="#94a3b8"/>
+    <!-- Body -->
+    <line x1="30" y1="34" x2="30" y2="68" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Arms -->
+    <line x1="30" y1="44" x2="10" y2="56" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="30" y1="44" x2="50" y2="56" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Legs -->
+    <line x1="30" y1="68" x2="16" y2="88" stroke="#94a3b8" stroke-width="2"/>
+    <line x1="30" y1="68" x2="44" y2="88" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Binoculars -->
+    <circle cx="10" cy="56" r="7" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+    <circle cx="22" cy="56" r="7" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+    <line x1="17" y1="56" x2="15" y2="56" stroke="#94a3b8" stroke-width="1.5"/>
+  </g>
+  <!-- Cross-out line over the spy figure -->
+  <line x1="718" y1="183" x2="788" y2="303" stroke="rgba(239,68,68,0.55)" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="788" y1="183" x2="718" y2="303" stroke="rgba(239,68,68,0.55)" stroke-width="3.5" stroke-linecap="round"/>
+
+  <!-- Laptop silhouette below (person at cafe) -->
+  <g transform="translate(800, 470)">
+    <!-- Screen -->
+    <rect x="0" y="0" width="240" height="140" rx="8" fill="#0a2420" stroke="#1a4038" stroke-width="1.5"/>
+    <!-- Screen content: HTTPS address bar -->
+    <rect x="12" y="12" width="216" height="20" rx="4" fill="#051a18" stroke="#1a4038" stroke-width="1"/>
+    <!-- Padlock icon tiny -->
+    <rect x="20" y="16" width="8" height="10" rx="2" fill="none" stroke="#14b8a6" stroke-width="1"/>
+    <path d="M23,16 L23,13 A3,3 0 0,1 29,13 L29,16" fill="none" stroke="#14b8a6" stroke-width="1"/>
+    <!-- URL text -->
+    <text x="34" y="26" font-family="monospace" font-size="9" fill="rgba(20,184,166,0.7)">https://yourbank.com</text>
+    <!-- Page content lines -->
+    <rect x="12" y="42" width="140" height="6" rx="3" fill="rgba(255,255,255,0.08)"/>
+    <rect x="12" y="56" width="100" height="6" rx="3" fill="rgba(255,255,255,0.06)"/>
+    <rect x="12" y="70" width="120" height="6" rx="3" fill="rgba(255,255,255,0.05)"/>
+    <!-- Base -->
+    <rect x="-20" y="140" width="280" height="10" rx="3" fill="#0d2a24" stroke="#1a4038" stroke-width="1"/>
+    <rect x="80" y="150" width="80" height="4" rx="2" fill="#0a2420"/>
+  </g>
+
+  <!-- "encrypted" label arc near the WiFi -->
+  <text x="760" y="505" font-family="monospace" font-size="10" fill="rgba(20,184,166,0.4)" letter-spacing="2">ENCRYPTED IN TRANSIT</text>
+</svg>

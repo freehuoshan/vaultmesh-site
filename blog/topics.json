@@ -61,7 +61,8 @@
       "title": "Public WiFi: what's a real risk, and what isn't anymore",
       "angle": "HTTPS-everywhere has made the old 'man in the middle on coffee shop WiFi' threat much smaller. What still matters (fake captive portals, untrusted networks for sensitive admin work), what doesn't.",
       "audience": "Travelers and remote workers who worry about hotel/cafe WiFi",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-06-30-public-wifi-overblown.md"
     },
     {
       "id": "browser-saved-passwords",
