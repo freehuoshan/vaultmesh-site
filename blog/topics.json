@@ -69,7 +69,8 @@
       "title": "Browser-saved passwords: convenient, but at what cost?",
       "angle": "The trade-offs of letting Chrome / Safari / Firefox remember your passwords. Where they're stored, how they sync, when this is fine, when it isn't.",
       "audience": "Anyone who clicked 'Save password' in their browser",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-01-browser-saved-passwords.md"
     },
     {
       "id": "passphrase-vs-password",
