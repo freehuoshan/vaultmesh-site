@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Four random words: the passphrase that&#39;s stronger than it looks</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/passphrase-vs-password.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/passphrase-vs-password.html</guid>
+    <pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate>
+    <description>A four-word passphrase can be easier to remember than a complex password and harder to guess — but only if the words are chosen randomly.</description>
+  </item>
+  <item>
     <title>Browser-saved passwords: convenient, but at what cost?</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/browser-saved-passwords.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/browser-saved-passwords.html</guid>

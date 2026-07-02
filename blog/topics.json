@@ -77,7 +77,8 @@
       "title": "Four random words: the passphrase that's stronger than it looks",
       "angle": "Walk through why a randomly-chosen 4-word phrase (e.g., the EFF diceware list) is both memorable and resistant to guessing — and why deliberately picking 4 words yourself doesn't count as random.",
       "audience": "Readers who want one strong master password they can actually remember",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-02-passphrase-vs-password.md"
     }
   ]
 }
