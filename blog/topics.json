@@ -79,6 +79,49 @@
       "audience": "Readers who want one strong master password they can actually remember",
       "status": "drafted",
       "draft_path": "blog/_drafts/2026-07-02-passphrase-vs-password.md"
+    },
+    {
+      "id": "email-is-the-master-key",
+      "title": "Why your email account deserves more protection than anything else",
+      "angle": "Your email is the recovery address for every other account you own. Whoever controls your inbox can reset your bank, your work login, your everything. This single account warrants extra protection — a strong unique password and 2FA at minimum.",
+      "audience": "Anyone who has multiple online accounts and hasn't thought of email as a central point of failure",
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-05-email-is-the-master-key.md"
+    },
+    {
+      "id": "when-to-change-passwords",
+      "title": "You don't need to change your password every 90 days",
+      "angle": "The 'change passwords regularly' rule is outdated and counterproductive — it leads to weaker passwords, not stronger ones. NIST guidance since 2017 says to change passwords when compromised, not on a schedule. Explain why, and clarify when you actually should change a password.",
+      "audience": "Anyone whose workplace or bank still enforces periodic password changes",
+      "status": "queued"
+    },
+    {
+      "id": "account-recovery-options",
+      "title": "The account settings most people never update",
+      "angle": "Recovery email and recovery phone number are the real keys to your accounts — but most people set them once and forget. Old email addresses, disconnected phone numbers, ex-employers' emails. What to audit and why it matters.",
+      "audience": "Anyone who has had the same accounts for years without reviewing recovery settings",
+      "status": "queued"
+    },
+    {
+      "id": "sim-swap-explained",
+      "title": "SIM swapping: when someone steals your phone number",
+      "angle": "SIM swap attacks let an attacker take over your phone number by convincing your carrier to transfer it. Once they have your number, SMS-based 2FA is theirs. Explain how it works, who's at risk, and the practical steps to reduce exposure (carrier PIN, move away from SMS 2FA for high-value accounts).",
+      "audience": "Anyone who uses SMS codes for two-factor authentication",
+      "status": "queued"
+    },
+    {
+      "id": "staying-logged-in",
+      "title": "Staying logged in: when it's fine and when it isn't",
+      "angle": "The 'remember me' checkbox and persistent login sessions are convenient but not always appropriate. Explain what a session actually is, what risks come from staying logged in on shared or lost devices, and the simple habit that mitigates most of it (lock your device).",
+      "audience": "Anyone who clicks 'remember me' without thinking about it",
+      "status": "queued"
+    },
+    {
+      "id": "sharing-passwords-safely",
+      "title": "How to share account access without sharing a password",
+      "angle": "Sharing passwords by text or email is common but risky. Cover the better options: services that have built-in sharing or family plans, password manager sharing features, and why the credential itself shouldn't travel over chat. Practical for both families and small teams.",
+      "audience": "Anyone who has sent a password over text, email, or Slack",
+      "status": "queued"
     }
   ]
 }

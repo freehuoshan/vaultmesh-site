@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Why your email account deserves more protection than anything else</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/email-is-the-master-key.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/email-is-the-master-key.html</guid>
+    <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Every &quot;forgot password&quot; link goes to your inbox — which makes your email account the recovery point for everything else you own online.</description>
+  </item>
+  <item>
     <title>Four random words: the passphrase that&#39;s stronger than it looks</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/passphrase-vs-password.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/passphrase-vs-password.html</guid>

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060d1f"/>
+      <stop offset="100%" stop-color="#0e1d3a"/>
+    </linearGradient>
+    <linearGradient id="envGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a2f58"/>
+      <stop offset="100%" stop-color="#0f1e40"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#112240"/>
+      <stop offset="100%" stop-color="#0a1630"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#3b82f6"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="52" fill="white">Why your email</text>
+  <text x="76" y="252" font-family="Georgia, serif" font-size="52" fill="white">account deserves</text>
+  <text x="76" y="316" font-family="Georgia, serif" font-size="52" fill="white">more protection</text>
+  <text x="76" y="380" font-family="Georgia, serif" font-size="52" fill="white">than anything else</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-07-05  ·  accounts  ·  2fa  ·  habits  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: Email as hub illustration ── -->
+
+  <!-- Central email envelope -->
+  <rect x="840" y="218" width="120" height="88" rx="8" fill="url(#envGrad)" stroke="#3b82f6" stroke-width="2.5"/>
+  <!-- Envelope flap -->
+  <polyline points="840,218 900,268 960,218" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Envelope bottom fold lines -->
+  <line x1="840" y1="306" x2="876" y2="272" stroke="#1e3a6e" stroke-width="1.5"/>
+  <line x1="960" y1="306" x2="924" y2="272" stroke="#1e3a6e" stroke-width="1.5"/>
+
+  <!-- Key overlay on envelope -->
+  <g transform="translate(886, 238)" opacity="0.9">
+    <circle cx="0" cy="0" r="10" fill="none" stroke="#3b82f6" stroke-width="2"/>
+    <rect x="10" y="-3" width="26" height="6" rx="2" fill="#3b82f6"/>
+    <rect x="26" y="3" width="5" height="7" rx="1.5" fill="#3b82f6"/>
+    <rect x="33" y="3" width="5" height="5" rx="1.5" fill="#3b82f6"/>
+  </g>
+
+  <!-- Satellite account nodes -->
+
+  <!-- Node: Bank (top-left) -->
+  <line x1="840" y1="240" x2="762" y2="148" stroke="rgba(59,130,246,0.3)" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <rect x="718" y="108" width="88" height="68" rx="10" fill="url(#nodeGrad)" stroke="#1e3560" stroke-width="1.5"/>
+  <!-- Bank icon: columns -->
+  <rect x="732" y="120" width="6" height="28" rx="2" fill="rgba(59,130,246,0.5)"/>
+  <rect x="742" y="120" width="6" height="28" rx="2" fill="rgba(59,130,246,0.5)"/>
+  <rect x="752" y="120" width="6" height="28" rx="2" fill="rgba(59,130,246,0.5)"/>
+  <rect x="762" y="120" width="6" height="28" rx="2" fill="rgba(59,130,246,0.5)"/>
+  <rect x="730" y="150" width="42" height="4" rx="2" fill="rgba(59,130,246,0.3)"/>
+  <text x="728" y="166" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.35)">BANK</text>
+
+  <!-- Node: Social (top-right) -->
+  <line x1="960" y1="240" x2="1040" y2="148" stroke="rgba(59,130,246,0.3)" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <rect x="998" y="108" width="88" height="68" rx="10" fill="url(#nodeGrad)" stroke="#1e3560" stroke-width="1.5"/>
+  <!-- Person icon -->
+  <circle cx="1042" cy="128" r="10" fill="rgba(59,130,246,0.4)"/>
+  <path d="M1026,168 Q1042,152 1058,168" fill="rgba(59,130,246,0.3)" stroke="none"/>
+  <text x="1010" y="166" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.35)">SOCIAL</text>
+
+  <!-- Node: Shopping (bottom-left) -->
+  <line x1="840" y1="290" x2="762" y2="382" stroke="rgba(59,130,246,0.3)" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <rect x="718" y="352" width="88" height="68" rx="10" fill="url(#nodeGrad)" stroke="#1e3560" stroke-width="1.5"/>
+  <!-- Cart icon -->
+  <path d="M730,368 L736,368 L748,390 L774,390" fill="none" stroke="rgba(59,130,246,0.5)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="750" cy="398" r="4" fill="rgba(59,130,246,0.5)"/>
+  <circle cx="770" cy="398" r="4" fill="rgba(59,130,246,0.5)"/>
+  <text x="724" y="414" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.35)">SHOPPING</text>
+
+  <!-- Node: Work (bottom-right) -->
+  <line x1="960" y1="290" x2="1040" y2="382" stroke="rgba(59,130,246,0.3)" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <rect x="998" y="352" width="88" height="68" rx="10" fill="url(#nodeGrad)" stroke="#1e3560" stroke-width="1.5"/>
+  <!-- Briefcase icon -->
+  <rect x="1016" y="368" width="52" height="36" rx="4" fill="none" stroke="rgba(59,130,246,0.5)" stroke-width="2"/>
+  <path d="M1030,368 L1030,362 Q1030,358 1034,358 L1050,358 Q1054,358 1054,362 L1054,368" fill="none" stroke="rgba(59,130,246,0.5)" stroke-width="2"/>
+  <line x1="1016" y1="382" x2="1068" y2="382" stroke="rgba(59,130,246,0.3)" stroke-width="1.5"/>
+  <text x="1010" y="414" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.35)">WORK</text>
+
+  <!-- Node: Subscriptions (far right) -->
+  <line x1="960" y1="262" x2="1080" y2="262" stroke="rgba(59,130,246,0.3)" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <rect x="1080" y="230" width="88" height="64" rx="10" fill="url(#nodeGrad)" stroke="#1e3560" stroke-width="1.5"/>
+  <!-- Play/subscription icon -->
+  <polygon points="1108,248 1108,278 1136,263" fill="rgba(59,130,246,0.4)"/>
+  <text x="1085" y="286" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.35)">STREAMING</text>
+
+  <!-- "RESET →" arrows flowing back to envelope -->
+  <text x="756" y="205" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.45)" letter-spacing="1">RESET →</text>
+  <text x="960" y="205" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.45)" letter-spacing="1">← RESET</text>
+  <text x="756" y="345" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.45)" letter-spacing="1">RESET →</text>
+  <text x="960" y="345" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.45)" letter-spacing="1">← RESET</text>
+
+  <!-- Central glow behind envelope -->
+  <circle cx="900" cy="262" r="80" fill="rgba(59,130,246,0.05)"/>
+
+  <!-- Label at bottom -->
+  <text x="820" y="490" font-family="monospace" font-size="10" fill="rgba(59,130,246,0.35)" letter-spacing="2">EMAIL = RECOVERY HUB</text>
+</svg>
