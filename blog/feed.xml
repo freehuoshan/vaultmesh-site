@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>You don&#39;t need to change your password every 90 days</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/when-to-change-passwords.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/when-to-change-passwords.html</guid>
+    <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Forced password rotation leads to weaker passwords, not stronger ones — here&#39;s what current guidance actually says, and when you really should change a password.</description>
+  </item>
+  <item>
     <title>Why your email account deserves more protection than anything else</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/email-is-the-master-key.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/email-is-the-master-key.html</guid>
