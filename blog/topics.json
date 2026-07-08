@@ -101,14 +101,16 @@
       "title": "The account settings most people never update",
       "angle": "Recovery email and recovery phone number are the real keys to your accounts — but most people set them once and forget. Old email addresses, disconnected phone numbers, ex-employers' emails. What to audit and why it matters.",
       "audience": "Anyone who has had the same accounts for years without reviewing recovery settings",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-07-account-recovery-options.md"
     },
     {
       "id": "sim-swap-explained",
       "title": "SIM swapping: when someone steals your phone number",
       "angle": "SIM swap attacks let an attacker take over your phone number by convincing your carrier to transfer it. Once they have your number, SMS-based 2FA is theirs. Explain how it works, who's at risk, and the practical steps to reduce exposure (carrier PIN, move away from SMS 2FA for high-value accounts).",
       "audience": "Anyone who uses SMS codes for two-factor authentication",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-08-sim-swap-explained.md"
     },
     {
       "id": "staying-logged-in",

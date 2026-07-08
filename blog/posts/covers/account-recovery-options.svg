@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060d1f"/>
+      <stop offset="100%" stop-color="#0e1d3a"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#111f40"/>
+      <stop offset="100%" stop-color="#0a1428"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#3b82f6"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="56" fill="white">The account</text>
+  <text x="76" y="254" font-family="Georgia, serif" font-size="56" fill="white">settings most</text>
+  <text x="76" y="320" font-family="Georgia, serif" font-size="56" fill="white">people never</text>
+  <text x="76" y="386" font-family="Georgia, serif" font-size="56" fill="white">update</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-07-07  ·  accounts  ·  habits  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: Account settings panel with stale data ── -->
+
+  <!-- Settings panel -->
+  <rect x="720" y="72" width="420" height="490" rx="14" fill="url(#panelGrad)" stroke="#1e3560" stroke-width="1.5"/>
+
+  <!-- Panel header -->
+  <rect x="720" y="72" width="420" height="44" rx="14" fill="#0f1e3a"/>
+  <rect x="720" y="98" width="420" height="18" fill="#0f1e3a"/>
+  <text x="740" y="100" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.5)" letter-spacing="2">SECURITY SETTINGS</text>
+
+  <!-- Section: Recovery email -->
+  <text x="740" y="142" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.4)" letter-spacing="1">RECOVERY EMAIL</text>
+  <rect x="740" y="150" width="380" height="38" rx="6" fill="rgba(0,0,0,0.25)" stroke="#1e3560" stroke-width="1"/>
+  <text x="754" y="173" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.55)">jane@oldworkplace.com</text>
+  <!-- Warning badge -->
+  <rect x="1062" y="154" width="48" height="24" rx="5" fill="rgba(239,68,68,0.2)" stroke="rgba(239,68,68,0.5)" stroke-width="1"/>
+  <text x="1070" y="170" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.8)">STALE</text>
+
+  <!-- Last updated note -->
+  <text x="740" y="206" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.5)">⚠  Last updated: 4 years ago</text>
+
+  <!-- Divider -->
+  <line x1="740" y1="220" x2="1120" y2="220" stroke="#1e3560" stroke-width="1"/>
+
+  <!-- Section: Recovery phone -->
+  <text x="740" y="242" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.4)" letter-spacing="1">RECOVERY PHONE</text>
+  <rect x="740" y="250" width="380" height="38" rx="6" fill="rgba(0,0,0,0.25)" stroke="#1e3560" stroke-width="1"/>
+  <text x="754" y="273" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.55)">+1 (555) 012-3456</text>
+  <!-- Warning badge -->
+  <rect x="1062" y="254" width="48" height="24" rx="5" fill="rgba(239,68,68,0.2)" stroke="rgba(239,68,68,0.5)" stroke-width="1"/>
+  <text x="1070" y="270" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.8)">STALE</text>
+
+  <text x="740" y="306" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.5)">⚠  Number reassigned — no longer yours</text>
+
+  <!-- Divider -->
+  <line x1="740" y1="320" x2="1120" y2="320" stroke="#1e3560" stroke-width="1"/>
+
+  <!-- Section: Backup codes -->
+  <text x="740" y="342" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.4)" letter-spacing="1">BACKUP CODES</text>
+  <rect x="740" y="350" width="380" height="38" rx="6" fill="rgba(0,0,0,0.25)" stroke="#1e3560" stroke-width="1"/>
+  <text x="754" y="373" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.3)">Generated 2021 · 0 codes remaining</text>
+  <rect x="1062" y="354" width="48" height="24" rx="5" fill="rgba(239,68,68,0.2)" stroke="rgba(239,68,68,0.5)" stroke-width="1"/>
+  <text x="1070" y="370" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.8)">STALE</text>
+
+  <!-- Divider -->
+  <line x1="740" y1="408" x2="1120" y2="408" stroke="#1e3560" stroke-width="1"/>
+
+  <!-- Section: 2FA (healthy — contrast) -->
+  <text x="740" y="430" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.4)" letter-spacing="1">TWO-FACTOR AUTH</text>
+  <rect x="740" y="438" width="380" height="38" rx="6" fill="rgba(0,0,0,0.25)" stroke="#1e3560" stroke-width="1"/>
+  <text x="754" y="461" font-family="monospace" font-size="13" fill="rgba(255,255,255,0.55)">Authenticator app</text>
+  <rect x="1052" y="442" width="58" height="24" rx="5" fill="rgba(34,197,94,0.15)" stroke="rgba(34,197,94,0.4)" stroke-width="1"/>
+  <text x="1060" y="458" font-family="monospace" font-size="9" fill="rgba(34,197,94,0.8)">CURRENT</text>
+
+  <!-- Update button -->
+  <rect x="740" y="500" width="160" height="38" rx="8" fill="rgba(59,130,246,0.2)" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="768" y="523" font-family="monospace" font-size="12" fill="rgba(59,130,246,0.9)">Update now</text>
+</svg>

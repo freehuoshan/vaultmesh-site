@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#051a0d"/>
+      <stop offset="100%" stop-color="#0a2d14"/>
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d2e1a"/>
+      <stop offset="100%" stop-color="#071a0e"/>
+    </linearGradient>
+    <linearGradient id="attackerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d0a0a"/>
+      <stop offset="100%" stop-color="#1a0505"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#10b981"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="54" fill="white">SIM swapping:</text>
+  <text x="76" y="254" font-family="Georgia, serif" font-size="54" fill="white">when someone</text>
+  <text x="76" y="320" font-family="Georgia, serif" font-size="54" fill="white">steals your</text>
+  <text x="76" y="386" font-family="Georgia, serif" font-size="54" fill="white">phone number</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-07-08  ·  2fa  ·  accounts  ·  habits  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: SIM transfer illustration ── -->
+
+  <!-- YOUR phone (left, victim) -->
+  <rect x="720" y="130" width="130" height="220" rx="18" fill="url(#phoneGrad)" stroke="#1a4030" stroke-width="2"/>
+  <!-- Screen -->
+  <rect x="730" y="150" width="110" height="160" rx="6" fill="#051a0d"/>
+  <!-- Signal bars crossed out -->
+  <line x1="742" y1="162" x2="742" y2="178" stroke="rgba(255,255,255,0.15)" stroke-width="4" stroke-linecap="round"/>
+  <line x1="752" y1="158" x2="752" y2="178" stroke="rgba(255,255,255,0.15)" stroke-width="4" stroke-linecap="round"/>
+  <line x1="762" y1="154" x2="762" y2="178" stroke="rgba(255,255,255,0.15)" stroke-width="4" stroke-linecap="round"/>
+  <!-- NO SIGNAL text -->
+  <text x="736" y="200" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.7)">NO SERVICE</text>
+  <!-- Missed SMS indicator -->
+  <rect x="734" y="215" width="102" height="48" rx="5" fill="rgba(16,185,129,0.08)" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
+  <text x="742" y="232" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.35)">BANK ALERT</text>
+  <text x="742" y="248" font-family="monospace" font-size="9" fill="rgba(16,185,129,0.5)">Code: 847291</text>
+  <text x="742" y="260" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.2)">→ redirected</text>
+  <!-- X mark over phone -->
+  <line x1="724" y1="134" x2="846" y2="346" stroke="rgba(239,68,68,0.5)" stroke-width="3" stroke-linecap="round"/>
+  <line x1="846" y1="134" x2="724" y2="346" stroke="rgba(239,68,68,0.5)" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Label -->
+  <text x="730" y="380" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.3)">YOUR PHONE</text>
+  <text x="730" y="394" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.5)">(locked out)</text>
+
+  <!-- Arrow: transfer -->
+  <line x1="860" y1="240" x2="940" y2="240" stroke="rgba(239,68,68,0.6)" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="930,228 942,240 930,252" fill="none" stroke="rgba(239,68,68,0.6)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="868" y="228" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.6)" letter-spacing="1">TRANSFER</text>
+
+  <!-- SIM card icon mid-arrow -->
+  <rect x="880" y="246" width="24" height="18" rx="3" fill="rgba(239,68,68,0.25)" stroke="rgba(239,68,68,0.5)" stroke-width="1"/>
+  <polygon points="880,246 892,246 880,258" fill="rgba(239,68,68,0.4)"/>
+  <rect x="884" y="254" width="14" height="8" rx="1" fill="none" stroke="rgba(239,68,68,0.4)" stroke-width="1"/>
+
+  <!-- ATTACKER phone (right) -->
+  <rect x="950" y="130" width="130" height="220" rx="18" fill="url(#attackerGrad)" stroke="#4a1a1a" stroke-width="2"/>
+  <!-- Screen -->
+  <rect x="960" y="150" width="110" height="160" rx="6" fill="#1a0505"/>
+  <!-- Good signal bars -->
+  <line x1="972" y1="170" x2="972" y2="178" stroke="rgba(239,68,68,0.6)" stroke-width="4" stroke-linecap="round"/>
+  <line x1="982" y1="164" x2="982" y2="178" stroke="rgba(239,68,68,0.6)" stroke-width="4" stroke-linecap="round"/>
+  <line x1="992" y1="158" x2="992" y2="178" stroke="rgba(239,68,68,0.6)" stroke-width="4" stroke-linecap="round"/>
+  <!-- Receiving SMS -->
+  <rect x="964" y="195" width="102" height="60" rx="5" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="972" y="212" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">BANK ALERT</text>
+  <text x="972" y="228" font-family="monospace" font-size="11" fill="rgba(239,68,68,0.8)">Code: 847291</text>
+  <text x="972" y="248" font-family="monospace" font-size="7" fill="rgba(239,68,68,0.5)">✓ received</text>
+
+  <!-- Label -->
+  <text x="958" y="380" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.3)">ATTACKER</text>
+  <text x="958" y="394" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.5)">(has your number)</text>
+
+  <!-- Carrier impersonation note -->
+  <rect x="730" y="430" width="360" height="60" rx="8" fill="rgba(0,0,0,0.3)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="748" y="452" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.4)">"Hi, I'm [your name], I lost my SIM.</text>
+  <text x="748" y="468" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.4)">Can you transfer my number?"</text>
+  <text x="748" y="484" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.4)">— attacker calls your carrier</text>
+
+  <!-- FIX label -->
+  <text x="730" y="528" font-family="monospace" font-size="10" fill="rgba(16,185,129,0.5)" letter-spacing="1">FIX: carrier PIN + authenticator app</text>
+</svg>
