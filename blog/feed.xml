@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>SIM swapping: when someone steals your phone number</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/sim-swap-explained.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/sim-swap-explained.html</guid>
+    <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
+    <description>A SIM swap attack transfers your phone number to someone else&#39;s device — and with it, any verification codes your accounts send via text.</description>
+  </item>
+  <item>
     <title>The account settings most people never update</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/account-recovery-options.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/account-recovery-options.html</guid>
