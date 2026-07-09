@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Staying logged in: when it&#39;s fine and when it isn&#39;t</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/staying-logged-in.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/staying-logged-in.html</guid>
+    <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Persistent login sessions are convenient — but a liability on shared devices or when your screen isn&#39;t locked.</description>
+  </item>
+  <item>
     <title>SIM swapping: when someone steals your phone number</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/sim-swap-explained.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/sim-swap-explained.html</guid>

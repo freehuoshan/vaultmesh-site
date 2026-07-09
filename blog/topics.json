@@ -117,7 +117,8 @@
       "title": "Staying logged in: when it's fine and when it isn't",
       "angle": "The 'remember me' checkbox and persistent login sessions are convenient but not always appropriate. Explain what a session actually is, what risks come from staying logged in on shared or lost devices, and the simple habit that mitigates most of it (lock your device).",
       "audience": "Anyone who clicks 'remember me' without thinking about it",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-09-staying-logged-in.md"
     },
     {
       "id": "sharing-passwords-safely",
