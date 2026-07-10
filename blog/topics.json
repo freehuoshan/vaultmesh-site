@@ -125,7 +125,8 @@
       "title": "How to share account access without sharing a password",
       "angle": "Sharing passwords by text or email is common but risky. Cover the better options: services that have built-in sharing or family plans, password manager sharing features, and why the credential itself shouldn't travel over chat. Practical for both families and small teams.",
       "audience": "Anyone who has sent a password over text, email, or Slack",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-10-sharing-passwords-safely.md"
     }
   ]
 }
