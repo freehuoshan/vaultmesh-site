@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Passkeys: the sign-in method that doesn&#39;t use a password</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/passkeys-explained.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/passkeys-explained.html</guid>
+    <pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Passkeys replace the password entirely — your device proves your identity with a cryptographic key that never leaves it.</description>
+  </item>
+  <item>
     <title>How to share account access without sharing a password</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/sharing-passwords-safely.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/sharing-passwords-safely.html</guid>

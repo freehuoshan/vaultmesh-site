@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#051a0d"/>
+      <stop offset="100%" stop-color="#0a2d14"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#10b981"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="54" fill="white">Passkeys: the</text>
+  <text x="76" y="254" font-family="Georgia, serif" font-size="54" fill="white">sign-in method</text>
+  <text x="76" y="320" font-family="Georgia, serif" font-size="54" fill="white">that doesn't</text>
+  <text x="76" y="386" font-family="Georgia, serif" font-size="54" fill="white">use a password</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-07-11  ·  2fa  ·  accounts  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: Passkey auth flow ── -->
+
+  <!-- YOUR DEVICE (phone) -->
+  <rect x="724" y="95" width="142" height="248" rx="20" fill="rgba(16,185,129,0.07)" stroke="rgba(16,185,129,0.35)" stroke-width="2"/>
+  <!-- Screen -->
+  <rect x="734" y="111" width="122" height="196" rx="8" fill="#030d07"/>
+  <!-- Home bar -->
+  <rect x="764" y="330" width="62" height="6" rx="3" fill="rgba(16,185,129,0.2)"/>
+  <!-- PASSKEY label on screen -->
+  <text x="795" y="138" font-family="monospace" font-size="8" fill="rgba(16,185,129,0.4)" text-anchor="middle" letter-spacing="2">PASSKEY</text>
+  <!-- Fingerprint rings -->
+  <circle cx="795" cy="196" r="36" fill="none" stroke="rgba(16,185,129,0.1)" stroke-width="1.5"/>
+  <circle cx="795" cy="196" r="28" fill="none" stroke="rgba(16,185,129,0.18)" stroke-width="1.5"/>
+  <circle cx="795" cy="196" r="20" fill="none" stroke="rgba(16,185,129,0.3)" stroke-width="1.5"/>
+  <circle cx="795" cy="196" r="12" fill="none" stroke="rgba(16,185,129,0.5)" stroke-width="1.5"/>
+  <circle cx="795" cy="196" r="5" fill="rgba(16,185,129,0.7)"/>
+  <!-- "Face ID / PIN" inside screen -->
+  <text x="795" y="264" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.28)" text-anchor="middle">Face ID · PIN</text>
+  <!-- Device label -->
+  <text x="795" y="372" font-family="monospace" font-size="9" fill="rgba(16,185,129,0.55)" text-anchor="middle">YOUR DEVICE</text>
+  <text x="795" y="387" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)" text-anchor="middle">private key stored here</text>
+
+  <!-- Arrow from device to website -->
+  <line x1="866" y1="218" x2="974" y2="218" stroke="rgba(16,185,129,0.55)" stroke-width="2.5" stroke-linecap="round"/>
+  <polyline points="963,208 975,218 963,228" fill="none" stroke="rgba(16,185,129,0.55)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Arrow label -->
+  <text x="920" y="208" font-family="monospace" font-size="8" fill="rgba(16,185,129,0.65)" text-anchor="middle">proof only</text>
+  <text x="920" y="232" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.22)" text-anchor="middle">not the password</text>
+
+  <!-- WEBSITE (browser panel) -->
+  <rect x="976" y="95" width="172" height="248" rx="12" fill="rgba(16,185,129,0.05)" stroke="rgba(16,185,129,0.3)" stroke-width="1.5"/>
+  <!-- Browser toolbar -->
+  <rect x="976" y="95" width="172" height="34" rx="12" fill="rgba(16,185,129,0.14)"/>
+  <rect x="976" y="116" width="172" height="13" fill="rgba(16,185,129,0.14)"/>
+  <!-- Dots -->
+  <circle cx="994" cy="112" r="4" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="1008" cy="112" r="4" fill="rgba(255,255,255,0.1)"/>
+  <circle cx="1022" cy="112" r="4" fill="rgba(255,255,255,0.1)"/>
+  <!-- URL bar -->
+  <rect x="1036" y="104" width="102" height="16" rx="4" fill="#030d07" stroke="rgba(16,185,129,0.2)" stroke-width="1"/>
+  <text x="1044" y="116" font-family="monospace" font-size="7" fill="rgba(16,185,129,0.45)">yourbank.com</text>
+  <!-- Verification checkmark circle -->
+  <circle cx="1062" cy="196" r="30" fill="rgba(16,185,129,0.07)" stroke="rgba(16,185,129,0.3)" stroke-width="1.5"/>
+  <polyline points="1048,196 1058,208 1078,182" fill="none" stroke="rgba(16,185,129,0.75)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- "Signed in" -->
+  <text x="1062" y="250" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.35)" text-anchor="middle">Signed in</text>
+  <!-- Website label -->
+  <text x="1062" y="372" font-family="monospace" font-size="9" fill="rgba(16,185,129,0.55)" text-anchor="middle">WEBSITE</text>
+  <text x="1062" y="387" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)" text-anchor="middle">public key only — no password stored</text>
+
+  <!-- Phishing deflection panel -->
+  <rect x="724" y="412" width="424" height="130" rx="10" fill="rgba(0,0,0,0.22)" stroke="rgba(239,68,68,0.15)" stroke-width="1"/>
+  <text x="736" y="435" font-family="monospace" font-size="8" fill="rgba(239,68,68,0.45)" letter-spacing="2">PHISHING ATTEMPT</text>
+
+  <!-- Fake site box -->
+  <rect x="736" y="446" width="150" height="38" rx="5" fill="rgba(239,68,68,0.07)" stroke="rgba(239,68,68,0.22)" stroke-width="1"/>
+  <text x="746" y="462" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.25)">y0urbank.com</text>
+  <text x="746" y="477" font-family="monospace" font-size="7" fill="rgba(239,68,68,0.45)">fake site, wrong domain</text>
+
+  <!-- Blocked arrow -->
+  <line x1="886" y1="465" x2="924" y2="465" stroke="rgba(239,68,68,0.35)" stroke-width="2" stroke-dasharray="4,3" stroke-linecap="round"/>
+  <rect x="912" y="453" width="24" height="24" rx="5" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.4)" stroke-width="1"/>
+  <line x1="918" y1="459" x2="930" y2="471" stroke="rgba(239,68,68,0.7)" stroke-width="2" stroke-linecap="round"/>
+  <line x1="930" y1="459" x2="918" y2="471" stroke="rgba(239,68,68,0.7)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Result text -->
+  <text x="948" y="458" font-family="monospace" font-size="9" fill="rgba(16,185,129,0.6)">device refuses —</text>
+  <text x="948" y="473" font-family="monospace" font-size="9" fill="rgba(16,185,129,0.6)">passkey is domain-bound</text>
+  <text x="948" y="488" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.2)">wrong domain = no match, nothing sent</text>
+</svg>

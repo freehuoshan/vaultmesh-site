@@ -127,6 +127,63 @@
       "audience": "Anyone who has sent a password over text, email, or Slack",
       "status": "drafted",
       "draft_path": "blog/_drafts/2026-07-10-sharing-passwords-safely.md"
+    },
+    {
+      "id": "passkeys-explained",
+      "title": "Passkeys: the sign-in method that doesn't use a password",
+      "angle": "Passkeys are now supported by Apple, Google, and Microsoft. Explain what they are (a cryptographic key pair tied to your device, no password to steal or phish), how they work without being technical, and what to do when a site offers one. Honest about the current limitation: they don't yet work everywhere.",
+      "audience": "Anyone who has seen 'Sign in with a passkey' and wasn't sure what to make of it",
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-11-passkeys-explained.md"
+    },
+    {
+      "id": "sign-in-with-google",
+      "title": "What 'Sign in with Google' actually does to your account",
+      "angle": "OAuth social login is convenient but creates a dependency: if your Google or Apple account is compromised, so is everything connected to it. Explain what's actually being shared, when social login is a reasonable choice, and when a standalone login is worth the extra step.",
+      "audience": "Anyone who routinely clicks 'Continue with Google' without thinking about what that means",
+      "status": "queued"
+    },
+    {
+      "id": "breach-severity-explained",
+      "title": "Not all data breaches are the same",
+      "angle": "When a breach notice arrives, the urgency depends on what was actually exposed. Explain the difference between plaintext passwords (change immediately), hashed passwords (change soon, monitor), and metadata-only breaches (lower urgency) — without entropy math or crypto jargon.",
+      "audience": "Anyone who gets breach notifications and doesn't know how seriously to take them",
+      "status": "queued"
+    },
+    {
+      "id": "backup-codes-explained",
+      "title": "Backup codes: the 2FA safety net most people never save",
+      "angle": "When you enable 2FA, most services offer one-time backup codes for account recovery. Most people skip saving them and later get locked out when they lose their phone or switch authenticator apps. Explain what backup codes are, why they matter, and where to store them safely.",
+      "audience": "Anyone who has set up 2FA but didn't save the backup codes — or doesn't know what they are",
+      "status": "queued"
+    },
+    {
+      "id": "third-party-app-access",
+      "title": "The apps still connected to your accounts",
+      "angle": "When you use 'Sign in with Google' or connect a tool to your account, it retains ongoing access — often long after you've stopped using it. Old, forgotten apps with account access are a real risk. Walk through how to find and revoke them on major platforms.",
+      "audience": "Anyone who has connected apps or services to their Google, Apple, or Microsoft account and never reviewed them",
+      "status": "queued"
+    },
+    {
+      "id": "smishing-explained",
+      "title": "Phishing by text: how SMS scams work and how to spot them",
+      "angle": "Smishing (SMS phishing) follows the same formula as email phishing but feels more personal. Fake delivery notifications, bank alerts, and government texts are the most common formats. Walk through the tells and the same core rule: don't tap a link in an unsolicited text — go directly to the site.",
+      "audience": "Anyone who gets unexpected texts from banks, couriers, or government agencies",
+      "status": "queued"
+    },
+    {
+      "id": "password-audit",
+      "title": "How to find and fix your weakest passwords",
+      "angle": "Most people have a handful of genuinely risky passwords mixed in with fine ones. Explain how to do a practical audit: check HaveIBeenPwned, use a password manager's built-in audit feature if available, and prioritize which to fix first (email and banking before everything else).",
+      "audience": "Anyone who suspects they have some weak or reused passwords but doesn't know where to start",
+      "status": "queued"
+    },
+    {
+      "id": "device-encryption",
+      "title": "Device encryption: why it matters when your phone goes missing",
+      "angle": "Full-device encryption means that a thief who gets your phone can't read its contents without your PIN. Most modern phones enable it by default, but many people don't know it's there or whether it's on. Explain what it does, how to verify it's enabled, and why the lock screen PIN is more important than it looks.",
+      "audience": "Anyone who stores passwords, photos, or sensitive data on a phone or laptop",
+      "status": "queued"
     }
   ]
 }
