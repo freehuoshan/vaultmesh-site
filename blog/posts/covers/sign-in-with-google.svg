@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#060d1f"/>
+      <stop offset="100%" stop-color="#0e1d3a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#3b82f6"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="54" fill="white">What 'Sign in</text>
+  <text x="76" y="254" font-family="Georgia, serif" font-size="54" fill="white">with Google'</text>
+  <text x="76" y="320" font-family="Georgia, serif" font-size="54" fill="white">actually does</text>
+  <text x="76" y="386" font-family="Georgia, serif" font-size="54" fill="white">to your account</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-07-12  ·  accounts  ·  habits  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: Hub-and-spoke identity dependency illustration ── -->
+
+  <!-- Hub connector spokes (drawn first so nodes sit on top) -->
+  <!-- Top-left: EMAIL -->
+  <line x1="940" y1="272" x2="820" y2="178" stroke="rgba(59,130,246,0.3)" stroke-width="1.5"/>
+  <!-- Top: BANKING -->
+  <line x1="940" y1="268" x2="940" y2="148" stroke="rgba(59,130,246,0.3)" stroke-width="1.5"/>
+  <!-- Top-right: SHOPPING -->
+  <line x1="948" y1="272" x2="1062" y2="178" stroke="rgba(59,130,246,0.3)" stroke-width="1.5"/>
+  <!-- Bottom-right: SOCIAL -->
+  <line x1="1000" y1="316" x2="1062" y2="378" stroke="rgba(59,130,246,0.3)" stroke-width="1.5"/>
+  <!-- Bottom: WORK TOOLS -->
+  <line x1="940" y1="330" x2="940" y2="418" stroke="rgba(59,130,246,0.3)" stroke-width="1.5"/>
+  <!-- Bottom-left: NEWS -->
+  <line x1="880" y1="316" x2="820" y2="378" stroke="rgba(59,130,246,0.3)" stroke-width="1.5"/>
+
+  <!-- Hub: identity provider circle -->
+  <circle cx="940" cy="297" r="52" fill="rgba(59,130,246,0.08)" stroke="rgba(59,130,246,0.45)" stroke-width="2"/>
+  <circle cx="940" cy="297" r="40" fill="rgba(59,130,246,0.06)" stroke="rgba(59,130,246,0.2)" stroke-width="1"/>
+  <!-- "G" letter mark -->
+  <text x="940" y="286" font-family="Georgia, serif" font-size="28" fill="rgba(59,130,246,0.7)" text-anchor="middle">G</text>
+  <text x="940" y="308" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="1">IDENTITY</text>
+  <text x="940" y="320" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="1">PROVIDER</text>
+
+  <!-- Spoke node: EMAIL (top-left) -->
+  <circle cx="806" cy="160" r="30" fill="rgba(59,130,246,0.07)" stroke="rgba(59,130,246,0.3)" stroke-width="1.5"/>
+  <text x="806" y="156" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)" text-anchor="middle">EMAIL</text>
+  <text x="806" y="169" font-family="monospace" font-size="7" fill="rgba(59,130,246,0.45)" text-anchor="middle">●●●●</text>
+
+  <!-- Spoke node: BANKING (top) -->
+  <circle cx="940" cy="118" r="30" fill="rgba(59,130,246,0.07)" stroke="rgba(59,130,246,0.3)" stroke-width="1.5"/>
+  <text x="940" y="114" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)" text-anchor="middle">BANK</text>
+  <text x="940" y="127" font-family="monospace" font-size="7" fill="rgba(59,130,246,0.45)" text-anchor="middle">●●●●</text>
+
+  <!-- Spoke node: SHOPPING (top-right) -->
+  <circle cx="1076" cy="160" r="30" fill="rgba(59,130,246,0.07)" stroke="rgba(59,130,246,0.3)" stroke-width="1.5"/>
+  <text x="1076" y="155" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.45)" text-anchor="middle">SHOPPING</text>
+  <text x="1076" y="168" font-family="monospace" font-size="7" fill="rgba(59,130,246,0.45)" text-anchor="middle">●●●●</text>
+
+  <!-- Spoke node: SOCIAL (bottom-right) -->
+  <circle cx="1076" cy="396" r="30" fill="rgba(59,130,246,0.07)" stroke="rgba(59,130,246,0.3)" stroke-width="1.5"/>
+  <text x="1076" y="391" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.45)" text-anchor="middle">SOCIAL</text>
+  <text x="1076" y="404" font-family="monospace" font-size="7" fill="rgba(59,130,246,0.45)" text-anchor="middle">●●●●</text>
+
+  <!-- Spoke node: WORK TOOLS (bottom) -->
+  <circle cx="940" cy="450" r="30" fill="rgba(59,130,246,0.07)" stroke="rgba(59,130,246,0.3)" stroke-width="1.5"/>
+  <text x="940" y="445" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.45)" text-anchor="middle">WORK</text>
+  <text x="940" y="458" font-family="monospace" font-size="7" fill="rgba(59,130,246,0.45)" text-anchor="middle">●●●●</text>
+
+  <!-- Spoke node: NEWS/MEDIA (bottom-left) -->
+  <circle cx="806" cy="396" r="30" fill="rgba(59,130,246,0.07)" stroke="rgba(59,130,246,0.3)" stroke-width="1.5"/>
+  <text x="806" y="391" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.45)" text-anchor="middle">MEDIA</text>
+  <text x="806" y="404" font-family="monospace" font-size="7" fill="rgba(59,130,246,0.45)" text-anchor="middle">●●●●</text>
+
+  <!-- "1 account" label on hub -->
+  <text x="940" y="520" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.25)" text-anchor="middle" letter-spacing="1">1 account controls access to all</text>
+
+  <!-- Warning annotation: if hub is compromised -->
+  <rect x="718" y="540" width="444" height="36" rx="7" fill="rgba(239,68,68,0.07)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <text x="728" y="554" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.5)">⚠</text>
+  <text x="744" y="554" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.3)">If the provider account is taken over,</text>
+  <text x="744" y="568" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.3)">every connected service is affected.</text>
+</svg>

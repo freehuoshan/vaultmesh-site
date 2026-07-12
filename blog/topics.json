@@ -141,7 +141,8 @@
       "title": "What 'Sign in with Google' actually does to your account",
       "angle": "OAuth social login is convenient but creates a dependency: if your Google or Apple account is compromised, so is everything connected to it. Explain what's actually being shared, when social login is a reasonable choice, and when a standalone login is worth the extra step.",
       "audience": "Anyone who routinely clicks 'Continue with Google' without thinking about what that means",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-12-sign-in-with-google.md"
     },
     {
       "id": "breach-severity-explained",

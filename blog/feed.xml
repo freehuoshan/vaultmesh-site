@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>What &#39;Sign in with Google&#39; actually does to your account</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/sign-in-with-google.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/sign-in-with-google.html</guid>
+    <pubDate>Sun, 12 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Social login is convenient, but it makes your Google or Apple account a master key for every service you connect to it.</description>
+  </item>
+  <item>
     <title>Passkeys: the sign-in method that doesn&#39;t use a password</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/passkeys-explained.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/passkeys-explained.html</guid>
