@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Not all data breaches are the same</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/breach-severity-explained.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/breach-severity-explained.html</guid>
+    <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+    <description>A breach notification doesn&#39;t always mean your password is at risk — how urgently you need to act depends on what was actually exposed.</description>
+  </item>
+  <item>
     <title>What &#39;Sign in with Google&#39; actually does to your account</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/sign-in-with-google.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/sign-in-with-google.html</guid>

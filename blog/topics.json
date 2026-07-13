@@ -149,7 +149,8 @@
       "title": "Not all data breaches are the same",
       "angle": "When a breach notice arrives, the urgency depends on what was actually exposed. Explain the difference between plaintext passwords (change immediately), hashed passwords (change soon, monitor), and metadata-only breaches (lower urgency) — without entropy math or crypto jargon.",
       "audience": "Anyone who gets breach notifications and doesn't know how seriously to take them",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-13-breach-severity-explained.md"
     },
     {
       "id": "backup-codes-explained",

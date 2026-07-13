@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0505"/>
+      <stop offset="100%" stop-color="#2d0a0a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#ef4444"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="56" fill="white">Not all data</text>
+  <text x="76" y="254" font-family="Georgia, serif" font-size="56" fill="white">breaches are</text>
+  <text x="76" y="320" font-family="Georgia, serif" font-size="56" fill="white">the same</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-07-13  ·  breaches  ·  habits  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: Three breach severity panels ── -->
+
+  <!-- PANEL 1: METADATA ONLY (low urgency, blue-gray) -->
+  <rect x="718" y="72" width="432" height="148" rx="10" fill="rgba(99,102,241,0.06)" stroke="rgba(99,102,241,0.3)" stroke-width="1.5"/>
+  <!-- Header bar -->
+  <rect x="718" y="72" width="432" height="36" rx="10" fill="rgba(99,102,241,0.18)"/>
+  <rect x="718" y="94" width="432" height="14" fill="rgba(99,102,241,0.18)"/>
+  <text x="730" y="96" font-family="monospace" font-size="10" fill="rgba(99,102,241,0.85)" letter-spacing="1">METADATA ONLY</text>
+  <!-- Urgency badge -->
+  <rect x="1060" y="78" width="78" height="20" rx="5" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.5)" stroke-width="1"/>
+  <text x="1099" y="92" font-family="monospace" font-size="8" fill="rgba(99,102,241,0.8)" text-anchor="middle" letter-spacing="1">LOW</text>
+  <!-- Content -->
+  <text x="730" y="128" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.45)">Exposed: email, name, phone, preferences</text>
+  <text x="730" y="144" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.3)">Password: not in scope</text>
+  <text x="730" y="164" font-family="monospace" font-size="9" fill="rgba(99,102,241,0.65)">Action: watch for phishing — no password change needed</text>
+
+  <!-- PANEL 2: HASHED PASSWORD (medium urgency, amber) -->
+  <rect x="718" y="234" width="432" height="148" rx="10" fill="rgba(251,146,60,0.06)" stroke="rgba(251,146,60,0.3)" stroke-width="1.5"/>
+  <!-- Header bar -->
+  <rect x="718" y="234" width="432" height="36" rx="10" fill="rgba(251,146,60,0.18)"/>
+  <rect x="718" y="256" width="432" height="14" fill="rgba(251,146,60,0.18)"/>
+  <text x="730" y="258" font-family="monospace" font-size="10" fill="rgba(251,146,60,0.85)" letter-spacing="1">HASHED PASSWORDS</text>
+  <!-- Urgency badge -->
+  <rect x="1042" y="240" width="96" height="20" rx="5" fill="rgba(251,146,60,0.2)" stroke="rgba(251,146,60,0.5)" stroke-width="1"/>
+  <text x="1090" y="254" font-family="monospace" font-size="8" fill="rgba(251,146,60,0.8)" text-anchor="middle" letter-spacing="1">MEDIUM</text>
+  <!-- Content -->
+  <text x="730" y="290" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.45)">Exposed: transformed password (not readable directly)</text>
+  <text x="730" y="306" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.3)">Risk: crackable if password was weak or common</text>
+  <!-- Hash visual -->
+  <rect x="730" y="316" width="240" height="18" rx="4" fill="rgba(0,0,0,0.3)" stroke="rgba(251,146,60,0.15)" stroke-width="1"/>
+  <text x="738" y="329" font-family="monospace" font-size="8" fill="rgba(251,146,60,0.45)">$2b$12$K8Yv3N… (hash, not password)</text>
+  <text x="730" y="358" font-family="monospace" font-size="9" fill="rgba(251,146,60,0.65)">Action: change password on site + anywhere reused</text>
+
+  <!-- PANEL 3: PLAINTEXT PASSWORD (high urgency, red) -->
+  <rect x="718" y="396" width="432" height="148" rx="10" fill="rgba(239,68,68,0.06)" stroke="rgba(239,68,68,0.4)" stroke-width="1.5"/>
+  <!-- Header bar -->
+  <rect x="718" y="396" width="432" height="36" rx="10" fill="rgba(239,68,68,0.22)"/>
+  <rect x="718" y="418" width="432" height="14" fill="rgba(239,68,68,0.22)"/>
+  <text x="730" y="420" font-family="monospace" font-size="10" fill="rgba(239,68,68,0.9)" letter-spacing="1">PLAINTEXT PASSWORDS</text>
+  <!-- Urgency badge -->
+  <rect x="1042" y="402" width="96" height="20" rx="5" fill="rgba(239,68,68,0.25)" stroke="rgba(239,68,68,0.6)" stroke-width="1"/>
+  <text x="1090" y="416" font-family="monospace" font-size="8" fill="rgba(239,68,68,0.9)" text-anchor="middle" letter-spacing="1">ACT NOW</text>
+  <!-- Content -->
+  <text x="730" y="452" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.45)">Exposed: your actual password, readable immediately</text>
+  <text x="730" y="468" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.3)">Risk: attacker can log in to this + any reused accounts</text>
+  <!-- Plaintext visual -->
+  <rect x="730" y="478" width="190" height="18" rx="4" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.3)" stroke-width="1"/>
+  <text x="738" y="491" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.8)">hunter2  ← visible as-is</text>
+  <text x="730" y="520" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.7)">Action: change it everywhere, immediately</text>
+</svg>
