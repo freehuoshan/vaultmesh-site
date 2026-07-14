@@ -157,7 +157,8 @@
       "title": "Backup codes: the 2FA safety net most people never save",
       "angle": "When you enable 2FA, most services offer one-time backup codes for account recovery. Most people skip saving them and later get locked out when they lose their phone or switch authenticator apps. Explain what backup codes are, why they matter, and where to store them safely.",
       "audience": "Anyone who has set up 2FA but didn't save the backup codes — or doesn't know what they are",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-14-backup-codes-explained.md"
     },
     {
       "id": "third-party-app-access",

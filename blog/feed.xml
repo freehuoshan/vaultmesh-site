@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Backup codes: the 2FA safety net most people never save</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/backup-codes-explained.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/backup-codes-explained.html</guid>
+    <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+    <description>When you set up 2FA, most services generate backup codes for emergencies — but skipping that step is how people get locked out of their own accounts.</description>
+  </item>
+  <item>
     <title>Not all data breaches are the same</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/breach-severity-explained.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/breach-severity-explained.html</guid>

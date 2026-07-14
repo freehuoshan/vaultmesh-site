@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backup codes: the 2FA safety net most people never save — Password Sense</title>
+  <meta name="description" content="When you set up 2FA, most services generate backup codes for emergencies — but skipping that step is how people get locked out of their own accounts.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Backup codes: the 2FA safety net most people never save">
+  <meta property="og:description" content="When you set up 2FA, most services generate backup codes for emergencies — but skipping that step is how people get locked out of their own accounts.">
+  <meta property="og:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/backup-codes-explained.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Backup codes: the 2FA safety net most people never save">
+  <meta name="twitter:description" content="When you set up 2FA, most services generate backup codes for emergencies — but skipping that step is how people get locked out of their own accounts.">
+  <meta name="twitter:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/backup-codes-explained.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .blog-prose { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+    .blog-prose h1 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 400; line-height: 1.2; margin: 0 0 32px; color: var(--ink); }
+    .blog-prose h2 { font-family: var(--serif); font-size: 24px; font-weight: 400; margin-top: 2em; margin-bottom: 0.6em; color: var(--ink); }
+    .blog-prose h3 { font-family: var(--sans); font-size: 18px; font-weight: 600; margin-top: 1.6em; color: var(--ink); }
+    .blog-prose p { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); margin: 0 0 1.1em; }
+    .blog-prose a { color: var(--primary); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .blog-prose a:hover { color: var(--primary-hover); }
+    .blog-prose pre { background: #103866; color: #f0f7ff; padding: 18px 20px; border-radius: 6px; overflow-x: auto; font-family: var(--mono); font-size: 13px; line-height: 1.55; margin: 1.4em 0; }
+    .blog-prose code { font-family: var(--mono); font-size: 0.88em; background: var(--bg2); padding: 1px 5px; border-radius: 3px; color: var(--ink); }
+    .blog-prose pre code { background: none; padding: 0; color: inherit; font-size: inherit; }
+    .blog-prose ul, .blog-prose ol { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); padding-left: 1.4em; }
+    .blog-prose li { margin: 0.3em 0; }
+    .blog-prose blockquote { border-left: 3px solid var(--accent-warm); margin: 1.4em 0; padding: 0.2em 0 0.2em 18px; color: var(--ink3); font-style: italic; }
+    .blog-meta { font-family: var(--mono); color: var(--ink3); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+    .blog-meta .tag { display: inline-block; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; margin-left: 6px; }
+    .blog-post-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .blog-back { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 12px; color: var(--ink3); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .blog-back:hover { color: var(--primary); }
+    .share-x { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 12px; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .share-x:hover { color: var(--primary-hover); }
+    .blog-cover-img { width: 100%; height: auto; display: block; border-radius: 8px; margin-bottom: 32px; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-brand" href="/index.html">
+    <img src="/img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
+    <span class="nav-brand-name">VaultMesh</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/index.html#features">Features</a></li>
+    <li><a href="/index.html#how-it-works">How It Works</a></li>
+    <li><a href="/index.html#download">Download</a></li>
+    <li><a href="/relay.html">Relay Guide</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/support.html">Support</a></li>
+    <li><a href="/index.html#download" class="nav-cta">Get VaultMesh</a></li>
+  </ul>
+</nav>
+
+<main class="blog-prose">
+  <img class="blog-cover-img" src="/blog/posts/covers/backup-codes-explained.svg" alt="" aria-hidden="true">
+  <div class="blog-meta">July 14, 2026 <span class="tag">2fa</span> <span class="tag">accounts</span></div>
+  <h1>Backup codes: the 2FA safety net most people never save</h1>
+  <p>When you enable two-factor authentication on an account, the setup usually ends with a screen showing a grid of codes and something like &quot;save these somewhere safe.&quot; Most people dismiss this without saving anything, or download the file and promptly forget where.</p>
+<p>These are backup codes. They exist for a specific reason, and skipping this step can lock you out of your own account when your normal 2FA method stops working.</p>
+<h2>What backup codes are and when you&#39;d need them</h2>
+<p>Backup codes are a set of one-time-use codes generated by the service when you first enable two-factor authentication. Each code works exactly once to sign in to your account in place of your usual 2FA method — your authenticator app, your SMS codes, or your hardware key.</p>
+<p>Unlike the codes your authenticator app generates, backup codes aren&#39;t time-sensitive. They don&#39;t expire on a 30-second timer. They sit waiting, stored by the service, available when you need them.</p>
+<p>The scenario they&#39;re designed for: you can&#39;t access your usual 2FA method. Your phone is broken, lost, or stolen. You switched to a new phone and forgot to migrate your authenticator app. Your hardware key has gone missing. In any of these cases, a backup code lets you sign in and update your settings from there.</p>
+<h2>What happens when you don&#39;t have them</h2>
+<p>When 2FA is enabled and you lose access to both your authenticator and your backup codes, getting back into the account is harder than most people expect. Services intentionally make their manual recovery processes difficult — if a &quot;lost my phone&quot; story bypassed 2FA, it would also work for an attacker.</p>
+<p>Depending on the service, recovery might require identity verification, waiting several days, or uploading documentation. Some services don&#39;t offer a manual recovery path at all for accounts with 2FA enabled and no backup codes. For those, the account may be permanently inaccessible.</p>
+<p>This is the most common way people get locked out of their own accounts after setting up 2FA.</p>
+<h2>Where to save them</h2>
+<p>The key requirement: backup codes need to be accessible without the device that holds your authenticator.</p>
+<p>Practical options:</p>
+<ul>
+<li><strong>A password manager</strong>, alongside the account&#39;s login credentials. If you&#39;re locked out of an account, your password manager is the first place you&#39;d look anyway — having the backup codes there keeps everything in one accessible place.</li>
+<li><strong>Printed out</strong> and kept somewhere physically secure at home, like a locked drawer or with other important documents.</li>
+<li><strong>An encrypted notes app</strong> that syncs to a device other than your phone.</li>
+</ul>
+<p>What doesn&#39;t work: saving them as a screenshot on the same phone as your authenticator app. If that phone is the one that&#39;s lost or broken, the backup codes are gone with it. Storing them in an email draft has the same problem — it&#39;s only as accessible as your email account.</p>
+<h2>Keeping them current</h2>
+<p>Most services let you generate a new set of backup codes at any time, which immediately invalidates the old ones. A few things worth knowing:</p>
+<p>If you use a code and the count gets low, generate a new set. Ten codes sounds like plenty until a few have been used in testing or in actual recoveries.</p>
+<p>When you generate a new set, save the new codes before closing the page. The old codes are gone the moment you regenerate.</p>
+<p>If you&#39;ve never saved your backup codes, or genuinely don&#39;t know whether you did, go check. Open the security settings on your important accounts and look for a two-factor authentication or backup codes section. Most services will show you whether codes were generated during setup and let you view or regenerate them.</p>
+<p>Start with the accounts that matter most: your primary email, banking, and any account with 2FA enabled that you&#39;d struggle to live without.</p>
+<h2>The short version</h2>
+<p>Backup codes take a couple of minutes to save properly. The entire value is in doing it before you need them — at the moment you need them, it&#39;s already too late to generate them.</p>
+
+  <div class="blog-post-actions">
+    <a class="blog-back" href="/blog/">← All posts</a>
+    <a class="share-x" href="https://twitter.com/intent/tweet?text=Backup%20codes%3A%20the%202FA%20safety%20net%20most%20people%20never%20save&url=https%3A%2F%2Fvaultmesh.codeblog.net%2Fblog%2Fposts%2Fbackup-codes-explained.html" target="_blank" rel="noopener noreferrer">Share on X →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">VaultMesh</div>
+      <div class="footer-brand-desc">Private password manager for desktop and mobile with local-first storage and end-to-end encryption.</div>
+      <div class="crypto-chips">
+        <span class="chip">Argon2id</span>
+        <span class="chip">XChaCha20</span>
+        <span class="chip">X25519</span>
+        <span class="chip">Ed25519</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Product</div>
+      <ul class="footer-links">
+        <li><a href="/index.html#features">Features</a></li>
+        <li><a href="/index.html#how-it-works">How It Works</a></li>
+        <li><a href="/index.html#download">Download</a></li>
+        <li><a href="/relay.html">Relay Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/downloads/checksums.txt">Checksums</a></li>
+        <li><a href="/downloads/desktop/">Desktop Packages</a></li>
+        <li><a href="/downloads/relay/">Relay Packages</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal</div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="mailto:vaultmesh.support@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 VaultMesh. All rights reserved.</span>
+    <span class="footer-copy"><a href="mailto:vaultmesh.support@gmail.com" style="color:inherit;text-decoration:none;">vaultmesh.support@gmail.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
