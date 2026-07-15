@@ -165,7 +165,8 @@
       "title": "The apps still connected to your accounts",
       "angle": "When you use 'Sign in with Google' or connect a tool to your account, it retains ongoing access — often long after you've stopped using it. Old, forgotten apps with account access are a real risk. Walk through how to find and revoke them on major platforms.",
       "audience": "Anyone who has connected apps or services to their Google, Apple, or Microsoft account and never reviewed them",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-15-third-party-app-access.md"
     },
     {
       "id": "smishing-explained",

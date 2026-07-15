@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>The apps still connected to your accounts</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/third-party-app-access.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/third-party-app-access.html</guid>
+    <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Every app you&#39;ve connected to Google, Apple, or Microsoft keeps that access until you explicitly revoke it — and most people never do.</description>
+  </item>
+  <item>
     <title>Backup codes: the 2FA safety net most people never save</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/backup-codes-explained.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/backup-codes-explained.html</guid>
