@@ -173,7 +173,8 @@
       "title": "Phishing by text: how SMS scams work and how to spot them",
       "angle": "Smishing (SMS phishing) follows the same formula as email phishing but feels more personal. Fake delivery notifications, bank alerts, and government texts are the most common formats. Walk through the tells and the same core rule: don't tap a link in an unsolicited text — go directly to the site.",
       "audience": "Anyone who gets unexpected texts from banks, couriers, or government agencies",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-16-smishing-explained.md"
     },
     {
       "id": "password-audit",

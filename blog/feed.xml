@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Phishing by text: how SMS scams work and how to spot them</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/smishing-explained.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/smishing-explained.html</guid>
+    <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+    <description>SMS scams use the same tricks as email phishing, but text messages feel more personal and urgent — which is exactly what makes them effective.</description>
+  </item>
+  <item>
     <title>The apps still connected to your accounts</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/third-party-app-access.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/third-party-app-access.html</guid>

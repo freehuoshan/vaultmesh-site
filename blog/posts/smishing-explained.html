@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phishing by text: how SMS scams work and how to spot them — Password Sense</title>
+  <meta name="description" content="SMS scams use the same tricks as email phishing, but text messages feel more personal and urgent — which is exactly what makes them effective.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Phishing by text: how SMS scams work and how to spot them">
+  <meta property="og:description" content="SMS scams use the same tricks as email phishing, but text messages feel more personal and urgent — which is exactly what makes them effective.">
+  <meta property="og:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/smishing-explained.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Phishing by text: how SMS scams work and how to spot them">
+  <meta name="twitter:description" content="SMS scams use the same tricks as email phishing, but text messages feel more personal and urgent — which is exactly what makes them effective.">
+  <meta name="twitter:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/smishing-explained.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .blog-prose { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+    .blog-prose h1 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 400; line-height: 1.2; margin: 0 0 32px; color: var(--ink); }
+    .blog-prose h2 { font-family: var(--serif); font-size: 24px; font-weight: 400; margin-top: 2em; margin-bottom: 0.6em; color: var(--ink); }
+    .blog-prose h3 { font-family: var(--sans); font-size: 18px; font-weight: 600; margin-top: 1.6em; color: var(--ink); }
+    .blog-prose p { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); margin: 0 0 1.1em; }
+    .blog-prose a { color: var(--primary); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .blog-prose a:hover { color: var(--primary-hover); }
+    .blog-prose pre { background: #103866; color: #f0f7ff; padding: 18px 20px; border-radius: 6px; overflow-x: auto; font-family: var(--mono); font-size: 13px; line-height: 1.55; margin: 1.4em 0; }
+    .blog-prose code { font-family: var(--mono); font-size: 0.88em; background: var(--bg2); padding: 1px 5px; border-radius: 3px; color: var(--ink); }
+    .blog-prose pre code { background: none; padding: 0; color: inherit; font-size: inherit; }
+    .blog-prose ul, .blog-prose ol { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); padding-left: 1.4em; }
+    .blog-prose li { margin: 0.3em 0; }
+    .blog-prose blockquote { border-left: 3px solid var(--accent-warm); margin: 1.4em 0; padding: 0.2em 0 0.2em 18px; color: var(--ink3); font-style: italic; }
+    .blog-meta { font-family: var(--mono); color: var(--ink3); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+    .blog-meta .tag { display: inline-block; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; margin-left: 6px; }
+    .blog-post-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .blog-back { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 12px; color: var(--ink3); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .blog-back:hover { color: var(--primary); }
+    .share-x { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 12px; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .share-x:hover { color: var(--primary-hover); }
+    .blog-cover-img { width: 100%; height: auto; display: block; border-radius: 8px; margin-bottom: 32px; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-brand" href="/index.html">
+    <img src="/img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
+    <span class="nav-brand-name">VaultMesh</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/index.html#features">Features</a></li>
+    <li><a href="/index.html#how-it-works">How It Works</a></li>
+    <li><a href="/index.html#download">Download</a></li>
+    <li><a href="/relay.html">Relay Guide</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/support.html">Support</a></li>
+    <li><a href="/index.html#download" class="nav-cta">Get VaultMesh</a></li>
+  </ul>
+</nav>
+
+<main class="blog-prose">
+  <img class="blog-cover-img" src="/blog/posts/covers/smishing-explained.svg" alt="" aria-hidden="true">
+  <div class="blog-meta">July 16, 2026 <span class="tag">phishing</span> <span class="tag">habits</span></div>
+  <h1>Phishing by text: how SMS scams work and how to spot them</h1>
+  <p>The text says your package couldn&#39;t be delivered. Or there&#39;s unusual activity on your bank account. Or you&#39;re owed a tax refund. There&#39;s a link to tap. The message feels urgent, and it&#39;s designed to.</p>
+<p>SMS scams — sometimes called smishing — follow exactly the same playbook as email phishing. The goal is identical: get you to click a link that leads to a fake site, enter credentials, or hand over personal information. What makes the text version effective is that it arrives through a channel with no spam filter, no preview of the sender&#39;s actual domain, and a strong cultural expectation of quick responses.</p>
+<h2>How it works</h2>
+<p>The attacker sends a text impersonating a recognizable organization — a delivery carrier, your bank, a government agency. The message is short, which makes it easier to look plausible. It includes a link, usually shortened (bit.ly or similar), so you can&#39;t see where it actually goes before you tap.</p>
+<p>If you tap and land on the fake site, it looks like the real one. If you enter your credentials, the attacker captures them. If it&#39;s a bank-themed scam, there may be a fake &quot;verify your identity&quot; form designed to capture enough information to take over your account.</p>
+<p>The sender number is not a reliable indicator of legitimacy. Phone numbers can be spoofed, and some attacks even appear in existing message threads with your real bank — because both messages came to the same number, they thread together in your SMS app.</p>
+<h2>The most common formats</h2>
+<p>Knowing what these look like helps you recognize them:</p>
+<p><strong>Delivery notifications.</strong> &quot;Your package couldn&#39;t be delivered. Click to reschedule or it will be returned.&quot; These are particularly effective because people are often expecting deliveries. The link goes to a fake carrier page, sometimes with a small &quot;customs fee&quot; to pay — which captures your card number.</p>
+<p><strong>Bank alerts.</strong> &quot;Unusual activity detected on your account. Verify your identity here.&quot; Real banks do send fraud alerts by text, which makes this one harder to dismiss. The tell: the link doesn&#39;t go to the bank&#39;s actual domain, and real alerts ask you to call the number on your card, not log in through a link.</p>
+<p><strong>Government texts.</strong> Tax refund notices, benefit payment alerts, or &quot;you owe a fine&quot; messages. Government agencies in most countries will not contact you for the first time about money owed or owed to you via text with a link.</p>
+<h2>What actually helps</h2>
+<p>The one habit that handles most of this: don&#39;t tap links in unsolicited texts. If a message says there&#39;s an issue with your delivery, your bank account, or your taxes, go directly to the relevant site or app. Open your browser, type the address you know, sign in, and check. A real problem will be visible there.</p>
+<p>This sounds obvious but is genuinely the right instinct. Both a real bank alert and a fake one can look identical in a text message. The only thing that reliably separates them is whether the destination is the bank&#39;s actual site — which you can only know by going there yourself.</p>
+<p>A few more specific things to watch for:</p>
+<p>If the link is shortened, the destination is hidden before you tap. That&#39;s a reason for extra skepticism, not necessarily proof of a scam — but combined with urgency and an unsolicited message, it&#39;s a meaningful signal.</p>
+<p>If the text asks you to call a number rather than tap a link, verify the number independently. The number in the text can be fake. Look up the company&#39;s contact number on their official website.</p>
+<p>If you&#39;re not expecting a package, be especially cautious about delivery texts. Check your email for a tracking number from an actual order, then go to the carrier&#39;s site directly with that number.</p>
+<h2>Reporting</h2>
+<p>Most carriers offer a way to report suspicious texts. In the US, you can forward smishing texts to 7726 (SPAM), which reports them to your carrier for analysis. This doesn&#39;t require any special setup and takes about ten seconds.</p>
+<h2>The short version</h2>
+<p>SMS scams rely on urgency, impersonation, and the assumption you&#39;ll tap without thinking. The defense is the same as with any phishing: pause, skip the link, and verify through a channel you already trust. Text messages can&#39;t prove who sent them — which is exactly why you shouldn&#39;t act on them before checking elsewhere.</p>
+
+  <div class="blog-post-actions">
+    <a class="blog-back" href="/blog/">← All posts</a>
+    <a class="share-x" href="https://twitter.com/intent/tweet?text=Phishing%20by%20text%3A%20how%20SMS%20scams%20work%20and%20how%20to%20spot%20them&url=https%3A%2F%2Fvaultmesh.codeblog.net%2Fblog%2Fposts%2Fsmishing-explained.html" target="_blank" rel="noopener noreferrer">Share on X →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">VaultMesh</div>
+      <div class="footer-brand-desc">Private password manager for desktop and mobile with local-first storage and end-to-end encryption.</div>
+      <div class="crypto-chips">
+        <span class="chip">Argon2id</span>
+        <span class="chip">XChaCha20</span>
+        <span class="chip">X25519</span>
+        <span class="chip">Ed25519</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Product</div>
+      <ul class="footer-links">
+        <li><a href="/index.html#features">Features</a></li>
+        <li><a href="/index.html#how-it-works">How It Works</a></li>
+        <li><a href="/index.html#download">Download</a></li>
+        <li><a href="/relay.html">Relay Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/downloads/checksums.txt">Checksums</a></li>
+        <li><a href="/downloads/desktop/">Desktop Packages</a></li>
+        <li><a href="/downloads/relay/">Relay Packages</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal</div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="mailto:vaultmesh.support@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 VaultMesh. All rights reserved.</span>
+    <span class="footer-copy"><a href="mailto:vaultmesh.support@gmail.com" style="color:inherit;text-decoration:none;">vaultmesh.support@gmail.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
