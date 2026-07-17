@@ -181,7 +181,8 @@
       "title": "How to find and fix your weakest passwords",
       "angle": "Most people have a handful of genuinely risky passwords mixed in with fine ones. Explain how to do a practical audit: check HaveIBeenPwned, use a password manager's built-in audit feature if available, and prioritize which to fix first (email and banking before everything else).",
       "audience": "Anyone who suspects they have some weak or reused passwords but doesn't know where to start",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-17-password-audit.md"
     },
     {
       "id": "device-encryption",

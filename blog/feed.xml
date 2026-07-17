@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>How to find and fix your weakest passwords</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/password-audit.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/password-audit.html</guid>
+    <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Most people have a few dangerously weak passwords hiding among acceptable ones — here&#39;s how to find them and fix the ones that matter most.</description>
+  </item>
+  <item>
     <title>Phishing by text: how SMS scams work and how to spot them</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/smishing-explained.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/smishing-explained.html</guid>
