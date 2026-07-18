@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device encryption: why it matters when your phone goes missing — Password Sense</title>
+  <meta name="description" content="Full-device encryption means a thief who gets your phone can&#39;t read its contents without your PIN — but the protection is only as strong as that PIN.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Device encryption: why it matters when your phone goes missing">
+  <meta property="og:description" content="Full-device encryption means a thief who gets your phone can&#39;t read its contents without your PIN — but the protection is only as strong as that PIN.">
+  <meta property="og:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/device-encryption.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Device encryption: why it matters when your phone goes missing">
+  <meta name="twitter:description" content="Full-device encryption means a thief who gets your phone can&#39;t read its contents without your PIN — but the protection is only as strong as that PIN.">
+  <meta name="twitter:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/device-encryption.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .blog-prose { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+    .blog-prose h1 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 400; line-height: 1.2; margin: 0 0 32px; color: var(--ink); }
+    .blog-prose h2 { font-family: var(--serif); font-size: 24px; font-weight: 400; margin-top: 2em; margin-bottom: 0.6em; color: var(--ink); }
+    .blog-prose h3 { font-family: var(--sans); font-size: 18px; font-weight: 600; margin-top: 1.6em; color: var(--ink); }
+    .blog-prose p { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); margin: 0 0 1.1em; }
+    .blog-prose a { color: var(--primary); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .blog-prose a:hover { color: var(--primary-hover); }
+    .blog-prose pre { background: #103866; color: #f0f7ff; padding: 18px 20px; border-radius: 6px; overflow-x: auto; font-family: var(--mono); font-size: 13px; line-height: 1.55; margin: 1.4em 0; }
+    .blog-prose code { font-family: var(--mono); font-size: 0.88em; background: var(--bg2); padding: 1px 5px; border-radius: 3px; color: var(--ink); }
+    .blog-prose pre code { background: none; padding: 0; color: inherit; font-size: inherit; }
+    .blog-prose ul, .blog-prose ol { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); padding-left: 1.4em; }
+    .blog-prose li { margin: 0.3em 0; }
+    .blog-prose blockquote { border-left: 3px solid var(--accent-warm); margin: 1.4em 0; padding: 0.2em 0 0.2em 18px; color: var(--ink3); font-style: italic; }
+    .blog-meta { font-family: var(--mono); color: var(--ink3); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+    .blog-meta .tag { display: inline-block; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; margin-left: 6px; }
+    .blog-post-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .blog-back { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 12px; color: var(--ink3); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .blog-back:hover { color: var(--primary); }
+    .share-x { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 12px; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .share-x:hover { color: var(--primary-hover); }
+    .blog-cover-img { width: 100%; height: auto; display: block; border-radius: 8px; margin-bottom: 32px; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-brand" href="/index.html">
+    <img src="/img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
+    <span class="nav-brand-name">VaultMesh</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/index.html#features">Features</a></li>
+    <li><a href="/index.html#how-it-works">How It Works</a></li>
+    <li><a href="/index.html#download">Download</a></li>
+    <li><a href="/relay.html">Relay Guide</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/support.html">Support</a></li>
+    <li><a href="/index.html#download" class="nav-cta">Get VaultMesh</a></li>
+  </ul>
+</nav>
+
+<main class="blog-prose">
+  <img class="blog-cover-img" src="/blog/posts/covers/device-encryption.svg" alt="" aria-hidden="true">
+  <div class="blog-meta">July 18, 2026 <span class="tag">habits</span> <span class="tag">myths</span></div>
+  <h1>Device encryption: why it matters when your phone goes missing</h1>
+  <p>A lock screen keeps someone from using your phone&#39;s interface. What it doesn&#39;t do, on its own, is prevent someone from reading the data stored on the device. With the right tools and physical access, it&#39;s possible to connect a phone to a computer and pull data from the storage directly — completely bypassing the lock screen.</p>
+<p>That&#39;s what full-device encryption addresses. The good news is that most people already have it turned on without knowing.</p>
+<h2>What encryption actually does</h2>
+<p>When device encryption is enabled, all the data on your phone — photos, messages, saved credentials, app data, emails — is stored in scrambled form. Reading those bytes directly produces meaningless output without the decryption key.</p>
+<p>That key is derived from your lock screen PIN or passphrase. When you enter your PIN to unlock your phone, you&#39;re not just dismissing the interface — you&#39;re providing the key the device needs to decrypt its own storage for that session. Without the correct PIN, the storage contents can&#39;t be read, even if someone removes the storage or connects the phone to another system.</p>
+<p>This is a meaningful difference from just having a lock screen. A lock screen controls the software interface. Encryption protects the data itself at the storage level.</p>
+<h2>What&#39;s already enabled on most devices</h2>
+<p>Full-device encryption has been enabled by default on iPhones since iOS 8. On Android, it became the default on most devices starting around 2015, with the specific rollout varying by manufacturer and device. If you have a phone from the last several years, it&#39;s almost certainly already encrypted.</p>
+<p>Laptops are more variable. Macs with Apple Silicon or the T2 chip encrypt storage by default. Windows Pro and Enterprise include BitLocker, and it&#39;s enabled by default on many newer devices sold with Windows 11. Older Windows machines, and Windows Home editions, may not have it on without you explicitly enabling it.</p>
+<h2>How to verify</h2>
+<p>On iPhone, encryption is active whenever a passcode is set. Under Settings → Face ID &amp; Passcode (or Touch ID &amp; Passcode), look for a line near the bottom that says &quot;Data protection is enabled.&quot; Setting a passcode is what activates encryption — there&#39;s no separate toggle.</p>
+<p>On Android, go to Settings → Security. Look for an Encryption section. If it says &quot;Encrypted,&quot; you&#39;re covered. The exact location varies by device manufacturer.</p>
+<p>On Windows, search for &quot;Device encryption&quot; or &quot;BitLocker&quot; in the Start menu to see the current status. On a Mac, go to System Settings → Privacy &amp; Security → FileVault.</p>
+<h2>Why your PIN matters as much as encryption itself</h2>
+<p>Encryption keeps your data safe from someone who bypasses your phone&#39;s operating system. But the protection is only as strong as the key — and the key comes from your PIN.</p>
+<p>A 4-digit PIN has 10,000 possible values. A 6-digit PIN has 1,000,000. An attacker trying guesses systematically faces a much harder problem with a longer PIN, even though modern phones add lockout timers and attempt limits that slow things down further. The PIN is still the weakest point in the chain.</p>
+<p>The practical step: if you&#39;re using a 4-digit PIN, switch to 6 digits or an alphanumeric passphrase. On iPhone, go to Settings → Face ID &amp; Passcode → Change Passcode → Passcode Options. The inconvenience of two extra digits at unlock is small; the security improvement is real.</p>
+<p>Biometrics — Face ID, fingerprint — are convenient for day-to-day unlocking, but your PIN is the fallback and the root of the decryption key. It&#39;s worth making it as strong as you&#39;re comfortable with.</p>
+<h2>The part most people miss</h2>
+<p>Encryption and lock screens are different layers of protection, and they work together. Encryption makes your data unreadable without the key. The lock screen enforces who can provide that key. If your PIN is easy to guess, the encryption is easier to bypass.</p>
+<p>One thing this means in practice: a stolen phone with a short, guessable PIN is meaningfully less protected than one with a longer PIN, even if both have encryption enabled. The encryption is doing its job — it&#39;s the PIN that becomes the limiting factor.</p>
+<p>Check that encryption is on. Lengthen your PIN if it&#39;s still four digits. Those two things together cover the scenario where your phone ends up in the wrong hands.</p>
+
+  <div class="blog-post-actions">
+    <a class="blog-back" href="/blog/">← All posts</a>
+    <a class="share-x" href="https://twitter.com/intent/tweet?text=Device%20encryption%3A%20why%20it%20matters%20when%20your%20phone%20goes%20missing&url=https%3A%2F%2Fvaultmesh.codeblog.net%2Fblog%2Fposts%2Fdevice-encryption.html" target="_blank" rel="noopener noreferrer">Share on X →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">VaultMesh</div>
+      <div class="footer-brand-desc">Private password manager for desktop and mobile with local-first storage and end-to-end encryption.</div>
+      <div class="crypto-chips">
+        <span class="chip">Argon2id</span>
+        <span class="chip">XChaCha20</span>
+        <span class="chip">X25519</span>
+        <span class="chip">Ed25519</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Product</div>
+      <ul class="footer-links">
+        <li><a href="/index.html#features">Features</a></li>
+        <li><a href="/index.html#how-it-works">How It Works</a></li>
+        <li><a href="/index.html#download">Download</a></li>
+        <li><a href="/relay.html">Relay Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/downloads/checksums.txt">Checksums</a></li>
+        <li><a href="/downloads/desktop/">Desktop Packages</a></li>
+        <li><a href="/downloads/relay/">Relay Packages</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal</div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="mailto:vaultmesh.support@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 VaultMesh. All rights reserved.</span>
+    <span class="footer-copy"><a href="mailto:vaultmesh.support@gmail.com" style="color:inherit;text-decoration:none;">vaultmesh.support@gmail.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

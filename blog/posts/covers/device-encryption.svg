@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#051a18"/>
+      <stop offset="100%" stop-color="#0a2d28"/>
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d0d0d"/>
+      <stop offset="100%" stop-color="#181818"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#14b8a6"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="54" fill="white">Device encryption:</text>
+  <text x="76" y="254" font-family="Georgia, serif" font-size="54" fill="white">why it matters</text>
+  <text x="76" y="320" font-family="Georgia, serif" font-size="54" fill="white">when your phone</text>
+  <text x="76" y="386" font-family="Georgia, serif" font-size="54" fill="white">goes missing</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-07-18  ·  habits  ·  myths  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: Phone + outcome panels ── -->
+
+  <!-- Phone outer frame -->
+  <rect x="718" y="72" width="192" height="400" rx="20" fill="url(#phoneGrad)" stroke="rgba(20,184,166,0.22)" stroke-width="2"/>
+  <!-- Camera notch -->
+  <rect x="782" y="80" width="64" height="12" rx="6" fill="#0d0d0d"/>
+  <!-- Home indicator -->
+  <rect x="782" y="462" width="64" height="4" rx="2" fill="rgba(255,255,255,0.18)"/>
+  <!-- Screen area -->
+  <rect x="726" y="96" width="176" height="358" rx="4" fill="#0b1e1c"/>
+
+  <!-- Status bar -->
+  <text x="736" y="110" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.4)">9:41</text>
+  <text x="894" y="110" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="end">▪▪▪</text>
+
+  <!-- Screen header -->
+  <text x="814" y="130" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.5)" text-anchor="middle">Security</text>
+  <line x1="726" y1="136" x2="902" y2="136" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Settings row: Encryption -->
+  <text x="736" y="154" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">Encryption</text>
+  <text x="894" y="154" font-family="monospace" font-size="8" fill="rgba(20,184,166,0.8)" text-anchor="end">On</text>
+  <line x1="736" y1="162" x2="894" y2="162" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- Settings row: Passcode -->
+  <text x="736" y="178" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">Passcode</text>
+  <text x="894" y="178" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.38)" text-anchor="end">6-digit</text>
+  <line x1="736" y1="186" x2="894" y2="186" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- Settings row: Data protection -->
+  <text x="736" y="202" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">Data protection</text>
+  <text x="894" y="202" font-family="monospace" font-size="8" fill="rgba(20,184,166,0.65)" text-anchor="end">Enabled</text>
+  <line x1="736" y1="210" x2="894" y2="210" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+
+  <!-- PIN entry area -->
+  <rect x="726" y="240" width="176" height="80" fill="rgba(20,184,166,0.04)"/>
+  <line x1="726" y1="240" x2="902" y2="240" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="814" y="262" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.28)" text-anchor="middle">Enter Passcode</text>
+  <!-- Six PIN dots -->
+  <circle cx="752" cy="291" r="6" fill="rgba(20,184,166,0.65)"/>
+  <circle cx="770" cy="291" r="6" fill="rgba(20,184,166,0.65)"/>
+  <circle cx="788" cy="291" r="6" fill="rgba(20,184,166,0.65)"/>
+  <circle cx="806" cy="291" r="6" fill="rgba(20,184,166,0.65)"/>
+  <circle cx="824" cy="291" r="6" fill="rgba(20,184,166,0.65)"/>
+  <circle cx="842" cy="291" r="6" fill="rgba(20,184,166,0.65)"/>
+
+  <!-- Encrypted storage visualization at bottom of phone -->
+  <line x1="726" y1="342" x2="902" y2="342" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  <text x="814" y="360" font-family="monospace" font-size="6.5" fill="rgba(20,184,166,0.35)" text-anchor="middle">stored encrypted at rest</text>
+  <!-- Storage blocks -->
+  <rect x="736" y="370" width="40" height="18" rx="2" fill="rgba(20,184,166,0.07)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
+  <text x="756" y="383" font-family="monospace" font-size="5.5" fill="rgba(20,184,166,0.45)" text-anchor="middle">photos</text>
+  <rect x="782" y="370" width="46" height="18" rx="2" fill="rgba(20,184,166,0.07)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
+  <text x="805" y="383" font-family="monospace" font-size="5.5" fill="rgba(20,184,166,0.45)" text-anchor="middle">messages</text>
+  <rect x="834" y="370" width="50" height="18" rx="2" fill="rgba(20,184,166,0.07)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
+  <text x="859" y="383" font-family="monospace" font-size="5.5" fill="rgba(20,184,166,0.45)" text-anchor="middle">passwords</text>
+  <text x="814" y="436" font-family="monospace" font-size="7" fill="rgba(20,184,166,0.25)" text-anchor="middle">[ key = your PIN ]</text>
+
+  <!-- ── WITHOUT PIN panel (top right) ── -->
+  <rect x="922" y="72" width="226" height="196" rx="10" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.25)" stroke-width="1.5"/>
+  <rect x="922" y="72" width="226" height="32" rx="10" fill="rgba(239,68,68,0.15)"/>
+  <rect x="922" y="90" width="226" height="14" fill="rgba(239,68,68,0.15)"/>
+  <text x="1035" y="92" font-family="monospace" font-size="8" fill="rgba(239,68,68,0.78)" text-anchor="middle" letter-spacing="1">WITHOUT YOUR PIN</text>
+  <!-- Scrambled bytes -->
+  <text x="932" y="118" font-family="monospace" font-size="7.5" fill="rgba(239,68,68,0.32)">3f8a c4b2 91e7 fa40 2d15</text>
+  <text x="932" y="134" font-family="monospace" font-size="7.5" fill="rgba(239,68,68,0.26)">b7c3 08af 4e19 d6f2 a381</text>
+  <text x="932" y="150" font-family="monospace" font-size="7.5" fill="rgba(239,68,68,0.20)">9140 e5b8 73c1 f047 2da6</text>
+  <text x="932" y="166" font-family="monospace" font-size="7.5" fill="rgba(239,68,68,0.15)">6e92 1b4f d830 a75c 3e08</text>
+  <line x1="932" y1="178" x2="1136" y2="178" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+  <text x="1035" y="202" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.55)" text-anchor="middle">unreadable to a thief</text>
+  <text x="1035" y="254" font-family="monospace" font-size="7" fill="rgba(239,68,68,0.3)" text-anchor="middle">even with direct storage access</text>
+
+  <!-- ── WITH PIN panel (bottom right) ── -->
+  <rect x="922" y="276" width="226" height="196" rx="10" fill="rgba(20,184,166,0.04)" stroke="rgba(20,184,166,0.28)" stroke-width="1.5"/>
+  <rect x="922" y="276" width="226" height="32" rx="10" fill="rgba(20,184,166,0.14)"/>
+  <rect x="922" y="294" width="226" height="14" fill="rgba(20,184,166,0.14)"/>
+  <text x="1035" y="296" font-family="monospace" font-size="8" fill="rgba(20,184,166,0.78)" text-anchor="middle" letter-spacing="1">WITH YOUR PIN</text>
+  <!-- Readable data items -->
+  <text x="932" y="324" font-family="monospace" font-size="8" fill="rgba(20,184,166,0.55)">Photos</text>
+  <text x="932" y="340" font-family="monospace" font-size="8" fill="rgba(20,184,166,0.55)">Messages</text>
+  <text x="932" y="356" font-family="monospace" font-size="8" fill="rgba(20,184,166,0.55)">Saved passwords</text>
+  <text x="932" y="372" font-family="monospace" font-size="8" fill="rgba(20,184,166,0.55)">App data &amp; email</text>
+  <line x1="932" y1="384" x2="1136" y2="384" stroke="rgba(20,184,166,0.1)" stroke-width="1"/>
+  <text x="1035" y="406" font-family="monospace" font-size="9" fill="rgba(20,184,166,0.6)" text-anchor="middle">full access restored</text>
+  <text x="1035" y="460" font-family="monospace" font-size="7" fill="rgba(20,184,166,0.28)" text-anchor="middle">decryption key derived from PIN</text>
+
+  <!-- ── FOOTER: PIN strength ── -->
+  <rect x="718" y="480" width="430" height="108" rx="10" fill="rgba(20,184,166,0.04)" stroke="rgba(20,184,166,0.2)" stroke-width="1.5"/>
+  <rect x="718" y="480" width="430" height="32" rx="10" fill="rgba(20,184,166,0.12)"/>
+  <rect x="718" y="498" width="430" height="14" fill="rgba(20,184,166,0.12)"/>
+  <text x="933" y="500" font-family="monospace" font-size="9" fill="rgba(20,184,166,0.72)" text-anchor="middle" letter-spacing="2">PIN STRENGTH</text>
+  <!-- 4-digit -->
+  <text x="730" y="526" font-family="monospace" font-size="8" fill="rgba(251,191,36,0.6)">4-digit PIN:</text>
+  <text x="820" y="526" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.3)">10,000 possible values</text>
+  <text x="730" y="542" font-family="monospace" font-size="8" fill="rgba(20,184,166,0.65)">6-digit PIN:</text>
+  <text x="820" y="542" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">1,000,000 possible values</text>
+  <text x="730" y="558" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.22)">Settings → Face ID &amp; Passcode → Change Passcode → Passcode Options</text>
+  <text x="730" y="572" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.18)">Android: Settings → Security → Screen lock</text>
+</svg>

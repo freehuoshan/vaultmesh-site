@@ -189,7 +189,8 @@
       "title": "Device encryption: why it matters when your phone goes missing",
       "angle": "Full-device encryption means that a thief who gets your phone can't read its contents without your PIN. Most modern phones enable it by default, but many people don't know it's there or whether it's on. Explain what it does, how to verify it's enabled, and why the lock screen PIN is more important than it looks.",
       "audience": "Anyone who stores passwords, photos, or sensitive data on a phone or laptop",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-18-device-encryption.md"
     }
   ]
 }

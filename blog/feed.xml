@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Device encryption: why it matters when your phone goes missing</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/device-encryption.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/device-encryption.html</guid>
+    <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Full-device encryption means a thief who gets your phone can&#39;t read its contents without your PIN — but the protection is only as strong as that PIN.</description>
+  </item>
+  <item>
     <title>How to find and fix your weakest passwords</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/password-audit.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/password-audit.html</guid>
