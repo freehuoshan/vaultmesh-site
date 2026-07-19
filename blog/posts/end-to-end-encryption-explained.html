@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What end-to-end encrypted actually means — Password Sense</title>
+  <meta name="description" content="End-to-end encryption protects your messages from the service provider — but it has real limits that are worth understanding before you rely on it.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="What end-to-end encrypted actually means">
+  <meta property="og:description" content="End-to-end encryption protects your messages from the service provider — but it has real limits that are worth understanding before you rely on it.">
+  <meta property="og:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/end-to-end-encryption-explained.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What end-to-end encrypted actually means">
+  <meta name="twitter:description" content="End-to-end encryption protects your messages from the service provider — but it has real limits that are worth understanding before you rely on it.">
+  <meta name="twitter:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/end-to-end-encryption-explained.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .blog-prose { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+    .blog-prose h1 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 400; line-height: 1.2; margin: 0 0 32px; color: var(--ink); }
+    .blog-prose h2 { font-family: var(--serif); font-size: 24px; font-weight: 400; margin-top: 2em; margin-bottom: 0.6em; color: var(--ink); }
+    .blog-prose h3 { font-family: var(--sans); font-size: 18px; font-weight: 600; margin-top: 1.6em; color: var(--ink); }
+    .blog-prose p { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); margin: 0 0 1.1em; }
+    .blog-prose a { color: var(--primary); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .blog-prose a:hover { color: var(--primary-hover); }
+    .blog-prose pre { background: #103866; color: #f0f7ff; padding: 18px 20px; border-radius: 6px; overflow-x: auto; font-family: var(--mono); font-size: 13px; line-height: 1.55; margin: 1.4em 0; }
+    .blog-prose code { font-family: var(--mono); font-size: 0.88em; background: var(--bg2); padding: 1px 5px; border-radius: 3px; color: var(--ink); }
+    .blog-prose pre code { background: none; padding: 0; color: inherit; font-size: inherit; }
+    .blog-prose ul, .blog-prose ol { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); padding-left: 1.4em; }
+    .blog-prose li { margin: 0.3em 0; }
+    .blog-prose blockquote { border-left: 3px solid var(--accent-warm); margin: 1.4em 0; padding: 0.2em 0 0.2em 18px; color: var(--ink3); font-style: italic; }
+    .blog-meta { font-family: var(--mono); color: var(--ink3); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+    .blog-meta .tag { display: inline-block; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; margin-left: 6px; }
+    .blog-post-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .blog-back { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 12px; color: var(--ink3); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .blog-back:hover { color: var(--primary); }
+    .share-x { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 12px; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .share-x:hover { color: var(--primary-hover); }
+    .blog-cover-img { width: 100%; height: auto; display: block; border-radius: 8px; margin-bottom: 32px; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-brand" href="/index.html">
+    <img src="/img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
+    <span class="nav-brand-name">VaultMesh</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/index.html#features">Features</a></li>
+    <li><a href="/index.html#how-it-works">How It Works</a></li>
+    <li><a href="/index.html#download">Download</a></li>
+    <li><a href="/relay.html">Relay Guide</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/support.html">Support</a></li>
+    <li><a href="/index.html#download" class="nav-cta">Get VaultMesh</a></li>
+  </ul>
+</nav>
+
+<main class="blog-prose">
+  <img class="blog-cover-img" src="/blog/posts/covers/end-to-end-encryption-explained.svg" alt="" aria-hidden="true">
+  <div class="blog-meta">July 20, 2026 <span class="tag">habits</span> <span class="tag">myths</span></div>
+  <h1>What end-to-end encrypted actually means</h1>
+  <p>The phrase &quot;end-to-end encrypted&quot; appears in app store listings, privacy settings, and company announcements. It sounds like a strong security guarantee. It is a real one — but it has specific boundaries that the marketing language rarely bothers to explain.</p>
+<p>Understanding what the term actually means helps you know when the protection applies and when it doesn&#39;t.</p>
+<h2>What end-to-end encryption does</h2>
+<p>In a regular messaging system, your message travels from your device to the service provider&#39;s servers, and then from those servers to the recipient. The company running the service can read the message at each point — while it&#39;s in transit, while it&#39;s stored on their servers, and potentially in other contexts depending on their policies.</p>
+<p>End-to-end encryption changes this. The message is encrypted on your device before it leaves. It remains encrypted as it travels through the company&#39;s infrastructure. It&#39;s only decrypted when it reaches the recipient&#39;s device. The company in the middle handles the encrypted version and can&#39;t read the contents.</p>
+<p>This is meaningful. It means that even if the service provider&#39;s servers are breached, or if a government compels the company to produce records, the actual content of your messages isn&#39;t accessible — because the company genuinely doesn&#39;t have it.</p>
+<h2>What it doesn&#39;t protect</h2>
+<p>End-to-end encryption secures the content of messages in transit and at rest on the server. It doesn&#39;t cover everything.</p>
+<p><strong>The devices at each end.</strong> If someone picks up your unlocked phone, or if malware is installed on your device, your messages are visible just as they would be on screen. Encryption protects the wire between devices, not the devices themselves.</p>
+<p><strong>Screenshots and copies.</strong> Once a message is decrypted and displayed on the recipient&#39;s screen, they can screenshot it, copy it, forward it. E2EE doesn&#39;t constrain what the recipient does with the content after receiving it.</p>
+<p><strong>Metadata.</strong> Many services that encrypt message content still log metadata — who messaged whom, when, how frequently, from what IP address. This information doesn&#39;t reveal what was said, but it can reveal quite a lot about relationships and patterns. Signal is notable for minimizing what metadata it collects; other services vary.</p>
+<p><strong>Backups.</strong> If you back up your messages to a cloud service, whether the backup is encrypted depends on your settings. Messages that are end-to-end encrypted in transit may sit in plaintext in an iCloud or Google Drive backup unless you explicitly enable encrypted backups.</p>
+<h2>Which apps actually use it</h2>
+<p>Not all messaging apps implement E2EE, and some do so only in certain contexts.</p>
+<p><strong>Signal</strong> uses end-to-end encryption by default for all messages and calls. It also collects minimal metadata.</p>
+<p><strong>iMessage</strong> uses E2EE between Apple devices on iMessage. When a message falls back to SMS — the green bubble — it&#39;s not encrypted at all.</p>
+<p><strong>WhatsApp</strong> uses end-to-end encryption by default for messages and calls.</p>
+<p><strong>Telegram</strong> is often misunderstood here. Regular Telegram chats are not end-to-end encrypted — they&#39;re stored on Telegram&#39;s servers in a way Telegram can access. Only &quot;Secret Chats&quot; use E2EE, and those must be started explicitly. Group chats are not end-to-end encrypted regardless.</p>
+<p><strong>Standard SMS and email</strong> are not end-to-end encrypted. Email with S/MIME or PGP can be, but this requires both parties to have it set up, and it&#39;s uncommon outside of technical contexts.</p>
+<h2>What to do with this</h2>
+<p>If you want the strongest protection for sensitive conversations, Signal is the practical recommendation. The E2EE implementation is well-reviewed, the metadata collection is minimal, and it works for messages, calls, and group chats.</p>
+<p>For everyday communication where E2EE content protection matters but you&#39;re less concerned about metadata, iMessage and WhatsApp are reasonable choices. Just be aware of the backup situation and the SMS fallback for iMessage.</p>
+<p>For Telegram, remember that regular chats aren&#39;t private from Telegram itself — use Secret Chats explicitly if that matters for a particular conversation.</p>
+<p>The main correction the term &quot;end-to-end encrypted&quot; sometimes needs: it says something specific about the content in transit and at rest on the server. It doesn&#39;t say anything about the devices on either end, what the other person does with the message, or what metadata the service logs. Those are separate questions worth asking.</p>
+
+  <div class="blog-post-actions">
+    <a class="blog-back" href="/blog/">← All posts</a>
+    <a class="share-x" href="https://twitter.com/intent/tweet?text=What%20end-to-end%20encrypted%20actually%20means&url=https%3A%2F%2Fvaultmesh.codeblog.net%2Fblog%2Fposts%2Fend-to-end-encryption-explained.html" target="_blank" rel="noopener noreferrer">Share on X →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">VaultMesh</div>
+      <div class="footer-brand-desc">Private password manager for desktop and mobile with local-first storage and end-to-end encryption.</div>
+      <div class="crypto-chips">
+        <span class="chip">Argon2id</span>
+        <span class="chip">XChaCha20</span>
+        <span class="chip">X25519</span>
+        <span class="chip">Ed25519</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Product</div>
+      <ul class="footer-links">
+        <li><a href="/index.html#features">Features</a></li>
+        <li><a href="/index.html#how-it-works">How It Works</a></li>
+        <li><a href="/index.html#download">Download</a></li>
+        <li><a href="/relay.html">Relay Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/downloads/checksums.txt">Checksums</a></li>
+        <li><a href="/downloads/desktop/">Desktop Packages</a></li>
+        <li><a href="/downloads/relay/">Relay Packages</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal</div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="mailto:vaultmesh.support@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 VaultMesh. All rights reserved.</span>
+    <span class="footer-copy"><a href="mailto:vaultmesh.support@gmail.com" style="color:inherit;text-decoration:none;">vaultmesh.support@gmail.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

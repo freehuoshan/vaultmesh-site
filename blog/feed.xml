@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>What end-to-end encrypted actually means</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/end-to-end-encryption-explained.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/end-to-end-encryption-explained.html</guid>
+    <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+    <description>End-to-end encryption protects your messages from the service provider — but it has real limits that are worth understanding before you rely on it.</description>
+  </item>
+  <item>
     <title>What a VPN actually protects you from (and what it doesn&#39;t)</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/vpn-myths.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/vpn-myths.html</guid>

@@ -205,7 +205,8 @@
       "title": "What end-to-end encrypted actually means",
       "angle": "E2EE is real and valuable, but the term gets misused and misunderstood. Explain what it means (only sender and recipient can read the message), what it doesn't cover (screenshots, device access, your contacts), and which common apps actually have it.",
       "audience": "Anyone who has seen 'end-to-end encrypted' in an app and wonders what that actually guarantees",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-20-end-to-end-encryption-explained.md"
     },
     {
       "id": "account-takeover-response",
