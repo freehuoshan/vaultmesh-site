@@ -191,6 +191,63 @@
       "audience": "Anyone who stores passwords, photos, or sensitive data on a phone or laptop",
       "status": "drafted",
       "draft_path": "blog/_drafts/2026-07-18-device-encryption.md"
+    },
+    {
+      "id": "vpn-myths",
+      "title": "What a VPN actually protects you from (and what it doesn't)",
+      "angle": "VPNs are massively oversold as all-purpose security tools. They hide your traffic from your ISP and can help on untrusted networks, but they don't protect against phishing, malware, or account attacks. Cut through the marketing to explain when a VPN helps and when it doesn't.",
+      "audience": "Anyone who has considered buying a VPN for 'security' or already subscribes to one",
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-19-vpn-myths.md"
+    },
+    {
+      "id": "end-to-end-encryption-explained",
+      "title": "What end-to-end encrypted actually means",
+      "angle": "E2EE is real and valuable, but the term gets misused and misunderstood. Explain what it means (only sender and recipient can read the message), what it doesn't cover (screenshots, device access, your contacts), and which common apps actually have it.",
+      "audience": "Anyone who has seen 'end-to-end encrypted' in an app and wonders what that actually guarantees",
+      "status": "queued"
+    },
+    {
+      "id": "account-takeover-response",
+      "title": "What to do when you think your account has been hacked",
+      "angle": "Concrete steps in order: change password immediately, check for active sessions and log them out, review account recovery settings (attackers often add a backup email), enable 2FA if not already on, check for forwarding rules or permission grants. Calm and actionable, not panicked.",
+      "audience": "Anyone who suspects an account has been compromised and doesn't know where to start",
+      "status": "queued"
+    },
+    {
+      "id": "incognito-mode-explained",
+      "title": "What incognito mode actually does",
+      "angle": "Private browsing clears local history and cookies when you close the window. It does not hide your activity from your ISP, employer, or the websites you visit. Useful for: signing into a different account, preventing local history. Not useful for: anonymity or hiding from outside observers.",
+      "audience": "Anyone who uses private browsing and believes it provides more privacy than it does",
+      "status": "queued"
+    },
+    {
+      "id": "fake-support-calls",
+      "title": "Fake tech support calls: how they work and how to shut them down",
+      "angle": "Vishing (voice phishing) impersonates Microsoft, Apple, your bank, or the IRS. The playbook: create urgency, keep you on the phone, request remote access or payment. The defense is simple: hang up and call back on a number you looked up yourself. Never call a number the caller gave you.",
+      "audience": "Anyone who has received a suspicious call from 'Microsoft support' or a bank fraud department",
+      "status": "queued"
+    },
+    {
+      "id": "two-step-vs-two-factor",
+      "title": "Two-step login and two-factor authentication are not the same thing",
+      "angle": "Some 'two-step' logins just send a code to your email — which is only as secure as your email. True 2FA uses a separate second factor (phone app, hardware key) that's independent of your password. The difference matters when evaluating how protected an account actually is.",
+      "audience": "Anyone who has 'two-step' enabled on an account and assumes it's as strong as 2FA",
+      "status": "queued"
+    },
+    {
+      "id": "email-forwarding-rules",
+      "title": "The hidden account setting attackers configure after they get in",
+      "angle": "After gaining access to an email account, attackers often set up silent forwarding rules so they continue receiving messages even after the password is changed. Most people never check this setting. Walk through what to look for and how to audit email forwarding rules in Gmail and Outlook.",
+      "audience": "Anyone whose email account may have been accessed, or who just wants to check",
+      "status": "queued"
+    },
+    {
+      "id": "password-manager-offline-access",
+      "title": "What happens to your passwords if the password manager goes down",
+      "angle": "A reasonable fear: if the service closes or goes offline, are your passwords gone? Explain how different PM architectures handle this (local vault vs. cloud-only), what 'export' means and when to use it, and why local-first designs have different availability characteristics than cloud-only ones. One natural mention of VaultMesh as a local-first example.",
+      "audience": "Anyone hesitant to commit to a password manager because they worry about losing access",
+      "status": "queued"
     }
   ]
 }

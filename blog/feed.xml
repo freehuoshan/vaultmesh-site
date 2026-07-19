@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>What a VPN actually protects you from (and what it doesn&#39;t)</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/vpn-myths.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/vpn-myths.html</guid>
+    <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
+    <description>VPNs are marketed as all-purpose security tools, but most of the threats people worry about are ones a VPN doesn&#39;t address at all.</description>
+  </item>
+  <item>
     <title>Device encryption: why it matters when your phone goes missing</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/device-encryption.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/device-encryption.html</guid>

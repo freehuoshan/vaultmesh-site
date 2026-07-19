@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#051a18"/>
+      <stop offset="100%" stop-color="#0a2d28"/>
+    </linearGradient>
+    <linearGradient id="tunnelGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="rgba(20,184,166,0.25)"/>
+      <stop offset="100%" stop-color="rgba(20,184,166,0.05)"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#14b8a6"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="52" fill="white">What a VPN</text>
+  <text x="76" y="252" font-family="Georgia, serif" font-size="52" fill="white">actually protects</text>
+  <text x="76" y="316" font-family="Georgia, serif" font-size="52" fill="white">you from (and</text>
+  <text x="76" y="380" font-family="Georgia, serif" font-size="52" fill="white">what it doesn't)</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-07-19  ·  myths  ·  habits  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: VPN diagram ── -->
+
+  <!-- Main panel -->
+  <rect x="718" y="72" width="432" height="498" rx="12" fill="rgba(20,184,166,0.03)" stroke="rgba(20,184,166,0.15)" stroke-width="1.5"/>
+
+  <!-- Panel header -->
+  <rect x="718" y="72" width="432" height="40" rx="12" fill="rgba(20,184,166,0.1)"/>
+  <rect x="718" y="98" width="432" height="14" fill="rgba(20,184,166,0.1)"/>
+  <text x="730" y="98" font-family="monospace" font-size="11" fill="rgba(20,184,166,0.65)" letter-spacing="2">VPN REALITY CHECK</text>
+
+  <!-- ── NETWORK PATH DIAGRAM ── -->
+  <text x="934" y="128" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="1">YOUR NETWORK PATH</text>
+
+  <!-- Device box -->
+  <rect x="730" y="136" width="72" height="36" rx="5" fill="rgba(20,184,166,0.08)" stroke="rgba(20,184,166,0.35)" stroke-width="1"/>
+  <text x="766" y="149" font-family="monospace" font-size="7" fill="rgba(20,184,166,0.7)" text-anchor="middle">YOUR</text>
+  <text x="766" y="161" font-family="monospace" font-size="7" fill="rgba(20,184,166,0.7)" text-anchor="middle">DEVICE</text>
+
+  <!-- Encrypted tunnel rect -->
+  <rect x="812" y="136" width="136" height="36" rx="5" fill="url(#tunnelGrad)" stroke="rgba(20,184,166,0.25)" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="880" y="149" font-family="monospace" font-size="7" fill="rgba(20,184,166,0.55)" text-anchor="middle">ENCRYPTED</text>
+  <text x="880" y="161" font-family="monospace" font-size="7" fill="rgba(20,184,166,0.55)" text-anchor="middle">TUNNEL</text>
+  <!-- Arrow into tunnel -->
+  <line x1="802" y1="154" x2="812" y2="154" stroke="rgba(20,184,166,0.4)" stroke-width="1.5"/>
+  <polygon points="812,150 820,154 812,158" fill="rgba(20,184,166,0.4)"/>
+
+  <!-- VPN Server box -->
+  <rect x="958" y="136" width="72" height="36" rx="5" fill="rgba(20,184,166,0.08)" stroke="rgba(20,184,166,0.35)" stroke-width="1"/>
+  <text x="994" y="149" font-family="monospace" font-size="7" fill="rgba(20,184,166,0.7)" text-anchor="middle">VPN</text>
+  <text x="994" y="161" font-family="monospace" font-size="7" fill="rgba(20,184,166,0.7)" text-anchor="middle">SERVER</text>
+  <!-- Arrow out of tunnel -->
+  <line x1="948" y1="154" x2="958" y2="154" stroke="rgba(20,184,166,0.4)" stroke-width="1.5"/>
+  <polygon points="958,150 966,154 958,158" fill="rgba(20,184,166,0.4)"/>
+
+  <!-- Arrow to website (unencrypted section) -->
+  <line x1="1030" y1="154" x2="1050" y2="154" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+  <polygon points="1050,150 1058,154 1050,158" fill="rgba(255,255,255,0.2)"/>
+
+  <!-- Website box -->
+  <rect x="1058" y="136" width="72" height="36" rx="5" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="1094" y="149" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.4)" text-anchor="middle">WEBSITE</text>
+  <text x="1094" y="161" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.3)" text-anchor="middle">/ SERVICE</text>
+
+  <!-- Annotation: ISP sees only VPN -->
+  <line x1="880" y1="172" x2="880" y2="192" stroke="rgba(20,184,166,0.3)" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="880" y="204" font-family="monospace" font-size="6.5" fill="rgba(20,184,166,0.5)" text-anchor="middle">ISP sees: VPN connection only</text>
+
+  <!-- Annotation: site sees VPN IP -->
+  <line x1="1094" y1="172" x2="1094" y2="192" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="1094" y="204" font-family="monospace" font-size="6.5" fill="rgba(255,255,255,0.28)" text-anchor="middle">site sees: VPN IP only</text>
+
+  <!-- Separator -->
+  <line x1="730" y1="218" x2="1138" y2="218" stroke="rgba(20,184,166,0.1)" stroke-width="1"/>
+
+  <!-- ── TWO COLUMN: COVERED vs NOT COVERED ── -->
+
+  <!-- Left column header: COVERS -->
+  <text x="820" y="238" font-family="monospace" font-size="8" fill="rgba(34,197,94,0.65)" text-anchor="middle" letter-spacing="1">COVERS</text>
+  <line x1="730" y1="244" x2="910" y2="244" stroke="rgba(34,197,94,0.12)" stroke-width="1"/>
+
+  <!-- Covered items (green check) -->
+  <text x="742" y="264" font-family="monospace" font-size="9" fill="rgba(34,197,94,0.55)">✓</text>
+  <text x="758" y="264" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">ISP traffic inspection</text>
+
+  <text x="742" y="284" font-family="monospace" font-size="9" fill="rgba(34,197,94,0.55)">✓</text>
+  <text x="758" y="284" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">Your home IP address</text>
+
+  <text x="742" y="304" font-family="monospace" font-size="9" fill="rgba(34,197,94,0.55)">✓</text>
+  <text x="758" y="304" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">Untrusted network sniffing</text>
+
+  <text x="742" y="332" font-family="monospace" font-size="7" fill="rgba(20,184,166,0.3)">Note: HTTPS already encrypts</text>
+  <text x="742" y="346" font-family="monospace" font-size="7" fill="rgba(20,184,166,0.3)">content even without a VPN</text>
+
+  <!-- Vertical divider -->
+  <line x1="918" y1="224" x2="918" y2="478" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+  <!-- Right column header: DOES NOT COVER -->
+  <text x="1034" y="238" font-family="monospace" font-size="8" fill="rgba(239,68,68,0.65)" text-anchor="middle" letter-spacing="1">DOES NOT COVER</text>
+  <line x1="926" y1="244" x2="1138" y2="244" stroke="rgba(239,68,68,0.12)" stroke-width="1"/>
+
+  <!-- Not covered items (red X) -->
+  <text x="934" y="264" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.55)">✗</text>
+  <text x="950" y="264" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">Phishing attacks</text>
+
+  <text x="934" y="284" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.55)">✗</text>
+  <text x="950" y="284" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">Malware / bad downloads</text>
+
+  <text x="934" y="304" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.55)">✗</text>
+  <text x="950" y="304" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">Credential stuffing</text>
+
+  <text x="934" y="324" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.55)">✗</text>
+  <text x="950" y="324" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">Browser tracking / cookies</text>
+
+  <text x="934" y="344" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.45)">✗</text>
+  <text x="950" y="344" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.35)">VPN provider seeing your traffic</text>
+
+  <!-- Separator -->
+  <line x1="730" y1="368" x2="1138" y2="368" stroke="rgba(20,184,166,0.08)" stroke-width="1"/>
+
+  <!-- Better investment strip -->
+  <text x="934" y="390" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.22)" text-anchor="middle" letter-spacing="1">BETTER INVESTMENT FOR MOST THREATS</text>
+  <text x="742" y="414" font-family="monospace" font-size="8" fill="rgba(20,184,166,0.5)">→</text>
+  <text x="756" y="414" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.4)">Unique passwords + password manager</text>
+  <text x="742" y="432" font-family="monospace" font-size="8" fill="rgba(20,184,166,0.5)">→</text>
+  <text x="756" y="432" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.4)">2FA on email, banking, and key accounts</text>
+  <text x="742" y="450" font-family="monospace" font-size="8" fill="rgba(20,184,166,0.5)">→</text>
+  <text x="756" y="450" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.4)">Phishing awareness (pause before clicking)</text>
+
+  <!-- Footer note -->
+  <line x1="718" y1="470" x2="1150" y2="470" stroke="rgba(20,184,166,0.08)" stroke-width="1"/>
+  <text x="730" y="490" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.18)">A VPN is a useful tool — just not a substitute for account security hygiene</text>
+  <text x="730" y="506" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.15)">Trusted providers with no-log policies: Mullvad, ProtonVPN — check policies before subscribing</text>
+</svg>
