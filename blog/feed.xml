@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>What to do when you think your account has been hacked</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/account-takeover-response.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/account-takeover-response.html</guid>
+    <pubDate>Tue, 21 Jul 2026 00:00:00 GMT</pubDate>
+    <description>If you suspect an account has been compromised, a few calm steps in the right order will do more than a panicked sweep of everything at once.</description>
+  </item>
+  <item>
     <title>What end-to-end encrypted actually means</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/end-to-end-encryption-explained.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/end-to-end-encryption-explained.html</guid>

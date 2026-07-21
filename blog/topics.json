@@ -213,7 +213,8 @@
       "title": "What to do when you think your account has been hacked",
       "angle": "Concrete steps in order: change password immediately, check for active sessions and log them out, review account recovery settings (attackers often add a backup email), enable 2FA if not already on, check for forwarding rules or permission grants. Calm and actionable, not panicked.",
       "audience": "Anyone who suspects an account has been compromised and doesn't know where to start",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-21-account-takeover-response.md"
     },
     {
       "id": "incognito-mode-explained",
