@@ -229,7 +229,8 @@
       "title": "Fake tech support calls: how they work and how to shut them down",
       "angle": "Vishing (voice phishing) impersonates Microsoft, Apple, your bank, or the IRS. The playbook: create urgency, keep you on the phone, request remote access or payment. The defense is simple: hang up and call back on a number you looked up yourself. Never call a number the caller gave you.",
       "audience": "Anyone who has received a suspicious call from 'Microsoft support' or a bank fraud department",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-23-fake-support-calls.md"
     },
     {
       "id": "two-step-vs-two-factor",

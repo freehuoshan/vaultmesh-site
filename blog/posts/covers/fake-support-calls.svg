@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1005"/>
+      <stop offset="100%" stop-color="#2d1a05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#f59e0b"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="52" fill="white">Fake tech support</text>
+  <text x="76" y="252" font-family="Georgia, serif" font-size="52" fill="white">calls: how they</text>
+  <text x="76" y="316" font-family="Georgia, serif" font-size="52" fill="white">work and how to</text>
+  <text x="76" y="380" font-family="Georgia, serif" font-size="52" fill="white">shut them down</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-07-23  ·  phishing  ·  habits  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: Call script + defense ── -->
+
+  <!-- Fake call panel -->
+  <rect x="718" y="72" width="432" height="290" rx="12" fill="rgba(239,68,68,0.04)" stroke="rgba(239,68,68,0.22)" stroke-width="1.5"/>
+  <rect x="718" y="72" width="432" height="38" rx="12" fill="rgba(239,68,68,0.14)"/>
+  <rect x="718" y="96" width="432" height="14" fill="rgba(239,68,68,0.14)"/>
+  <text x="934" y="97" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.75)" text-anchor="middle" letter-spacing="2">SCAM CALL PLAYBOOK</text>
+
+  <!-- Call phases -->
+  <text x="730" y="130" font-family="monospace" font-size="8" fill="rgba(245,158,11,0.5)" letter-spacing="1">PHASE 1 — ESTABLISH LEGITIMACY</text>
+  <text x="730" y="148" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">"This is Microsoft Support. Caller ID: 1-800-642-7676"</text>
+  <text x="730" y="164" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">Caller ID can be spoofed — not proof of legitimacy</text>
+
+  <line x1="730" y1="178" x2="1138" y2="178" stroke="rgba(239,68,68,0.08)" stroke-width="1"/>
+
+  <text x="730" y="198" font-family="monospace" font-size="8" fill="rgba(245,158,11,0.5)" letter-spacing="1">PHASE 2 — CREATE URGENCY</text>
+  <text x="730" y="216" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">"We've detected malware. Your account will be suspended."</text>
+  <text x="730" y="232" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">Real orgs don't cold-call with urgent problems requiring immediate action</text>
+
+  <line x1="730" y1="246" x2="1138" y2="246" stroke="rgba(239,68,68,0.08)" stroke-width="1"/>
+
+  <text x="730" y="266" font-family="monospace" font-size="8" fill="rgba(245,158,11,0.5)" letter-spacing="1">PHASE 3 — REQUEST ACCESS OR PAYMENT</text>
+  <text x="730" y="284" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">"Install this tool so we can fix it / Read me the code / Pay now"</text>
+  <text x="730" y="300" font-family="monospace" font-size="7" fill="rgba(239,68,68,0.45)">This is the moment — any of these requests = scam</text>
+  <text x="730" y="316" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.2)">Legitimate: remote access software · verification codes · gift cards · wire transfers</text>
+  <text x="730" y="330" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.18)">All of these in an unsolicited call = do not comply</text>
+  <text x="730" y="346" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.15)">→ Microsoft does not call about malware</text>
+  <text x="730" y="360" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.15)">→ IRS does not demand gift card payment</text>
+
+  <!-- Defense panel -->
+  <rect x="718" y="378" width="432" height="190" rx="12" fill="rgba(245,158,11,0.05)" stroke="rgba(245,158,11,0.3)" stroke-width="1.5"/>
+  <rect x="718" y="378" width="432" height="36" rx="12" fill="rgba(245,158,11,0.15)"/>
+  <rect x="718" y="400" width="432" height="14" fill="rgba(245,158,11,0.15)"/>
+  <text x="934" y="401" font-family="monospace" font-size="9" fill="rgba(245,158,11,0.8)" text-anchor="middle" letter-spacing="2">THE ONE RULE</text>
+
+  <text x="934" y="434" font-family="Georgia, serif" font-size="22" fill="rgba(245,158,11,0.85)" text-anchor="middle">Hang up.</text>
+  <text x="934" y="460" font-family="Georgia, serif" font-size="22" fill="rgba(255,255,255,0.7)" text-anchor="middle">Look up the real number.</text>
+  <text x="934" y="486" font-family="Georgia, serif" font-size="22" fill="rgba(255,255,255,0.7)" text-anchor="middle">Call them back yourself.</text>
+
+  <line x1="730" y1="500" x2="1138" y2="500" stroke="rgba(245,158,11,0.1)" stroke-width="1"/>
+  <text x="934" y="520" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.25)" text-anchor="middle">Never call the number the caller gave you</text>
+  <text x="934" y="536" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.2)" text-anchor="middle">Any legitimate org will welcome a callback · scammers will not</text>
+  <text x="934" y="552" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.15)" text-anchor="middle">If you already gave access: disconnect device · change passwords from another device · call your bank</text>
+</svg>
