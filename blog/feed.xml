@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>The hidden account setting attackers configure after they get in</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/email-forwarding-rules.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/email-forwarding-rules.html</guid>
+    <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+    <description>When someone gets into your email, they often don&#39;t just read it and leave — they set up a rule that keeps sending them your messages long after you&#39;ve changed the password.</description>
+  </item>
+  <item>
     <title>Two-step login and two-factor authentication are not the same thing</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/two-step-vs-two-factor.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/two-step-vs-two-factor.html</guid>

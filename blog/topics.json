@@ -245,7 +245,8 @@
       "title": "The hidden account setting attackers configure after they get in",
       "angle": "After gaining access to an email account, attackers often set up silent forwarding rules so they continue receiving messages even after the password is changed. Most people never check this setting. Walk through what to look for and how to audit email forwarding rules in Gmail and Outlook.",
       "audience": "Anyone whose email account may have been accessed, or who just wants to check",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-25-email-forwarding-rules.md"
     },
     {
       "id": "password-manager-offline-access",
