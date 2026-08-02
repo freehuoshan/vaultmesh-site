@@ -285,7 +285,8 @@
       "title": "What apps actually get when you tap Allow",
       "angle": "When an app requests access to contacts, location, camera, or microphone — what does it get, exactly, and for how long? Walk through iOS and Android permission models, explain when broad permissions are reasonable vs. worth questioning, and how to audit and revoke permissions you've already granted.",
       "audience": "Anyone who taps Allow on permission dialogs without reading them",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-30-app-permissions-explained.md"
     },
     {
       "id": "deleting-accounts-properly",

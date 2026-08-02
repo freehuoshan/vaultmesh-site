@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0519"/>
+      <stop offset="100%" stop-color="#1a0a2d"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#160824"/>
+      <stop offset="100%" stop-color="#0e0518"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#8b5cf6"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="54" fill="white">What apps actually</text>
+  <text x="76" y="254" font-family="Georgia, serif" font-size="54" fill="white">get when you</text>
+  <text x="76" y="320" font-family="Georgia, serif" font-size="54" fill="white">tap Allow</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-07-30  ·  habits  ·  accounts  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: Permission breakdown + audit ── -->
+
+  <!-- Main panel -->
+  <rect x="718" y="72" width="432" height="498" rx="12" fill="url(#panelGrad)" stroke="rgba(139,92,246,0.2)" stroke-width="1.5"/>
+
+  <!-- Panel header -->
+  <rect x="718" y="72" width="432" height="40" rx="12" fill="rgba(139,92,246,0.12)"/>
+  <rect x="718" y="98" width="432" height="14" fill="rgba(139,92,246,0.12)"/>
+  <text x="934" y="98" font-family="monospace" font-size="9" fill="rgba(139,92,246,0.65)" text-anchor="middle" letter-spacing="2">WHAT PERMISSIONS GRANT</text>
+
+  <!-- Permission rows -->
+  <line x1="730" y1="114" x2="1138" y2="114" stroke="rgba(139,92,246,0.08)" stroke-width="1"/>
+
+  <!-- Contacts -->
+  <text x="730" y="130" font-family="monospace" font-size="8.5" fill="rgba(139,92,246,0.6)" letter-spacing="1">CONTACTS</text>
+  <text x="730" y="144" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.5)">Your full contacts list — names, numbers, emails</text>
+  <text x="730" y="157" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">Includes people who never agreed to share with the app</text>
+
+  <line x1="730" y1="167" x2="1138" y2="167" stroke="rgba(139,92,246,0.06)" stroke-width="1"/>
+
+  <!-- Location -->
+  <text x="730" y="182" font-family="monospace" font-size="8.5" fill="rgba(139,92,246,0.6)" letter-spacing="1">LOCATION</text>
+  <text x="730" y="196" font-family="monospace" font-size="7.5" fill="rgba(34,197,94,0.55)">"While using" →</text>
+  <text x="844" y="196" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.5)"> only when app is open in foreground</text>
+  <text x="730" y="210" font-family="monospace" font-size="7.5" fill="rgba(239,68,68,0.55)">"Always"      →</text>
+  <text x="844" y="210" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.5)"> background tracking even when not in use</text>
+  <text x="730" y="224" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">Always prefer "while using" — upgrade only if a feature requires it</text>
+
+  <line x1="730" y1="234" x2="1138" y2="234" stroke="rgba(139,92,246,0.06)" stroke-width="1"/>
+
+  <!-- Camera + Microphone -->
+  <text x="730" y="249" font-family="monospace" font-size="8.5" fill="rgba(139,92,246,0.6)" letter-spacing="1">CAMERA / MICROPHONE</text>
+  <text x="730" y="263" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.5)">Camera: activate and capture photos or video</text>
+  <text x="730" y="277" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.5)">Microphone: record audio — no "this call only" option</text>
+  <text x="730" y="291" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">Worth questioning in apps where you wouldn't expect it</text>
+
+  <line x1="730" y1="301" x2="1138" y2="301" stroke="rgba(139,92,246,0.06)" stroke-width="1"/>
+
+  <!-- Photos -->
+  <text x="730" y="316" font-family="monospace" font-size="8.5" fill="rgba(139,92,246,0.6)" letter-spacing="1">PHOTOS / MEDIA</text>
+  <text x="730" y="330" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.5)">Full library access: all photos, embedded location data,</text>
+  <text x="730" y="344" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.5)">screenshots of sensitive documents — years of personal images</text>
+  <text x="730" y="358" font-family="monospace" font-size="7" fill="rgba(139,92,246,0.45)">iOS allows "select specific photos" — use it when available</text>
+
+  <!-- Persistence note -->
+  <line x1="730" y1="374" x2="1138" y2="374" stroke="rgba(139,92,246,0.1)" stroke-width="1"/>
+  <text x="730" y="390" font-family="monospace" font-size="7.5" fill="rgba(239,68,68,0.55)">Permissions granted once stay granted until revoked — no automatic expiry</text>
+  <text x="730" y="405" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.3)">Revoking removes future access · does not remove already-collected data</text>
+
+  <!-- Audit guide -->
+  <line x1="730" y1="420" x2="1138" y2="420" stroke="rgba(139,92,246,0.1)" stroke-width="1"/>
+  <text x="730" y="436" font-family="monospace" font-size="7.5" fill="rgba(139,92,246,0.55)" letter-spacing="1">HOW TO AUDIT</text>
+
+  <text x="730" y="452" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.45)">iOS: Settings → Privacy &amp; Security → each permission type</text>
+  <text x="730" y="467" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.45)">Android: Settings → Privacy → Permission Manager</text>
+  <text x="730" y="482" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.28)">Check Location, Contacts, Camera, Microphone first</text>
+  <text x="730" y="497" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">Revoke where the access doesn't match the app's purpose</text>
+
+  <!-- Footer -->
+  <line x1="718" y1="512" x2="1150" y2="512" stroke="rgba(139,92,246,0.1)" stroke-width="1"/>
+  <text x="730" y="530" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.25)">Grant only what makes sense when installing · revisit once a year</text>
+  <text x="730" y="546" font-family="monospace" font-size="7" fill="rgba(139,92,246,0.4)">Apps that break when permission is revoked were depending on more than they needed</text>
+  <text x="730" y="561" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.18)">A flashlight app requesting contacts — or a game requesting microphone — warrants scrutiny</text>
+</svg>

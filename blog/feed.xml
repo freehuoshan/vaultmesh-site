@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>What apps actually get when you tap Allow</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/app-permissions-explained.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/app-permissions-explained.html</guid>
+    <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+    <description>When an app asks for access to your camera, contacts, or location, what does it actually get — and for how long? Permissions granted once tend to stay granted indefinitely.</description>
+  </item>
+  <item>
     <title>Keeping software updated is the lowest-effort security habit that most people skip</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/auto-updates-security.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/auto-updates-security.html</guid>
