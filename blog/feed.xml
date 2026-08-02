@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>How to make sure you downloaded the real app</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/fake-apps-in-app-stores.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/fake-apps-in-app-stores.html</guid>
+    <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
+    <description>Fake apps impersonating banks, wallets, and popular services appear in official app stores. The check that catches most of them takes about thirty seconds.</description>
+  </item>
+  <item>
     <title>Why your router probably has a guest network — and when to use it</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/wifi-guest-networks.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/wifi-guest-networks.html</guid>

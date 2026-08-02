@@ -309,7 +309,8 @@
       "title": "How to make sure you downloaded the real app",
       "angle": "Fake apps impersonating banks, wallets, and popular services appear in official app stores. They look real. The check that catches most of them: verify the developer name, total number of reviews, and that the app matches the company's official website. Never download from links in emails or texts.",
       "audience": "Anyone who downloads apps by searching in the app store without verifying the publisher",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-08-02-fake-apps-in-app-stores.md"
     }
   ]
 }
