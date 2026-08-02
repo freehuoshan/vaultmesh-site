@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Why your router probably has a guest network — and when to use it</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/wifi-guest-networks.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/wifi-guest-networks.html</guid>
+    <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
+    <description>A guest network shares your internet connection but keeps devices on it isolated from your main network. It takes a few minutes to set up and is worth doing if you have smart devices or frequent visitors.</description>
+  </item>
+  <item>
     <title>Deleting an account is not the same as deleting your data</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/deleting-accounts-properly.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/deleting-accounts-properly.html</guid>

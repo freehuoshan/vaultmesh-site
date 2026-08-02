@@ -301,7 +301,8 @@
       "title": "Why your router probably has a guest network — and when to use it",
       "angle": "A guest network is a separate WiFi that shares your internet connection but is isolated from your main devices. Useful for IoT devices, visitors, and anything you don't fully trust. Explain what the isolation actually does, how to enable it on common routers, and what it doesn't protect against.",
       "audience": "Anyone with a home WiFi network and smart devices or frequent guests",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-08-01-wifi-guest-networks.md"
     },
     {
       "id": "fake-apps-in-app-stores",

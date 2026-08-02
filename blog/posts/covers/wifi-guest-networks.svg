@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0519"/>
+      <stop offset="100%" stop-color="#1a0a2d"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#160824"/>
+      <stop offset="100%" stop-color="#0e0518"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#8b5cf6"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="52" fill="white">Why your router</text>
+  <text x="76" y="252" font-family="Georgia, serif" font-size="52" fill="white">probably has a</text>
+  <text x="76" y="316" font-family="Georgia, serif" font-size="52" fill="white">guest network —</text>
+  <text x="76" y="380" font-family="Georgia, serif" font-size="52" fill="white">and when to use it</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-08-01  ·  habits  ·  accounts  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: Network diagram + setup ── -->
+
+  <!-- Main panel -->
+  <rect x="718" y="72" width="432" height="498" rx="12" fill="url(#panelGrad)" stroke="rgba(139,92,246,0.2)" stroke-width="1.5"/>
+
+  <!-- Panel header -->
+  <rect x="718" y="72" width="432" height="40" rx="12" fill="rgba(139,92,246,0.12)"/>
+  <rect x="718" y="98" width="432" height="14" fill="rgba(139,92,246,0.12)"/>
+  <text x="934" y="98" font-family="monospace" font-size="9" fill="rgba(139,92,246,0.65)" text-anchor="middle" letter-spacing="2">NETWORK SEPARATION</text>
+
+  <!-- INTERNET box at top -->
+  <rect x="844" y="110" width="180" height="28" rx="6" fill="rgba(139,92,246,0.15)" stroke="rgba(139,92,246,0.3)" stroke-width="1"/>
+  <text x="934" y="129" font-family="monospace" font-size="9" fill="rgba(139,92,246,0.7)" text-anchor="middle" letter-spacing="1">INTERNET</text>
+
+  <!-- Lines from internet to router -->
+  <line x1="934" y1="138" x2="934" y2="158" stroke="rgba(139,92,246,0.3)" stroke-width="1.5"/>
+
+  <!-- Router box -->
+  <rect x="844" y="158" width="180" height="28" rx="6" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="934" y="177" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.55)" text-anchor="middle" letter-spacing="1">ROUTER</text>
+
+  <!-- Lines from router to two networks -->
+  <line x1="810" y1="186" x2="810" y2="206" stroke="rgba(34,197,94,0.4)" stroke-width="1.5"/>
+  <line x1="1058" y1="186" x2="1058" y2="206" stroke="rgba(251,191,36,0.35)" stroke-width="1.5"/>
+  <!-- Bridge line -->
+  <line x1="810" y1="186" x2="1058" y2="186" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+
+  <!-- MAIN NETWORK -->
+  <rect x="730" y="206" width="158" height="26" rx="5" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.3)" stroke-width="1"/>
+  <text x="809" y="223" font-family="monospace" font-size="8" fill="rgba(34,197,94,0.7)" text-anchor="middle" letter-spacing="1">MAIN NETWORK</text>
+
+  <!-- Main devices -->
+  <text x="730" y="248" font-family="monospace" font-size="7.5" fill="rgba(34,197,94,0.5)">→</text>
+  <text x="745" y="248" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.5)">Laptops, phones, tablets</text>
+  <text x="730" y="263" font-family="monospace" font-size="7.5" fill="rgba(34,197,94,0.5)">→</text>
+  <text x="745" y="263" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.5)">Printers, NAS drives</text>
+  <text x="730" y="278" font-family="monospace" font-size="7.5" fill="rgba(34,197,94,0.5)">→</text>
+  <text x="745" y="278" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.5)">Anything with sensitive data</text>
+
+  <!-- GUEST NETWORK -->
+  <rect x="918" y="206" width="200" height="26" rx="5" fill="rgba(251,191,36,0.1)" stroke="rgba(251,191,36,0.3)" stroke-width="1"/>
+  <text x="1018" y="223" font-family="monospace" font-size="8" fill="rgba(251,191,36,0.65)" text-anchor="middle" letter-spacing="1">GUEST NETWORK</text>
+
+  <!-- Guest devices -->
+  <text x="918" y="248" font-family="monospace" font-size="7.5" fill="rgba(251,191,36,0.5)">→</text>
+  <text x="933" y="248" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.5)">Smart speakers, bulbs, plugs</text>
+  <text x="918" y="263" font-family="monospace" font-size="7.5" fill="rgba(251,191,36,0.5)">→</text>
+  <text x="933" y="263" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.5)">Cameras, thermostats</text>
+  <text x="918" y="278" font-family="monospace" font-size="7.5" fill="rgba(251,191,36,0.5)">→</text>
+  <text x="933" y="278" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.5)">Visitor phones, game consoles</text>
+
+  <!-- Blocked line between them -->
+  <line x1="889" y1="250" x2="914" y2="250" stroke="rgba(239,68,68,0.5)" stroke-width="2" stroke-dasharray="3,2"/>
+  <text x="900" y="246" font-family="monospace" font-size="8" fill="rgba(239,68,68,0.6)" text-anchor="middle">✗</text>
+
+  <!-- Divider -->
+  <line x1="730" y1="296" x2="1138" y2="296" stroke="rgba(139,92,246,0.08)" stroke-width="1"/>
+
+  <!-- Setup -->
+  <text x="730" y="312" font-family="monospace" font-size="7.5" fill="rgba(139,92,246,0.55)" letter-spacing="1">HOW TO ENABLE</text>
+
+  <text x="730" y="328" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.45)">Router admin: 192.168.1.1 or 192.168.0.1 in a browser</text>
+  <text x="730" y="342" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.45)">Or via companion app (Eero, Orbi, etc.)</text>
+  <text x="730" y="356" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.45)">Settings → Guest Network → enable, name, set password</text>
+  <text x="730" y="372" font-family="monospace" font-size="7" fill="rgba(251,191,36,0.5)">Critical: enable AP Isolation / Client Isolation — blocks local access</text>
+
+  <!-- What it doesn't protect -->
+  <line x1="730" y1="386" x2="1138" y2="386" stroke="rgba(139,92,246,0.08)" stroke-width="1"/>
+  <text x="730" y="402" font-family="monospace" font-size="7.5" fill="rgba(239,68,68,0.5)" letter-spacing="1">WHAT IT DOESN'T PROTECT AGAINST</text>
+
+  <text x="730" y="418" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.4)">✗  Internet-level threats — guest devices still reach the open web</text>
+  <text x="730" y="433" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.4)">✗  Router compromise — both networks are behind the same device</text>
+  <text x="730" y="448" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.4)">✗  Devices that need local discovery to work together</text>
+
+  <!-- Footer -->
+  <line x1="718" y1="464" x2="1150" y2="464" stroke="rgba(139,92,246,0.1)" stroke-width="1"/>
+  <text x="730" y="484" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.25)">IoT devices have a poor security track record — isolation is a structural precaution</text>
+  <text x="730" y="500" font-family="monospace" font-size="7.5" fill="rgba(139,92,246,0.4)">A compromised smart bulb can't reach your laptop if they're on separate networks</text>
+  <text x="730" y="516" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.18)">Takes ~10 minutes to set up · provides real if limited segmentation benefit</text>
+  <text x="730" y="532" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.15)">Streaming sticks and game consoles only need internet access — guest network fine</text>
+</svg>

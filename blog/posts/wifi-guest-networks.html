@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why your router probably has a guest network — and when to use it — Password Sense</title>
+  <meta name="description" content="A guest network shares your internet connection but keeps devices on it isolated from your main network. It takes a few minutes to set up and is worth doing if you have smart devices or frequent visitors.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Why your router probably has a guest network — and when to use it">
+  <meta property="og:description" content="A guest network shares your internet connection but keeps devices on it isolated from your main network. It takes a few minutes to set up and is worth doing if you have smart devices or frequent visitors.">
+  <meta property="og:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/wifi-guest-networks.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Why your router probably has a guest network — and when to use it">
+  <meta name="twitter:description" content="A guest network shares your internet connection but keeps devices on it isolated from your main network. It takes a few minutes to set up and is worth doing if you have smart devices or frequent visitors.">
+  <meta name="twitter:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/wifi-guest-networks.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .blog-prose { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+    .blog-prose h1 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 400; line-height: 1.2; margin: 0 0 32px; color: var(--ink); }
+    .blog-prose h2 { font-family: var(--serif); font-size: 24px; font-weight: 400; margin-top: 2em; margin-bottom: 0.6em; color: var(--ink); }
+    .blog-prose h3 { font-family: var(--sans); font-size: 18px; font-weight: 600; margin-top: 1.6em; color: var(--ink); }
+    .blog-prose p { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); margin: 0 0 1.1em; }
+    .blog-prose a { color: var(--primary); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .blog-prose a:hover { color: var(--primary-hover); }
+    .blog-prose pre { background: #103866; color: #f0f7ff; padding: 18px 20px; border-radius: 6px; overflow-x: auto; font-family: var(--mono); font-size: 13px; line-height: 1.55; margin: 1.4em 0; }
+    .blog-prose code { font-family: var(--mono); font-size: 0.88em; background: var(--bg2); padding: 1px 5px; border-radius: 3px; color: var(--ink); }
+    .blog-prose pre code { background: none; padding: 0; color: inherit; font-size: inherit; }
+    .blog-prose ul, .blog-prose ol { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); padding-left: 1.4em; }
+    .blog-prose li { margin: 0.3em 0; }
+    .blog-prose blockquote { border-left: 3px solid var(--accent-warm); margin: 1.4em 0; padding: 0.2em 0 0.2em 18px; color: var(--ink3); font-style: italic; }
+    .blog-meta { font-family: var(--mono); color: var(--ink3); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+    .blog-meta .tag { display: inline-block; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; margin-left: 6px; }
+    .blog-post-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .blog-back { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 12px; color: var(--ink3); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .blog-back:hover { color: var(--primary); }
+    .share-x { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 12px; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .share-x:hover { color: var(--primary-hover); }
+    .blog-cover-img { width: 100%; height: auto; display: block; border-radius: 8px; margin-bottom: 32px; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-brand" href="/index.html">
+    <img src="/img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
+    <span class="nav-brand-name">VaultMesh</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/index.html#features">Features</a></li>
+    <li><a href="/index.html#how-it-works">How It Works</a></li>
+    <li><a href="/index.html#download">Download</a></li>
+    <li><a href="/relay.html">Relay Guide</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/support.html">Support</a></li>
+    <li><a href="/index.html#download" class="nav-cta">Get VaultMesh</a></li>
+  </ul>
+</nav>
+
+<main class="blog-prose">
+  <img class="blog-cover-img" src="/blog/posts/covers/wifi-guest-networks.svg" alt="" aria-hidden="true">
+  <div class="blog-meta">August 1, 2026 <span class="tag">habits</span> <span class="tag">accounts</span></div>
+  <h1>Why your router probably has a guest network — and when to use it</h1>
+  <p>Most home routers sold in the last several years include a guest network feature. Many people never enable it, either because they don&#39;t know it&#39;s there or aren&#39;t sure when they&#39;d use it.</p>
+<p>The short answer: if you have smart home devices, a guest network is worth turning on and putting those devices on it. If you have visitors who need Wi-Fi, the same applies.</p>
+<h2>What a guest network actually does</h2>
+<p>A guest network creates a separate Wi-Fi network that shares your internet connection but is isolated from your main devices. Something connected to your guest network can access the internet normally, but it cannot see or communicate with devices on your primary network.</p>
+<p>In practice: a guest phone cannot access files on your main laptop. A smart speaker on the guest network cannot communicate with your computers, printers, or network storage. A visitor&#39;s device cannot browse your local network.</p>
+<p>This isolation is the main value. It&#39;s a simple boundary between things you trust and things you trust less.</p>
+<h2>Why smart devices belong on a guest network</h2>
+<p>Smart home devices — thermostats, cameras, light bulbs, smart plugs, voice assistants — vary considerably in how well they&#39;re maintained and how long they receive security updates. Many IoT devices have unpatched vulnerabilities, run outdated software, or phone home to services you have limited visibility into.</p>
+<p>Putting these devices on your main network means they share the same local network segment as your laptops, phones, and anything sensitive. If a poorly secured smart bulb is compromised, an attacker with access to it can attempt to reach other devices on the same network.</p>
+<p>Putting them on a guest network creates a boundary: they can talk to the internet (which they need to function), but they can&#39;t reach your personal computers even if they&#39;re compromised.</p>
+<p>This doesn&#39;t require distrusting specific devices — it&#39;s a structural precaution. The IoT security track record broadly is poor enough that keeping these devices isolated from your main machines is a reasonable default.</p>
+<h2>Setting it up</h2>
+<p>Most routers let you enable a guest network through the admin interface — typically accessed at 192.168.1.1 or 192.168.0.1 in a browser, or through a companion app if you have a newer mesh system.</p>
+<p>Look for &quot;Guest Network&quot; or &quot;Guest Wi-Fi&quot; in the settings. Enable it, give it a name, and set a password. Important: make sure the option that prevents guest devices from accessing the local network is enabled — this is sometimes called &quot;AP Isolation,&quot; &quot;Client Isolation,&quot; or &quot;Allow guests to access local network&quot; (set to off).</p>
+<p>Once set up, connect your IoT devices and any visitor phones to the guest network. Your personal devices stay on the main network.</p>
+<h2>What the guest network doesn&#39;t protect against</h2>
+<p>Network isolation is useful but limited in scope. A few things worth knowing:</p>
+<p><strong>Internet-level threats aren&#39;t blocked.</strong> Devices on a guest network can still be reached from the internet, still connect to malicious sites, and still be part of botnets if compromised. The guest network doesn&#39;t add an internet firewall — it only creates local isolation.</p>
+<p><strong>If your router is compromised, both networks are affected.</strong> The isolation is maintained by the router. An attacker who compromises the router itself has access to everything behind it.</p>
+<p><strong>Devices that need to work together have to be on the same network.</strong> A home assistant that needs to control smart bulbs, a printer shared by household members, devices that use local discovery protocols — these won&#39;t work across network boundaries. You&#39;ll need to decide which devices actually need to communicate with each other versus which ones just need internet access.</p>
+<h2>The practical setup</h2>
+<p>Main network: your personal laptops, phones, tablets, and anything with sensitive data.</p>
+<p>Guest network: smart speakers, cameras, smart bulbs, smart plugs, thermostats, game consoles, streaming sticks, and visitor devices.</p>
+<p>This takes about ten minutes to configure and provides a real if limited improvement in the segmentation of your home network. It&#39;s not a complete security measure, but it&#39;s a straightforward one with a clear practical benefit.</p>
+<p>If you&#39;re not sure how to access your router&#39;s admin interface, the model name on the label usually has documentation available. Most guest network setups are a few clicks once you&#39;re in the admin interface.</p>
+
+  <div class="blog-post-actions">
+    <a class="blog-back" href="/blog/">← All posts</a>
+    <a class="share-x" href="https://twitter.com/intent/tweet?text=Why%20your%20router%20probably%20has%20a%20guest%20network%20%E2%80%94%20and%20when%20to%20use%20it&url=https%3A%2F%2Fvaultmesh.codeblog.net%2Fblog%2Fposts%2Fwifi-guest-networks.html" target="_blank" rel="noopener noreferrer">Share on X →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">VaultMesh</div>
+      <div class="footer-brand-desc">Private password manager for desktop and mobile with local-first storage and end-to-end encryption.</div>
+      <div class="crypto-chips">
+        <span class="chip">Argon2id</span>
+        <span class="chip">XChaCha20</span>
+        <span class="chip">X25519</span>
+        <span class="chip">Ed25519</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Product</div>
+      <ul class="footer-links">
+        <li><a href="/index.html#features">Features</a></li>
+        <li><a href="/index.html#how-it-works">How It Works</a></li>
+        <li><a href="/index.html#download">Download</a></li>
+        <li><a href="/relay.html">Relay Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/downloads/checksums.txt">Checksums</a></li>
+        <li><a href="/downloads/desktop/">Desktop Packages</a></li>
+        <li><a href="/downloads/relay/">Relay Packages</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal</div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="mailto:vaultmesh.support@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 VaultMesh. All rights reserved.</span>
+    <span class="footer-copy"><a href="mailto:vaultmesh.support@gmail.com" style="color:inherit;text-decoration:none;">vaultmesh.support@gmail.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
