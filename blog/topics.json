@@ -277,7 +277,8 @@
       "title": "Keeping software updated is the lowest-effort security habit that most people skip",
       "angle": "Most real-world exploits target known vulnerabilities that already have patches. 'I'll update later' is a meaningful risk, not just an inconvenience. Make the case for auto-updates clearly, address the legitimate fear of updates breaking things, and explain the priority order: OS and browser first, then everything else.",
       "audience": "Anyone who dismisses update prompts or delays them indefinitely",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-29-auto-updates-security.md"
     },
     {
       "id": "app-permissions-explained",

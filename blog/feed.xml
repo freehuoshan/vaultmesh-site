@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Keeping software updated is the lowest-effort security habit that most people skip</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/auto-updates-security.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/auto-updates-security.html</guid>
+    <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Dismissing update prompts feels harmless. But most real-world exploits target known vulnerabilities that already have patches — which means an unpatched device is a device with known, public weaknesses.</description>
+  </item>
+  <item>
     <title>Your data is probably on the dark web — here is what that actually means</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/dark-web-explained.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/dark-web-explained.html</guid>

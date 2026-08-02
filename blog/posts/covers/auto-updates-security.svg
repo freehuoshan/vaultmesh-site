@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0519"/>
+      <stop offset="100%" stop-color="#1a0a2d"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#160824"/>
+      <stop offset="100%" stop-color="#0e0518"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#8b5cf6"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="48" fill="white">Keeping software</text>
+  <text x="76" y="248" font-family="Georgia, serif" font-size="48" fill="white">updated is the</text>
+  <text x="76" y="308" font-family="Georgia, serif" font-size="48" fill="white">lowest-effort</text>
+  <text x="76" y="368" font-family="Georgia, serif" font-size="48" fill="white">security habit</text>
+  <text x="76" y="428" font-family="Georgia, serif" font-size="48" fill="white">most people skip</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-07-29  ·  habits  ·  myths  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: Update timeline + priority ── -->
+
+  <!-- Main panel -->
+  <rect x="718" y="72" width="432" height="498" rx="12" fill="url(#panelGrad)" stroke="rgba(139,92,246,0.2)" stroke-width="1.5"/>
+
+  <!-- Panel header -->
+  <rect x="718" y="72" width="432" height="40" rx="12" fill="rgba(139,92,246,0.12)"/>
+  <rect x="718" y="98" width="432" height="14" fill="rgba(139,92,246,0.12)"/>
+  <text x="934" y="98" font-family="monospace" font-size="9" fill="rgba(139,92,246,0.65)" text-anchor="middle" letter-spacing="2">WHY "I'LL DO IT LATER" IS RISKY</text>
+
+  <!-- Timeline -->
+  <text x="730" y="128" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.3)" letter-spacing="1">WHAT HAPPENS AFTER A PATCH IS RELEASED</text>
+  <line x1="730" y1="134" x2="1138" y2="134" stroke="rgba(139,92,246,0.08)" stroke-width="1"/>
+
+  <!-- Day 0 -->
+  <rect x="730" y="140" width="3" height="52" fill="rgba(34,197,94,0.7)"/>
+  <text x="742" y="157" font-family="monospace" font-size="7.5" fill="rgba(34,197,94,0.55)" letter-spacing="1">DAY 0 — PATCH RELEASED</text>
+  <text x="742" y="171" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.6)">Vulnerability is fixed and available to download</text>
+  <text x="742" y="185" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.28)">Security notes published — details become public</text>
+
+  <!-- Day 1–7 -->
+  <line x1="730" y1="196" x2="1138" y2="196" stroke="rgba(139,92,246,0.06)" stroke-width="1"/>
+  <rect x="730" y="196" width="3" height="52" fill="rgba(251,191,36,0.65)"/>
+  <text x="742" y="213" font-family="monospace" font-size="7.5" fill="rgba(251,191,36,0.5)" letter-spacing="1">DAYS 1–7 — EXPLOITATION BEGINS</text>
+  <text x="742" y="227" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.6)">Attackers update tools to target the now-public flaw</text>
+  <text x="742" y="241" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.28)">Unpatched devices have known, documented weaknesses</text>
+
+  <!-- Ongoing -->
+  <line x1="730" y1="252" x2="1138" y2="252" stroke="rgba(139,92,246,0.06)" stroke-width="1"/>
+  <rect x="730" y="252" width="3" height="52" fill="rgba(239,68,68,0.75)"/>
+  <text x="742" y="269" font-family="monospace" font-size="7.5" fill="rgba(239,68,68,0.5)" letter-spacing="1">ONGOING — ACTIVE EXPLOITATION</text>
+  <text x="742" y="283" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.6)">Patch is available. Risk grows with each dismissed prompt.</text>
+  <text x="742" y="297" font-family="monospace" font-size="7" fill="rgba(239,68,68,0.4)">A fix was released. Choosing not to install it is the risk.</text>
+
+  <!-- Divider -->
+  <line x1="730" y1="316" x2="1138" y2="316" stroke="rgba(139,92,246,0.1)" stroke-width="1"/>
+
+  <!-- Priority order -->
+  <text x="730" y="334" font-family="monospace" font-size="7.5" fill="rgba(139,92,246,0.55)" letter-spacing="1">PRIORITY ORDER</text>
+
+  <rect x="730" y="342" width="3" height="16" fill="rgba(239,68,68,0.75)"/>
+  <text x="742" y="354" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.7)">Browser — processes content from the whole internet</text>
+  <text x="742" y="367" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.3)">Chrome/Edge auto-update by default · verify it's on</text>
+
+  <rect x="730" y="376" width="3" height="16" fill="rgba(251,191,36,0.65)"/>
+  <text x="742" y="388" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.65)">OS — foundation for everything · enables privilege escalation if unpatched</text>
+
+  <rect x="730" y="400" width="3" height="16" fill="rgba(139,92,246,0.55)"/>
+  <text x="742" y="412" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.55)">Apps that handle external content — PDF readers, media, docs</text>
+
+  <!-- Warning box -->
+  <line x1="730" y1="428" x2="1138" y2="428" stroke="rgba(139,92,246,0.08)" stroke-width="1"/>
+  <text x="730" y="446" font-family="monospace" font-size="7.5" fill="rgba(245,158,11,0.55)" letter-spacing="1">WATCH FOR FAKE UPDATES</text>
+  <text x="730" y="462" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">Webpages saying "your browser is out of date" → always malware</text>
+  <text x="730" y="478" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.28)">Real updates arrive through system settings, not through websites</text>
+
+  <!-- Footer -->
+  <line x1="718" y1="494" x2="1150" y2="494" stroke="rgba(139,92,246,0.1)" stroke-width="1"/>
+  <text x="730" y="514" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.25)">Enable auto-updates: macOS System Settings · Windows Update · iOS/Android System</text>
+  <text x="730" y="530" font-family="monospace" font-size="7.5" fill="rgba(139,92,246,0.4)">An unpatched device is not safe — it has known vulnerabilities with available fixes</text>
+  <text x="730" y="546" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.18)">Bad update risk: some inconvenience, fixed in days. Unpatched risk: gets worse over time.</text>
+</svg>
