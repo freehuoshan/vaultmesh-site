@@ -261,7 +261,8 @@
       "title": "Most account compromises start with a person being tricked, not a system being hacked",
       "angle": "Social engineering — pretexting, urgency, impersonation — is behind most real-world account takeovers. Technical exploits get the headlines, but 'someone convinced me to hand over my credentials' is far more common. Explain the patterns and the one habit that disrupts most of them: slow down and verify through a channel you initiated.",
       "audience": "Anyone who thinks account security is mainly about technical defenses",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-27-social-engineering-basics.md"
     },
     {
       "id": "dark-web-explained",

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1005"/>
+      <stop offset="100%" stop-color="#2d1a05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#f59e0b"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="46" fill="white">Most account</text>
+  <text x="76" y="242" font-family="Georgia, serif" font-size="46" fill="white">compromises start</text>
+  <text x="76" y="296" font-family="Georgia, serif" font-size="46" fill="white">with a person being</text>
+  <text x="76" y="350" font-family="Georgia, serif" font-size="46" fill="white">tricked, not a</text>
+  <text x="76" y="404" font-family="Georgia, serif" font-size="46" fill="white">system being hacked</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-07-27  ·  phishing  ·  habits  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: Attack patterns + defense ── -->
+
+  <!-- Patterns panel -->
+  <rect x="718" y="72" width="432" height="330" rx="12" fill="rgba(245,158,11,0.04)" stroke="rgba(245,158,11,0.2)" stroke-width="1.5"/>
+  <rect x="718" y="72" width="432" height="38" rx="12" fill="rgba(245,158,11,0.12)"/>
+  <rect x="718" y="96" width="432" height="14" fill="rgba(245,158,11,0.12)"/>
+  <text x="934" y="97" font-family="monospace" font-size="9" fill="rgba(245,158,11,0.7)" text-anchor="middle" letter-spacing="2">HOW IT WORKS</text>
+
+  <!-- Pattern rows -->
+  <text x="730" y="128" font-family="monospace" font-size="8" fill="rgba(245,158,11,0.55)" letter-spacing="1">URGENCY</text>
+  <text x="730" y="143" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">"Your account will be suspended in 24 hours"</text>
+  <text x="730" y="157" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">Manufactured pressure bypasses verification instincts</text>
+
+  <line x1="730" y1="167" x2="1138" y2="167" stroke="rgba(245,158,11,0.06)" stroke-width="1"/>
+
+  <text x="730" y="183" font-family="monospace" font-size="8" fill="rgba(245,158,11,0.55)" letter-spacing="1">AUTHORITY</text>
+  <text x="730" y="198" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">"This is Microsoft Support / your bank's fraud team"</text>
+  <text x="730" y="212" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">Caller ID can be spoofed · email domains can look close enough</text>
+
+  <line x1="730" y1="222" x2="1138" y2="222" stroke="rgba(245,158,11,0.06)" stroke-width="1"/>
+
+  <text x="730" y="238" font-family="monospace" font-size="8" fill="rgba(245,158,11,0.55)" letter-spacing="1">PRETEXTING</text>
+  <text x="730" y="253" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">"IT security audit — need to verify your credentials"</text>
+  <text x="730" y="267" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">A believable backstory makes the unusual request seem reasonable</text>
+
+  <line x1="730" y1="277" x2="1138" y2="277" stroke="rgba(245,158,11,0.06)" stroke-width="1"/>
+
+  <text x="730" y="293" font-family="monospace" font-size="8" fill="rgba(245,158,11,0.55)" letter-spacing="1">FEAR OF BEING WRONG</text>
+  <text x="730" y="308" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">"If you don't act now, you'll be responsible"</text>
+  <text x="730" y="322" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">High-stakes framing makes complying feel like the safer option</text>
+
+  <line x1="730" y1="335" x2="1138" y2="335" stroke="rgba(245,158,11,0.06)" stroke-width="1"/>
+
+  <text x="730" y="351" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.3)">Technical defenses (strong passwords, 2FA) don't stop credentials you hand over willingly</text>
+  <text x="730" y="366" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.22)">The attacker isn't attacking the account — they're attacking the person with access to it</text>
+  <text x="730" y="381" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.18)">Appearance of legitimacy is something they construct — sounding professional proves nothing</text>
+  <text x="730" y="396" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.15)">Being targeted doesn't mean you did something wrong — attacks often run at scale</text>
+
+  <!-- Defense panel -->
+  <rect x="718" y="418" width="432" height="152" rx="12" fill="rgba(245,158,11,0.06)" stroke="rgba(245,158,11,0.35)" stroke-width="1.5"/>
+  <rect x="718" y="418" width="432" height="36" rx="12" fill="rgba(245,158,11,0.18)"/>
+  <rect x="718" y="440" width="432" height="14" fill="rgba(245,158,11,0.18)"/>
+  <text x="934" y="441" font-family="monospace" font-size="9" fill="rgba(245,158,11,0.85)" text-anchor="middle" letter-spacing="2">THE ONE HABIT</text>
+
+  <text x="934" y="476" font-family="Georgia, serif" font-size="18" fill="rgba(245,158,11,0.9)" text-anchor="middle">Verify through a channel you initiated.</text>
+  <text x="934" y="500" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)" text-anchor="middle">Unexpected contact asking for credentials or a code?</text>
+  <text x="934" y="516" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)" text-anchor="middle">Hang up. Go directly to the real site. Call the number you have on record.</text>
+  <text x="934" y="534" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)" text-anchor="middle">Urgency is manufactured. Legitimate organizations will always wait for a callback.</text>
+  <text x="934" y="550" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.18)" text-anchor="middle">Never use the number or link the contact gave you — use one you looked up yourself</text>
+</svg>

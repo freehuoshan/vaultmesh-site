@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Most account compromises start with a person being tricked, not a system being hacked</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/social-engineering-basics.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/social-engineering-basics.html</guid>
+    <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Technical exploits get the headlines, but the more common story is simpler: someone was convinced to hand over their credentials. Understanding the patterns is most of the defense.</description>
+  </item>
+  <item>
     <title>What happens to your passwords if the password manager goes down</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/password-manager-offline-access.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/password-manager-offline-access.html</guid>

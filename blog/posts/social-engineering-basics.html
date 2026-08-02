@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Most account compromises start with a person being tricked, not a system being hacked — Password Sense</title>
+  <meta name="description" content="Technical exploits get the headlines, but the more common story is simpler: someone was convinced to hand over their credentials. Understanding the patterns is most of the defense.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Most account compromises start with a person being tricked, not a system being hacked">
+  <meta property="og:description" content="Technical exploits get the headlines, but the more common story is simpler: someone was convinced to hand over their credentials. Understanding the patterns is most of the defense.">
+  <meta property="og:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/social-engineering-basics.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Most account compromises start with a person being tricked, not a system being hacked">
+  <meta name="twitter:description" content="Technical exploits get the headlines, but the more common story is simpler: someone was convinced to hand over their credentials. Understanding the patterns is most of the defense.">
+  <meta name="twitter:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/social-engineering-basics.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .blog-prose { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+    .blog-prose h1 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 400; line-height: 1.2; margin: 0 0 32px; color: var(--ink); }
+    .blog-prose h2 { font-family: var(--serif); font-size: 24px; font-weight: 400; margin-top: 2em; margin-bottom: 0.6em; color: var(--ink); }
+    .blog-prose h3 { font-family: var(--sans); font-size: 18px; font-weight: 600; margin-top: 1.6em; color: var(--ink); }
+    .blog-prose p { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); margin: 0 0 1.1em; }
+    .blog-prose a { color: var(--primary); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .blog-prose a:hover { color: var(--primary-hover); }
+    .blog-prose pre { background: #103866; color: #f0f7ff; padding: 18px 20px; border-radius: 6px; overflow-x: auto; font-family: var(--mono); font-size: 13px; line-height: 1.55; margin: 1.4em 0; }
+    .blog-prose code { font-family: var(--mono); font-size: 0.88em; background: var(--bg2); padding: 1px 5px; border-radius: 3px; color: var(--ink); }
+    .blog-prose pre code { background: none; padding: 0; color: inherit; font-size: inherit; }
+    .blog-prose ul, .blog-prose ol { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); padding-left: 1.4em; }
+    .blog-prose li { margin: 0.3em 0; }
+    .blog-prose blockquote { border-left: 3px solid var(--accent-warm); margin: 1.4em 0; padding: 0.2em 0 0.2em 18px; color: var(--ink3); font-style: italic; }
+    .blog-meta { font-family: var(--mono); color: var(--ink3); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+    .blog-meta .tag { display: inline-block; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; margin-left: 6px; }
+    .blog-post-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .blog-back { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 12px; color: var(--ink3); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .blog-back:hover { color: var(--primary); }
+    .share-x { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 12px; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .share-x:hover { color: var(--primary-hover); }
+    .blog-cover-img { width: 100%; height: auto; display: block; border-radius: 8px; margin-bottom: 32px; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-brand" href="/index.html">
+    <img src="/img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
+    <span class="nav-brand-name">VaultMesh</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/index.html#features">Features</a></li>
+    <li><a href="/index.html#how-it-works">How It Works</a></li>
+    <li><a href="/index.html#download">Download</a></li>
+    <li><a href="/relay.html">Relay Guide</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/support.html">Support</a></li>
+    <li><a href="/index.html#download" class="nav-cta">Get VaultMesh</a></li>
+  </ul>
+</nav>
+
+<main class="blog-prose">
+  <img class="blog-cover-img" src="/blog/posts/covers/social-engineering-basics.svg" alt="" aria-hidden="true">
+  <div class="blog-meta">July 27, 2026 <span class="tag">phishing</span> <span class="tag">habits</span></div>
+  <h1>Most account compromises start with a person being tricked, not a system being hacked</h1>
+  <p>When people think about accounts being compromised, they tend to picture something technical — software vulnerabilities, code exploits, servers being broken into. This happens. But a much larger portion of real-world account compromises start somewhere simpler: a person was convinced to do something they shouldn&#39;t have.</p>
+<p>Social engineering is the practice of manipulating people into taking actions that benefit an attacker. It doesn&#39;t require hacking anything. It just requires understanding how people respond to certain kinds of pressure, and applying that pressure.</p>
+<p>The reason it works so consistently is that the techniques exploit cognitive shortcuts we rely on every day.</p>
+<h2>The patterns that appear over and over</h2>
+<p><strong>Urgency.</strong> An attacker who can make you feel rushed makes you less likely to pause and verify. &quot;Your account will be suspended in 24 hours.&quot; &quot;Unauthorized access was detected — respond immediately.&quot; &quot;Your package has been held — click now to release it.&quot; The urgency is manufactured, but the feeling it triggers is real. Acting under pressure is exactly when verification steps get skipped.</p>
+<p><strong>Authority.</strong> People comply more readily with requests from apparent authority figures. Impersonating an IT department, a bank fraud team, a government agency, or a senior employee exploits this tendency. &quot;This is Microsoft support&quot; and &quot;This is your bank&#39;s security team&quot; both work because the implied authority makes compliance feel like the right response.</p>
+<p><strong>Pretexting.</strong> This is constructing a believable scenario that gives the attacker a reason to request something unusual. &quot;We&#39;re doing an IT security audit and need to verify your credentials&quot; or &quot;I&#39;m the new vendor and need access to the shared folder&quot; — the backstory makes the request seem reasonable before the target has a chance to think through whether it actually is.</p>
+<p><strong>Familiarity and reciprocity.</strong> An attacker who&#39;s done some research can reference your manager&#39;s name, your company&#39;s recent news, or your internal tool names. This makes them seem legitimate and makes requests feel less suspicious. People also tend to want to help when someone seems friendly or claims to be in a bind.</p>
+<p><strong>Fear of getting things wrong.</strong> &quot;If you don&#39;t act now, you&#39;ll be responsible for the breach&quot; puts the target in a position where complying feels like the safer option. This is especially effective in professional environments where the cost of a mistake feels high.</p>
+<h2>Why technical defenses aren&#39;t enough</h2>
+<p>A strong password and two-factor authentication will stop an attacker who&#39;s trying to break in through normal login channels. They don&#39;t stop an attacker who convinces you to type your credentials into a site they control, who tricks you into approving a login on your own authenticator app, or who calls you pretending to be your bank and talks you through reading them a one-time code.</p>
+<p>The credential you hand over willingly bypasses whatever&#39;s protecting the account from unwanted logins. This is why the most technically secured accounts can still be compromised through social engineering — the attacker isn&#39;t attacking the account, they&#39;re attacking the person with access to it.</p>
+<h2>The one habit that disrupts most of it</h2>
+<p>Almost every social engineering attack depends on you responding to a channel the attacker initiated. They called you, emailed you, texted you, sent you a chat message. They control that channel — they can make the caller ID say anything, the email address look close enough, the message seem official.</p>
+<p>The habit that breaks this is: verify through a channel you initiate.</p>
+<p>If someone calls claiming to be from your bank about suspicious activity, hang up and call the number on the back of your card. If you get an email from IT saying to verify your credentials, don&#39;t click the link — go to the IT portal directly and check. If a vendor contacts you asking to update payment details, call them at the number you have on record, not the one they gave you.</p>
+<p>This doesn&#39;t require assuming everyone is lying. Most requests from banks and IT teams are real. It just means responding to an unexpected contact by reaching back through a channel whose legitimacy you control.</p>
+<p>The delay this creates is part of its value. Urgency is manufactured. Taking five minutes to make a callback gives you time to think, and legitimate organizations will always accommodate that.</p>
+<h2>A few things worth internalizing</h2>
+<p>You cannot tell a social engineering call is fake by how professional the caller sounds. Skilled attackers are convincing — that&#39;s the point. The caller ID on a spoofed call will often show a real number. The email domain may have a character substituted that&#39;s easy to miss. Appearance of legitimacy is something they construct.</p>
+<p>Being targeted doesn&#39;t mean you did something wrong. Social engineering is often done at scale — attackers run through contact lists until someone responds. The person who falls for it isn&#39;t necessarily less careful than average; they just encountered a more convincing scenario, or happened to be distracted at the right moment.</p>
+<p>The goal isn&#39;t perfect skepticism about everything. It&#39;s building one reliable habit: when an unexpected contact is asking for credentials, access, or a verification code — verify before complying, through a channel you chose.</p>
+<p>That single step makes most social engineering attacks substantially harder.</p>
+
+  <div class="blog-post-actions">
+    <a class="blog-back" href="/blog/">← All posts</a>
+    <a class="share-x" href="https://twitter.com/intent/tweet?text=Most%20account%20compromises%20start%20with%20a%20person%20being%20tricked%2C%20not%20a%20system%20being%20hacked&url=https%3A%2F%2Fvaultmesh.codeblog.net%2Fblog%2Fposts%2Fsocial-engineering-basics.html" target="_blank" rel="noopener noreferrer">Share on X →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">VaultMesh</div>
+      <div class="footer-brand-desc">Private password manager for desktop and mobile with local-first storage and end-to-end encryption.</div>
+      <div class="crypto-chips">
+        <span class="chip">Argon2id</span>
+        <span class="chip">XChaCha20</span>
+        <span class="chip">X25519</span>
+        <span class="chip">Ed25519</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Product</div>
+      <ul class="footer-links">
+        <li><a href="/index.html#features">Features</a></li>
+        <li><a href="/index.html#how-it-works">How It Works</a></li>
+        <li><a href="/index.html#download">Download</a></li>
+        <li><a href="/relay.html">Relay Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/downloads/checksums.txt">Checksums</a></li>
+        <li><a href="/downloads/desktop/">Desktop Packages</a></li>
+        <li><a href="/downloads/relay/">Relay Packages</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal</div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="mailto:vaultmesh.support@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 VaultMesh. All rights reserved.</span>
+    <span class="footer-copy"><a href="mailto:vaultmesh.support@gmail.com" style="color:inherit;text-decoration:none;">vaultmesh.support@gmail.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
