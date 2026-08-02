@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#051a18"/>
+      <stop offset="100%" stop-color="#0a2d28"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a2420"/>
+      <stop offset="100%" stop-color="#061510"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#14b8a6"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="54" fill="white">What incognito</text>
+  <text x="76" y="254" font-family="Georgia, serif" font-size="54" fill="white">mode actually</text>
+  <text x="76" y="320" font-family="Georgia, serif" font-size="54" fill="white">does</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-07-22  ·  myths  ·  habits  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: Two-column comparison ── -->
+
+  <!-- Main panel -->
+  <rect x="718" y="72" width="432" height="498" rx="12" fill="url(#panelGrad)" stroke="rgba(20,184,166,0.18)" stroke-width="1.5"/>
+
+  <!-- Panel header -->
+  <rect x="718" y="72" width="432" height="40" rx="12" fill="rgba(20,184,166,0.1)"/>
+  <rect x="718" y="98" width="432" height="14" fill="rgba(20,184,166,0.1)"/>
+  <text x="934" y="98" font-family="monospace" font-size="10" fill="rgba(20,184,166,0.65)" text-anchor="middle" letter-spacing="2">INCOGNITO MODE</text>
+
+  <!-- Column headers -->
+  <text x="810" y="130" font-family="monospace" font-size="8" fill="rgba(34,197,94,0.65)" text-anchor="middle" letter-spacing="1">CLEARS</text>
+  <text x="1034" y="130" font-family="monospace" font-size="8" fill="rgba(239,68,68,0.65)" text-anchor="middle" letter-spacing="1">DOES NOT HIDE</text>
+
+  <!-- Vertical divider -->
+  <line x1="924" y1="116" x2="924" y2="490" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <!-- Horizontal rule under headers -->
+  <line x1="730" y1="138" x2="1138" y2="138" stroke="rgba(20,184,166,0.08)" stroke-width="1"/>
+
+  <!-- LEFT column: CLEARS (green checks) -->
+  <text x="738" y="164" font-family="monospace" font-size="9" fill="rgba(34,197,94,0.55)">✓</text>
+  <text x="754" y="164" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">Browsing history</text>
+  <text x="754" y="178" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">on this device</text>
+
+  <text x="738" y="206" font-family="monospace" font-size="9" fill="rgba(34,197,94,0.55)">✓</text>
+  <text x="754" y="206" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">Cookies &amp; sessions</text>
+  <text x="754" y="220" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">logged out on close</text>
+
+  <text x="738" y="248" font-family="monospace" font-size="9" fill="rgba(34,197,94,0.55)">✓</text>
+  <text x="754" y="248" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">Form / search data</text>
+  <text x="754" y="262" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">not saved to autofill</text>
+
+  <text x="738" y="290" font-family="monospace" font-size="9" fill="rgba(34,197,94,0.55)">✓</text>
+  <text x="754" y="290" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">Local page cache</text>
+
+  <!-- Useful for box -->
+  <rect x="730" y="330" width="184" height="130" rx="6" fill="rgba(20,184,166,0.05)" stroke="rgba(20,184,166,0.18)" stroke-width="1"/>
+  <text x="822" y="350" font-family="monospace" font-size="7" fill="rgba(20,184,166,0.5)" text-anchor="middle" letter-spacing="1">GOOD FOR</text>
+  <text x="740" y="370" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.4)">→ Second account login</text>
+  <text x="740" y="388" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.4)">→ Shared / borrowed device</text>
+  <text x="740" y="406" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.4)">→ Testing logged-out view</text>
+  <text x="740" y="424" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.4)">→ Keeping autocomplete clean</text>
+  <text x="740" y="448" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.22)">Downloads &amp; bookmarks still saved</text>
+
+  <!-- RIGHT column: DOES NOT HIDE (red X) -->
+  <text x="932" y="164" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.55)">✗</text>
+  <text x="948" y="164" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">Your ISP</text>
+  <text x="948" y="178" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">sees every domain you visit</text>
+
+  <text x="932" y="206" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.55)">✗</text>
+  <text x="948" y="206" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">Employer / school network</text>
+  <text x="948" y="220" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">traffic logs still apply</text>
+
+  <text x="932" y="248" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.55)">✗</text>
+  <text x="948" y="248" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">Websites you visit</text>
+  <text x="948" y="262" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">see your IP + fingerprint</text>
+
+  <text x="932" y="290" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.55)">✗</text>
+  <text x="948" y="290" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">Cross-site tracking</text>
+  <text x="948" y="304" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)">if already logged in elsewhere</text>
+
+  <!-- Summary statement at bottom -->
+  <line x1="718" y1="472" x2="1150" y2="472" stroke="rgba(20,184,166,0.08)" stroke-width="1"/>
+  <text x="934" y="494" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.25)" text-anchor="middle">"Private" = private from the next person who opens your browser</text>
+  <text x="934" y="510" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.18)" text-anchor="middle">Not private from the internet, your ISP, or the sites you visit</text>
+  <text x="934" y="530" font-family="monospace" font-size="7" fill="rgba(20,184,166,0.3)" text-anchor="middle">For network privacy: VPN  ·  For anonymity: Tor</text>
+  <text x="934" y="546" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.15)" text-anchor="middle">These are separate tools for different goals</text>
+</svg>

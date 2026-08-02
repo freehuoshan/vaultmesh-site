@@ -221,7 +221,8 @@
       "title": "What incognito mode actually does",
       "angle": "Private browsing clears local history and cookies when you close the window. It does not hide your activity from your ISP, employer, or the websites you visit. Useful for: signing into a different account, preventing local history. Not useful for: anonymity or hiding from outside observers.",
       "audience": "Anyone who uses private browsing and believes it provides more privacy than it does",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-22-incognito-mode-explained.md"
     },
     {
       "id": "fake-support-calls",
@@ -249,6 +250,55 @@
       "title": "What happens to your passwords if the password manager goes down",
       "angle": "A reasonable fear: if the service closes or goes offline, are your passwords gone? Explain how different PM architectures handle this (local vault vs. cloud-only), what 'export' means and when to use it, and why local-first designs have different availability characteristics than cloud-only ones. One natural mention of VaultMesh as a local-first example.",
       "audience": "Anyone hesitant to commit to a password manager because they worry about losing access",
+      "status": "queued"
+    },
+    {
+      "id": "social-engineering-basics",
+      "title": "Most account compromises start with a person being tricked, not a system being hacked",
+      "angle": "Social engineering — pretexting, urgency, impersonation — is behind most real-world account takeovers. Technical exploits get the headlines, but 'someone convinced me to hand over my credentials' is far more common. Explain the patterns and the one habit that disrupts most of them: slow down and verify through a channel you initiated.",
+      "audience": "Anyone who thinks account security is mainly about technical defenses",
+      "status": "queued"
+    },
+    {
+      "id": "dark-web-explained",
+      "title": "Your data is probably on the dark web — here is what that actually means",
+      "angle": "The phrase 'your data is on the dark web' sounds alarming. In practice it usually means credentials from a breach are available in dumps that attackers buy and use for credential stuffing. It's worth knowing, not panicking about. What to actually do (change the password, enable 2FA) vs. what not to do (pay for removal services).",
+      "audience": "Anyone who received a dark web monitoring alert from their bank or identity service",
+      "status": "queued"
+    },
+    {
+      "id": "auto-updates-security",
+      "title": "Keeping software updated is the lowest-effort security habit that most people skip",
+      "angle": "Most real-world exploits target known vulnerabilities that already have patches. 'I'll update later' is a meaningful risk, not just an inconvenience. Make the case for auto-updates clearly, address the legitimate fear of updates breaking things, and explain the priority order: OS and browser first, then everything else.",
+      "audience": "Anyone who dismisses update prompts or delays them indefinitely",
+      "status": "queued"
+    },
+    {
+      "id": "app-permissions-explained",
+      "title": "What apps actually get when you tap Allow",
+      "angle": "When an app requests access to contacts, location, camera, or microphone — what does it get, exactly, and for how long? Walk through iOS and Android permission models, explain when broad permissions are reasonable vs. worth questioning, and how to audit and revoke permissions you've already granted.",
+      "audience": "Anyone who taps Allow on permission dialogs without reading them",
+      "status": "queued"
+    },
+    {
+      "id": "deleting-accounts-properly",
+      "title": "Deleting an account is not the same as deleting your data",
+      "angle": "Most services distinguish between deactivating an account and actually deleting it. Deactivation hides the account but retains the data; true deletion removes it (eventually, per their policy). How to find the real delete option, what data retention really means, and why closing old unused accounts is worth doing.",
+      "audience": "Anyone who has old accounts on services they no longer use",
+      "status": "queued"
+    },
+    {
+      "id": "wifi-guest-networks",
+      "title": "Why your router probably has a guest network — and when to use it",
+      "angle": "A guest network is a separate WiFi that shares your internet connection but is isolated from your main devices. Useful for IoT devices, visitors, and anything you don't fully trust. Explain what the isolation actually does, how to enable it on common routers, and what it doesn't protect against.",
+      "audience": "Anyone with a home WiFi network and smart devices or frequent guests",
+      "status": "queued"
+    },
+    {
+      "id": "fake-apps-in-app-stores",
+      "title": "How to make sure you downloaded the real app",
+      "angle": "Fake apps impersonating banks, wallets, and popular services appear in official app stores. They look real. The check that catches most of them: verify the developer name, total number of reviews, and that the app matches the company's official website. Never download from links in emails or texts.",
+      "audience": "Anyone who downloads apps by searching in the app store without verifying the publisher",
       "status": "queued"
     }
   ]
