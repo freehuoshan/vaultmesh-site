@@ -269,7 +269,8 @@
       "title": "Your data is probably on the dark web — here is what that actually means",
       "angle": "The phrase 'your data is on the dark web' sounds alarming. In practice it usually means credentials from a breach are available in dumps that attackers buy and use for credential stuffing. It's worth knowing, not panicking about. What to actually do (change the password, enable 2FA) vs. what not to do (pay for removal services).",
       "audience": "Anyone who received a dark web monitoring alert from their bank or identity service",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-28-dark-web-explained.md"
     },
     {
       "id": "auto-updates-security",

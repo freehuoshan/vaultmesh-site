@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0505"/>
+      <stop offset="100%" stop-color="#2d0a0a"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e0a0a"/>
+      <stop offset="100%" stop-color="#120505"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#ef4444"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="50" fill="white">Your data is probably</text>
+  <text x="76" y="250" font-family="Georgia, serif" font-size="50" fill="white">on the dark web —</text>
+  <text x="76" y="312" font-family="Georgia, serif" font-size="50" fill="white">here is what that</text>
+  <text x="76" y="374" font-family="Georgia, serif" font-size="50" fill="white">actually means</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-07-28  ·  breaches  ·  myths  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: What the alert means + what to do ── -->
+
+  <!-- Main panel -->
+  <rect x="718" y="72" width="432" height="498" rx="12" fill="url(#panelGrad)" stroke="rgba(239,68,68,0.2)" stroke-width="1.5"/>
+
+  <!-- Panel header -->
+  <rect x="718" y="72" width="432" height="40" rx="12" fill="rgba(239,68,68,0.12)"/>
+  <rect x="718" y="98" width="432" height="14" fill="rgba(239,68,68,0.12)"/>
+  <text x="934" y="98" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.6)" text-anchor="middle" letter-spacing="2">WHAT THE ALERT MEANS</text>
+
+  <!-- What it usually is -->
+  <text x="730" y="126" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.35)" letter-spacing="1">TYPICAL ALERT: EMAIL + PASSWORD IN A CREDENTIAL DUMP</text>
+  <line x1="730" y1="132" x2="1138" y2="132" stroke="rgba(239,68,68,0.08)" stroke-width="1"/>
+
+  <text x="730" y="150" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.55)">1. Company gets breached → attacker gets user database</text>
+  <text x="730" y="166" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.55)">2. Data posted to dark web forums, distributed in dumps</text>
+  <text x="730" y="182" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.55)">3. Attackers try email + password against other services</text>
+  <text x="730" y="198" font-family="monospace" font-size="7" fill="rgba(239,68,68,0.45)">   → credential stuffing: works wherever you reused the password</text>
+
+  <!-- Hashed vs plaintext -->
+  <line x1="730" y1="212" x2="1138" y2="212" stroke="rgba(239,68,68,0.08)" stroke-width="1"/>
+  <text x="730" y="228" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.3)" letter-spacing="1">PASSWORD FORMAT IN THE DUMP</text>
+  <text x="730" y="244" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">Hashed: scrambled — common passwords still crackable</text>
+  <text x="730" y="260" font-family="monospace" font-size="8" fill="rgba(239,68,68,0.55)">Plaintext: immediately usable — poor storage by breached site</text>
+  <text x="730" y="276" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.28)">Monitoring alerts usually tell you which breach and what was exposed</text>
+
+  <!-- What to do -->
+  <line x1="730" y1="290" x2="1138" y2="290" stroke="rgba(239,68,68,0.12)" stroke-width="1"/>
+  <text x="730" y="308" font-family="monospace" font-size="7.5" fill="rgba(34,197,94,0.6)" letter-spacing="1">WHAT TO DO</text>
+
+  <rect x="730" y="316" width="3" height="16" fill="rgba(34,197,94,0.7)"/>
+  <text x="742" y="328" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.65)">Change password on the breached site</text>
+
+  <rect x="730" y="338" width="3" height="16" fill="rgba(34,197,94,0.7)"/>
+  <text x="742" y="350" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.65)">Change it everywhere else you used the same password</text>
+  <text x="742" y="364" font-family="monospace" font-size="7" fill="rgba(239,68,68,0.4)">  ← this is the more important step</text>
+
+  <rect x="730" y="372" width="3" height="16" fill="rgba(34,197,94,0.55)"/>
+  <text x="742" y="384" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.65)">Enable 2FA on email and banking if not already on</text>
+
+  <!-- What not to do -->
+  <line x1="730" y1="400" x2="1138" y2="400" stroke="rgba(239,68,68,0.08)" stroke-width="1"/>
+  <text x="730" y="416" font-family="monospace" font-size="7.5" fill="rgba(239,68,68,0.55)" letter-spacing="1">WHAT NOT TO DO</text>
+
+  <text x="730" y="432" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">✗  Pay for "dark web removal" services — distributed data cannot be recalled</text>
+  <text x="730" y="448" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">✗  Panic about non-credential data (name + old address = lower urgency)</text>
+  <text x="730" y="464" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">✗  Assume nothing happened because the notification was vague</text>
+
+  <!-- Footer -->
+  <line x1="718" y1="480" x2="1150" y2="480" stroke="rgba(239,68,68,0.1)" stroke-width="1"/>
+  <text x="730" y="500" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.25)">The data can't be recalled. The risk is specific and containable.</text>
+  <text x="730" y="516" font-family="monospace" font-size="7.5" fill="rgba(239,68,68,0.4)">Structural fix: unique passwords per site → breach stays contained to that site</text>
+  <text x="730" y="532" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.18)">Most people with years of online activity have credentials in at least one dump</text>
+  <text x="730" y="548" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.15)">The concern is not exposure — it's reuse enabling cascade to other accounts</text>
+</svg>

@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Your data is probably on the dark web — here is what that actually means</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/dark-web-explained.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/dark-web-explained.html</guid>
+    <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+    <description>A dark web monitoring alert sounds alarming. In practice it usually means credentials from an old breach are circulating in dumps. What to do about it is simpler than the notification implies.</description>
+  </item>
+  <item>
     <title>Most account compromises start with a person being tricked, not a system being hacked</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/social-engineering-basics.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/social-engineering-basics.html</guid>

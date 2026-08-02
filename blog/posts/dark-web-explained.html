@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your data is probably on the dark web — here is what that actually means — Password Sense</title>
+  <meta name="description" content="A dark web monitoring alert sounds alarming. In practice it usually means credentials from an old breach are circulating in dumps. What to do about it is simpler than the notification implies.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Your data is probably on the dark web — here is what that actually means">
+  <meta property="og:description" content="A dark web monitoring alert sounds alarming. In practice it usually means credentials from an old breach are circulating in dumps. What to do about it is simpler than the notification implies.">
+  <meta property="og:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/dark-web-explained.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Your data is probably on the dark web — here is what that actually means">
+  <meta name="twitter:description" content="A dark web monitoring alert sounds alarming. In practice it usually means credentials from an old breach are circulating in dumps. What to do about it is simpler than the notification implies.">
+  <meta name="twitter:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/dark-web-explained.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .blog-prose { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+    .blog-prose h1 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 400; line-height: 1.2; margin: 0 0 32px; color: var(--ink); }
+    .blog-prose h2 { font-family: var(--serif); font-size: 24px; font-weight: 400; margin-top: 2em; margin-bottom: 0.6em; color: var(--ink); }
+    .blog-prose h3 { font-family: var(--sans); font-size: 18px; font-weight: 600; margin-top: 1.6em; color: var(--ink); }
+    .blog-prose p { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); margin: 0 0 1.1em; }
+    .blog-prose a { color: var(--primary); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .blog-prose a:hover { color: var(--primary-hover); }
+    .blog-prose pre { background: #103866; color: #f0f7ff; padding: 18px 20px; border-radius: 6px; overflow-x: auto; font-family: var(--mono); font-size: 13px; line-height: 1.55; margin: 1.4em 0; }
+    .blog-prose code { font-family: var(--mono); font-size: 0.88em; background: var(--bg2); padding: 1px 5px; border-radius: 3px; color: var(--ink); }
+    .blog-prose pre code { background: none; padding: 0; color: inherit; font-size: inherit; }
+    .blog-prose ul, .blog-prose ol { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); padding-left: 1.4em; }
+    .blog-prose li { margin: 0.3em 0; }
+    .blog-prose blockquote { border-left: 3px solid var(--accent-warm); margin: 1.4em 0; padding: 0.2em 0 0.2em 18px; color: var(--ink3); font-style: italic; }
+    .blog-meta { font-family: var(--mono); color: var(--ink3); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+    .blog-meta .tag { display: inline-block; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; margin-left: 6px; }
+    .blog-post-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .blog-back { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 12px; color: var(--ink3); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .blog-back:hover { color: var(--primary); }
+    .share-x { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 12px; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .share-x:hover { color: var(--primary-hover); }
+    .blog-cover-img { width: 100%; height: auto; display: block; border-radius: 8px; margin-bottom: 32px; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-brand" href="/index.html">
+    <img src="/img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
+    <span class="nav-brand-name">VaultMesh</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/index.html#features">Features</a></li>
+    <li><a href="/index.html#how-it-works">How It Works</a></li>
+    <li><a href="/index.html#download">Download</a></li>
+    <li><a href="/relay.html">Relay Guide</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/support.html">Support</a></li>
+    <li><a href="/index.html#download" class="nav-cta">Get VaultMesh</a></li>
+  </ul>
+</nav>
+
+<main class="blog-prose">
+  <img class="blog-cover-img" src="/blog/posts/covers/dark-web-explained.svg" alt="" aria-hidden="true">
+  <div class="blog-meta">July 28, 2026 <span class="tag">breaches</span> <span class="tag">myths</span></div>
+  <h1>Your data is probably on the dark web — here is what that actually means</h1>
+  <p>Your bank, your credit card company, your identity monitoring service — one of them has probably sent you a notification that your personal information was found on the dark web. It sounds serious. It can prompt a wave of anxiety about what&#39;s being done with your data and what you need to do in response.</p>
+<p>The reality is often less dramatic than the notification implies, though still worth responding to.</p>
+<h2>What the dark web actually is</h2>
+<p>The dark web is a part of the internet that isn&#39;t indexed by search engines and is accessed through specialized software like Tor. This anonymity makes it useful for legitimate purposes — journalists, activists, and people in repressive environments use it to communicate privately. It&#39;s also where markets for stolen data operate, because the anonymity cuts both ways.</p>
+<p>When a company gets breached, the attacker often ends up with a database of user credentials — usernames, email addresses, hashed or sometimes plaintext passwords, and sometimes additional data like addresses or payment information. This data gets posted to dark web forums or sold through markets. From there, it gets downloaded by others and used in attacks.</p>
+<p>This process takes some time, which is why a breach from two years ago might generate a monitoring alert today — the data is still circulating.</p>
+<h2>What &quot;your data is on the dark web&quot; usually means</h2>
+<p>Most dark web alerts from monitoring services are triggered by finding your email address in a credential dump from a known breach. This means:</p>
+<p>Your email address and a password associated with it appeared in a dataset that&#39;s been circulating among attackers. The password may be hashed (scrambled using a one-way function) or it may be plaintext, depending on how the breached service stored it.</p>
+<p>If the password was hashed, it&#39;s somewhat harder to use, but not permanently safe — common passwords get cracked quickly through pre-computed tables, and a determined attacker will crack many of the simpler ones given time. If the password was stored in plaintext (meaning the breached company didn&#39;t protect it well), it&#39;s immediately usable.</p>
+<p>The immediate risk: credential stuffing. Attackers take these email/password combinations and try them against other services — your email, your bank, your social media accounts. The reason this works is password reuse. If the password exposed in the breach is the same one you use elsewhere, those other accounts become vulnerable.</p>
+<h2>What to do</h2>
+<p><strong>Change the password on the breached site</strong> if you haven&#39;t already. If the breach is old and you&#39;ve changed your password since, you may be covered — but it&#39;s worth verifying.</p>
+<p><strong>Change that same password anywhere else you used it.</strong> This is the more important step. The danger of credential stuffing is that a breach at one site enables access to others. Every account where you reused the exposed password is now at elevated risk.</p>
+<p><strong>Enable two-factor authentication</strong> on accounts that support it, especially email and banking. Even if attackers have a correct password, 2FA means they can&#39;t get in without your second factor.</p>
+<p>That&#39;s most of what there is to do. The data being circulated can&#39;t be recalled — it&#39;s out there. But the risk is specific: it affects accounts where you reused that password, and that risk is eliminated by changing those passwords.</p>
+<h2>What not to do</h2>
+<p><strong>Don&#39;t pay for data removal services.</strong> Offers to &quot;remove your data from the dark web&quot; are generally not offering what they claim. Once credential dumps are distributed, they&#39;re copied across many systems and forums. No service has the access to retrieve and delete that data. What these services typically do is monitor for your data, which is a legitimate and sometimes useful service — but &quot;monitoring&quot; and &quot;removal&quot; are very different things, and removal is not meaningfully possible.</p>
+<p><strong>Don&#39;t panic about data that isn&#39;t actionable.</strong> If a monitoring alert shows your name and an old address from a retail data breach — without a password — the immediate risk is much lower. Email addresses and names are widely available. The credentials are what enable account takeover.</p>
+<p><strong>Don&#39;t assume nothing happened just because the notification was vague.</strong> &quot;Your data was found on the dark web&quot; usually refers to something specific. Check what was exposed (most services tell you which breach it came from and what data type), and respond to the specific risk.</p>
+<h2>The bigger picture</h2>
+<p>Data breaches are common enough that most people with many years of online activity have credentials in at least one dump. This isn&#39;t a reason for alarm — it&#39;s a reason to not reuse passwords, so that a breach at a low-security site can&#39;t cascade to your email or bank account.</p>
+<p>Using unique passwords for each account (a password manager makes this practical) means a breach at any one site stays contained to that site. The credential stolen is only good for the site it came from.</p>
+<p>That&#39;s the structural fix. The monitoring alerts are useful prompts to act on specific incidents, but the underlying protection is not reusing passwords in the first place.</p>
+
+  <div class="blog-post-actions">
+    <a class="blog-back" href="/blog/">← All posts</a>
+    <a class="share-x" href="https://twitter.com/intent/tweet?text=Your%20data%20is%20probably%20on%20the%20dark%20web%20%E2%80%94%20here%20is%20what%20that%20actually%20means&url=https%3A%2F%2Fvaultmesh.codeblog.net%2Fblog%2Fposts%2Fdark-web-explained.html" target="_blank" rel="noopener noreferrer">Share on X →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">VaultMesh</div>
+      <div class="footer-brand-desc">Private password manager for desktop and mobile with local-first storage and end-to-end encryption.</div>
+      <div class="crypto-chips">
+        <span class="chip">Argon2id</span>
+        <span class="chip">XChaCha20</span>
+        <span class="chip">X25519</span>
+        <span class="chip">Ed25519</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Product</div>
+      <ul class="footer-links">
+        <li><a href="/index.html#features">Features</a></li>
+        <li><a href="/index.html#how-it-works">How It Works</a></li>
+        <li><a href="/index.html#download">Download</a></li>
+        <li><a href="/relay.html">Relay Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/downloads/checksums.txt">Checksums</a></li>
+        <li><a href="/downloads/desktop/">Desktop Packages</a></li>
+        <li><a href="/downloads/relay/">Relay Packages</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal</div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="mailto:vaultmesh.support@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 VaultMesh. All rights reserved.</span>
+    <span class="footer-copy"><a href="mailto:vaultmesh.support@gmail.com" style="color:inherit;text-decoration:none;">vaultmesh.support@gmail.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
