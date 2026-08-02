@@ -253,7 +253,8 @@
       "title": "What happens to your passwords if the password manager goes down",
       "angle": "A reasonable fear: if the service closes or goes offline, are your passwords gone? Explain how different PM architectures handle this (local vault vs. cloud-only), what 'export' means and when to use it, and why local-first designs have different availability characteristics than cloud-only ones. One natural mention of VaultMesh as a local-first example.",
       "audience": "Anyone hesitant to commit to a password manager because they worry about losing access",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-26-password-manager-offline-access.md"
     },
     {
       "id": "social-engineering-basics",
