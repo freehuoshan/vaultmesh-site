@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Two-step login and two-factor authentication are not the same thing</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/two-step-vs-two-factor.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/two-step-vs-two-factor.html</guid>
+    <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Sending a login code to your email is better than nothing — but it is not the same as true 2FA, and the difference matters for accounts you really need to protect.</description>
+  </item>
+  <item>
     <title>Fake tech support calls: how they work and how to shut them down</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/fake-support-calls.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/fake-support-calls.html</guid>

@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#051a0d"/>
+      <stop offset="100%" stop-color="#0a2d14"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a2018"/>
+      <stop offset="100%" stop-color="#061510"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#10b981"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="48" fill="white">Two-step login</text>
+  <text x="76" y="248" font-family="Georgia, serif" font-size="48" fill="white">and two-factor</text>
+  <text x="76" y="308" font-family="Georgia, serif" font-size="48" fill="white">auth are not</text>
+  <text x="76" y="368" font-family="Georgia, serif" font-size="48" fill="white">the same thing</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-07-24  ·  2fa  ·  myths  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: Two-panel comparison ── -->
+
+  <!-- EMAIL CODE panel (top, warning amber) -->
+  <rect x="718" y="72" width="432" height="238" rx="12" fill="rgba(245,158,11,0.04)" stroke="rgba(245,158,11,0.2)" stroke-width="1.5"/>
+  <rect x="718" y="72" width="432" height="38" rx="12" fill="rgba(245,158,11,0.12)"/>
+  <rect x="718" y="96" width="432" height="14" fill="rgba(245,158,11,0.12)"/>
+  <text x="934" y="97" font-family="monospace" font-size="9" fill="rgba(245,158,11,0.7)" text-anchor="middle" letter-spacing="2">TWO-STEP (EMAIL CODE)</text>
+
+  <!-- Email code flow -->
+  <text x="730" y="130" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.35)" letter-spacing="1">ATTACKER COMPROMISES YOUR EMAIL</text>
+
+  <!-- Flow boxes -->
+  <rect x="730" y="142" width="120" height="30" rx="4" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+  <text x="790" y="160" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.6)" text-anchor="middle">Password reset</text>
+  <text x="790" y="172" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="middle">via email → got it</text>
+
+  <text x="862" y="161" font-family="monospace" font-size="10" fill="rgba(245,158,11,0.5)">+</text>
+
+  <rect x="876" y="142" width="120" height="30" rx="4" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.3)" stroke-width="1"/>
+  <text x="936" y="160" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.6)" text-anchor="middle">Login code</text>
+  <text x="936" y="172" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.35)" text-anchor="middle">also in email → got it</text>
+
+  <text x="1008" y="161" font-family="monospace" font-size="10" fill="rgba(239,68,68,0.6)">→</text>
+  <text x="1020" y="157" font-family="monospace" font-size="8" fill="rgba(239,68,68,0.7)">IN</text>
+  <text x="1020" y="170" font-family="monospace" font-size="7" fill="rgba(239,68,68,0.55)">✓</text>
+
+  <line x1="730" y1="185" x2="1138" y2="185" stroke="rgba(245,158,11,0.08)" stroke-width="1"/>
+
+  <text x="730" y="203" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">Both factors live in the same place — your email inbox.</text>
+  <text x="730" y="219" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.28)">An attacker who controls your email controls both the password reset</text>
+  <text x="730" y="233" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.28)">and the login code. This is stronger than a password alone — but</text>
+  <text x="730" y="247" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.28)">it is not two independent factors.</text>
+  <text x="730" y="262" font-family="monospace" font-size="7" fill="rgba(245,158,11,0.4)">SMS codes: middle ground — separate from email, but vulnerable to SIM swap</text>
+
+  <!-- AUTHENTICATOR APP panel (bottom, green) -->
+  <rect x="718" y="328" width="432" height="238" rx="12" fill="rgba(16,185,129,0.04)" stroke="rgba(16,185,129,0.22)" stroke-width="1.5"/>
+  <rect x="718" y="328" width="432" height="38" rx="12" fill="rgba(16,185,129,0.12)"/>
+  <rect x="718" y="352" width="432" height="14" fill="rgba(16,185,129,0.12)"/>
+  <text x="934" y="353" font-family="monospace" font-size="9" fill="rgba(16,185,129,0.75)" text-anchor="middle" letter-spacing="2">AUTHENTICATOR APP (TRUE 2FA)</text>
+
+  <!-- Authenticator flow -->
+  <text x="730" y="386" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.35)" letter-spacing="1">ATTACKER COMPROMISES YOUR EMAIL</text>
+
+  <!-- Flow boxes -->
+  <rect x="730" y="398" width="120" height="30" rx="4" fill="rgba(239,68,68,0.1)" stroke="rgba(239,68,68,0.25)" stroke-width="1"/>
+  <text x="790" y="416" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.6)" text-anchor="middle">Password</text>
+  <text x="790" y="428" font-family="monospace" font-size="7" fill="rgba(239,68,68,0.5)" text-anchor="middle">stolen → got it</text>
+
+  <text x="862" y="417" font-family="monospace" font-size="10" fill="rgba(255,255,255,0.2)">+</text>
+
+  <rect x="876" y="398" width="120" height="30" rx="4" fill="rgba(16,185,129,0.1)" stroke="rgba(16,185,129,0.3)" stroke-width="1"/>
+  <text x="936" y="416" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.6)" text-anchor="middle">TOTP code</text>
+  <text x="936" y="428" font-family="monospace" font-size="7" fill="rgba(16,185,129,0.6)" text-anchor="middle">on physical device → NO</text>
+
+  <text x="1008" y="417" font-family="monospace" font-size="10" fill="rgba(16,185,129,0.6)">→</text>
+  <text x="1020" y="413" font-family="monospace" font-size="8" fill="rgba(16,185,129,0.7)">OUT</text>
+  <text x="1020" y="426" font-family="monospace" font-size="7" fill="rgba(16,185,129,0.55)">✗</text>
+
+  <line x1="730" y1="441" x2="1138" y2="441" stroke="rgba(16,185,129,0.08)" stroke-width="1"/>
+
+  <text x="730" y="459" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.45)">The code is generated on your phone — not transmitted to you.</text>
+  <text x="730" y="475" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.28)">Codes change every 30 seconds using a secret set at setup.</text>
+  <text x="730" y="491" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.28)">An attacker with your password and email still cannot log in</text>
+  <text x="730" y="507" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.28)">without your unlocked phone. This is what "something you have" means.</text>
+  <text x="730" y="523" font-family="monospace" font-size="7" fill="rgba(16,185,129,0.45)">Look for: Authenticator app · TOTP · Scan a QR code — in account security settings</text>
+  <text x="730" y="540" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.2)">Hardware keys (YubiKey etc.) provide the same independence</text>
+  <text x="730" y="555" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.18)">Save backup codes when setting up — they restore access if you lose your phone</text>
+</svg>

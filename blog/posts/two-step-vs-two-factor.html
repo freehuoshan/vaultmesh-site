@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-step login and two-factor authentication are not the same thing — Password Sense</title>
+  <meta name="description" content="Sending a login code to your email is better than nothing — but it is not the same as true 2FA, and the difference matters for accounts you really need to protect.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Two-step login and two-factor authentication are not the same thing">
+  <meta property="og:description" content="Sending a login code to your email is better than nothing — but it is not the same as true 2FA, and the difference matters for accounts you really need to protect.">
+  <meta property="og:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/two-step-vs-two-factor.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Two-step login and two-factor authentication are not the same thing">
+  <meta name="twitter:description" content="Sending a login code to your email is better than nothing — but it is not the same as true 2FA, and the difference matters for accounts you really need to protect.">
+  <meta name="twitter:image" content="https://vaultmesh.codeblog.net/blog/posts/covers/two-step-vs-two-factor.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+    .blog-prose { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+    .blog-prose h1 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 400; line-height: 1.2; margin: 0 0 32px; color: var(--ink); }
+    .blog-prose h2 { font-family: var(--serif); font-size: 24px; font-weight: 400; margin-top: 2em; margin-bottom: 0.6em; color: var(--ink); }
+    .blog-prose h3 { font-family: var(--sans); font-size: 18px; font-weight: 600; margin-top: 1.6em; color: var(--ink); }
+    .blog-prose p { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); margin: 0 0 1.1em; }
+    .blog-prose a { color: var(--primary); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .blog-prose a:hover { color: var(--primary-hover); }
+    .blog-prose pre { background: #103866; color: #f0f7ff; padding: 18px 20px; border-radius: 6px; overflow-x: auto; font-family: var(--mono); font-size: 13px; line-height: 1.55; margin: 1.4em 0; }
+    .blog-prose code { font-family: var(--mono); font-size: 0.88em; background: var(--bg2); padding: 1px 5px; border-radius: 3px; color: var(--ink); }
+    .blog-prose pre code { background: none; padding: 0; color: inherit; font-size: inherit; }
+    .blog-prose ul, .blog-prose ol { font-family: var(--sans); font-size: 16.5px; font-weight: 300; line-height: 1.75; color: var(--ink2); padding-left: 1.4em; }
+    .blog-prose li { margin: 0.3em 0; }
+    .blog-prose blockquote { border-left: 3px solid var(--accent-warm); margin: 1.4em 0; padding: 0.2em 0 0.2em 18px; color: var(--ink3); font-style: italic; }
+    .blog-meta { font-family: var(--mono); color: var(--ink3); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 20px; }
+    .blog-meta .tag { display: inline-block; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px; margin-left: 6px; }
+    .blog-post-actions { display: flex; justify-content: space-between; align-items: center; margin-top: 60px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .blog-back { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 12px; color: var(--ink3); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .blog-back:hover { color: var(--primary); }
+    .share-x { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 12px; color: var(--primary); text-transform: uppercase; letter-spacing: 0.05em; text-decoration: none; }
+    .share-x:hover { color: var(--primary-hover); }
+    .blog-cover-img { width: 100%; height: auto; display: block; border-radius: 8px; margin-bottom: 32px; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a class="nav-brand" href="/index.html">
+    <img src="/img/vaultmesh-app-icon.png" alt="" class="nav-brand-icon-img" aria-hidden="true">
+    <span class="nav-brand-name">VaultMesh</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/index.html#features">Features</a></li>
+    <li><a href="/index.html#how-it-works">How It Works</a></li>
+    <li><a href="/index.html#download">Download</a></li>
+    <li><a href="/relay.html">Relay Guide</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/support.html">Support</a></li>
+    <li><a href="/index.html#download" class="nav-cta">Get VaultMesh</a></li>
+  </ul>
+</nav>
+
+<main class="blog-prose">
+  <img class="blog-cover-img" src="/blog/posts/covers/two-step-vs-two-factor.svg" alt="" aria-hidden="true">
+  <div class="blog-meta">July 24, 2026 <span class="tag">2fa</span> <span class="tag">myths</span></div>
+  <h1>Two-step login and two-factor authentication are not the same thing</h1>
+  <p>You turn on &quot;two-step verification&quot; on a service. Every time you log in, it emails you a code. You enter the code. This feels like a meaningful security upgrade — two steps are required, after all. And it is an improvement. But it is categorically different from what security professionals mean by two-factor authentication, and understanding why helps you make better decisions about which option to use.</p>
+<h2>What two-factor authentication actually means</h2>
+<p>The &quot;two factors&quot; in 2FA refer to two different types of credential:</p>
+<p>Something you know — typically your password. Something you have — a physical device, like your phone running an authenticator app or a hardware security key. Or something you are — a biometric like a fingerprint.</p>
+<p>The key word is &quot;different.&quot; Two-factor authentication is valuable because it requires something from two distinct categories. An attacker who has your password still can&#39;t get in without the second factor — which lives on a separate physical object they don&#39;t have.</p>
+<p>An authenticator app generates time-based codes tied to your specific device. A hardware key requires physical possession. These are genuinely independent of your password.</p>
+<h2>Why email codes are weaker than they seem</h2>
+<p>When a site sends a verification code to your email address, both the password and the code go through the same channel: your email account. If an attacker gains access to your email — whether through a phishing attack, a credential stuffing login, or a compromised recovery option — they can receive your account&#39;s password reset emails and your login codes simultaneously.</p>
+<p>The &quot;two steps&quot; are not from two different categories. They are both things accessible to whoever controls your email inbox. This is meaningfully stronger than a password alone, because it requires the attacker to compromise two things rather than one. But it does not provide the independence that genuine 2FA offers.</p>
+<p>SMS codes are a middle ground. They go to your phone via text rather than email, which separates them from your email account. They&#39;re better than email codes but still vulnerable to SIM swapping, where an attacker convinces your carrier to transfer your number to their device.</p>
+<h2>What changes with an authenticator app</h2>
+<p>When you use an authenticator app — such as those built into iOS, Android, or dedicated apps — the codes are generated locally on your physical device using a cryptographic secret set up during initial configuration. The codes change every 30 seconds and are not transmitted to you over any network channel. An attacker who has your password and your email address still cannot log in without your unlocked phone.</p>
+<p>This is what the &quot;something you have&quot; factor is supposed to mean: a physical object the attacker doesn&#39;t possess. Email codes are more like &quot;something you can access&quot; — which is a weaker version of that guarantee.</p>
+<h2>What this means in practice</h2>
+<p>For accounts that matter most — email, banking, anything with financial access or that controls other accounts — an authenticator app is worth setting up. The setup takes about two minutes: you scan a QR code in the account settings, and from then on the app generates codes automatically.</p>
+<p>Check whether the accounts you care about offer an authenticator app option in their security settings. The setting is often labeled &quot;Authenticator app,&quot; &quot;TOTP,&quot; or &quot;Scan a QR code&quot; rather than just &quot;two-step verification.&quot; If those options exist, they&#39;re worth choosing over email or even SMS codes.</p>
+<p>For accounts where you have no other choice, email codes are still better than no second step. The risk model is just different: you&#39;re protected against most attacks, but not against an attacker who has already accessed your email.</p>
+<p>Backup codes matter here too: when you set up an authenticator app, save the backup codes the service provides. If you lose your phone, those codes are how you regain access.</p>
+<h2>The practical summary</h2>
+<p>Two-step verification using email codes: better than a password alone, but both factors live in the same place. An attacker who controls your email controls both.</p>
+<p>Two-factor authentication with an authenticator app: requires something an attacker doesn&#39;t have — your physical device. A meaningful step up for accounts that warrant it.</p>
+<p>Both options are available on most major services. The authenticator app is worth the two minutes it takes to set up.</p>
+
+  <div class="blog-post-actions">
+    <a class="blog-back" href="/blog/">← All posts</a>
+    <a class="share-x" href="https://twitter.com/intent/tweet?text=Two-step%20login%20and%20two-factor%20authentication%20are%20not%20the%20same%20thing&url=https%3A%2F%2Fvaultmesh.codeblog.net%2Fblog%2Fposts%2Ftwo-step-vs-two-factor.html" target="_blank" rel="noopener noreferrer">Share on X →</a>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-name">VaultMesh</div>
+      <div class="footer-brand-desc">Private password manager for desktop and mobile with local-first storage and end-to-end encryption.</div>
+      <div class="crypto-chips">
+        <span class="chip">Argon2id</span>
+        <span class="chip">XChaCha20</span>
+        <span class="chip">X25519</span>
+        <span class="chip">Ed25519</span>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Product</div>
+      <ul class="footer-links">
+        <li><a href="/index.html#features">Features</a></li>
+        <li><a href="/index.html#how-it-works">How It Works</a></li>
+        <li><a href="/index.html#download">Download</a></li>
+        <li><a href="/relay.html">Relay Guide</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Resources</div>
+      <ul class="footer-links">
+        <li><a href="/blog/">Blog</a></li>
+        <li><a href="/downloads/checksums.txt">Checksums</a></li>
+        <li><a href="/downloads/desktop/">Desktop Packages</a></li>
+        <li><a href="/downloads/relay/">Relay Packages</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Legal</div>
+      <ul class="footer-links">
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="mailto:vaultmesh.support@gmail.com">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&copy; 2026 VaultMesh. All rights reserved.</span>
+    <span class="footer-copy"><a href="mailto:vaultmesh.support@gmail.com" style="color:inherit;text-decoration:none;">vaultmesh.support@gmail.com</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

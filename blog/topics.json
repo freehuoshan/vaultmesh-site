@@ -237,7 +237,8 @@
       "title": "Two-step login and two-factor authentication are not the same thing",
       "angle": "Some 'two-step' logins just send a code to your email — which is only as secure as your email. True 2FA uses a separate second factor (phone app, hardware key) that's independent of your password. The difference matters when evaluating how protected an account actually is.",
       "audience": "Anyone who has 'two-step' enabled on an account and assumes it's as strong as 2FA",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-07-24-two-step-vs-two-factor.md"
     },
     {
       "id": "email-forwarding-rules",
