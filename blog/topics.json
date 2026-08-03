@@ -311,6 +311,70 @@
       "audience": "Anyone who downloads apps by searching in the app store without verifying the publisher",
       "status": "drafted",
       "draft_path": "blog/_drafts/2026-08-02-fake-apps-in-app-stores.md"
+    },
+    {
+      "id": "what-https-means",
+      "title": "What the padlock in your browser actually means",
+      "angle": "The HTTPS padlock tells you the connection to a site is encrypted — not that the site is legitimate. Phishing sites use HTTPS too. Explain what TLS/HTTPS actually protects (eavesdropping on the wire), what it doesn't (the site's identity beyond a certificate), and why 'it has a padlock' is no longer a reliable trust signal.",
+      "audience": "Anyone who's been told to 'look for the padlock' as a sign a site is safe",
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-08-03-what-https-means.md"
+    },
+    {
+      "id": "qr-code-phishing",
+      "title": "QR codes can phish you just as easily as links",
+      "angle": "Quishing (QR-code phishing) works because people trust QR codes more than URLs — you can't hover-preview a QR code. Attackers paste fake QR codes over real ones in public spaces, or embed them in emails. The fix is the same as for links: check the URL before you do anything on the page it opens.",
+      "audience": "Anyone who scans QR codes in public spaces or from emails without thinking twice",
+      "status": "queued"
+    },
+    {
+      "id": "hardware-security-keys",
+      "title": "Hardware security keys: the strongest 2FA most people have never tried",
+      "angle": "Physical security keys (small USB/NFC devices) are the only form of 2FA that's fully phishing-resistant — they verify the site's domain before responding, so a fake site gets nothing. Explain how they work without being technical, who they're worth the cost for, and how they compare to authenticator apps.",
+      "audience": "Anyone who uses an authenticator app and wants to understand whether a hardware key is worth upgrading to",
+      "status": "queued"
+    },
+    {
+      "id": "lost-phone-response",
+      "title": "What to do when your phone is lost or stolen",
+      "angle": "Losing a phone is a security event, not just an inconvenience. Your phone likely has active sessions, SMS-based 2FA, and possibly an authenticator app. Walk through the priority order: remote lock/wipe, changing passwords on accounts using SMS 2FA, recovering authenticator app accounts, and what to tell your carrier.",
+      "audience": "Anyone who stores accounts, 2FA codes, or sensitive data on their phone",
+      "status": "queued"
+    },
+    {
+      "id": "browser-extensions-security",
+      "title": "Browser extensions can read everything you do online",
+      "angle": "Most browser extensions request permission to read and modify all web pages you visit. An extension with that access can see your passwords as you type them, your bank balance, your messages. Explain what extension permissions actually grant, how to audit what you have installed, and which categories to be skeptical of.",
+      "audience": "Anyone who has installed browser extensions and never thought about what they can access",
+      "status": "queued"
+    },
+    {
+      "id": "biometrics-explained",
+      "title": "What Face ID and fingerprint unlock actually protect against",
+      "angle": "Biometric unlock is convenient and reasonably secure against casual access, but it has limits: in many jurisdictions police can compel biometric unlock but not a PIN, and a copy of your fingerprint can potentially be used. Explain what biometrics protect well (quick, strong against strangers), where a PIN is still important, and how biometrics interact with device encryption.",
+      "audience": "Anyone who uses Face ID or fingerprint unlock and wonders whether it's as secure as a PIN",
+      "status": "queued"
+    },
+    {
+      "id": "recognizing-breach-emails",
+      "title": "How to tell if a breach notification email is real",
+      "angle": "When a real breach happens, companies send notification emails — and attackers immediately send fake ones designed to harvest credentials. The irony: a real breach generates cover for phishing. Walk through how real breach notifications look vs. fake ones, and the rule: never click links in breach emails — go to the site directly.",
+      "audience": "Anyone who has received a 'your data was exposed' email and wasn't sure if it was real",
+      "status": "queued"
+    },
+    {
+      "id": "home-wifi-security",
+      "title": "The router settings worth changing when you first get one",
+      "angle": "Home routers ship with default admin credentials that are publicly known and posted online. Changing the admin password, using WPA2 or WPA3 for Wi-Fi, and keeping firmware updated are the three changes with the most impact. Explain what each protects and how to find these settings without being technical.",
+      "audience": "Anyone who set up a home router and never changed the defaults",
+      "status": "queued"
+    },
+    {
+      "id": "password-length-vs-complexity",
+      "title": "Length beats complexity: why a longer password wins",
+      "angle": "Most password complexity requirements (uppercase, number, symbol) add less protection than simply making the password longer. A 16-character random lowercase password is harder to crack than an 8-character one with all the required substitutions. Explain why length dominates in practical terms without entropy math.",
+      "audience": "Anyone frustrated by password complexity rules who wants to understand what actually matters",
+      "status": "queued"
     }
   ]
 }

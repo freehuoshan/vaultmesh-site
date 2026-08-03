@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#051a18"/>
+      <stop offset="100%" stop-color="#0a2d28"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a2420"/>
+      <stop offset="100%" stop-color="#061510"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#14b8a6"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="54" fill="white">What the padlock</text>
+  <text x="76" y="254" font-family="Georgia, serif" font-size="54" fill="white">in your browser</text>
+  <text x="76" y="320" font-family="Georgia, serif" font-size="54" fill="white">actually means</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-08-03  ·  myths  ·  habits  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: HTTPS what it does / doesn't panel ── -->
+
+  <!-- Main panel -->
+  <rect x="718" y="72" width="432" height="498" rx="12" fill="url(#panelGrad)" stroke="rgba(20,184,166,0.18)" stroke-width="1.5"/>
+
+  <!-- Panel header -->
+  <rect x="718" y="72" width="432" height="40" rx="12" fill="rgba(20,184,166,0.1)"/>
+  <rect x="718" y="98" width="432" height="14" fill="rgba(20,184,166,0.1)"/>
+  <text x="934" y="98" font-family="monospace" font-size="10" fill="rgba(20,184,166,0.65)" text-anchor="middle" letter-spacing="2">HTTPS / PADLOCK</text>
+
+  <!-- Address bar mockup -->
+  <rect x="730" y="118" width="408" height="30" rx="5" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <!-- Padlock icon (simple) -->
+  <rect x="742" y="128" width="8" height="6" rx="1" fill="rgba(20,184,166,0.7)"/>
+  <rect x="744" y="124" width="4" height="5" rx="2" fill="none" stroke="rgba(20,184,166,0.7)" stroke-width="1.5"/>
+  <text x="758" y="138" font-family="monospace" font-size="9" fill="rgba(20,184,166,0.6)">https://</text>
+  <text x="810" y="138" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.7)">bankofamerica.com/login</text>
+
+  <line x1="730" y1="158" x2="1138" y2="158" stroke="rgba(20,184,166,0.08)" stroke-width="1"/>
+
+  <!-- What padlock MEANS -->
+  <text x="730" y="176" font-family="monospace" font-size="7.5" fill="rgba(20,184,166,0.6)" letter-spacing="1">PADLOCK MEANS</text>
+
+  <text x="730" y="193" font-family="monospace" font-size="8" fill="rgba(34,197,94,0.65)">✓</text>
+  <text x="746" y="193" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.55)">Connection is encrypted</text>
+  <text x="746" y="206" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.28)">ISP, Wi-Fi watchers cannot read the data in transit</text>
+
+  <text x="730" y="224" font-family="monospace" font-size="8" fill="rgba(34,197,94,0.65)">✓</text>
+  <text x="746" y="224" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.55)">Network-level eavesdropping is blocked</text>
+  <text x="746" y="237" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.28)">Passwords submitted on HTTPS aren't readable on the wire</text>
+
+  <!-- What padlock DOES NOT MEAN -->
+  <line x1="730" y1="252" x2="1138" y2="252" stroke="rgba(20,184,166,0.08)" stroke-width="1"/>
+  <text x="730" y="270" font-family="monospace" font-size="7.5" fill="rgba(239,68,68,0.55)" letter-spacing="1">PADLOCK DOES NOT MEAN</text>
+
+  <text x="730" y="287" font-family="monospace" font-size="8" fill="rgba(239,68,68,0.6)">✗</text>
+  <text x="746" y="287" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.55)">The site is legitimate</text>
+  <text x="746" y="300" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.28)">Phishing sites use HTTPS — free certs take minutes to set up</text>
+
+  <text x="730" y="318" font-family="monospace" font-size="8" fill="rgba(239,68,68,0.6)">✗</text>
+  <text x="746" y="318" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.55)">Your data goes to the right place</text>
+  <text x="746" y="331" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.28)">Encrypted channel to attacker's server is still a padlock</text>
+
+  <!-- Phishing URL example -->
+  <rect x="730" y="344" width="408" height="30" rx="5" fill="rgba(239,68,68,0.05)" stroke="rgba(239,68,68,0.2)" stroke-width="1"/>
+  <rect x="742" y="354" width="8" height="6" rx="1" fill="rgba(239,68,68,0.5)"/>
+  <rect x="744" y="350" width="4" height="5" rx="2" fill="none" stroke="rgba(239,68,68,0.5)" stroke-width="1.5"/>
+  <text x="758" y="364" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.5)">https://</text>
+  <text x="810" y="364" font-family="monospace" font-size="9" fill="rgba(255,255,255,0.5)">bankofamerica</text>
+  <text x="960" y="364" font-family="monospace" font-size="9" fill="rgba(239,68,68,0.65)">.secure-login.net</text>
+
+  <!-- Arrow + annotation -->
+  <text x="934" y="392" font-family="monospace" font-size="7" fill="rgba(239,68,68,0.5)" text-anchor="middle">padlock ✓ — but the real domain is secure-login.net, not bankofamerica.com</text>
+
+  <!-- Domain reading tip -->
+  <line x1="730" y1="406" x2="1138" y2="406" stroke="rgba(20,184,166,0.1)" stroke-width="1"/>
+  <text x="730" y="422" font-family="monospace" font-size="7.5" fill="rgba(20,184,166,0.55)" letter-spacing="1">HOW TO READ A DOMAIN</text>
+
+  <text x="730" y="438" font-family="monospace" font-size="8" fill="rgba(255,255,255,0.5)">Read right-to-left from the first slash:</text>
+  <text x="730" y="453" font-family="monospace" font-size="8" fill="rgba(34,197,94,0.6)">bankofamerica.com</text>
+  <text x="870" y="453" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.3)">/login  →  real</text>
+  <text x="730" y="468" font-family="monospace" font-size="8" fill="rgba(239,68,68,0.6)">bankofamerica.com</text>
+  <text x="870" y="468" font-family="monospace" font-size="8" fill="rgba(239,68,68,0.6)">.phish.net</text>
+  <text x="1020" y="468" font-family="monospace" font-size="7" fill="rgba(239,68,68,0.4)">→  fake</text>
+
+  <!-- Footer -->
+  <line x1="718" y1="486" x2="1150" y2="486" stroke="rgba(20,184,166,0.08)" stroke-width="1"/>
+  <text x="730" y="505" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.25)">No padlock on a login page = clear warning. Padlock alone = necessary, not sufficient.</text>
+  <text x="730" y="521" font-family="monospace" font-size="7.5" fill="rgba(20,184,166,0.4)">Safe = encrypted connection (HTTPS) + correct domain</text>
+  <text x="730" y="537" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.18)">Use bookmarks for banking and email — don't follow links from unexpected messages</text>
+  <text x="730" y="553" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.15)">HTTPS is free and automatic — phishing sites have had it for years</text>
+</svg>
