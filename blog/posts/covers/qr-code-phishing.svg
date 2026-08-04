@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1005"/>
+      <stop offset="100%" stop-color="#2d1a05"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#f59e0b"/>
+
+  <!-- PASSWORD SENSE label -->
+  <text x="76" y="100" font-family="monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Post title -->
+  <text x="76" y="188" font-family="Georgia, serif" font-size="54" fill="white">QR codes can</text>
+  <text x="76" y="254" font-family="Georgia, serif" font-size="54" fill="white">phish you just</text>
+  <text x="76" y="320" font-family="Georgia, serif" font-size="54" fill="white">as easily as links</text>
+
+  <!-- Date + tags + wordmark -->
+  <text x="76" y="580" font-family="monospace" font-size="12" fill="rgba(255,255,255,0.28)" letter-spacing="1">2026-08-04  ·  phishing  ·  habits  ·  VAULTMESH</text>
+
+  <!-- ── RIGHT SIDE: QR code illustration + attack flow ── -->
+
+  <!-- Fake QR code grid (top panel) -->
+  <rect x="718" y="72" width="432" height="290" rx="12" fill="rgba(245,158,11,0.04)" stroke="rgba(245,158,11,0.2)" stroke-width="1.5"/>
+  <rect x="718" y="72" width="432" height="38" rx="12" fill="rgba(245,158,11,0.12)"/>
+  <rect x="718" y="96" width="432" height="14" fill="rgba(245,158,11,0.12)"/>
+  <text x="934" y="97" font-family="monospace" font-size="9" fill="rgba(245,158,11,0.7)" text-anchor="middle" letter-spacing="2">THE TRUST GAP</text>
+
+  <!-- QR visual (symbolic) -->
+  <!-- Position finder squares -->
+  <rect x="740" y="120" width="48" height="48" rx="3" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+  <rect x="748" y="128" width="32" height="32" rx="1" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+  <rect x="756" y="136" width="16" height="16" rx="1" fill="rgba(255,255,255,0.2)"/>
+  <!-- Top-right finder -->
+  <rect x="868" y="120" width="48" height="48" rx="3" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+  <rect x="876" y="128" width="32" height="32" rx="1" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+  <rect x="884" y="136" width="16" height="16" rx="1" fill="rgba(255,255,255,0.2)"/>
+  <!-- Bottom-left finder -->
+  <rect x="740" y="248" width="48" height="48" rx="3" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2"/>
+  <rect x="748" y="256" width="32" height="32" rx="1" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="2"/>
+  <rect x="756" y="264" width="16" height="16" rx="1" fill="rgba(255,255,255,0.2)"/>
+  <!-- Data modules (decorative pattern) -->
+  <rect x="806" y="120" width="8" height="8" fill="rgba(239,68,68,0.4)"/>
+  <rect x="820" y="120" width="8" height="8" fill="rgba(239,68,68,0.3)"/>
+  <rect x="834" y="128" width="8" height="8" fill="rgba(239,68,68,0.4)"/>
+  <rect x="806" y="136" width="8" height="8" fill="rgba(239,68,68,0.25)"/>
+  <rect x="820" y="144" width="8" height="8" fill="rgba(239,68,68,0.4)"/>
+  <rect x="848" y="128" width="8" height="8" fill="rgba(239,68,68,0.3)"/>
+  <rect x="806" y="152" width="8" height="8" fill="rgba(239,68,68,0.35)"/>
+  <rect x="834" y="152" width="8" height="8" fill="rgba(239,68,68,0.25)"/>
+  <rect x="848" y="144" width="8" height="8" fill="rgba(239,68,68,0.4)"/>
+  <!-- Sticker overlay indicator -->
+  <rect x="736" y="116" width="200" height="188" rx="2" fill="none" stroke="rgba(239,68,68,0.5)" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="836" y="310" font-family="monospace" font-size="7.5" fill="rgba(239,68,68,0.5)" text-anchor="middle">← malicious sticker placed over real QR code</text>
+
+  <!-- Scan → destination problem -->
+  <text x="970" y="140" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="1">LINK IN EMAIL</text>
+  <rect x="950" y="148" width="168" height="20" rx="3" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="966" y="162" font-family="monospace" font-size="7.5" fill="rgba(34,197,94,0.6)">hover → see URL → decide</text>
+
+  <text x="970" y="198" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.3)" text-anchor="middle" letter-spacing="1">QR CODE</text>
+  <rect x="950" y="206" width="168" height="20" rx="3" fill="rgba(255,255,255,0.05)" stroke="rgba(239,68,68,0.25)" stroke-width="1"/>
+  <text x="966" y="220" font-family="monospace" font-size="7.5" fill="rgba(239,68,68,0.55)">scan → ??? → tap → gone</text>
+
+  <text x="970" y="252" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)" text-anchor="middle">you can't read a QR code</text>
+  <text x="970" y="265" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.25)" text-anchor="middle">before the camera decodes it</text>
+  <text x="970" y="284" font-family="monospace" font-size="7" fill="rgba(245,158,11,0.45)" text-anchor="middle">email filters catch URLs — not QR images</text>
+
+  <!-- Bottom panel: where + defense -->
+  <rect x="718" y="378" width="432" height="190" rx="12" fill="rgba(245,158,11,0.05)" stroke="rgba(245,158,11,0.25)" stroke-width="1.5"/>
+  <rect x="718" y="378" width="432" height="36" rx="12" fill="rgba(245,158,11,0.15)"/>
+  <rect x="718" y="400" width="432" height="14" fill="rgba(245,158,11,0.15)"/>
+  <text x="934" y="401" font-family="monospace" font-size="9" fill="rgba(245,158,11,0.8)" text-anchor="middle" letter-spacing="2">THE PAUSE THAT CATCHES IT</text>
+
+  <!-- URL preview mockup -->
+  <rect x="730" y="422" width="408" height="24" rx="4" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <text x="742" y="438" font-family="monospace" font-size="8.5" fill="rgba(245,158,11,0.6)">Open in Safari: </text>
+  <text x="846" y="438" font-family="monospace" font-size="8.5" fill="rgba(255,255,255,0.65)">parking-payment-secure</text>
+  <text x="1040" y="438" font-family="monospace" font-size="8.5" fill="rgba(239,68,68,0.65)">.net</text>
+
+  <text x="934" y="462" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.4)" text-anchor="middle">→ read this URL before tapping Open</text>
+  <text x="934" y="477" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.35)" text-anchor="middle">Is it the city's actual payment domain? The bank's real address?</text>
+
+  <line x1="730" y1="490" x2="1138" y2="490" stroke="rgba(245,158,11,0.1)" stroke-width="1"/>
+  <text x="730" y="507" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.25)">In email: QR code asking to "verify account" → go to the site directly instead</text>
+  <text x="730" y="522" font-family="monospace" font-size="7.5" fill="rgba(255,255,255,0.22)">In public: check for stickers · prefer official app for payments over QR</text>
+  <text x="730" y="537" font-family="monospace" font-size="7" fill="rgba(245,158,11,0.35)">Scan freely — read the URL in the preview — then decide whether to open</text>
+  <text x="730" y="552" font-family="monospace" font-size="7" fill="rgba(255,255,255,0.15)">The 2-second pause between scan and tap is where this attack gets stopped</text>
+</svg>

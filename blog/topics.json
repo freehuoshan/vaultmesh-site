@@ -325,7 +325,8 @@
       "title": "QR codes can phish you just as easily as links",
       "angle": "Quishing (QR-code phishing) works because people trust QR codes more than URLs — you can't hover-preview a QR code. Attackers paste fake QR codes over real ones in public spaces, or embed them in emails. The fix is the same as for links: check the URL before you do anything on the page it opens.",
       "audience": "Anyone who scans QR codes in public spaces or from emails without thinking twice",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-08-04-qr-code-phishing.md"
     },
     {
       "id": "hardware-security-keys",
