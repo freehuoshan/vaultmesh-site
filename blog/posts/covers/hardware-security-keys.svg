@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#051a0d"/>
+      <stop offset="100%" stop-color="#0a2d14"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- === RIGHT SIDE ILLUSTRATION (x 700–1200) === -->
+
+  <!-- Subtle horizontal rules -->
+  <line x1="710" y1="100" x2="1180" y2="100" stroke="#22c55e" stroke-width="0.3" opacity="0.05"/>
+  <line x1="710" y1="530" x2="1180" y2="530" stroke="#22c55e" stroke-width="0.3" opacity="0.05"/>
+
+  <!-- Laptop edge / USB socket housing -->
+  <rect x="734" y="296" width="12" height="40" rx="2" fill="#0d2b17" stroke="#22c55e" stroke-width="1" opacity="0.5"/>
+  <!-- USB port opening -->
+  <rect x="740" y="302" width="20" height="28" rx="2" fill="#051a0d" stroke="#22c55e" stroke-width="0.8" opacity="0.5"/>
+  <!-- Port contacts -->
+  <rect x="744" y="308" width="12" height="5" rx="1" fill="#22c55e" opacity="0.3"/>
+  <rect x="744" y="319" width="12" height="5" rx="1" fill="#22c55e" opacity="0.3"/>
+
+  <!-- USB connector tab (narrow end of key) -->
+  <rect x="760" y="305" width="32" height="22" rx="2" fill="#1a3a22" stroke="#22c55e" stroke-width="1.2" opacity="0.9"/>
+  <!-- Connector contacts -->
+  <rect x="765" y="310" width="20" height="4" rx="1" fill="#22c55e" opacity="0.35"/>
+  <rect x="765" y="318" width="20" height="4" rx="1" fill="#22c55e" opacity="0.35"/>
+
+  <!-- Key body (pill/capsule) -->
+  <rect x="792" y="293" width="200" height="46" rx="23" fill="#163d22" stroke="#22c55e" stroke-width="1.8"/>
+
+  <!-- Touch sensor circle -->
+  <circle cx="880" cy="316" r="16" fill="#051a0d" stroke="#22c55e" stroke-width="1.5" opacity="0.9"/>
+  <!-- Fingerprint arcs -->
+  <path d="M872 316 Q880 308 888 316" fill="none" stroke="#22c55e" stroke-width="0.9" opacity="0.5"/>
+  <path d="M870 320 Q880 310 890 320" fill="none" stroke="#22c55e" stroke-width="0.8" opacity="0.35"/>
+  <path d="M869 324 Q880 312 891 324" fill="none" stroke="#22c55e" stroke-width="0.7" opacity="0.22"/>
+
+  <!-- LED indicator (active) -->
+  <circle cx="948" cy="316" r="5" fill="#22c55e" opacity="0.95"/>
+  <circle cx="948" cy="316" r="10" fill="#22c55e" opacity="0.12"/>
+
+  <!-- NFC waves (right end) -->
+  <path d="M 980 306 Q 993 316 980 326" fill="none" stroke="#22c55e" stroke-width="1.5" opacity="0.55" stroke-linecap="round"/>
+  <path d="M 988 300 Q 1006 316 988 332" fill="none" stroke="#22c55e" stroke-width="1.2" opacity="0.35" stroke-linecap="round"/>
+  <path d="M 996 294 Q 1019 316 996 338" fill="none" stroke="#22c55e" stroke-width="0.9" opacity="0.2" stroke-linecap="round"/>
+
+  <!-- Domain verified box (above key) -->
+  <rect x="790" y="200" width="265" height="60" rx="7" fill="#071f0f" stroke="#22c55e" stroke-width="1.2" opacity="0.85"/>
+  <!-- Lock icon -->
+  <rect x="808" y="220" width="11" height="10" rx="2" fill="none" stroke="#22c55e" stroke-width="1.1" opacity="0.85"/>
+  <path d="M810 220 L810 216 Q810 212 813.5 212 Q817 212 817 216 L817 220" fill="none" stroke="#22c55e" stroke-width="1.1" opacity="0.85"/>
+  <!-- Domain label -->
+  <text x="828" y="228" font-family="'Courier New',Courier,monospace" font-size="12" fill="#22c55e" opacity="0.9">mybank.com</text>
+  <!-- Checkmark -->
+  <path d="M1024 222 L1030 230 L1044 214" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.85" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Sub-label -->
+  <text x="808" y="249" font-family="'Courier New',Courier,monospace" font-size="10" fill="#22c55e" opacity="0.45">domain matches registration</text>
+
+  <!-- Phishing rejected box (below key) -->
+  <rect x="790" y="375" width="265" height="60" rx="7" fill="#1a0505" stroke="#7a2222" stroke-width="1.2" opacity="0.8"/>
+  <!-- Phishing domain label -->
+  <text x="808" y="400" font-family="'Courier New',Courier,monospace" font-size="12" fill="#c05050" opacity="0.85">myb4nk-secure.net</text>
+  <!-- X mark -->
+  <line x1="1024" y1="390" x2="1040" y2="406" stroke="#c05050" stroke-width="2" opacity="0.85" stroke-linecap="round"/>
+  <line x1="1040" y1="390" x2="1024" y2="406" stroke="#c05050" stroke-width="2" opacity="0.85" stroke-linecap="round"/>
+  <!-- Sub-label -->
+  <text x="808" y="424" font-family="'Courier New',Courier,monospace" font-size="10" fill="#c05050" opacity="0.4">domain mismatch - key silent</text>
+
+  <!-- Dashed connector lines: key to boxes -->
+  <line x1="870" y1="293" x2="870" y2="260" stroke="#22c55e" stroke-width="0.8" opacity="0.25" stroke-dasharray="4,3"/>
+  <line x1="870" y1="339" x2="870" y2="375" stroke="#7a2222" stroke-width="0.8" opacity="0.25" stroke-dasharray="4,3"/>
+
+  <!-- === LEFT SIDE === -->
+
+  <!-- Accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#22c55e"/>
+
+  <!-- PASSWORD SENSE -->
+  <text x="80" y="100" font-family="'Courier New',Courier,monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Title (52px Georgia, 4 lines) -->
+  <text x="80" y="188" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="white">Hardware security</text>
+  <text x="80" y="252" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="white">keys: the strongest</text>
+  <text x="80" y="316" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="white">2FA most people</text>
+  <text x="80" y="380" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="white">have never tried</text>
+
+  <!-- Date · tags · VAULTMESH -->
+  <text x="80" y="580" font-family="'Courier New',Courier,monospace" font-size="12" fill="rgba(255,255,255,0.28)">2026-08-07  ·  2fa  ·  phishing  ·  habits</text>
+  <text x="1144" y="580" font-family="'Courier New',Courier,monospace" font-size="12" fill="rgba(255,255,255,0.28)" text-anchor="end">VAULTMESH</text>
+</svg>

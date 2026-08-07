@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>Hardware security keys: the strongest 2FA most people have never tried</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/hardware-security-keys.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/hardware-security-keys.html</guid>
+    <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
+    <description>Hardware security keys are the only form of 2FA that a phishing page can&#39;t steal — here&#39;s how they work and who should consider one.</description>
+  </item>
+  <item>
     <title>QR codes can phish you just as easily as links</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/qr-code-phishing.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/qr-code-phishing.html</guid>

@@ -333,7 +333,8 @@
       "title": "Hardware security keys: the strongest 2FA most people have never tried",
       "angle": "Physical security keys (small USB/NFC devices) are the only form of 2FA that's fully phishing-resistant — they verify the site's domain before responding, so a fake site gets nothing. Explain how they work without being technical, who they're worth the cost for, and how they compare to authenticator apps.",
       "audience": "Anyone who uses an authenticator app and wants to understand whether a hardware key is worth upgrading to",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-08-07-hardware-security-keys.md"
     },
     {
       "id": "lost-phone-response",
