@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#0f0519"/>
+      <stop offset="100%" stop-color="#1a0a2d"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- === RIGHT SIDE ILLUSTRATION (x 700–1200) === -->
+
+  <!-- Simplified laptop silhouette (signal source) -->
+  <rect x="756" y="204" width="72" height="46" rx="4" fill="none" stroke="#a855f7" stroke-width="1.2" opacity="0.38"/>
+  <rect x="748" y="250" width="88" height="8" rx="3" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.3"/>
+  <!-- Laptop screen content hint -->
+  <rect x="763" y="212" width="58" height="30" rx="2" fill="#a855f7" opacity="0.04"/>
+  <line x1="768" y1="220" x2="814" y2="220" stroke="#a855f7" stroke-width="0.8" opacity="0.35"/>
+  <line x1="768" y1="228" x2="804" y2="228" stroke="#a855f7" stroke-width="0.8" opacity="0.25"/>
+  <line x1="768" y1="236" x2="810" y2="236" stroke="#a855f7" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Source dot (glowing send point) -->
+  <circle cx="830" cy="204" r="5" fill="#a855f7" opacity="0.65"/>
+  <circle cx="830" cy="204" r="11" fill="#a855f7" opacity="0.1"/>
+
+  <!-- Signal arcs: remote lock command traveling from laptop to phone -->
+  <path d="M836 200 Q858 174 882 196" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.55" stroke-linecap="round"/>
+  <path d="M828 210 Q855 178 886 208" fill="none" stroke="#a855f7" stroke-width="1.1" opacity="0.33" stroke-linecap="round"/>
+  <path d="M820 222 Q852 182 889 220" fill="none" stroke="#a855f7" stroke-width="0.8" opacity="0.18" stroke-linecap="round"/>
+
+  <!-- Phone body -->
+  <rect x="893" y="178" width="112" height="222" rx="15" fill="#1d0e35" stroke="#a855f7" stroke-width="1.8"/>
+  <!-- Phone screen -->
+  <rect x="902" y="195" width="94" height="183" rx="7" fill="#0f0519"/>
+  <!-- Notch -->
+  <rect x="930" y="183" width="38" height="9" rx="4" fill="#0f0519"/>
+  <!-- Home button ring -->
+  <circle cx="949" cy="392" r="10" fill="none" stroke="#a855f7" stroke-width="1.4" opacity="0.45"/>
+
+  <!-- Lock icon on screen (centered at 949, 286) -->
+  <!-- Shackle -->
+  <path d="M933 280 L933 267 Q933 250 949 250 Q965 250 965 267 L965 280" fill="none" stroke="#a855f7" stroke-width="2.2" opacity="0.9"/>
+  <!-- Lock body -->
+  <rect x="927" y="278" width="44" height="34" rx="6" fill="#1d0e35" stroke="#a855f7" stroke-width="2" opacity="0.9"/>
+  <!-- Keyhole circle -->
+  <circle cx="949" cy="293" r="7" fill="#a855f7" opacity="0.65"/>
+  <!-- Keyhole stem -->
+  <rect x="946" y="293" width="6" height="11" rx="2" fill="#a855f7" opacity="0.65"/>
+  <!-- LOCKED label -->
+  <text x="949" y="330" font-family="'Courier New',Courier,monospace" font-size="9" fill="#a855f7" opacity="0.55" text-anchor="middle" letter-spacing="2">LOCKED</text>
+
+  <!-- Screen top status bar -->
+  <rect x="902" y="195" width="94" height="16" rx="4" fill="#a855f7" opacity="0.05"/>
+
+  <!-- SIM card below phone -->
+  <rect x="921" y="418" width="56" height="42" rx="5" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.55"/>
+  <!-- SIM corner cut (characteristic notch) -->
+  <path d="M921 430 L933 418" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.55"/>
+  <!-- SIM contact grid -->
+  <rect x="928" y="425" width="12" height="8" rx="1" fill="#a855f7" opacity="0.18"/>
+  <rect x="944" y="425" width="12" height="8" rx="1" fill="#a855f7" opacity="0.18"/>
+  <rect x="928" y="437" width="12" height="8" rx="1" fill="#a855f7" opacity="0.18"/>
+  <rect x="944" y="437" width="12" height="8" rx="1" fill="#a855f7" opacity="0.18"/>
+  <!-- Suspended: X over SIM -->
+  <line x1="917" y1="414" x2="981" y2="464" stroke="#a855f7" stroke-width="1.3" opacity="0.38" stroke-linecap="round"/>
+  <line x1="981" y1="414" x2="917" y2="464" stroke="#a855f7" stroke-width="1.3" opacity="0.38" stroke-linecap="round"/>
+  <text x="949" y="480" font-family="'Courier New',Courier,monospace" font-size="9" fill="#a855f7" opacity="0.38" text-anchor="middle" letter-spacing="1">SIM SUSPENDED</text>
+
+  <!-- Shield (accounts protected, right side) -->
+  <path d="M1090 218 L1135 240 L1135 300 Q1135 334 1090 350 Q1045 334 1045 300 L1045 240 Z" fill="none" stroke="#a855f7" stroke-width="1.5" opacity="0.25"/>
+  <path d="M1090 238 L1122 256 L1122 305 Q1122 330 1090 343 Q1058 330 1058 305 L1058 256 Z" fill="#a855f7" opacity="0.05"/>
+  <!-- Checkmark in shield -->
+  <path d="M1074 294 L1086 308 L1112 274" fill="none" stroke="#a855f7" stroke-width="2.2" opacity="0.45" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Subtle horizontal rules -->
+  <line x1="720" y1="522" x2="1180" y2="522" stroke="#a855f7" stroke-width="0.3" opacity="0.07"/>
+  <line x1="720" y1="552" x2="1180" y2="552" stroke="#a855f7" stroke-width="0.2" opacity="0.04"/>
+
+  <!-- === LEFT SIDE === -->
+
+  <!-- Accent bar -->
+  <rect x="56" y="56" width="4" height="518" fill="#a855f7"/>
+
+  <!-- PASSWORD SENSE -->
+  <text x="80" y="100" font-family="'Courier New',Courier,monospace" font-size="13" letter-spacing="4" fill="rgba(255,255,255,0.55)">PASSWORD SENSE</text>
+
+  <!-- Title (3 lines, 52px Georgia) -->
+  <text x="80" y="188" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="white">What to do when</text>
+  <text x="80" y="252" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="white">your phone is</text>
+  <text x="80" y="316" font-family="Georgia,'Times New Roman',serif" font-size="52" fill="white">lost or stolen</text>
+
+  <!-- Date · tags · VAULTMESH -->
+  <text x="80" y="580" font-family="'Courier New',Courier,monospace" font-size="12" fill="rgba(255,255,255,0.28)">2026-08-08  ·  habits  ·  2fa  ·  accounts</text>
+  <text x="1144" y="580" font-family="'Courier New',Courier,monospace" font-size="12" fill="rgba(255,255,255,0.28)" text-anchor="end">VAULTMESH</text>
+</svg>

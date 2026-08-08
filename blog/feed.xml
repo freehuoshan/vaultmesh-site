@@ -7,6 +7,13 @@
   <language>en</language>
   <atom:link href="https://vaultmesh.codeblog.net/blog/feed.xml" rel="self" type="application/rss+xml" />
   <item>
+    <title>What to do when your phone is lost or stolen</title>
+    <link>https://vaultmesh.codeblog.net/blog/posts/lost-phone-response.html</link>
+    <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/lost-phone-response.html</guid>
+    <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
+    <description>Your phone holds active sessions, SMS codes, and 2FA credentials for most of your accounts — losing it requires more than filing a claim.</description>
+  </item>
+  <item>
     <title>Hardware security keys: the strongest 2FA most people have never tried</title>
     <link>https://vaultmesh.codeblog.net/blog/posts/hardware-security-keys.html</link>
     <guid isPermaLink="true">https://vaultmesh.codeblog.net/blog/posts/hardware-security-keys.html</guid>

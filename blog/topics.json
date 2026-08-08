@@ -341,7 +341,8 @@
       "title": "What to do when your phone is lost or stolen",
       "angle": "Losing a phone is a security event, not just an inconvenience. Your phone likely has active sessions, SMS-based 2FA, and possibly an authenticator app. Walk through the priority order: remote lock/wipe, changing passwords on accounts using SMS 2FA, recovering authenticator app accounts, and what to tell your carrier.",
       "audience": "Anyone who stores accounts, 2FA codes, or sensitive data on their phone",
-      "status": "queued"
+      "status": "drafted",
+      "draft_path": "blog/_drafts/2026-08-08-lost-phone-response.md"
     },
     {
       "id": "browser-extensions-security",
